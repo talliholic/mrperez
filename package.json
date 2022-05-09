@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js -e js,json,hbs",
+    "dev": "nodemon src/index.js -e js,json,hbs,css",
     "build": "npx babel src/projectable.js --out-file=public/scripts/projectable.js --presets=@babel/preset-env,@babel/preset-react",
     "watch": "npx babel src/projectable.js --out-file=public/scripts/projectable.js --presets=@babel/preset-env,@babel/preset-react --watch"
   },

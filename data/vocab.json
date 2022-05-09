@@ -23,5 +23,22 @@
     "structure": "I can smell...",
     "key": "smell",
     "words": ["flowers", "food", "smoke"]
+  },
+  {
+    "context": "Oy and Oi",
+    "structure": "...contains OI/OY.",
+    "key": "oy",
+    "words": [
+      "soy",
+      "toy",
+      "boil",
+      "join",
+      "soil",
+      "boy",
+      "enjoy",
+      "droid",
+      "joy",
+      "coin"
+    ]
   }
 ]
