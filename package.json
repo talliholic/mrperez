@@ -2,8 +2,8 @@
   "name": "mrperez",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "start":"index.js",
+  "main": "src/index.js",
+  "start": "node src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js -e js,json,hbs",
     "build": "npx babel src/projectable.js --out-file=public/scripts/projectable.js --presets=@babel/preset-env,@babel/preset-react",
