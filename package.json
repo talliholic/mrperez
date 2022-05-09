@@ -1,0 +1,26 @@
+{
+  "name": "mrperez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "start":"index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js -e js,json,hbs",
+    "build": "npx babel src/projectable.js --out-file=public/scripts/projectable.js --presets=@babel/preset-env,@babel/preset-react",
+    "watch": "npx babel src/projectable.js --out-file=public/scripts/projectable.js --presets=@babel/preset-env,@babel/preset-react --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  }
+}

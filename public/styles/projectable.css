@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+.container {
+  margin: 20px;
+}
+h1 {
+  text-align: center;
+}
+.lesson {
+  width: 900px;
+  margin: 10px auto;
+  border: 1px dashed black;
+  padding: 10px;
+}
+.instruction {
+  height: 200px;
+}
+li {
+  font-size: 18px;
+}

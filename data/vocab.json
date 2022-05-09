@@ -1,0 +1,27 @@
+[
+  {
+    "context": "The City",
+    "structure": "I can see...",
+    "key": "see",
+    "words": [
+      "the subway",
+      "sidewalks",
+      "stores",
+      "roads",
+      "traffic lights",
+      "buildings"
+    ]
+  },
+  {
+    "context": "The City",
+    "structure": "I can hear...",
+    "key": "hear",
+    "words": ["the subway", "people", "cars"]
+  },
+  {
+    "context": "The City",
+    "structure": "I can smell...",
+    "key": "smell",
+    "words": ["flowers", "food", "smoke"]
+  }
+]

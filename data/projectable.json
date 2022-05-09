@@ -1,0 +1,50 @@
+[
+  {
+    "objective": "Use learned vocabulary and structures to write simple sentences regarding technology, the city and the farm..",
+    "question": "What can I do in the city?",
+    "textbook": "Language notebook 63 and 64",
+    "instructions": [
+      {
+        "command": "Answer the essential question."
+      },
+      {
+        "command": "Look at the pictures and answer 'What are they doing?', 'where', 'What do they wear?', 'How do they move?' and 'Where do they go?'",
+        "resource": "media/img_1/people_city.png"
+      },
+      {
+        "command": "Write the answers in your notebook, page 63",
+        "resource": "media/textbooks/l63.png"
+      },
+      {
+        "command": "Practice saying sentences about the city.",
+        "resource": "/sentence_practice?context=The City"
+      },
+      {
+        "command": "On page 64, complete the sentences on the paragraph.",
+        "resource": "media/textbooks/l64.png"
+      }
+    ]
+  },
+  {
+    "objective": "Segment and blend words according to learned sounds.",
+    "question": "Which words contain OI and OY?",
+    "textbook": "Language notebook 66",
+    "instructions": [
+      {
+        "command": "Answer the essential question."
+      },
+      {
+        "command": "Watch the video, ask and answer the essential question.",
+        "resource": "https://www.youtube.com/watch?v=EJV7XsmxW4s"
+      },
+      {
+        "command": "Watch another video and say which words have OY and OI.",
+        "resource": "https://www.youtube.com/watch?v=OdWkgYQnFcw"
+      },
+      {
+        "command": "In your notebook write 10 words with OY and ten words with OI.",
+        "resource": "/media/textbooks/l66.png"
+      }
+    ]
+  }
+]
