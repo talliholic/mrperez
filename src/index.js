@@ -21,11 +21,20 @@ app.use(express.urlencoded({ extended: true }));
 const vocab = require("../data/vocab.json");
 const projectable = require("../data/projectable.json");
 
+app.get("/transition_skills", (req, res) => {
+  res.render("transition_skills");
+});
 app.get("/sentence_practice", (req, res) => {
   res.render("sentence_practice");
 });
 app.get("/projectable", (req, res) => {
   res.render("projectable");
+});
+app.get("/vocab_reading_quiz", (req, res) => {
+  res.render("vocab_reading_quiz");
+});
+app.get("/vocab_listening_quiz", (req, res) => {
+  res.render("vocab_listening_quiz");
 });
 
 app.get("/projectable_data", (req, res) => {
@@ -59,7 +68,92 @@ app.get("/vocab/:context", (req, res) => {
   });
   res.send(mappedVocab);
 });
+app.get("/vocabulary", (req, res) => {
+  const topics = [...new Set(vocab.map((item) => item.context))];
+  res.send({ topics, vocab });
+});
+app.get("/vocab_quiz/:context/:index", (req, res) => {
+  const filteredVocab = vocab.filter(
+    (item) => item.context === req.params.context
+  );
+  const mappedVocab = filteredVocab.map((item) => {
+    return {
+      ...item,
+      img: [],
+      audio: [],
+    };
+  });
+  mappedVocab.forEach((item) => {
+    item.words.forEach((word) => {
+      if (fs.existsSync("./public/media/img_1/" + word + ".png")) {
+        item.img.push("media/img_1/" + word + ".png");
+      } else if (fs.existsSync("./public/media/img_1/" + word + ".jpg")) {
+        item.img.push("media/img_1/" + word + ".jpg");
+      }
+      if (
+        fs.existsSync("./public/media/audio/" + item.key + "_" + word + ".mp3")
+      ) {
+        item.audio.push("media/audio/" + item.key + "_" + word + ".mp3");
+      }
+    });
+  });
+
+  let vocabQuiz = {
+    ...mappedVocab[req.params.index],
+    other: [],
+    options: [],
+    sentences: [],
+  };
+  for (let i = 0; i < vocabQuiz.words.length; i++) {
+    vocabQuiz.other[i] = [];
+    vocabQuiz.options[i] = [];
+    if (vocabQuiz.prefix) {
+      vocabQuiz.sentences[i] =
+        capFirst(vocabQuiz.words[i]) + " " + vocabQuiz.structure + ".";
+    } else {
+      vocabQuiz.sentences[i] =
+        vocabQuiz.structure + " " + vocabQuiz.words[i] + ".";
+    }
+    for (let j = 0; j < vocabQuiz.words.length; j++) {
+      if (j === i) {
+        continue;
+      }
+      vocabQuiz.other[i].push(vocabQuiz.img[j]);
+    }
+    shuffle(vocabQuiz.other[i]);
+    vocabQuiz.options[i].push(vocabQuiz.img[i]);
+    for (let k = 0; k < 3; k++) {
+      vocabQuiz.options[i].push(vocabQuiz.other[i][k]);
+    }
+    shuffle(vocabQuiz.options[i]);
+  }
+
+  res.send(vocabQuiz);
+});
 
 app.listen(port, () => {
   console.log("Server is up on port " + port);
 });
+
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
+function capFirst(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}

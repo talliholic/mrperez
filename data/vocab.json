@@ -1,7 +1,8 @@
 [
   {
     "context": "The City",
-    "structure": "I can see...",
+    "structure": "I can see",
+    "prefix": false,
     "key": "see",
     "words": [
       "the subway",
@@ -9,24 +10,34 @@
       "stores",
       "roads",
       "traffic lights",
-      "buildings"
-    ]
+      "buildings",
+      "the rain"
+    ],
+    "readingQuiz": "vocab_reading_quiz?context=The%20City&index=0",
+    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=0"
   },
   {
     "context": "The City",
-    "structure": "I can hear...",
+    "structure": "I can hear",
+    "prefix": false,
     "key": "hear",
-    "words": ["the subway", "people", "cars"]
+    "words": ["the subway", "people", "cars", "the rain"],
+    "readingQuiz": "vocab_reading_quiz?context=The%20City&index=1",
+    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=1"
   },
   {
     "context": "The City",
-    "structure": "I can smell...",
+    "structure": "I can smell",
+    "prefix": false,
     "key": "smell",
-    "words": ["flowers", "food", "smoke"]
+    "words": ["flowers", "food", "smoke", "the rain"],
+    "readingQuiz": "vocab_reading_quiz?context=The%20City&index=1",
+    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=2"
   },
   {
-    "context": "Oy and Oi",
-    "structure": "...contains OI/OY.",
+    "context": "Phonics",
+    "structure": "contains OI/OY",
+    "prefix": true,
     "key": "oy",
     "words": [
       "soy",
@@ -39,6 +50,8 @@
       "droid",
       "joy",
       "coin"
-    ]
+    ],
+    "readingQuiz": "http://localhost:3000/vocab_reading_quiz?context=Phonics&index=0",
+    "listeningQuiz": "http://localhost:3000/vocab_listening_quiz?context=Phonics&index=0"
   }
 ]

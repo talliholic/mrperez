@@ -37,7 +37,7 @@ class VocabItem extends React.Component {
   }
   render() {
     return this.props.data.map((item, i) => (
-      <div className="section" key={i}>
+      <div className="section" id={item.structure} key={i}>
         <h2>{item.structure}</h2>
         <Words data={item} />
       </div>
@@ -48,7 +48,6 @@ class VocabItem extends React.Component {
 class Words extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props.data.img);
   }
   render() {
     return this.props.data.words.map((item, i) => (

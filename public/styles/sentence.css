@@ -20,3 +20,9 @@ h1 {
 .vocab figcaption {
   text-align: center;
 }
+.section h2 {
+  display: block;
+  background-color: greenyellow;
+  padding: 10px;
+  text-align: center;
+}

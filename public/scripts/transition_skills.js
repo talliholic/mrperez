@@ -34,7 +34,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      items: [],
+      item: [],
       dataLoaded: false
     };
     return _this;
@@ -45,12 +45,11 @@ var Practice = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var searchParams = new URLSearchParams(window.location.search);
-      fetch("/vocab/" + searchParams.get("context")).then(function (res) {
+      fetch("/vocabulary/").then(function (res) {
         return res.json();
       }).then(function (json) {
         _this2.setState({
-          items: json,
+          item: json,
           dataLoaded: true
         });
       });
@@ -60,13 +59,19 @@ var Practice = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this$state = this.state,
           dataLoaded = _this$state.dataLoaded,
-          items = _this$state.items;
+          item = _this$state.item;
 
       if (dataLoaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, items[0].context), /*#__PURE__*/React.createElement(VocabItem, {
-          data: items
+        }, /*#__PURE__*/React.createElement("h1", null, "Transition Skills"), item.topics.map(function (topic, i) {
+          return /*#__PURE__*/React.createElement(Topic, {
+            key: i,
+            data: item.vocab.filter(function (voc) {
+              return voc.context === topic;
+            }),
+            topic: topic
+          });
         }));
       }
 
@@ -77,69 +82,27 @@ var Practice = /*#__PURE__*/function (_React$Component) {
   return Practice;
 }(React.Component);
 
-var VocabItem = /*#__PURE__*/function (_React$Component2) {
-  _inherits(VocabItem, _React$Component2);
+var Topic = function Topic(props) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "topic"
+  }, /*#__PURE__*/React.createElement("h2", null, props.topic), /*#__PURE__*/React.createElement("a", {
+    href: "sentence_practice?context=" + props.topic
+  }, "Practice"), props.data.map(function (structure, i) {
+    return /*#__PURE__*/React.createElement(Structure, {
+      key: i,
+      data: structure
+    });
+  }));
+};
 
-  var _super2 = _createSuper(VocabItem);
-
-  function VocabItem(props) {
-    _classCallCheck(this, VocabItem);
-
-    return _super2.call(this, props);
-  }
-
-  _createClass(VocabItem, [{
-    key: "render",
-    value: function render() {
-      return this.props.data.map(function (item, i) {
-        return /*#__PURE__*/React.createElement("div", {
-          className: "section",
-          id: item.structure,
-          key: i
-        }, /*#__PURE__*/React.createElement("h2", null, item.structure), /*#__PURE__*/React.createElement(Words, {
-          data: item
-        }));
-      });
-    }
-  }]);
-
-  return VocabItem;
-}(React.Component);
-
-var Words = /*#__PURE__*/function (_React$Component3) {
-  _inherits(Words, _React$Component3);
-
-  var _super3 = _createSuper(Words);
-
-  function Words(props) {
-    _classCallCheck(this, Words);
-
-    return _super3.call(this, props);
-  }
-
-  _createClass(Words, [{
-    key: "render",
-    value: function render() {
-      var _this3 = this;
-
-      return this.props.data.words.map(function (item, i) {
-        return /*#__PURE__*/React.createElement("figure", {
-          className: "vocab",
-          key: i
-        }, /*#__PURE__*/React.createElement("img", {
-          className: "vocab_pic",
-          src: _this3.props.data.img[i]
-        }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("h3", null, item)), /*#__PURE__*/React.createElement("audio", {
-          controls: true
-        }, /*#__PURE__*/React.createElement("source", {
-          src: _this3.props.data.audio[i],
-          type: "audio/mpeg"
-        })));
-      });
-    }
-  }]);
-
-  return Words;
-}(React.Component);
+var Structure = function Structure(props) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "structure"
+  }, /*#__PURE__*/React.createElement("h3", null, props.data.structure), /*#__PURE__*/React.createElement("a", {
+    href: props.data.readingQuiz
+  }, "Reading Quiz"), /*#__PURE__*/React.createElement("a", {
+    href: props.data.listeningQuiz
+  }, "Listening Quiz"));
+};
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));
