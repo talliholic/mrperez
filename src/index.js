@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 const vocab = require("../data/vocab.json");
 const projectable = require("../data/projectable.json");
 
-app.get("/transition_skills", (req, res) => {
+app.get("/transition", (req, res) => {
   res.render("transition_skills");
 });
 app.get("/sentence_practice", (req, res) => {

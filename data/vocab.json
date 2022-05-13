@@ -51,7 +51,7 @@
       "joy",
       "coin"
     ],
-    "readingQuiz": "http://localhost:3000/vocab_reading_quiz?context=Phonics&index=0",
-    "listeningQuiz": "http://localhost:3000/vocab_listening_quiz?context=Phonics&index=0"
+    "readingQuiz": "vocab_reading_quiz?context=Phonics&index=0",
+    "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=0"
   }
 ]
