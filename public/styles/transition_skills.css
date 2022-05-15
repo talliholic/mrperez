@@ -9,20 +9,45 @@
 h1 {
   text-align: center;
 }
-.structure a,
-.topic a {
-  margin: 10px;
+.resources {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
-.topic {
-  border: 1px solid black;
-  padding: 20px;
-  margin-bottom: 20px;
+.topic a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
 }
 .topic h2 {
   background-color: lightgray;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
 }
 .structure h3 {
   border: 1.5px solid green;
   padding: 5px;
+}
+#green {
+  background-color: lightgreen;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
+#yellow {
+  background-color: lightgoldenrodyellow;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
+#pink {
+  background-color: lightpink;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
 }

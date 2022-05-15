@@ -85,9 +85,9 @@ var Practice = /*#__PURE__*/function (_React$Component) {
 var Topic = function Topic(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "topic"
-  }, /*#__PURE__*/React.createElement("h2", null, props.topic), /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("a", {
     href: "sentence_practice?context=" + props.topic
-  }, "Practice"), props.data.map(function (structure, i) {
+  }, /*#__PURE__*/React.createElement("h2", null, props.topic)), props.data.map(function (structure, i) {
     return /*#__PURE__*/React.createElement(Structure, {
       key: i,
       data: structure
@@ -98,13 +98,18 @@ var Topic = function Topic(props) {
 var Structure = function Structure(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "structure"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "resources"
   }, /*#__PURE__*/React.createElement("h3", null, props.data.structure), /*#__PURE__*/React.createElement("a", {
+    id: "green",
     href: props.data.readingQuiz
   }, "Reading Quiz"), /*#__PURE__*/React.createElement("a", {
+    id: "yellow",
     href: props.data.listeningQuiz
   }, "Listening Quiz"), /*#__PURE__*/React.createElement("a", {
+    id: "pink",
     href: props.data.unscrambleWord
-  }, "Unscramble the word"));
+  }, "Unscramble the word")));
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));

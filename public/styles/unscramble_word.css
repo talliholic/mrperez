@@ -26,6 +26,8 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-color: lightgrey;
+  margin: 20px 0;
   cursor: pointer;
 }
 .letters {
