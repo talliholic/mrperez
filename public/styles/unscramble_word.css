@@ -53,3 +53,9 @@ h1 {
   background-color: blue;
   color: white;
 }
+.prompt {
+  display: block;
+  height: 200px;
+  margin: 10px auto 0;
+  border-radius: 20%;
+}
