@@ -14,7 +14,8 @@
       "the rain"
     ],
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=0",
-    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=0"
+    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=0",
+    "unscrambleWord": "unscramble_word?context=The%20City&index=0"
   },
   {
     "context": "The City",
@@ -23,7 +24,8 @@
     "key": "hear",
     "words": ["the subway", "people", "cars", "the rain"],
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=1",
-    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=1"
+    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=1",
+    "unscrambleWord": "unscramble_word?context=The%20City&index=1"
   },
   {
     "context": "The City",
@@ -31,8 +33,9 @@
     "prefix": false,
     "key": "smell",
     "words": ["flowers", "food", "smoke", "the rain"],
-    "readingQuiz": "vocab_reading_quiz?context=The%20City&index=1",
-    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=2"
+    "readingQuiz": "vocab_reading_quiz?context=The%20City&index=2",
+    "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=2",
+    "unscrambleWord": "unscramble_word?context=The%20City&index=2"
   },
   {
     "context": "Phonics",
@@ -52,6 +55,7 @@
       "coin"
     ],
     "readingQuiz": "vocab_reading_quiz?context=Phonics&index=0",
-    "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=0"
+    "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=0",
+    "unscrambleWord": "unscramble_word?context=Phonics&index=0"
   }
 ]

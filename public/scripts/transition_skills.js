@@ -102,7 +102,9 @@ var Structure = function Structure(props) {
     href: props.data.readingQuiz
   }, "Reading Quiz"), /*#__PURE__*/React.createElement("a", {
     href: props.data.listeningQuiz
-  }, "Listening Quiz"));
+  }, "Listening Quiz"), /*#__PURE__*/React.createElement("a", {
+    href: props.data.unscrambleWord
+  }, "Unscramble the word"));
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));

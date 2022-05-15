@@ -27,6 +27,9 @@ app.get("/transition", (req, res) => {
 app.get("/sentence_practice", (req, res) => {
   res.render("sentence_practice");
 });
+app.get("/unscramble_word", (req, res) => {
+  res.render("unscramble_word");
+});
 app.get("/projectable", (req, res) => {
   res.render("projectable");
 });
