@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+.instruction {
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 1px;
+}
+#app {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+.question {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10%;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 10%;
+}
+.unscrambled {
+  display: block;
+  background-color: lightgoldenrodyellow;
+  font-size: 28px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10%;
+}
+.scrambled {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.word {
+  margin: 10px;
+  font-size: 28px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.show_results {
+  font-size: 36px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}

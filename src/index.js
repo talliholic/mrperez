@@ -30,6 +30,9 @@ app.get("/sentence_practice", (req, res) => {
 app.get("/unscramble_word", (req, res) => {
   res.render("unscramble_word");
 });
+app.get("/unscramble_sentence", (req, res) => {
+  res.render("unscramble_sentence");
+});
 app.get("/projectable", (req, res) => {
   res.render("projectable");
 });
