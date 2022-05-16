@@ -12,8 +12,11 @@ h1 {
 .resources {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
+}
+.resources a {
+  margin: 20px;
 }
 .topic a {
   color: black;
