@@ -12,6 +12,11 @@ h1 {
 .vocab {
   display: inline-block;
 }
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 .image {
   display: inline-block;
   height: 200px;
