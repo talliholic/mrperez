@@ -1,5 +1,4 @@
 node_modules/
 config/
-templates/views/loginuser.hbs
 react
 doc.txt

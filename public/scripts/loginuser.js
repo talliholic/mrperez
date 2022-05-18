@@ -113,6 +113,8 @@ var App = /*#__PURE__*/function (_React$Component) {
             showSign: false,
             showLog: true
           });
+        } else {
+          alert("There was en error!");
         }
       });
     }
