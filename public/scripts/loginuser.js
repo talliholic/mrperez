@@ -291,7 +291,7 @@ var User = /*#__PURE__*/function (_React$Component2) {
         id: "subcontainer"
       }, this.state.quizzes.length === 0 && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "No quiz results yet!")), /*#__PURE__*/React.createElement("table", null, this.state.quizzes.length > 0 && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
         id: "heading"
-      }, /*#__PURE__*/React.createElement("th", null, "Topic"), /*#__PURE__*/React.createElement("th", null, "Type"), /*#__PURE__*/React.createElement("th", null, "Structure"), /*#__PURE__*/React.createElement("th", null, "Score"))), /*#__PURE__*/React.createElement("tbody", null, this.state.quizzes.map(function (quiz, i) {
+      }, /*#__PURE__*/React.createElement("th", null, "Topic"), /*#__PURE__*/React.createElement("th", null, "Type"), /*#__PURE__*/React.createElement("th", null, "Structure"), /*#__PURE__*/React.createElement("th", null, "Score"))), /*#__PURE__*/React.createElement("tbody", null, this.state.quizzes.length > 0 && this.state.quizzes.map(function (quiz, i) {
         return /*#__PURE__*/React.createElement(Quiz, {
           key: i,
           data: quiz
