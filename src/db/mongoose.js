@@ -1,3 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect(
+  "mongodb+srv://talliholic:kay20071@cluster0.ttnid.mongodb.net/quizzes?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+  }
+);
