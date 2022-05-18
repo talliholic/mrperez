@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(
-  "mongodb+srv://talliholic:kay20071@cluster0.ttnid.mongodb.net/quizzes?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-  }
-);
+mongoose.connect(process.env.MONGODB_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+mongoose.connection.on("connected", () => {
+  console.log("Mongoose connected");
+});
