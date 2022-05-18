@@ -37,6 +37,21 @@ input[type="submit"] {
   padding: 5px;
   border-radius: 10%;
 }
+.show_password_button {
+  border: none;
+  background-color: lightcyan;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+}
+.show_password {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+}
 #logoutbutton {
   margin-top: 60px;
   float: right;

@@ -44,10 +44,22 @@ var App = /*#__PURE__*/function (_React$Component) {
     _this.logoutAll = _this.logoutAll.bind(_assertThisInitialized(_this));
     _this.showSignUp = _this.showSignUp.bind(_assertThisInitialized(_this));
     _this.showLogIn = _this.showLogIn.bind(_assertThisInitialized(_this));
+    _this.showPassword = _this.showPassword.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(App, [{
+    key: "showPassword",
+    value: function showPassword(e) {
+      var password = e.target.parentNode.previousSibling.value;
+
+      if (e.target.nextSibling.textContent === "") {
+        e.target.nextSibling.textContent = password;
+      } else {
+        e.target.nextSibling.textContent = "";
+      }
+    }
+  }, {
     key: "showSignUp",
     value: function showSignUp() {
       this.setState({
@@ -215,7 +227,12 @@ var App = /*#__PURE__*/function (_React$Component) {
         type: "password",
         placeholder: "Password",
         autoComplete: "on"
-      }), /*#__PURE__*/React.createElement("input", {
+      }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+        onClick: this.showPassword,
+        className: "show_password_button"
+      }, "Show Password"), /*#__PURE__*/React.createElement("div", {
+        className: "show_password"
+      })), /*#__PURE__*/React.createElement("input", {
         onClick: this.signup,
         type: "submit",
         value: "Sign up"
