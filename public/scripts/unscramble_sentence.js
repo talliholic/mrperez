@@ -93,7 +93,8 @@ var Practice = /*#__PURE__*/function (_React$Component) {
             update: _this3.updateAnswers
           });
         }), /*#__PURE__*/React.createElement(Check, {
-          getResult: this.getState
+          getResult: this.getState,
+          data: this.state.data
         }));
       }
 
@@ -229,16 +230,96 @@ var Check = /*#__PURE__*/function (_React$Component4) {
 
     _this8 = _super4.call(this, props);
     _this8.showResults = _this8.showResults.bind(_assertThisInitialized(_this8));
+    _this8.state = {
+      loggedIn: false,
+      quizzes: []
+    };
     return _this8;
   }
 
   _createClass(Check, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this9 = this;
+
+      fetch("/loggedin").then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        if (json.loggedIn) {
+          _this9.setState(function (prevState) {
+            return {
+              loggedIn: true,
+              quizzes: []
+            };
+          });
+        }
+      });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      var _this10 = this;
+
+      if (prevState.loggedIn !== this.state.loggedIn) {
+        fetch("/quizzes").then(function (res) {
+          return res.json();
+        }).then(function (json) {
+          _this10.setState(function () {
+            return {
+              loggedIn: true,
+              quizzes: json
+            };
+          });
+        });
+      }
+    }
+  }, {
     key: "showResults",
     value: function showResults() {
+      var _this11 = this;
+
+      var type = "Unscramble the Sentence";
       var sum = this.props.getResult().reduce(function (partialSum, a) {
         return partialSum + a;
       }, 0);
       var score = Math.round(sum * 100 / this.props.getResult().length);
+      var taken = this.state.quizzes.filter(function (quiz) {
+        return quiz.context === _this11.props.data.context && quiz.structure === _this11.props.data.structure && quiz.type === type;
+      });
+
+      if (taken.length > 0) {
+        fetch("/quizzes/" + taken[0]._id, {
+          method: "PATCH",
+          body: JSON.stringify({
+            grade: score
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        }).then(function (response) {
+          return response.json();
+        }).then(function (json) {
+          return console.log(json);
+        });
+      } else {
+        fetch("/quizzes/", {
+          method: "POST",
+          body: JSON.stringify({
+            context: this.props.data.context,
+            structure: this.props.data.structure,
+            type: type,
+            grade: score
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        }).then(function (response) {
+          return response.json();
+        }).then(function (json) {
+          return console.log(json);
+        });
+      }
+
       alert("You scored " + score + " points.");
       location.reload();
     }

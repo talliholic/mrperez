@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+#container,
+#subcontainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.form {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+input {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+input[type="submit"] {
+  border: none;
+  background-color: lightgreen;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+}
+.form button {
+  border: none;
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+}
+#logoutbutton {
+  margin-top: 60px;
+  float: right;
+}
+table {
+  margin: 20px;
+}
+th,
+td {
+  padding: 7px 10px;
+  border: 1px solid black;
+}
+.center {
+  text-align: center;
+}

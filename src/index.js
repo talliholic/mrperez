@@ -2,6 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+require("./db/mongoose");
+const userRouter = require("./routers/user");
+const quizRouter = require("./routers/quiz");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -17,9 +21,22 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+
+app.use(express.json());
+app.use(userRouter);
+app.use(quizRouter);
 
 const vocab = require("../data/vocab.json");
 const projectable = require("../data/projectable.json");
+
+app.get("/loggedin", (req, res) => {
+  let loggedIn = false;
+  if (req.cookies.jwt) {
+    loggedIn = true;
+  }
+  res.send({ loggedIn });
+});
 
 app.get("/transition", (req, res) => {
   res.render("transition_skills");

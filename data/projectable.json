@@ -46,5 +46,54 @@
         "resource": "/media/textbooks/l66.png"
       }
     ]
+  },
+  {
+    "objective": "Apply subtraction strategies.",
+    "question": "How can you use a number line?",
+    "textbook": "Math notebook 85",
+    "instructions": [
+      {
+        "command": "Look at the number line and answer the essential question.",
+        "resource": "https://content.connect.collins.co.uk/Content/Live/ES/Primary/complete/Resources/Busy_Ant_Tools-Games/10_IMT_NumberLine_RC1/index.html"
+      },
+      {
+        "command": "Open your notebook on page 85 and solve the first 2 exercises with the teacher. Use the interactve number line",
+        "resource": "https://content.connect.collins.co.uk/Content/Live/ES/Primary/complete/Resources/Busy_Ant_Tools-Games/10_IMT_NumberLine_RC1/index.html"
+      },
+      {
+        "command": "Read the instructions and use the number line to solve the exercises.",
+        "resource": "/media/textbooks/m85.png"
+      }
+    ]
+  },
+  {
+    "objective": "Segment and blend words according to learned sounds.",
+    "question": "Which words contain -y and -y?",
+    "textbook": "Language notebook 77",
+    "instructions": [
+      {
+        "command": "Watch the video and say which words contain -y (1 syllable).",
+        "resource": "https://www.youtube.com/watch?v=Ew5gLUbejSs"
+      },
+      {
+        "command": "Watch another video and say which words end with -y (2 syllables).",
+        "resource": "https://www.youtube.com/watch?v=EJV7XsmxW4s"
+      },
+      {
+        "command": "Take turns to read the sentence and pick the related image (-y with 2 syllables).",
+        "resource": "/vocab_reading_quiz?context=Phonics&index=3"
+      },
+      {
+        "command": "Take turns to read the sentence and pick the related image (-y with 1 syllables).",
+        "resource": "/vocab_reading_quiz?context=Phonics&index=4"
+      },
+      {
+        "command": "In your notebook, page 77, listen to the dictation and write the corresponding word. Check the words you picked.",
+        "resource": "/media/textbooks/l77.png"
+      },
+      {
+        "command": "Solve 2 notebook pages for homework."
+      }
+    ]
   }
 ]

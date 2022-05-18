@@ -95,7 +95,7 @@ var Lesson = /*#__PURE__*/function (_React$Component2) {
     value: function render() {
       return /*#__PURE__*/React.createElement("div", {
         className: "lesson"
-      }, /*#__PURE__*/React.createElement("h1", null, this.props.data.question), /*#__PURE__*/React.createElement("h3", null, /*#__PURE__*/React.createElement("i", null, this.props.data.textbook)), /*#__PURE__*/React.createElement("h2", null, "Instructions"), this.props.data.instructions.map(function (instruction, i) {
+      }, /*#__PURE__*/React.createElement("h1", null, this.props.data.question), /*#__PURE__*/React.createElement("h3", null, /*#__PURE__*/React.createElement("i", null, this.props.data.textbook)), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), this.props.data.instructions.map(function (instruction, i) {
         return /*#__PURE__*/React.createElement(Instruction, {
           className: "instruction",
           key: i,
