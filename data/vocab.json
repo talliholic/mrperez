@@ -16,7 +16,9 @@
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=0",
     "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=0",
     "unscrambleWord": "unscramble_word?context=The%20City&index=0",
-    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=0"
+    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=0",
+    "vocabulary": "vocabulary_ref?context=The%20City&index=0",
+    "sentences": "sentence_practice?context=The%20City&index=0"
   },
   {
     "context": "The City",
@@ -27,7 +29,9 @@
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=1",
     "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=1",
     "unscrambleWord": "unscramble_word?context=The%20City&index=1",
-    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=1"
+    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=1",
+    "vocabulary": "vocabulary_ref?context=The%20City&index=1",
+    "sentences": "sentence_practice?context=The%20City&index=1"
   },
   {
     "context": "The City",
@@ -38,7 +42,9 @@
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=2",
     "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=2",
     "unscrambleWord": "unscramble_word?context=The%20City&index=2",
-    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=2"
+    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=2",
+    "vocabulary": "vocabulary_ref?context=The%20City&index=2",
+    "sentences": "sentence_practice?context=The%20City&index=2"
   },
   {
     "context": "Phonics",
@@ -60,7 +66,9 @@
     "readingQuiz": "vocab_reading_quiz?context=Phonics&index=0",
     "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=0",
     "unscrambleWord": "unscramble_word?context=Phonics&index=0",
-    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=0"
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=0",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=0",
+    "sentences": "sentence_practice?context=Phonics&index=0"
   },
   {
     "context": "The City",
@@ -78,7 +86,9 @@
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=3",
     "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=3",
     "unscrambleWord": "unscramble_word?context=The%20City&index=3",
-    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=3"
+    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=3",
+    "vocabulary": "vocabulary_ref?context=The%20City&index=3",
+    "sentences": "sentence_practice?context=The%20City&index=3"
   },
   {
     "context": "The City",
@@ -89,7 +99,9 @@
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=4",
     "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=4",
     "unscrambleWord": "unscramble_word?context=The%20City&index=4",
-    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=4"
+    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=4",
+    "vocabulary": "vocabulary_ref?context=The%20City&index=4",
+    "sentences": "sentence_practice?context=The%20City&index=4"
   },
   {
     "context": "The City",
@@ -100,7 +112,9 @@
     "readingQuiz": "vocab_reading_quiz?context=The%20City&index=5",
     "listeningQuiz": "vocab_listening_quiz?context=The%20City&index=5",
     "unscrambleWord": "unscramble_word?context=The%20City&index=5",
-    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=5"
+    "unscrambleSentence": "unscramble_sentence?context=The%20City&index=5",
+    "vocabulary": "vocabulary_ref?context=The%20City&index=5",
+    "sentences": "sentence_practice?context=The%20City&index=5"
   },
   {
     "context": "Phonics",
@@ -111,7 +125,9 @@
     "readingQuiz": "vocab_reading_quiz?context=Phonics&index=1",
     "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=1",
     "unscrambleWord": "unscramble_word?context=Phonics&index=1",
-    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=1"
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=1",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=1",
+    "sentences": "sentence_practice?context=Phonics&index=1"
   },
   {
     "context": "Phonics",
@@ -122,7 +138,9 @@
     "readingQuiz": "vocab_reading_quiz?context=Phonics&index=2",
     "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=2",
     "unscrambleWord": "unscramble_word?context=Phonics&index=2",
-    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=2"
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=2",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=2",
+    "sentences": "sentence_practice?context=Phonics&index=2"
   },
   {
     "context": "Phonics",
@@ -133,7 +151,9 @@
     "readingQuiz": "vocab_reading_quiz?context=Phonics&index=3",
     "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=3",
     "unscrambleWord": "unscramble_word?context=Phonics&index=3",
-    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=3"
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=3",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=3",
+    "sentences": "sentence_practice?context=Phonics&index=3"
   },
   {
     "context": "Phonics",
@@ -144,6 +164,34 @@
     "readingQuiz": "vocab_reading_quiz?context=Phonics&index=4",
     "listeningQuiz": "vocab_listening_quiz?context=Phonics&index=4",
     "unscrambleWord": "unscramble_word?context=Phonics&index=4",
-    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=4"
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=4",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=4",
+    "sentences": "sentence_practice?context=Phonics&index=4"
+  },
+  {
+    "context": "Time",
+    "structure": "It is",
+    "prefix": false,
+    "key": "it",
+    "words": [
+      "1 o'clock",
+      "2 o'clock",
+      "3 o'clock",
+      "4 o'clock",
+      "5 o'clock",
+      "6 o'clock",
+      "7 o'clock",
+      "8 o'clock",
+      "9 o'clock",
+      "10 o'clock",
+      "11 o'clock",
+      "12 o'clock"
+    ],
+    "readingQuiz": "vocab_reading_quiz?context=Time&index=0",
+    "listeningQuiz": "vocab_listening_quiz?context=Time&index=0",
+    "unscrambleWord": "unscramble_word?context=Time&index=0",
+    "unscrambleSentence": "unscramble_sentence?context=Time&index=0",
+    "vocabulary": "vocabulary_ref?context=Time&index=0",
+    "sentences": "sentence_practice?context=Time&index=0"
   }
 ]

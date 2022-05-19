@@ -3,32 +3,25 @@
 * {
   font-family: "Special Elite", cursive;
 }
-.sentences {
+h1 {
+  text-align: center;
+}
+.words {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-h1 {
-  text-align: center;
-}
-.vocab {
+.word {
   margin: 10px;
 }
-.vocab_pic {
-  display: block;
-  height: 150px;
-  margin: 0 auto;
-}
-.vocab figcaption {
-  text-align: center;
-}
-.section h2 {
-  display: block;
-  background-color: greenyellow;
-  padding: 10px;
-  text-align: center;
-}
-audio {
+
+img {
+  height: 100px;
   display: block;
   margin: 0 auto;
+}
+figcaption {
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
 }

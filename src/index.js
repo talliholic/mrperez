@@ -56,6 +56,9 @@ app.get("/projectable", (req, res) => {
 app.get("/vocab_reading_quiz", (req, res) => {
   res.render("vocab_reading_quiz");
 });
+app.get("/vocabulary_ref", (req, res) => {
+  res.render("vocabulary");
+});
 app.get("/vocab_listening_quiz", (req, res) => {
   res.render("vocab_listening_quiz");
 });

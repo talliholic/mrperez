@@ -46,7 +46,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       var searchParams = new URLSearchParams(window.location.search);
-      fetch("/vocab/" + searchParams.get("context")).then(function (res) {
+      fetch("/vocab_quiz/" + searchParams.get("context") + "/" + searchParams.get("index")).then(function (res) {
         return res.json();
       }).then(function (json) {
         _this2.setState({
@@ -63,14 +63,17 @@ var Practice = /*#__PURE__*/function (_React$Component) {
           items = _this$state.items;
 
       if (dataLoaded) {
+        console.log(items);
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, items[0].context), /*#__PURE__*/React.createElement(VocabItem, {
+        }, /*#__PURE__*/React.createElement("h1", null, items.structure), /*#__PURE__*/React.createElement("div", {
+          className: "sentences"
+        }, /*#__PURE__*/React.createElement(VocabItem, {
           data: items
-        }));
+        })));
       }
 
-      return /*#__PURE__*/React.createElement("p", null, "Data did not load");
+      return /*#__PURE__*/React.createElement("p", null, "Loading...");
     }
   }]);
 
@@ -91,39 +94,13 @@ var VocabItem = /*#__PURE__*/function (_React$Component2) {
   _createClass(VocabItem, [{
     key: "render",
     value: function render() {
-      return this.props.data.map(function (item, i) {
-        return /*#__PURE__*/React.createElement("div", {
-          className: "section",
-          id: item.structure,
-          key: i
-        }, /*#__PURE__*/React.createElement("h2", null, item.structure), /*#__PURE__*/React.createElement(Words, {
-          data: item
-        }));
-      });
-    }
-  }]);
-
-  return VocabItem;
-}(React.Component);
-
-var Words = /*#__PURE__*/function (_React$Component3) {
-  _inherits(Words, _React$Component3);
-
-  var _super3 = _createSuper(Words);
-
-  function Words(props) {
-    _classCallCheck(this, Words);
-
-    return _super3.call(this, props);
-  }
-
-  _createClass(Words, [{
-    key: "render",
-    value: function render() {
       var _this3 = this;
 
-      return this.props.data.words.map(function (item, i) {
-        return /*#__PURE__*/React.createElement("figure", {
+      return this.props.data.sentences.map(function (item, i) {
+        return /*#__PURE__*/React.createElement("div", {
+          className: "section",
+          key: i
+        }, /*#__PURE__*/React.createElement("figure", {
           className: "vocab",
           key: i
         }, /*#__PURE__*/React.createElement("img", {
@@ -134,12 +111,12 @@ var Words = /*#__PURE__*/function (_React$Component3) {
         }, /*#__PURE__*/React.createElement("source", {
           src: _this3.props.data.audio[i],
           type: "audio/mpeg"
-        })));
+        }))));
       });
     }
   }]);
 
-  return Words;
+  return VocabItem;
 }(React.Component);
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));

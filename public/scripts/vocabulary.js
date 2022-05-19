@@ -22,101 +22,65 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Practice = /*#__PURE__*/function (_React$Component) {
-  _inherits(Practice, _React$Component);
+var Vocabulary = /*#__PURE__*/function (_React$Component) {
+  _inherits(Vocabulary, _React$Component);
 
-  var _super = _createSuper(Practice);
+  var _super = _createSuper(Vocabulary);
 
-  function Practice(props) {
+  function Vocabulary(props) {
     var _this;
 
-    _classCallCheck(this, Practice);
+    _classCallCheck(this, Vocabulary);
 
     _this = _super.call(this, props);
     _this.state = {
-      item: [],
-      dataLoaded: false
+      items: []
     };
     return _this;
   }
 
-  _createClass(Practice, [{
+  _createClass(Vocabulary, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch("/vocabulary/").then(function (res) {
+      var searchParams = new URLSearchParams(window.location.search);
+      fetch("/vocab_quiz/" + searchParams.get("context") + "/" + searchParams.get("index")).then(function (res) {
         return res.json();
       }).then(function (json) {
         _this2.setState({
-          item: json,
-          dataLoaded: true
+          items: json
         });
       });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this$state = this.state,
-          dataLoaded = _this$state.dataLoaded,
-          item = _this$state.item;
+      var _this3 = this;
 
-      if (dataLoaded) {
-        return /*#__PURE__*/React.createElement("div", {
-          className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, "Transition Skills"), item.topics.map(function (topic, i) {
-          return /*#__PURE__*/React.createElement(Topic, {
-            key: i,
-            data: item.vocab.filter(function (voc) {
-              return voc.context === topic;
-            }),
-            topic: topic
-          });
-        }));
-      }
-
-      return /*#__PURE__*/React.createElement("p", null, "Data did not load");
+      return /*#__PURE__*/React.createElement("div", null, this.state.items.words && /*#__PURE__*/React.createElement("div", {
+        className: "container"
+      }, this.state.items.prefix && /*#__PURE__*/React.createElement("h1", null, "...", this.state.items.structure), !this.state.items.prefix && /*#__PURE__*/React.createElement("h1", null, this.state.items.structure, "..."), /*#__PURE__*/React.createElement("div", {
+        className: "words"
+      }, this.state.items.words.map(function (word, i) {
+        return /*#__PURE__*/React.createElement(Word, {
+          key: i,
+          word: word,
+          img: _this3.state.items.img[i]
+        });
+      }))));
     }
   }]);
 
-  return Practice;
+  return Vocabulary;
 }(React.Component);
 
-var Topic = function Topic(props) {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "topic"
-  }, /*#__PURE__*/React.createElement("h2", null, props.topic), props.data.map(function (structure, i) {
-    return /*#__PURE__*/React.createElement(Structure, {
-      key: i,
-      data: structure
-    });
-  }));
+var Word = function Word(props) {
+  return /*#__PURE__*/React.createElement("figure", {
+    className: "word"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: props.img
+  }), /*#__PURE__*/React.createElement("figcaption", null, " ", props.word));
 };
 
-var Structure = function Structure(props) {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "structure"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "resources"
-  }, /*#__PURE__*/React.createElement("h3", null, props.data.structure), /*#__PURE__*/React.createElement("a", {
-    id: "gray",
-    href: props.data.vocabulary
-  }, "Vocabulary"), /*#__PURE__*/React.createElement("a", {
-    id: "white",
-    href: props.data.sentences
-  }, "Sentences"), /*#__PURE__*/React.createElement("a", {
-    id: "green",
-    href: props.data.readingQuiz
-  }, "Reading Quiz"), /*#__PURE__*/React.createElement("a", {
-    id: "yellow",
-    href: props.data.listeningQuiz
-  }, "Listening Quiz"), /*#__PURE__*/React.createElement("a", {
-    id: "pink",
-    href: props.data.unscrambleWord
-  }, "Unscramble the word"), /*#__PURE__*/React.createElement("a", {
-    id: "blue",
-    href: props.data.unscrambleSentence
-  }, "Unscramble the sentence")));
-};
-
-ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Vocabulary, null), document.getElementById("app"));
