@@ -66,7 +66,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
         console.log(items);
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, items.structure), /*#__PURE__*/React.createElement("div", {
+        }, items.prefix && /*#__PURE__*/React.createElement("h1", null, "...", items.structure), !items.prefix && /*#__PURE__*/React.createElement("h1", null, items.structure, "..."), /*#__PURE__*/React.createElement("div", {
           className: "sentences"
         }, /*#__PURE__*/React.createElement(VocabItem, {
           data: items

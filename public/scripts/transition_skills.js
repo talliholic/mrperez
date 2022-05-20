@@ -96,9 +96,9 @@ var Topic = function Topic(props) {
 var Structure = function Structure(props) {
   return /*#__PURE__*/React.createElement("div", {
     className: "structure"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", props.data.structure), !props.data.prefix && /*#__PURE__*/React.createElement("h2", null, props.data.structure, "..."), /*#__PURE__*/React.createElement("div", {
     className: "resources"
-  }, /*#__PURE__*/React.createElement("h3", null, props.data.structure), /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("a", {
     id: "gray",
     href: props.data.vocabulary
   }, "Vocabulary"), /*#__PURE__*/React.createElement("a", {
