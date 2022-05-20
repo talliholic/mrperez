@@ -22,104 +22,99 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Practice = /*#__PURE__*/function (_React$Component) {
-  _inherits(Practice, _React$Component);
+var Quiz = /*#__PURE__*/function (_React$Component) {
+  _inherits(Quiz, _React$Component);
 
-  var _super = _createSuper(Practice);
+  var _super = _createSuper(Quiz);
 
-  function Practice(props) {
+  function Quiz(props) {
     var _this;
 
-    _classCallCheck(this, Practice);
+    _classCallCheck(this, Quiz);
 
     _this = _super.call(this, props);
     _this.state = {
-      item: [],
-      dataLoaded: false
+      data: [],
+      loaded: false
     };
     return _this;
   }
 
-  _createClass(Practice, [{
+  _createClass(Quiz, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch("/vocabulary/").then(function (res) {
+      var searchParams = new URLSearchParams(window.location.search);
+      fetch("/vocab_quiz/" + searchParams.get("context") + "/" + searchParams.get("index")).then(function (res) {
         return res.json();
       }).then(function (json) {
         _this2.setState({
-          item: json,
-          dataLoaded: true
+          data: json,
+          loaded: true
         });
       });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this$state = this.state,
-          dataLoaded = _this$state.dataLoaded,
-          item = _this$state.item;
-
-      if (dataLoaded) {
+      if (this.state.loaded) {
+        var data = this.state.data;
+        var img = shuffle(data.img);
         return /*#__PURE__*/React.createElement("div", {
-          className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, "Transition Skills"), item.topics.map(function (topic, i) {
-          return /*#__PURE__*/React.createElement(Topic, {
+          id: "quiz"
+        }, /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("h1", null, data.context && data.context), data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", data.structure), !data.prefix && /*#__PURE__*/React.createElement("h2", null, data.structure, "..."), /*#__PURE__*/React.createElement("p", null, "Write sentences next to the pictures. Use the structure and the words."), /*#__PURE__*/React.createElement("div", {
+          className: "words"
+        }, data.words.map(function (word, i) {
+          return /*#__PURE__*/React.createElement(Word, {
             key: i,
-            data: item.vocab.filter(function (voc) {
-              return voc.context === topic;
-            }),
-            topic: topic
+            word: word
           });
-        }));
+        })), /*#__PURE__*/React.createElement("div", {
+          className: "images"
+        }, img.map(function (img, i) {
+          return /*#__PURE__*/React.createElement(Image, {
+            key: i,
+            img: img
+          });
+        })));
       }
 
-      return /*#__PURE__*/React.createElement("p", null, "Data did not load");
+      return /*#__PURE__*/React.createElement("div", null, "Loading...");
     }
   }]);
 
-  return Practice;
+  return Quiz;
 }(React.Component);
 
-var Topic = function Topic(props) {
+var Word = function Word(props) {
   return /*#__PURE__*/React.createElement("div", {
-    className: "topic"
-  }, /*#__PURE__*/React.createElement("h2", null, props.topic), props.data.map(function (structure, i) {
-    return /*#__PURE__*/React.createElement(Structure, {
-      key: i,
-      data: structure
-    });
-  }));
+    className: "word"
+  }, props.word);
 };
 
-var Structure = function Structure(props) {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "structure"
-  }, props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", props.data.structure), !props.data.prefix && /*#__PURE__*/React.createElement("h2", null, props.data.structure, "..."), /*#__PURE__*/React.createElement("div", {
-    className: "resources"
-  }, /*#__PURE__*/React.createElement("a", {
-    id: "gray",
-    href: props.data.vocabulary
-  }, "Vocabulary"), /*#__PURE__*/React.createElement("a", {
-    id: "white",
-    href: props.data.sentences
-  }, "Sentences"), /*#__PURE__*/React.createElement("a", {
-    id: "green",
-    href: props.data.readingQuiz
-  }, "Reading Quiz"), /*#__PURE__*/React.createElement("a", {
-    id: "yellow",
-    href: props.data.listeningQuiz
-  }, "Listening Quiz"), props.data.unscrambleWord && /*#__PURE__*/React.createElement("a", {
-    id: "pink",
-    href: props.data.unscrambleWord
-  }, "Unscramble the word"), /*#__PURE__*/React.createElement("a", {
-    id: "blue",
-    href: props.data.unscrambleSentence
-  }, "Unscramble the sentence"), /*#__PURE__*/React.createElement("a", {
-    id: "other",
-    href: props.data.paper
-  }, "Paper Quiz")));
+var Image = function Image(props) {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
+    className: "image",
+    src: props.img
+  }), /*#__PURE__*/React.createElement("hr", null));
 };
 
-ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(Quiz, null), document.getElementById("app"));
+
+function shuffle(array) {
+  var currentIndex = array.length,
+      randomIndex; // While there remain elements to shuffle.
+
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--; // And swap it with the current element.
+
+    var _ref = [array[randomIndex], array[currentIndex]];
+    array[currentIndex] = _ref[0];
+    array[randomIndex] = _ref[1];
+  }
+
+  return array;
+}

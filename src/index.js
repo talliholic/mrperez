@@ -62,6 +62,9 @@ app.get("/vocabulary_ref", (req, res) => {
 app.get("/vocab_listening_quiz", (req, res) => {
   res.render("vocab_listening_quiz");
 });
+app.get("/paper_quiz", (req, res) => {
+  res.render("paper_quiz");
+});
 
 app.get("/projectable_data", (req, res) => {
   res.send(projectable);

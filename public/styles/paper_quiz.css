@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+#quiz {
+  display: blocK;
+  margin: 10px;
+}
+.words {
+  border: 1px solid black;
+  display: inline-block;
+}
+.word {
+  margin: 7px 20px;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.image {
+  display: block;
+  height: 75px;
+  margin: 5px 0;
+}
+hr {
+  border: 1px dashed black;
+  margin: 0;
+}
+i {
+  font-size: 24px;
+  margin: 0;
+}
