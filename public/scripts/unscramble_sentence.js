@@ -79,6 +79,8 @@ var Practice = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
+      var searchParams = new URLSearchParams(window.location.search);
+
       if (this.state.loaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "practice"
@@ -94,7 +96,8 @@ var Practice = /*#__PURE__*/function (_React$Component) {
           });
         }), /*#__PURE__*/React.createElement(Check, {
           getResult: this.getState,
-          data: this.state.data
+          data: this.state.data,
+          path: "unscramble_sentence?context=" + searchParams.get("context") + "&index=" + searchParams.get("index")
         }));
       }
 
@@ -308,6 +311,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
             context: this.props.data.context,
             structure: this.props.data.structure,
             type: type,
+            path: this.props.path,
             grade: score
           }),
           headers: {

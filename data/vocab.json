@@ -15,7 +15,6 @@
       "glasses"
     ],
     "readingQuiz": "vocab_reading_quiz?context=ING&index=0",
-    "listeningQuiz": "vocab_listening_quiz?context=ING&index=0",
     "unscrambleWord": "unscramble_word?context=ING&index=0",
     "unscrambleSentence": "unscramble_sentence?context=ING&index=0",
     "vocabulary": "vocabulary_ref?context=ING&index=0",

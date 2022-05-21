@@ -107,7 +107,7 @@ var Structure = function Structure(props) {
   }, "Sentences"), /*#__PURE__*/React.createElement("a", {
     id: "green",
     href: props.data.readingQuiz
-  }, "Reading Quiz"), /*#__PURE__*/React.createElement("a", {
+  }, "Reading Quiz"), props.data.listeningQuiz && /*#__PURE__*/React.createElement("a", {
     id: "yellow",
     href: props.data.listeningQuiz
   }, "Listening Quiz"), props.data.unscrambleWord && /*#__PURE__*/React.createElement("a", {

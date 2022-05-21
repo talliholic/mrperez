@@ -13,6 +13,9 @@ const Quiz = mongoose.model("Quiz", {
     type: String,
     trim: true,
   },
+  path: {
+    type: String,
+  },
   grade: {
     type: Number,
     required: true,

@@ -79,6 +79,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
+      var searchParams = new URLSearchParams(window.location.search);
       var _this$state = this.state,
           dataLoaded = _this$state.dataLoaded,
           item = _this$state.item;
@@ -101,7 +102,8 @@ var Practice = /*#__PURE__*/function (_React$Component) {
           });
         }), /*#__PURE__*/React.createElement(Check, {
           getResult: this.getState,
-          data: item
+          data: item,
+          path: "vocab_listening_quiz?context=" + searchParams.get("context") + "&index=" + searchParams.get("index")
         }));
       }
 
@@ -314,6 +316,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
             context: this.props.data.context,
             structure: this.props.data.structure,
             type: type,
+            path: this.props.path,
             grade: score
           }),
           headers: {
