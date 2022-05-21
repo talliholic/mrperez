@@ -71,7 +71,7 @@
     "context": "Time",
     "structure": "This is the",
     "prefix": false,
-    "key": "the",
+    "key": "",
     "words": [
       "1st month",
       "2nd month",
@@ -87,10 +87,8 @@
       "12th month"
     ],
     "readingQuiz": "vocab_reading_quiz?context=Time&index=2",
-    "listeningQuiz": "vocab_listening_quiz?context=Time&index=2",
     "unscrambleSentence": "unscramble_sentence?context=Time&index=2",
     "vocabulary": "vocabulary_ref?context=Time&index=2",
-    "sentences": "sentence_practice?context=Time&index=2",
     "paper": "paper_quiz?context=Time&index=2"
   },
   {
