@@ -101,7 +101,7 @@ var Structure = function Structure(props) {
   }, /*#__PURE__*/React.createElement("a", {
     id: "gray",
     href: props.data.vocabulary
-  }, "Vocabulary"), /*#__PURE__*/React.createElement("a", {
+  }, "Vocabulary"), props.data.sentences && /*#__PURE__*/React.createElement("a", {
     id: "white",
     href: props.data.sentences
   }, "Sentences"), /*#__PURE__*/React.createElement("a", {
