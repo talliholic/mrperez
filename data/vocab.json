@@ -18,7 +18,8 @@
     "unscrambleWord": "unscramble_word?context=ING&index=0",
     "unscrambleSentence": "unscramble_sentence?context=ING&index=0",
     "vocabulary": "vocabulary_ref?context=ING&index=0",
-    "paper": "paper_quiz?context=ING&index=0"
+    "paper": "paper_quiz?context=ING&index=0",
+    "paperReading": "paper_reading?context=ING&index=0"
   },
   {
     "context": "Time",
@@ -44,7 +45,8 @@
     "unscrambleSentence": "unscramble_sentence?context=Time&index=0",
     "vocabulary": "vocabulary_ref?context=Time&index=0",
     "sentences": "sentence_practice?context=Time&index=0",
-    "paper": "paper_quiz?context=Time&index=0"
+    "paper": "paper_quiz?context=Time&index=0",
+    "paperReading": "paper_reading?context=Time&index=0"
   },
   {
     "context": "Time",
@@ -65,7 +67,8 @@
     "unscrambleSentence": "unscramble_sentence?context=Time&index=1",
     "vocabulary": "vocabulary_ref?context=Time&index=1",
     "sentences": "sentence_practice?context=Time&index=1",
-    "paper": "paper_quiz?context=Time&index=1"
+    "paper": "paper_quiz?context=Time&index=1",
+    "paperReading": "paper_reading?context=Time&index=1"
   },
   {
     "context": "Time",
@@ -89,7 +92,8 @@
     "readingQuiz": "vocab_reading_quiz?context=Time&index=2",
     "unscrambleSentence": "unscramble_sentence?context=Time&index=2",
     "vocabulary": "vocabulary_ref?context=Time&index=2",
-    "paper": "paper_quiz?context=Time&index=2"
+    "paper": "paper_quiz?context=Time&index=2",
+    "paperReading": "paper_reading?context=Time&index=2"
   },
   {
     "context": "The City",
@@ -111,7 +115,8 @@
     "unscrambleSentence": "unscramble_sentence?context=The%20City&index=0",
     "vocabulary": "vocabulary_ref?context=The%20City&index=0",
     "sentences": "sentence_practice?context=The%20City&index=0",
-    "paper": "paper_quiz?context=The%20City&index=0"
+    "paper": "paper_quiz?context=The%20City&index=0",
+    "paperReading": "paper_reading?context=The%20City&index=0"
   },
   {
     "context": "The City",
@@ -125,7 +130,8 @@
     "unscrambleSentence": "unscramble_sentence?context=The%20City&index=1",
     "vocabulary": "vocabulary_ref?context=The%20City&index=1",
     "sentences": "sentence_practice?context=The%20City&index=1",
-    "paper": "paper_quiz?context=The%20City&index=1"
+    "paper": "paper_quiz?context=The%20City&index=1",
+    "paperReading": "paper_reading?context=The%20City&index=1"
   },
   {
     "context": "The City",
@@ -139,7 +145,8 @@
     "unscrambleSentence": "unscramble_sentence?context=The%20City&index=2",
     "vocabulary": "vocabulary_ref?context=The%20City&index=2",
     "sentences": "sentence_practice?context=The%20City&index=2",
-    "paper": "paper_quiz?context=The%20City&index=2"
+    "paper": "paper_quiz?context=The%20City&index=2",
+    "paperReading": "paper_reading?context=The%20City&index=2"
   },
   {
     "context": "The City",
@@ -160,7 +167,8 @@
     "unscrambleSentence": "unscramble_sentence?context=The%20City&index=3",
     "vocabulary": "vocabulary_ref?context=The%20City&index=3",
     "sentences": "sentence_practice?context=The%20City&index=3",
-    "paper": "paper_quiz?context=The%20City&index=3"
+    "paper": "paper_quiz?context=The%20City&index=3",
+    "paperReading": "paper_reading?context=The%20City&index=3"
   },
   {
     "context": "The City",
@@ -174,7 +182,8 @@
     "unscrambleSentence": "unscramble_sentence?context=The%20City&index=4",
     "vocabulary": "vocabulary_ref?context=The%20City&index=4",
     "sentences": "sentence_practice?context=The%20City&index=4",
-    "paper": "paper_quiz?context=The%20City&index=4"
+    "paper": "paper_quiz?context=The%20City&index=4",
+    "paperReading": "paper_reading?context=The%20City&index=4"
   },
   {
     "context": "The City",
@@ -188,7 +197,8 @@
     "unscrambleSentence": "unscramble_sentence?context=The%20City&index=5",
     "vocabulary": "vocabulary_ref?context=The%20City&index=5",
     "sentences": "sentence_practice?context=The%20City&index=5",
-    "paper": "paper_quiz?context=The%20City&index=5"
+    "paper": "paper_quiz?context=The%20City&index=5",
+    "paperReading": "paper_reading?context=The%20City&index=5"
   },
   {
     "context": "Phonics",
@@ -213,7 +223,8 @@
     "unscrambleSentence": "unscramble_sentence?context=Phonics&index=0",
     "vocabulary": "vocabulary_ref?context=Phonics&index=0",
     "sentences": "sentence_practice?context=Phonics&index=0",
-    "paper": "paper_quiz?context=Phonics&index=0"
+    "paper": "paper_quiz?context=Phonics&index=0",
+    "paperReading": "paper_reading?context=Phonics&index=0"
   },
 
   {
@@ -228,7 +239,8 @@
     "unscrambleSentence": "unscramble_sentence?context=Phonics&index=1",
     "vocabulary": "vocabulary_ref?context=Phonics&index=1",
     "sentences": "sentence_practice?context=Phonics&index=1",
-    "paper": "paper_quiz?context=Phonics&index=1"
+    "paper": "paper_quiz?context=Phonics&index=1",
+    "paperReading": "paper_reading?context=Phonics&index=1"
   },
   {
     "context": "Phonics",
@@ -242,7 +254,8 @@
     "unscrambleSentence": "unscramble_sentence?context=Phonics&index=2",
     "vocabulary": "vocabulary_ref?context=Phonics&index=2",
     "sentences": "sentence_practice?context=Phonics&index=2",
-    "paper": "paper_quiz?context=Phonics&index=2"
+    "paper": "paper_quiz?context=Phonics&index=2",
+    "paperReading": "paper_reading?context=Phonics&index=2"
   },
   {
     "context": "Phonics",
@@ -256,7 +269,8 @@
     "unscrambleSentence": "unscramble_sentence?context=Phonics&index=3",
     "vocabulary": "vocabulary_ref?context=Phonics&index=3",
     "sentences": "sentence_practice?context=Phonics&index=3",
-    "paper": "paper_quiz?context=Phonics&index=3"
+    "paper": "paper_quiz?context=Phonics&index=3",
+    "paperReading": "paper_reading?context=Phonics&index=3"
   },
   {
     "context": "Phonics",
@@ -270,6 +284,7 @@
     "unscrambleSentence": "unscramble_sentence?context=Phonics&index=4",
     "vocabulary": "vocabulary_ref?context=Phonics&index=4",
     "sentences": "sentence_practice?context=Phonics&index=4",
-    "paper": "paper_quiz?context=Phonics&index=4"
+    "paper": "paper_quiz?context=Phonics&index=4",
+    "paperReading": "paper_reading?context=Phonics&index=4"
   }
 ]

@@ -1,11 +1,66 @@
 const express = require("express");
 const User = require("../models/user");
+const Quiz = require("../models/quiz");
 const bodyParser = require("body-parser");
 const auth = require("../middleware/auth");
 const router = new express.Router();
 
+const users = () => {
+  return new Promise((res, rej) => {
+    try {
+      res(User.find());
+    } catch (error) {
+      rej(error);
+    }
+  });
+};
+const quizzes = () => {
+  return new Promise((res, rej) => {
+    try {
+      res(Quiz.find());
+    } catch (error) {
+      rej(error);
+    }
+  });
+};
+
 router.get("/loginuser", (req, res) => {
   res.render("loginuser");
+});
+
+router.get("/leaderboard", auth, async (req, res) => {
+  const userss = await users();
+  const quizzess = await quizzes();
+  const usersQuizzes = userss.map((user) => {
+    return {
+      user,
+      quizzes: quizzess.filter(
+        (quiz) => quiz.owner.toString() === user._id.toString()
+      ),
+    };
+  });
+  const leaderboard = usersQuizzes.map((user) => {
+    return {
+      user: user.user.name + " " + user.user.lastname,
+      totalScore: user.quizzes
+        .map((quiz) => quiz.grade)
+        .reduce((partialSum, a) => partialSum + a, 0),
+      quizzes: user.quizzes.map((quiz) => {
+        return {
+          context: quiz.context,
+          structure: quiz.structure,
+          type: quiz.type,
+          score: quiz.grade,
+        };
+      }),
+    };
+  });
+
+  try {
+    res.send(leaderboard);
+  } catch (error) {
+    res.send(e);
+  }
 });
 
 router.post("/users", async (req, res) => {
