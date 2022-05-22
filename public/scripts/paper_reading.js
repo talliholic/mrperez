@@ -74,7 +74,7 @@ var Reading = /*#__PURE__*/function (_React$Component) {
             key: i,
             src: image
           });
-        })), /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("h1", null, data.context && data.context), data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", data.structure), !data.prefix && /*#__PURE__*/React.createElement("h2", null, data.structure, "..."), /*#__PURE__*/React.createElement("p", null, "Cut out the images and paste them next to the each sentence."), data.sentences.map(function (sentence, i) {
+        })), /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("h1", null, data.context && data.context), data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", data.structure), !data.prefix && /*#__PURE__*/React.createElement("h2", null, data.structure, "..."), /*#__PURE__*/React.createElement("p", null, "Cut out the images and paste them next to the each sentence. Copy the sentences."), data.sentences.map(function (sentence, i) {
           return /*#__PURE__*/React.createElement(Sentence, {
             key: i,
             sentence: sentence
