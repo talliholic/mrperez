@@ -5,10 +5,10 @@ const bodyParser = require("body-parser");
 const auth = require("../middleware/auth");
 const router = new express.Router();
 
-const users = () => {
+const users = (filter = {}) => {
   return new Promise((res, rej) => {
     try {
-      res(User.find());
+      res(User.find(filter));
     } catch (error) {
       rej(error);
     }
@@ -29,7 +29,10 @@ router.get("/loginuser", (req, res) => {
 });
 
 router.get("/leaderboard", auth, async (req, res) => {
-  const userss = await users();
+  let userss = await users();
+  if (req.query.me) {
+    userss = await users({ _id: req.user.id });
+  }
   const quizzess = await quizzes();
   const usersQuizzes = userss.map((user) => {
     return {
@@ -39,7 +42,7 @@ router.get("/leaderboard", auth, async (req, res) => {
       ),
     };
   });
-  const leaderboard = usersQuizzes.map((user) => {
+  let leaderboard = usersQuizzes.map((user) => {
     return {
       user: user.user.name + " " + user.user.lastname,
       totalScore: user.quizzes
@@ -54,6 +57,10 @@ router.get("/leaderboard", auth, async (req, res) => {
         };
       }),
     };
+  });
+
+  leaderboard = leaderboard.sort((a, b) => {
+    return b.totalScore - a.totalScore;
   });
 
   try {

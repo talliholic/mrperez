@@ -255,9 +255,9 @@ var App = /*#__PURE__*/function (_React$Component) {
         value: "Log in"
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showSignUp
-      }, "Not a member? Sign up here")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
+      }, "Not a member? Sign up here")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(MyScore, null), /*#__PURE__*/React.createElement(User, {
         user: this.state.user
-      }), /*#__PURE__*/React.createElement("div", {
+      }), /*#__PURE__*/React.createElement(Leaderboard, null), /*#__PURE__*/React.createElement("div", {
         className: "userlogout"
       }, /*#__PURE__*/React.createElement("form", {
         className: "user_form"
@@ -345,6 +345,90 @@ var Quiz = /*#__PURE__*/function (_React$Component3) {
   }]);
 
   return Quiz;
+}(React.Component);
+
+var MyScore = /*#__PURE__*/function (_React$Component4) {
+  _inherits(MyScore, _React$Component4);
+
+  var _super4 = _createSuper(MyScore);
+
+  function MyScore(props) {
+    var _this7;
+
+    _classCallCheck(this, MyScore);
+
+    _this7 = _super4.call(this, props);
+    _this7.state = {
+      totalScore: undefined
+    };
+    return _this7;
+  }
+
+  _createClass(MyScore, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this8 = this;
+
+      fetch("/leaderboard?me=true").then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        return _this8.setState({
+          totalScore: res[0].totalScore
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/React.createElement("div", {
+        id: "total_score"
+      }, "I have scored ", /*#__PURE__*/React.createElement("b", null, this.state.totalScore), " points.");
+    }
+  }]);
+
+  return MyScore;
+}(React.Component);
+
+var Leaderboard = /*#__PURE__*/function (_React$Component5) {
+  _inherits(Leaderboard, _React$Component5);
+
+  var _super5 = _createSuper(Leaderboard);
+
+  function Leaderboard(props) {
+    var _this9;
+
+    _classCallCheck(this, Leaderboard);
+
+    _this9 = _super5.call(this, props);
+    _this9.state = {
+      leaderboard: []
+    };
+    return _this9;
+  }
+
+  _createClass(Leaderboard, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this10 = this;
+
+      fetch("/leaderboard").then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        return _this10.setState({
+          leaderboard: res
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/React.createElement("div", {
+        id: "leaderboard"
+      }, /*#__PURE__*/React.createElement("h2", null, "Leaderboard"));
+    }
+  }]);
+
+  return Leaderboard;
 }(React.Component);
 
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("app"));

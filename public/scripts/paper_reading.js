@@ -98,7 +98,7 @@ var Sentence = function Sentence(props) {
     className: "sentences"
   }, /*#__PURE__*/React.createElement("div", {
     className: "sentence"
-  }, props.sentence), /*#__PURE__*/React.createElement("div", {
+  }, props.sentence.toUpperCase()), /*#__PURE__*/React.createElement("div", {
     className: "copy"
   })));
 };
