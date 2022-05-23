@@ -3,7 +3,7 @@
     "context": "Technology",
     "structure": "I am wearing",
     "prefix": false,
-    "key": "wearing",
+    "key": "",
     "words": [
       "a jacket",
       "a dress",
@@ -19,7 +19,10 @@
     "unscrambleSentence": "unscramble_sentence?context=Technology&index=0",
     "vocabulary": "vocabulary_ref?context=Technology&index=0",
     "paper": "paper_quiz?context=Technology&index=0",
-    "paperReading": "paper_reading?context=Technology&index=0"
+    "paperReading": "paper_reading?context=Technology&index=0",
+    "video": "https://www.youtube.com/watch?v=KFQxBCvgx70",
+    "listeningQuiz": "vocab_listening_quiz?context=Technology&index=0",
+    "sentences": "sentence_practice?context=Technology&index=0"
   },
   {
     "context": "Technology",
@@ -39,7 +42,10 @@
     "unscrambleSentence": "unscramble_sentence?context=Technology&index=1",
     "vocabulary": "vocabulary_ref?context=Technology&index=1",
     "paper": "paper_quiz?context=Technology&index=1",
-    "paperReading": "paper_reading?context=Technology&index=1"
+    "paperReading": "paper_reading?context=Technology&index=1",
+    "video": "https://www.youtube.com/watch?v=Giiz81_uzK8",
+    "listeningQuiz": "vocab_listening_quiz?context=Technology&index=1",
+    "sentences": "sentence_practice?context=Technology&index=1"
   },
   {
     "context": "Technology",
@@ -105,7 +111,8 @@
     "vocabulary": "vocabulary_ref?context=Time&index=0",
     "sentences": "sentence_practice?context=Time&index=0",
     "paper": "paper_quiz?context=Time&index=0",
-    "paperReading": "paper_reading?context=Time&index=0"
+    "paperReading": "paper_reading?context=Time&index=0",
+    "video": "https://www.youtube.com/watch?v=EIxaxnageTo"
   },
   {
     "context": "Time",
@@ -127,7 +134,8 @@
     "vocabulary": "vocabulary_ref?context=Time&index=1",
     "sentences": "sentence_practice?context=Time&index=1",
     "paper": "paper_quiz?context=Time&index=1",
-    "paperReading": "paper_reading?context=Time&index=1"
+    "paperReading": "paper_reading?context=Time&index=1",
+    "video": "https://www.youtube.com/watch?v=36n93jvjkDs"
   },
   {
     "context": "Time",
@@ -152,7 +160,10 @@
     "unscrambleSentence": "unscramble_sentence?context=Time&index=2",
     "vocabulary": "vocabulary_ref?context=Time&index=2",
     "paper": "paper_quiz?context=Time&index=2",
-    "paperReading": "paper_reading?context=Time&index=2"
+    "paperReading": "paper_reading?context=Time&index=2",
+    "video": "https://www.youtube.com/watch?v=v608v42dKeI",
+    "listeningQuiz": "vocab_listening_quiz?context=Time&index=2",
+    "sentences": "sentence_practice?context=Time&index=2"
   },
   {
     "context": "The City",

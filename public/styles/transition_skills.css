@@ -114,3 +114,15 @@ h1 {
   padding: 5px;
   border-radius: 15%;
 }
+#video {
+  display: block;
+  text-align: center;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
+.check {
+  height: 20px;
+}

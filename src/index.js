@@ -68,6 +68,9 @@ app.get("/paper_quiz", (req, res) => {
 app.get("/paper_reading", (req, res) => {
   res.render("paper_reading");
 });
+app.get("/tutorials", (req, res) => {
+  res.render("tutorials");
+});
 
 app.get("/projectable_data", (req, res) => {
   res.send(projectable);

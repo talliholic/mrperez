@@ -122,7 +122,11 @@ var Structure = function Structure(props) {
   }, "Paper Quiz"), /*#__PURE__*/React.createElement("a", {
     id: "paper_reading",
     href: props.data.paperReading
-  }, "Paper Reading")));
+  }, "Paper Reading"), props.data.video && /*#__PURE__*/React.createElement("a", {
+    target: "_blank",
+    id: "video",
+    href: props.data.video
+  }, "Video")));
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));
