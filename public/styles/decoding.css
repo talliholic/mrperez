@@ -3,14 +3,3 @@
 * {
   font-family: "Special Elite", cursive;
 }
-.container {
-  display: flex;
-  padding: 20px;
-  align-content: center;
-}
-h1 {
-  text-align: center;
-}
-iframe {
-  margin: 10px;
-}
