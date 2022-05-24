@@ -68,8 +68,8 @@ app.get("/paper_quiz", (req, res) => {
 app.get("/paper_reading", (req, res) => {
   res.render("paper_reading");
 });
-app.get("/decoding", (req, res) => {
-  res.render("decoding");
+app.get("/unscrambled_paper", (req, res) => {
+  res.render("unscrambled_paper");
 });
 app.get("/tutorials", (req, res) => {
   res.render("tutorials");
