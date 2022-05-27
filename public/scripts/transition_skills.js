@@ -93,40 +93,89 @@ var Topic = function Topic(props) {
   }));
 };
 
-var Structure = function Structure(props) {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "structure"
-  }, props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", props.data.structure), !props.data.prefix && /*#__PURE__*/React.createElement("h2", null, props.data.structure, "..."), /*#__PURE__*/React.createElement("div", {
-    className: "resources"
-  }, /*#__PURE__*/React.createElement("a", {
-    id: "gray",
-    href: props.data.vocabulary
-  }, "Vocabulary"), props.data.sentences && /*#__PURE__*/React.createElement("a", {
-    id: "white",
-    href: props.data.sentences
-  }, "Sentences"), /*#__PURE__*/React.createElement("a", {
-    id: "green",
-    href: props.data.readingQuiz
-  }, "Reading Quiz"), props.data.listeningQuiz && /*#__PURE__*/React.createElement("a", {
-    id: "yellow",
-    href: props.data.listeningQuiz
-  }, "Listening Quiz"), props.data.unscrambleWord && /*#__PURE__*/React.createElement("a", {
-    id: "pink",
-    href: props.data.unscrambleWord
-  }, "Unscramble the word"), /*#__PURE__*/React.createElement("a", {
-    id: "blue",
-    href: props.data.unscrambleSentence
-  }, "Unscramble the sentence"), /*#__PURE__*/React.createElement("a", {
-    id: "other",
-    href: props.data.paper
-  }, "Paper Quiz"), /*#__PURE__*/React.createElement("a", {
-    id: "paper_reading",
-    href: props.data.paperReading
-  }, "Paper Reading"), props.data.video && /*#__PURE__*/React.createElement("a", {
-    target: "_blank",
-    id: "video",
-    href: props.data.video
-  }, "Video")));
-};
+var Structure = /*#__PURE__*/function (_React$Component2) {
+  _inherits(Structure, _React$Component2);
+
+  var _super2 = _createSuper(Structure);
+
+  function Structure(props) {
+    var _this3;
+
+    _classCallCheck(this, Structure);
+
+    _this3 = _super2.call(this, props);
+    _this3.state = {
+      show: false
+    };
+    _this3.toggle = _this3.toggle.bind(_assertThisInitialized(_this3));
+    return _this3;
+  }
+
+  _createClass(Structure, [{
+    key: "toggle",
+    value: function toggle() {
+      this.setState(function (prev) {
+        return {
+          show: !prev.show
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "structure"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "title",
+        onClick: function onClick() {
+          return _this4.toggle();
+        }
+      }, this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "(", this.props.data.vocab, ")", " ...", this.props.data.structure), !this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, this.props.data.structure, "... ", "(", this.props.data.vocab, ")")), this.state.show && /*#__PURE__*/React.createElement("div", {
+        className: "content"
+      }, " ", /*#__PURE__*/React.createElement("h3", null, "Reference"), /*#__PURE__*/React.createElement("div", {
+        className: "resources"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "gray",
+        href: this.props.data.vocabulary
+      }, "Vocabulary"), this.props.data.sentences && /*#__PURE__*/React.createElement("a", {
+        id: "white",
+        href: this.props.data.sentences
+      }, "Sentences"), " ", this.props.data.video && /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
+        id: "video",
+        href: this.props.data.video
+      }, "Video")), /*#__PURE__*/React.createElement("h3", null, "Interactive Quizzes"), /*#__PURE__*/React.createElement("div", {
+        className: "resources"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "green",
+        href: this.props.data.readingQuiz
+      }, "Reading Quiz"), this.props.data.listeningQuiz && /*#__PURE__*/React.createElement("a", {
+        id: "yellow",
+        href: this.props.data.listeningQuiz
+      }, "Listening Quiz"), this.props.data.unscrambleWord && /*#__PURE__*/React.createElement("a", {
+        id: "pink",
+        href: this.props.data.unscrambleWord
+      }, "Unscramble the word"), /*#__PURE__*/React.createElement("a", {
+        id: "blue",
+        href: this.props.data.unscrambleSentence
+      }, "Unscramble the sentence"), /*#__PURE__*/React.createElement("a", {
+        id: "decoding",
+        href: this.props.data.decoding
+      }, "Decoding")), /*#__PURE__*/React.createElement("h3", null, "Worksheets"), /*#__PURE__*/React.createElement("div", {
+        className: "resources"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "other",
+        href: this.props.data.paper
+      }, "Paper Quiz"), /*#__PURE__*/React.createElement("a", {
+        id: "paper_reading",
+        href: this.props.data.paperReading
+      }, "Paper Reading"))));
+    }
+  }]);
+
+  return Structure;
+}(React.Component);
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Practice, null), document.getElementById("app"));

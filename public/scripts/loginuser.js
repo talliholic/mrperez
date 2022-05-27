@@ -230,7 +230,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
         onClick: this.showPassword,
         className: "show_password_button"
-      }, "Show Password"), /*#__PURE__*/React.createElement("div", {
+      }, "Show password"), /*#__PURE__*/React.createElement("div", {
         className: "show_password"
       })), /*#__PURE__*/React.createElement("input", {
         onClick: this.signup,
@@ -249,7 +249,12 @@ var App = /*#__PURE__*/function (_React$Component) {
         type: "password",
         placeholder: "Password",
         autoComplete: "on"
-      }), /*#__PURE__*/React.createElement("input", {
+      }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+        onClick: this.showPassword,
+        className: "show_password_button"
+      }, "Show password"), /*#__PURE__*/React.createElement("div", {
+        className: "show_password"
+      })), /*#__PURE__*/React.createElement("input", {
         onClick: this.login,
         type: "submit",
         value: "Log in"
@@ -338,7 +343,7 @@ var User = /*#__PURE__*/function (_React$Component2) {
         return partialSum + a;
       }, 0)), " ", "pts."), /*#__PURE__*/React.createElement("table", null, this.state.quizzes.length > 0 && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
         id: "heading"
-      }, /*#__PURE__*/React.createElement("th", null, "Topic"), /*#__PURE__*/React.createElement("th", null, "Type"), /*#__PURE__*/React.createElement("th", null, "Structure"), /*#__PURE__*/React.createElement("th", null, "Score"), /*#__PURE__*/React.createElement("th", null, "Link"))), /*#__PURE__*/React.createElement("tbody", null, this.state.quizzes.length > 0 && this.state.quizzes.map(function (quiz, i) {
+      }, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Score"), /*#__PURE__*/React.createElement("th", null, "Link"))), /*#__PURE__*/React.createElement("tbody", null, this.state.quizzes.length > 0 && this.state.quizzes.map(function (quiz, i) {
         return /*#__PURE__*/React.createElement(Quiz, {
           key: i,
           data: quiz
@@ -364,11 +369,11 @@ var Quiz = /*#__PURE__*/function (_React$Component3) {
   _createClass(Quiz, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, this.props.data.context), /*#__PURE__*/React.createElement("td", null, this.props.data.type), /*#__PURE__*/React.createElement("td", null, this.props.data.structure), /*#__PURE__*/React.createElement("td", {
+      return /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, this.props.data.context, "-", this.props.data.type, "-", this.props.data.structure), /*#__PURE__*/React.createElement("td", {
         className: "center"
       }, this.props.data.grade), /*#__PURE__*/React.createElement("td", null, /*#__PURE__*/React.createElement("a", {
         href: this.props.data.path
-      }, "Retake Quiz")));
+      }, "Retake")));
     }
   }]);
 

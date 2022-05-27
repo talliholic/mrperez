@@ -38,19 +38,22 @@ input[type="submit"] {
   border-radius: 10%;
 }
 .show_password_button {
-  border: none;
+  border: 1px dashed black;
   background-color: lightcyan;
   cursor: pointer;
   font-size: 18px;
   padding: 5px;
   border-radius: 10%;
+  text-align: center;
+  margin-top: 15px;
 }
 .show_password {
   border: none;
   cursor: pointer;
   font-size: 18px;
-  padding: 5px;
+  padding-top: 10px;
   border-radius: 10%;
+  text-align: center;
 }
 #logoutbutton {
   margin-top: 60px;
@@ -70,6 +73,7 @@ td {
 #total_score {
   text-align: center;
   padding: 5px;
-  border: 1px solid black;
+  background-color: lightgoldenrodyellow;
   display: inline-block;
+  border: 1px dashed black;
 }

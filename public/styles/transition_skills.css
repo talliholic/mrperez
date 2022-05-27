@@ -16,7 +16,7 @@ h1 {
   align-items: baseline;
 }
 .resources a {
-  margin: 20px;
+  margin: 10px 20px;
 }
 .topic a {
   color: black;
@@ -123,6 +123,25 @@ h1 {
   padding: 5px;
   border-radius: 15%;
 }
+#decoding {
+  display: block;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
 .check {
   height: 20px;
+}
+h3 {
+  text-align: center;
+  padding: 5px;
+  background-color: blanchedalmond;
+  border-radius: 25%;
+  border: solid red 1px;
+}
+.title {
+  cursor: pointer;
 }
