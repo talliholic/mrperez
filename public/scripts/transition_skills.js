@@ -160,7 +160,7 @@ var Structure = /*#__PURE__*/function (_React$Component2) {
       }, "Unscramble the word"), /*#__PURE__*/React.createElement("a", {
         id: "blue",
         href: this.props.data.unscrambleSentence
-      }, "Unscramble the sentence"), /*#__PURE__*/React.createElement("a", {
+      }, "Unscramble the sentence"), this.props.data.decoding && /*#__PURE__*/React.createElement("a", {
         id: "decoding",
         href: this.props.data.decoding
       }, "Decoding")), /*#__PURE__*/React.createElement("h3", null, "Worksheets"), /*#__PURE__*/React.createElement("div", {
