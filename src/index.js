@@ -38,7 +38,7 @@ app.get("/loggedin", (req, res) => {
   res.send({ loggedIn });
 });
 
-app.get("/transition", (req, res) => {
+app.get("", (req, res) => {
   res.render("transition_skills");
 });
 app.get("/sentence_practice", (req, res) => {
