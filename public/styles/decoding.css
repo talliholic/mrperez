@@ -46,7 +46,7 @@
 .score {
   position: fixed;
   right: 20px;
-  top: 20px;
+  bottom: 20px;
   font-size: 36px;
   z-index: 1;
   background-color: white;
