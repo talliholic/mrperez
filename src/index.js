@@ -41,6 +41,9 @@ app.get("/loggedin", (req, res) => {
 app.get("", (req, res) => {
   res.render("transition_skills");
 });
+app.get("/transition", (req, res) => {
+  res.redirect("../");
+});
 app.get("/sentence_practice", (req, res) => {
   res.render("sentence_practice");
 });
