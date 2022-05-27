@@ -128,7 +128,7 @@ var Decoding = /*#__PURE__*/function (_React$Component) {
           });
         }));
       } else {
-        return /*#__PURE__*/React.createElement("p", null, "Loading...");
+        return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "This browser does not support Speech Recognition. Change your device or browser to access this section. Att: Mr. Perez"), /*#__PURE__*/React.createElement("p", null, "En este navegador no funciona el Reconocimiento de Voz. Cambia de dispositivo o navegador para acceder a esta secci\xF3n. Att: Mr. Perez"));
       }
     }
   }]);
