@@ -132,7 +132,11 @@ var Structure = /*#__PURE__*/function (_React$Component2) {
         onClick: function onClick() {
           return _this4.toggle();
         }
-      }, this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "(", this.props.data.vocab, ")", " ...", this.props.data.structure), !this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, this.props.data.structure, "... ", "(", this.props.data.vocab, ")")), this.state.show && /*#__PURE__*/React.createElement("div", {
+      }, this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "(", /*#__PURE__*/React.createElement("span", {
+        className: "blue"
+      }, this.props.data.vocab), ")", " ...", this.props.data.structure), !this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, this.props.data.structure, "... ", "(", /*#__PURE__*/React.createElement("span", {
+        className: "blue"
+      }, this.props.data.vocab), ")")), this.state.show && /*#__PURE__*/React.createElement("div", {
         className: "content"
       }, " ", /*#__PURE__*/React.createElement("h3", null, "Reference"), /*#__PURE__*/React.createElement("div", {
         className: "resources"
