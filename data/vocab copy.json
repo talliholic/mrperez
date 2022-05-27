@@ -358,7 +358,8 @@
     "vocabulary": "vocabulary_ref?context=Phonics&index=0",
     "sentences": "sentence_practice?context=Phonics&index=0",
     "paper": "paper_quiz?context=Phonics&index=0",
-    "paperReading": "paper_reading?context=Phonics&index=0"
+    "paperReading": "paper_reading?context=Phonics&index=0",
+    "decoding": "decoding?context=Phonics&index=0"
   },
 
   {
@@ -375,7 +376,8 @@
     "vocabulary": "vocabulary_ref?context=Phonics&index=1",
     "sentences": "sentence_practice?context=Phonics&index=1",
     "paper": "paper_quiz?context=Phonics&index=1",
-    "paperReading": "paper_reading?context=Phonics&index=1"
+    "paperReading": "paper_reading?context=Phonics&index=1",
+    "decoding": "decoding?context=Phonics&index=1"
   },
   {
     "context": "Phonics",
@@ -391,7 +393,8 @@
     "vocabulary": "vocabulary_ref?context=Phonics&index=2",
     "sentences": "sentence_practice?context=Phonics&index=2",
     "paper": "paper_quiz?context=Phonics&index=2",
-    "paperReading": "paper_reading?context=Phonics&index=2"
+    "paperReading": "paper_reading?context=Phonics&index=2",
+    "decoding": "decoding?context=Phonics&index=2"
   },
   {
     "context": "Phonics",
@@ -407,7 +410,8 @@
     "vocabulary": "vocabulary_ref?context=Phonics&index=3",
     "sentences": "sentence_practice?context=Phonics&index=3",
     "paper": "paper_quiz?context=Phonics&index=3",
-    "paperReading": "paper_reading?context=Phonics&index=3"
+    "paperReading": "paper_reading?context=Phonics&index=3",
+    "decoding": "decoding?context=Phonics&index=3"
   },
   {
     "context": "Phonics",
@@ -423,6 +427,7 @@
     "vocabulary": "vocabulary_ref?context=Phonics&index=4",
     "sentences": "sentence_practice?context=Phonics&index=4",
     "paper": "paper_quiz?context=Phonics&index=4",
-    "paperReading": "paper_reading?context=Phonics&index=4"
+    "paperReading": "paper_reading?context=Phonics&index=4",
+    "decoding": "decoding?context=Phonics&index=4"
   }
 ]
