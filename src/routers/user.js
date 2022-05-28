@@ -174,12 +174,13 @@ router.post("/forgot-password", async (req, res, next) => {
     const link =
       "https://mrperez.herokuapp.com/reset-password/" + user._id + "/" + token;
     sendmail(user.email, link);
-
     res.send(
-      "<h1>A link to reset your password has been sent to the email registered. The link is valid for 15 minutes.</h1>"
+      '<script>alert("A link to reset your password has been sent to the email registered. The link is ONLY valid for 15 minutes."); window.location.href="/loginuser"</script>'
     );
   } catch (e) {
-    res.send("<h1>User not found. Go back</h1>");
+    res.send(
+      '<script>alert("User NOT found. Try AGAIN"); window.location.href="/forgot-password"</script>'
+    );
   }
 });
 
@@ -190,14 +191,16 @@ router.get("/reset-password/:id/:token", async (req, res, next) => {
     jwt.verify(token, process.env.JWT_SECRET);
     res.render("reset-password", { email: user.email });
   } catch (e) {
-    res.send("<h1>Link has expired!</h1>");
+    res.send(
+      '<script>alert("This link is not valid!"); window.location.href="/loginuser"</script>'
+    );
   }
 });
 router.post("/reset-password/:id/:token", async (req, res, next) => {
   const { id, token } = req.params;
   let { password, password2 } = req.body;
   if (password !== password2) {
-    return res.send("<h1>Passwords do not match! Go back.</h1>");
+    return res.send('<script>alert("Passwords do not match!")</script>');
   }
   try {
     password = await bcrypt.hash(password, 8);
@@ -205,7 +208,7 @@ router.post("/reset-password/:id/:token", async (req, res, next) => {
     jwt.verify(token, process.env.JWT_SECRET);
     await User.findOneAndUpdate({ _id: id }, { password });
     res.send(
-      '<h1>Password has been reset! <br /><a href="/loginuser">Log in</a></h1>'
+      '<script>alert("Your password has been reset. You can NOW log in!"); window.location.href="/loginuser"</script>'
     );
   } catch (e) {
     res.send(e.message);
