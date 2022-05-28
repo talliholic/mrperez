@@ -176,10 +176,10 @@ router.post("/forgot-password", async (req, res, next) => {
     sendmail(user.email, link);
 
     res.send(
-      "<h2>A link to reset your password has been sent to the email registered. The link is valid for 15 minutes.</h2>"
+      "<h1>A link to reset your password has been sent to the email registered. The link is valid for 15 minutes.</h1>"
     );
   } catch (e) {
-    res.send("<h2>User not found. Go back</h2>");
+    res.send("<h1>User not found. Go back</h1>");
   }
 });
 
@@ -190,14 +190,14 @@ router.get("/reset-password/:id/:token", async (req, res, next) => {
     jwt.verify(token, process.env.JWT_SECRET);
     res.render("reset-password", { email: user.email });
   } catch (e) {
-    res.send("<h2>Link has expired!</h2>");
+    res.send("<h1>Link has expired!</h1>");
   }
 });
 router.post("/reset-password/:id/:token", async (req, res, next) => {
   const { id, token } = req.params;
   let { password, password2 } = req.body;
   if (password !== password2) {
-    return res.send("<h2>Passwords do not match! Go back.</h2>");
+    return res.send("<h1>Passwords do not match! Go back.</h1>");
   }
   try {
     password = await bcrypt.hash(password, 8);
@@ -205,7 +205,7 @@ router.post("/reset-password/:id/:token", async (req, res, next) => {
     jwt.verify(token, process.env.JWT_SECRET);
     await User.findOneAndUpdate({ _id: id }, { password });
     res.send(
-      '<h2>Password has been reset! <br /><a href="/loginuser">Log in</a></h2>'
+      '<h1>Password has been reset! <br /><a href="/loginuser">Log in</a></h1>'
     );
   } catch (e) {
     res.send(e.message);
