@@ -174,7 +174,6 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
 
   res.send(vocabQuiz);
 });
-
 app.listen(port, () => {
   console.log("Server is up on port " + port);
 });

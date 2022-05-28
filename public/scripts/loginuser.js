@@ -238,7 +238,10 @@ var App = /*#__PURE__*/function (_React$Component) {
         value: "Sign up"
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showLogIn
-      }, "Are you a member? Log in here")), this.state.showLog && /*#__PURE__*/React.createElement("div", {
+      }, "Are you a member? Log in here"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+        id: "forgot",
+        href: "/forgot-password"
+      }, "Did you forget your password?")), this.state.showLog && /*#__PURE__*/React.createElement("div", {
         className: "form"
       }, /*#__PURE__*/React.createElement("h1", null, "User Login"), /*#__PURE__*/React.createElement("form", {
         className: "user_form"
@@ -260,7 +263,10 @@ var App = /*#__PURE__*/function (_React$Component) {
         value: "Log in"
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showSignUp
-      }, "Not a member? Sign up here")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
+      }, "Not a member? Sign up here"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+        id: "forgot",
+        href: "/forgot-password"
+      }, "Did you forget your password?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
         user: this.state.user
       }), /*#__PURE__*/React.createElement("div", {
         className: "userlogout"

@@ -36,6 +36,7 @@ input[type="submit"] {
   font-size: 18px;
   padding: 5px;
   border-radius: 10%;
+  margin-bottom: 10px;
 }
 .show_password_button {
   border: 1px dashed black;
@@ -76,4 +77,10 @@ td {
   background-color: lightgoldenrodyellow;
   display: inline-block;
   border: 1px dashed black;
+}
+#forgot {
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+  padding: 5px;
 }

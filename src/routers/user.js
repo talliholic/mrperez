@@ -4,6 +4,9 @@ const Quiz = require("../models/quiz");
 const bodyParser = require("body-parser");
 const auth = require("../middleware/auth");
 const router = new express.Router();
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
+const sendmail = require("../email/sendgrid");
 
 const users = (filter = {}) => {
   return new Promise((res, rej) => {
@@ -150,6 +153,62 @@ router.delete("/users/me", auth, async (req, res) => {
     res.send(req.user);
   } catch (e) {
     res.status(500).send();
+  }
+});
+
+router.get("/forgot-password", (req, res, next) => {
+  res.render("forgot-password");
+});
+
+router.post("/forgot-password", async (req, res, next) => {
+  const { email } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    const payload = {
+      email: user.email,
+      id: user._id,
+    };
+    const token = jwt.sign(payload, process.env.JWT_SECRET, {
+      expiresIn: "15m",
+    });
+    const link =
+      "https://mrperez.herokuapp.com/reset-password/" + user._id + "/" + token;
+    sendmail(user.email, link);
+
+    res.send(
+      "<h2>A link to reset your password has been sent to the email registered.</h2>"
+    );
+  } catch (e) {
+    res.send("<h2>User not found. Go back</h2>");
+  }
+});
+
+router.get("/reset-password/:id/:token", async (req, res, next) => {
+  const { id, token } = req.params;
+  try {
+    const user = await User.findOne({ _id: id });
+    jwt.verify(token, process.env.JWT_SECRET);
+    res.render("reset-password", { email: user.email });
+  } catch (e) {
+    res.send("<h2>Link has expired!</h2>");
+  }
+});
+router.post("/reset-password/:id/:token", async (req, res, next) => {
+  const { id, token } = req.params;
+  let { password, password2 } = req.body;
+  if (password !== password2) {
+    return res.send("<h2>Passwords do not match! Go back.</h2>");
+  }
+  try {
+    password = await bcrypt.hash(password, 8);
+    const user = await User.findOne({ _id: id });
+    jwt.verify(token, process.env.JWT_SECRET);
+    await User.findOneAndUpdate({ _id: id }, { password });
+    res.send(
+      '<h2>Password has been reset! <br /><a href="/loginuser">Log in</a></h2>'
+    );
+  } catch (e) {
+    res.send(e.message);
   }
 });
 
