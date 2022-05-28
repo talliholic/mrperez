@@ -239,6 +239,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showLogIn
       }, "Are you a member? Log in here"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
         id: "forgot",
         href: "/forgot-password"
       }, "Did you forget your password?")), this.state.showLog && /*#__PURE__*/React.createElement("div", {
@@ -264,6 +265,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showSignUp
       }, "Not a member? Sign up here"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+        target: "_blank",
         id: "forgot",
         href: "/forgot-password"
       }, "Did you forget your password?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
