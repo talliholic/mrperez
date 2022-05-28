@@ -200,7 +200,7 @@ router.post("/reset-password/:id/:token", async (req, res, next) => {
   const { id, token } = req.params;
   let { password, password2 } = req.body;
   if (password !== password2) {
-    alert("Passwords do not match!");
+    res.send('<script>alert("Passwords do not match!")</script>');
     location.reload();
   }
   try {
