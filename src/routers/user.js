@@ -176,7 +176,7 @@ router.post("/forgot-password", async (req, res, next) => {
     sendmail(user.email, link);
 
     res.send(
-      "<h2>A link to reset your password has been sent to the email registered.</h2>"
+      "<h2>A link to reset your password has been sent to the email registered. The link is valid for 15 minutes.</h2>"
     );
   } catch (e) {
     res.send("<h2>User not found. Go back</h2>");
