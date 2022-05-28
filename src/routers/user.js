@@ -201,7 +201,7 @@ router.post("/reset-password/:id/:token", async (req, res, next) => {
   let { password, password2 } = req.body;
   if (password !== password2) {
     return res.send(
-      '<script>alert("Passwords do not match!");location.reload()</script>'
+      `<script>alert("Passwords do not match!");window.location.href="/${id}/${token}"</script>`
     );
   }
   try {
