@@ -200,7 +200,8 @@ router.post("/reset-password/:id/:token", async (req, res, next) => {
   const { id, token } = req.params;
   let { password, password2 } = req.body;
   if (password !== password2) {
-    return res.send('<script>alert("Passwords do not match!")</script>');
+    alert("Passwords do not match!");
+    location.reload();
   }
   try {
     password = await bcrypt.hash(password, 8);
