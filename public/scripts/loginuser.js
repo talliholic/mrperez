@@ -270,7 +270,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         href: "/forgot-password"
       }, "Did you forget your password?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
         user: this.state.user
-      }), /*#__PURE__*/React.createElement("div", {
+      }), /*#__PURE__*/React.createElement(Leaderboard, null), /*#__PURE__*/React.createElement("div", {
         className: "userlogout"
       }, /*#__PURE__*/React.createElement("form", {
         className: "user_form"
@@ -386,6 +386,60 @@ var Quiz = /*#__PURE__*/function (_React$Component3) {
   }]);
 
   return Quiz;
+}(React.Component);
+
+var Leaderboard = /*#__PURE__*/function (_React$Component4) {
+  _inherits(Leaderboard, _React$Component4);
+
+  var _super4 = _createSuper(Leaderboard);
+
+  function Leaderboard(props) {
+    var _this8;
+
+    _classCallCheck(this, Leaderboard);
+
+    _this8 = _super4.call(this, props);
+    _this8.state = {
+      leaders: []
+    };
+    return _this8;
+  }
+
+  _createClass(Leaderboard, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this9 = this;
+
+      fetch("/leaderboard").then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        var leaders = [];
+
+        for (var i = 0; i < 10; i++) {
+          leaders.push(res[i]);
+        }
+
+        _this9.setState({
+          leaders: leaders
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/React.createElement("div", {
+        className: "leaders"
+      }, /*#__PURE__*/React.createElement("h2", null, "Leaderboard"), /*#__PURE__*/React.createElement("h3", null, "Most Points - Top Ten"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "#"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Points"))), /*#__PURE__*/React.createElement("tbody", null, this.state.leaders.map(function (leader, i) {
+        return /*#__PURE__*/React.createElement("tr", {
+          key: i
+        }, /*#__PURE__*/React.createElement("td", null, i + 1), /*#__PURE__*/React.createElement("td", null, leader.user.split(" ")[0] + " " + leader.user.split(" ")[1].charAt(0)), /*#__PURE__*/React.createElement("td", {
+          className: "total"
+        }, leader.totalScore));
+      }))));
+    }
+  }]);
+
+  return Leaderboard;
 }(React.Component);
 
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("app"));

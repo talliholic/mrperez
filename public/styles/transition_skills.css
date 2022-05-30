@@ -132,6 +132,23 @@ h1 {
   padding: 5px;
   border-radius: 15%;
 }
+#unscramble_w {
+  display: block;
+  text-align: center;
+  background-color: burlywood;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
+#unscramble_s {
+  display: block;
+  text-align: center;
+  background-color: yellow;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
 .check {
   height: 20px;
 }

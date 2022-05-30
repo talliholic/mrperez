@@ -37,7 +37,7 @@ var Unscramble = /*#__PURE__*/function (_React$Component) {
       context: "",
       structure: "",
       prefix: undefined,
-      sentences: [],
+      words: [],
       images: [],
       dataLoaded: false
     };
@@ -57,7 +57,7 @@ var Unscramble = /*#__PURE__*/function (_React$Component) {
           context: json.context,
           structure: json.structure,
           prefix: json.prefix,
-          sentences: json.sentences,
+          words: json.words,
           images: json.img,
           dataLoaded: true
         });
@@ -67,10 +67,10 @@ var Unscramble = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.dataLoaded) {
-        return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("h1", null, this.state.context && this.state.context), this.state.prefix && /*#__PURE__*/React.createElement("h2", null, "...", this.state.structure), !this.state.prefix && /*#__PURE__*/React.createElement("h2", null, this.state.structure, "..."), /*#__PURE__*/React.createElement("p", null, "Cut out the words and images to caption the images with sentences on the table."), this.state.sentences.map(function (sentence, i) {
-          return /*#__PURE__*/React.createElement(Sentence, {
+        return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("h1", null, this.state.context && this.state.context), this.state.prefix && /*#__PURE__*/React.createElement("h2", null, "...", this.state.structure), !this.state.prefix && /*#__PURE__*/React.createElement("h2", null, this.state.structure, "..."), /*#__PURE__*/React.createElement("p", null, "Cut out the letters and images to caption the images with words on the table."), this.state.words.map(function (word, i) {
+          return /*#__PURE__*/React.createElement(Phrase, {
             key: i,
-            sentence: sentence
+            phrase: word
           });
         }), this.state.images.map(function (image, i) {
           return /*#__PURE__*/React.createElement("img", {
@@ -87,22 +87,22 @@ var Unscramble = /*#__PURE__*/function (_React$Component) {
   return Unscramble;
 }(React.Component);
 
-var Sentence = function Sentence(props) {
-  var sentence = shuffle(props.sentence.split(" "));
+var Phrase = function Phrase(props) {
+  var phrase = shuffle(props.phrase.split(""));
   return /*#__PURE__*/React.createElement("div", {
     className: "sentence"
-  }, sentence.map(function (word, i) {
-    return /*#__PURE__*/React.createElement(Word, {
+  }, phrase.map(function (letter, i) {
+    return /*#__PURE__*/React.createElement(Letter, {
       key: i,
-      word: word
+      letter: letter
     });
   }));
 };
 
-var Word = function Word(props) {
+var Letter = function Letter(props) {
   return /*#__PURE__*/React.createElement("span", {
     className: "word"
-  }, props.word, " ");
+  }, props.letter, " ");
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Unscramble, null), document.getElementById("app"));

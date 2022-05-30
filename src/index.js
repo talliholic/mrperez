@@ -74,6 +74,9 @@ app.get("/paper_reading", (req, res) => {
 app.get("/unscrambled_paper", (req, res) => {
   res.render("unscrambled_paper");
 });
+app.get("/unscrambled_paper_phrase", (req, res) => {
+  res.render("unscrambled_paper_phrase");
+});
 app.get("/decoding", (req, res) => {
   res.render("decoding");
 });
