@@ -175,7 +175,20 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
     shuffle(vocabQuiz.options[i]);
   }
 
-  res.send(vocabQuiz);
+  const vocabo = { ...vocabQuiz, words: [] };
+  vocabQuiz.words.forEach((word) => {
+    if (vocabQuiz.wordQuiz) {
+      if (word.split(" ").length === 2) {
+        vocabo.words.push(word.split(" ")[1]);
+      } else {
+        vocabo.words.push(word);
+      }
+    } else {
+      vocabo.words.push(word);
+    }
+  });
+
+  res.send(vocabo);
 });
 app.listen(port, () => {
   console.log("Server is up on port " + port);

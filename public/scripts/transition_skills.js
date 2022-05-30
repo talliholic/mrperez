@@ -175,7 +175,7 @@ var Structure = /*#__PURE__*/function (_React$Component2) {
       }, "Paper Quiz"), /*#__PURE__*/React.createElement("a", {
         id: "paper_reading",
         href: this.props.data.paperReading
-      }, "Paper Reading"), /*#__PURE__*/React.createElement("a", {
+      }, "Paper Reading"), this.props.data.unscrambled_paper_phrase && /*#__PURE__*/React.createElement("a", {
         id: "unscramble_s",
         href: this.props.data.unscrambled_paper_phrase
       }, "Paper Unscramble Words"), /*#__PURE__*/React.createElement("a", {
