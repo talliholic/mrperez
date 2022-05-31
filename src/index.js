@@ -29,6 +29,7 @@ app.use(quizRouter);
 
 const vocab = require("../data/vocab.json");
 const projectable = require("../data/projectable.json");
+const messages = require("../data/messages.json");
 
 app.get("/loggedin", (req, res) => {
   let loggedIn = false;
@@ -82,6 +83,12 @@ app.get("/decoding", (req, res) => {
 });
 app.get("/tutorials", (req, res) => {
   res.render("tutorials");
+});
+app.get("/messages", (req, res) => {
+  res.render("messages");
+});
+app.get("/load-messages", (req, res) => {
+  res.json(messages);
 });
 
 app.get("/projectable_data", (req, res) => {
