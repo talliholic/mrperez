@@ -123,6 +123,15 @@ h1 {
   padding: 5px;
   border-radius: 15%;
 }
+#typing {
+  display: block;
+  text-align: center;
+  background-color: lightcoral;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15%;
+}
 #decoding {
   display: block;
   text-align: center;

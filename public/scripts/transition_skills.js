@@ -167,7 +167,10 @@ var Structure = /*#__PURE__*/function (_React$Component2) {
       }, "Unscramble the sentence"), this.props.data.decoding && /*#__PURE__*/React.createElement("a", {
         id: "decoding",
         href: this.props.data.decoding
-      }, "Decoding")), /*#__PURE__*/React.createElement("h3", null, "Worksheets"), /*#__PURE__*/React.createElement("div", {
+      }, "Decoding"), /*#__PURE__*/React.createElement("a", {
+        id: "typing",
+        href: this.props.data.typing
+      }, "Typing")), /*#__PURE__*/React.createElement("h3", null, "Worksheets"), /*#__PURE__*/React.createElement("div", {
         className: "resources"
       }, /*#__PURE__*/React.createElement("a", {
         id: "other",

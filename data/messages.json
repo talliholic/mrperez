@@ -1,6 +1,16 @@
 [
   {
     "Date": "31/05/22",
+    "Title": "Nueva sección de TYPING",
+    "Message": "He creado una nueva tipo de quiz interactivo, TYPING. En esta actividad, los estudiantes deben completar la oración con una de las palabras exploradas en el vocabulario. Si la palabra inicia la oración, el estudiante debe capitalizarla."
+  },
+  {
+    "Date": "31/05/22",
+    "Title": "Corrección quiz UNSCRAMBLE THE WORD",
+    "Message": "He corregido el quiz interactivo UNSCRAMBLE THE WORD. Los estudiantes ya pueden organizar SÓLO una palabra EN VEZ de una frase."
+  },
+  {
+    "Date": "31/05/22",
     "Title": "Nueva sección de mensajes",
     "Message": "He creado una nueva sección de mensajes, en la cual presentaré el material nuevo, las actualizaciones y noticias importantes de la página. Los invito a estar revisando esta sección con regularidad para que estén entererados del material nuevo y las actualizacines."
   },

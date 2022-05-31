@@ -65,7 +65,7 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
           id: "quiz"
         }, /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("h1", null, data.context && data.context), data.prefix && /*#__PURE__*/React.createElement("h2", null, "...", data.structure), !data.prefix && /*#__PURE__*/React.createElement("h2", null, data.structure, "..."), /*#__PURE__*/React.createElement("p", null, "Write sentences next to the pictures. Use the structure and the words."), /*#__PURE__*/React.createElement("div", {
           className: "words"
-        }, data.words.map(function (word, i) {
+        }, data.vocabu.map(function (word, i) {
           return /*#__PURE__*/React.createElement(Word, {
             key: i,
             word: word

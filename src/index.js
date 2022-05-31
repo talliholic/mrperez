@@ -87,6 +87,9 @@ app.get("/tutorials", (req, res) => {
 app.get("/messages", (req, res) => {
   res.render("messages");
 });
+app.get("/typing", (req, res) => {
+  res.render("typing");
+});
 app.get("/load-messages", (req, res) => {
   res.json(messages);
 });
@@ -182,7 +185,7 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
     shuffle(vocabQuiz.options[i]);
   }
 
-  const vocabo = { ...vocabQuiz, words: [] };
+  const vocabo = { ...vocabQuiz, words: [], vocabu: vocabQuiz.words };
   vocabQuiz.words.forEach((word) => {
     if (vocabQuiz.wordQuiz) {
       if (word.split(" ").length === 2) {

@@ -27,7 +27,8 @@
     "sentences": "sentence_practice?context=Technology&index=0",
     "decoding": "decoding?context=Technology&index=0",
     "unscrambled_paper": "unscrambled_paper?context=Technology&index=0",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=0"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=0",
+    "typing": "typing?context=Technology&index=0"
   },
   {
     "context": "Technology",
@@ -55,7 +56,8 @@
     "sentences": "sentence_practice?context=Technology&index=1",
     "decoding": "decoding?context=Technology&index=1",
     "unscrambled_paper": "unscrambled_paper?context=Technology&index=1",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=1"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=1",
+    "typing": "typing?context=Technology&index=1"
   },
   {
     "context": "Technology",
@@ -77,7 +79,8 @@
     "paper": "paper_quiz?context=Technology&index=2",
     "paperReading": "paper_reading?context=Technology&index=2",
     "decoding": "decoding?context=Technology&index=2",
-    "unscrambled_paper": "unscrambled_paper?context=Technology&index=2"
+    "unscrambled_paper": "unscrambled_paper?context=Technology&index=2",
+    "typing": "typing?context=Technology&index=2"
   },
   {
     "context": "Technology",
@@ -92,7 +95,8 @@
     "paper": "paper_quiz?context=Technology&index=3",
     "paperReading": "paper_reading?context=Technology&index=3",
     "decoding": "decoding?context=Technology&index=3",
-    "unscrambled_paper": "unscrambled_paper?context=Technology&index=3"
+    "unscrambled_paper": "unscrambled_paper?context=Technology&index=3",
+    "typing": "typing?context=Technology&index=3"
   },
   {
     "context": "Time",
@@ -122,7 +126,8 @@
     "paper": "paper_quiz?context=Time&index=0",
     "paperReading": "paper_reading?context=Time&index=0",
     "video": "https://www.youtube.com/watch?v=EIxaxnageTo",
-    "unscrambled_paper": "unscrambled_paper?context=Time&index=0"
+    "unscrambled_paper": "unscrambled_paper?context=Time&index=0",
+    "typing": "typing?context=Time&index=0"
   },
   {
     "context": "Time",
@@ -147,7 +152,8 @@
     "paper": "paper_quiz?context=Time&index=1",
     "paperReading": "paper_reading?context=Time&index=1",
     "video": "https://www.youtube.com/watch?v=36n93jvjkDs",
-    "unscrambled_paper": "unscrambled_paper?context=Time&index=1"
+    "unscrambled_paper": "unscrambled_paper?context=Time&index=1",
+    "typing": "typing?context=Time&index=1"
   },
   {
     "context": "Time",
@@ -177,7 +183,8 @@
     "video": "https://www.youtube.com/watch?v=v608v42dKeI",
     "listeningQuiz": "vocab_listening_quiz?context=Time&index=2",
     "sentences": "sentence_practice?context=Time&index=2",
-    "unscrambled_paper": "unscrambled_paper?context=Time&index=2"
+    "unscrambled_paper": "unscrambled_paper?context=Time&index=2",
+    "typing": "typing?context=Time&index=2"
   },
   {
     "context": "Time",
@@ -201,7 +208,8 @@
     "video": "https://www.youtube.com/watch?v=rrayvaGIuMY",
     "listeningQuiz": "vocab_listening_quiz?context=Time&index=3",
     "sentences": "sentence_practice?context=Time&index=3",
-    "unscrambled_paper": "unscrambled_paper?context=Time&index=3"
+    "unscrambled_paper": "unscrambled_paper?context=Time&index=3",
+    "typing": "typing?context=Time&index=3"
   },
   {
     "context": "Time",
@@ -219,7 +227,8 @@
     "unscrambleWord": "unscramble_word?context=Time&index=4",
     "decoding": "decoding?context=Time&index=4",
     "unscrambled_paper": "unscrambled_paper?context=Time&index=4",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Time&index=4"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Time&index=4",
+    "typing": "typing?context=Time&index=4"
   },
   {
     "context": "The City",
@@ -247,7 +256,8 @@
     "paperReading": "paper_reading?context=The%20City&index=0",
     "decoding": "decoding?context=The%20City&index=0",
     "unscrambled_paper": "unscrambled_paper?context=The%20City&index=0",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=0"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=0",
+    "typing": "typing?context=The%20City&index=0"
   },
   {
     "context": "The City",
@@ -267,7 +277,8 @@
     "paperReading": "paper_reading?context=The%20City&index=1",
     "decoding": "decoding?context=The%20City&index=1",
     "unscrambled_paper": "unscrambled_paper?context=The%20City&index=1",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=1"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=1",
+    "typing": "typing?context=The%20City&index=1"
   },
   {
     "context": "The City",
@@ -287,7 +298,8 @@
     "paperReading": "paper_reading?context=The%20City&index=2",
     "decoding": "decoding?context=The%20City&index=2",
     "unscrambled_paper": "unscrambled_paper?context=The%20City&index=2",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=2"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=2",
+    "typing": "typing?context=The%20City&index=2"
   },
   {
     "context": "The City",
@@ -314,7 +326,8 @@
     "paperReading": "paper_reading?context=The%20City&index=3",
     "decoding": "decoding?context=The%20City&index=3",
     "unscrambled_paper": "unscrambled_paper?context=The%20City&index=3",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=3"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=3",
+    "typing": "typing?context=The%20City&index=3"
   },
   {
     "context": "The City",
@@ -333,7 +346,8 @@
     "paperReading": "paper_reading?context=The%20City&index=4",
     "decoding": "decoding?context=The%20City&index=4",
     "unscrambled_paper": "unscrambled_paper?context=The%20City&index=4",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=4"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=4",
+    "typing": "typing?context=The%20City&index=4"
   },
   {
     "context": "The City",
@@ -352,7 +366,8 @@
     "paperReading": "paper_reading?context=The%20City&index=5",
     "decoding": "decoding?context=The%20City&index=5",
     "unscrambled_paper": "unscrambled_paper?context=The%20City&index=5",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=5"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=The%20City&index=5",
+    "typing": "typing?context=The%20City&index=5"
   },
   {
     "context": "Phonics",
@@ -381,7 +396,8 @@
     "paper": "paper_quiz?context=Phonics&index=0",
     "paperReading": "paper_reading?context=Phonics&index=0",
     "unscrambled_paper": "unscrambled_paper?context=Phonics&index=0",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=0"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=0",
+    "typing": "typing?context=Phonics&index=0"
   },
 
   {
@@ -400,7 +416,8 @@
     "paper": "paper_quiz?context=Phonics&index=1",
     "paperReading": "paper_reading?context=Phonics&index=1",
     "unscrambled_paper": "unscrambled_paper?context=Phonics&index=1",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=1"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=1",
+    "typing": "typing?context=Phonics&index=1"
   },
   {
     "context": "Phonics",
@@ -418,7 +435,8 @@
     "paper": "paper_quiz?context=Phonics&index=2",
     "paperReading": "paper_reading?context=Phonics&index=2",
     "unscrambled_paper": "unscrambled_paper?context=Phonics&index=2",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=2"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=2",
+    "typing": "typing?context=Phonics&index=2"
   },
   {
     "context": "Phonics",
@@ -436,7 +454,8 @@
     "paper": "paper_quiz?context=Phonics&index=3",
     "paperReading": "paper_reading?context=Phonics&index=3",
     "unscrambled_paper": "unscrambled_paper?context=Phonics&index=3",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=3"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=3",
+    "typing": "typing?context=Phonics&index=3"
   },
   {
     "context": "Phonics",
@@ -454,6 +473,7 @@
     "paper": "paper_quiz?context=Phonics&index=4",
     "paperReading": "paper_reading?context=Phonics&index=4",
     "unscrambled_paper": "unscrambled_paper?context=Phonics&index=4",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=4"
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=4",
+    "typing": "typing?context=Phonics&index=4"
   }
 ]
