@@ -123,18 +123,18 @@ var MathQuizzes = /*#__PURE__*/function (_React$Component2) {
         onClick: function onClick() {
           return _this4.toggle();
         }
-      }, "Doubles"), this.state.show && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "References"), /*#__PURE__*/React.createElement("div", {
+      }, "Addition"), this.state.show && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "References"), /*#__PURE__*/React.createElement("div", {
         className: "resources"
       }, /*#__PURE__*/React.createElement("a", {
         id: "video",
         href: "https://www.youtube.com/watch?v=8jOzhiACB68"
-      }, "Song 1"), /*#__PURE__*/React.createElement("a", {
+      }, "Doubles Song 1"), /*#__PURE__*/React.createElement("a", {
         id: "white",
         href: "https://www.youtube.com/watch?v=At0quRa90rs"
-      }, "Song 2"), /*#__PURE__*/React.createElement("a", {
+      }, "Doubles Song 2"), /*#__PURE__*/React.createElement("a", {
         id: "pink",
         href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
-      }, "Game 1")), /*#__PURE__*/React.createElement("h3", null, "Interactive Quizzes"), /*#__PURE__*/React.createElement("div", {
+      }, "Doubles Game 1")), /*#__PURE__*/React.createElement("h3", null, "Interactive Quizzes"), /*#__PURE__*/React.createElement("div", {
         className: "resources"
       }, /*#__PURE__*/React.createElement("a", {
         id: "green",
