@@ -64,7 +64,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
       if (dataLoaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, "Transition Skills"), item.topics.map(function (topic, i) {
+        }, /*#__PURE__*/React.createElement("h1", null, "Transition Skills"), /*#__PURE__*/React.createElement(MathQuizzes, null), item.topics.map(function (topic, i) {
           return /*#__PURE__*/React.createElement(Topic, {
             key: i,
             data: item.vocab.filter(function (voc) {
@@ -82,26 +82,15 @@ var Practice = /*#__PURE__*/function (_React$Component) {
   return Practice;
 }(React.Component);
 
-var Topic = function Topic(props) {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "topic"
-  }, /*#__PURE__*/React.createElement("h2", null, props.topic), props.data.map(function (structure, i) {
-    return /*#__PURE__*/React.createElement(Structure, {
-      key: i,
-      data: structure
-    });
-  }));
-};
+var MathQuizzes = /*#__PURE__*/function (_React$Component2) {
+  _inherits(MathQuizzes, _React$Component2);
 
-var Structure = /*#__PURE__*/function (_React$Component2) {
-  _inherits(Structure, _React$Component2);
+  var _super2 = _createSuper(MathQuizzes);
 
-  var _super2 = _createSuper(Structure);
-
-  function Structure(props) {
+  function MathQuizzes(props) {
     var _this3;
 
-    _classCallCheck(this, Structure);
+    _classCallCheck(this, MathQuizzes);
 
     _this3 = _super2.call(this, props);
     _this3.state = {
@@ -111,7 +100,7 @@ var Structure = /*#__PURE__*/function (_React$Component2) {
     return _this3;
   }
 
-  _createClass(Structure, [{
+  _createClass(MathQuizzes, [{
     key: "toggle",
     value: function toggle() {
       this.setState(function (prev) {
@@ -126,11 +115,91 @@ var Structure = /*#__PURE__*/function (_React$Component2) {
       var _this4 = this;
 
       return /*#__PURE__*/React.createElement("div", {
+        className: "topic"
+      }, /*#__PURE__*/React.createElement("h2", null, "Math"), /*#__PURE__*/React.createElement("div", {
+        className: "structure"
+      }, /*#__PURE__*/React.createElement("h2", {
+        className: "title",
+        onClick: function onClick() {
+          return _this4.toggle();
+        }
+      }, "Doubles"), this.state.show && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "References"), /*#__PURE__*/React.createElement("div", {
+        className: "resources"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "video",
+        href: "https://www.youtube.com/watch?v=8jOzhiACB68"
+      }, "Song 1"), /*#__PURE__*/React.createElement("a", {
+        id: "white",
+        href: "https://www.youtube.com/watch?v=At0quRa90rs"
+      }, "Song 2"), /*#__PURE__*/React.createElement("a", {
+        id: "pink",
+        href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
+      }, "Game 1")), /*#__PURE__*/React.createElement("h3", null, "Interactive Quizzes"), /*#__PURE__*/React.createElement("div", {
+        className: "resources"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "green",
+        href: "/math-quizzes?topic=doubles"
+      }, "Doubles Sum")), /*#__PURE__*/React.createElement("h3", null, "Workskeets"), /*#__PURE__*/React.createElement("div", {
+        className: "resources"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "unscramble_w",
+        href: "/math?topic=doubles"
+      }, "Doubles Sum")))));
+    }
+  }]);
+
+  return MathQuizzes;
+}(React.Component);
+
+var Topic = function Topic(props) {
+  return /*#__PURE__*/React.createElement("div", {
+    className: "topic"
+  }, /*#__PURE__*/React.createElement("h2", null, props.topic), props.data.map(function (structure, i) {
+    return /*#__PURE__*/React.createElement(Structure, {
+      key: i,
+      data: structure
+    });
+  }));
+};
+
+var Structure = /*#__PURE__*/function (_React$Component3) {
+  _inherits(Structure, _React$Component3);
+
+  var _super3 = _createSuper(Structure);
+
+  function Structure(props) {
+    var _this5;
+
+    _classCallCheck(this, Structure);
+
+    _this5 = _super3.call(this, props);
+    _this5.state = {
+      show: false
+    };
+    _this5.toggle = _this5.toggle.bind(_assertThisInitialized(_this5));
+    return _this5;
+  }
+
+  _createClass(Structure, [{
+    key: "toggle",
+    value: function toggle() {
+      this.setState(function (prev) {
+        return {
+          show: !prev.show
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this6 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
         className: "structure"
       }, /*#__PURE__*/React.createElement("div", {
         className: "title",
         onClick: function onClick() {
-          return _this4.toggle();
+          return _this6.toggle();
         }
       }, this.props.data.prefix && /*#__PURE__*/React.createElement("h2", null, "(", /*#__PURE__*/React.createElement("span", {
         className: "blue"

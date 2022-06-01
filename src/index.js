@@ -90,6 +90,12 @@ app.get("/messages", (req, res) => {
 app.get("/typing", (req, res) => {
   res.render("typing");
 });
+app.get("/math-quizzes", (req, res) => {
+  res.render("math-quizzes");
+});
+app.get("/math", (req, res) => {
+  res.render("math");
+});
 app.get("/load-messages", (req, res) => {
   res.json(messages);
 });
