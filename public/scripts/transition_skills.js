@@ -139,12 +139,18 @@ var MathQuizzes = /*#__PURE__*/function (_React$Component2) {
       }, /*#__PURE__*/React.createElement("a", {
         id: "green",
         href: "/math-quizzes?topic=doubles"
-      }, "Doubles Sum")), /*#__PURE__*/React.createElement("h3", null, "Workskeets"), /*#__PURE__*/React.createElement("div", {
+      }, "Doubles Sum"), /*#__PURE__*/React.createElement("a", {
+        id: "decoding",
+        href: "/math-quizzes?topic=doubles Missing"
+      }, "Doubles Missing")), /*#__PURE__*/React.createElement("h3", null, "Workskeets"), /*#__PURE__*/React.createElement("div", {
         className: "resources"
       }, /*#__PURE__*/React.createElement("a", {
         id: "unscramble_w",
         href: "/math?topic=doubles"
-      }, "Doubles Sum")))));
+      }, "Doubles Sum"), /*#__PURE__*/React.createElement("a", {
+        id: "unscramble_s",
+        href: "/math?topic=doubles Missing"
+      }, "Doubles Missing")))));
     }
   }]);
 

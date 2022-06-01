@@ -43,6 +43,9 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
         case "doubles":
           return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Doubles, null), /*#__PURE__*/React.createElement(Doubles, null));
 
+        case "doubles Missing":
+          return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(DoublesM, null), /*#__PURE__*/React.createElement(DoublesM, null));
+
         default:
           return /*#__PURE__*/React.createElement("div", null, "No topic set");
       }
@@ -63,7 +66,7 @@ var Doubles = /*#__PURE__*/function (_React$Component2) {
     _classCallCheck(this, Doubles);
 
     _this = _super2.call(this, props);
-    _this.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+    _this.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
     return _this;
   }
 
@@ -103,12 +106,74 @@ var Double = /*#__PURE__*/function (_React$Component3) {
       return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
         className: "sentence"
       }, this.props.addend, "", " +", "", " ", this.props.addend, " =", " "), /*#__PURE__*/React.createElement("input", {
-        type: "number"
+        type: "number",
+        disabled: true
       }));
     }
   }]);
 
   return Double;
+}(React.Component);
+
+var DoublesM = /*#__PURE__*/function (_React$Component4) {
+  _inherits(DoublesM, _React$Component4);
+
+  var _super4 = _createSuper(DoublesM);
+
+  function DoublesM(props) {
+    var _this2;
+
+    _classCallCheck(this, DoublesM);
+
+    _this2 = _super4.call(this, props);
+    _this2.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    return _this2;
+  }
+
+  _createClass(DoublesM, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("i", null, "Name: "), /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement("div", {
+        className: "quiz"
+      }, /*#__PURE__*/React.createElement("h1", null, "Doubles"), /*#__PURE__*/React.createElement("div", {
+        id: "instruction"
+      }, "Use any strategy to find the missing part that makes the double."), this.addends.map(function (addend, i) {
+        return /*#__PURE__*/React.createElement(DoubleM, {
+          key: i,
+          addend: addend
+        });
+      })));
+    }
+  }]);
+
+  return DoublesM;
+}(React.Component);
+
+var DoubleM = /*#__PURE__*/function (_React$Component5) {
+  _inherits(DoubleM, _React$Component5);
+
+  var _super5 = _createSuper(DoubleM);
+
+  function DoubleM(props) {
+    _classCallCheck(this, DoubleM);
+
+    return _super5.call(this, props);
+  }
+
+  _createClass(DoubleM, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
+        className: "sentence"
+      }, this.props.addend + " ", " +", " ", /*#__PURE__*/React.createElement("input", {
+        onChange: this.check,
+        type: "number",
+        disabled: true
+      }), " =", " ", this.props.addend * 2));
+    }
+  }]);
+
+  return DoubleM;
 }(React.Component);
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Quiz, null), document.getElementById("app"));
