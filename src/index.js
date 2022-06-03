@@ -96,6 +96,9 @@ app.get("/math-quizzes", (req, res) => {
 app.get("/math", (req, res) => {
   res.render("math");
 });
+app.get("/section", (req, res) => {
+  res.render("section", { section: req.query.topic });
+});
 app.get("/load-messages", (req, res) => {
   res.json(messages);
 });

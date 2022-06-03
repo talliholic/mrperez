@@ -1,5 +1,10 @@
 [
   {
+    "Date": "3/06/22",
+    "Title": "Corrección en retroalimentación de resultado en quizzes de READING y LISTENING",
+    "Message": "He corregido la herramienta que da puntaje en los quizzes de READING y LISTENING. Estaba dando resultados erróneos."
+  },
+  {
     "Date": "1/06/22",
     "Title": "Nueva sección de MATH",
     "Message": "He creado una nueva sección de MATH. En ella, los estudiantes pueden explorar material interactivo, ejercicios para imprimir en casa, juegos, videos y quizzes que sumarán a sus resultados."

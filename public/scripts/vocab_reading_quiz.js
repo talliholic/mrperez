@@ -89,12 +89,12 @@ var Practice = /*#__PURE__*/function (_React$Component) {
           className: "container"
         }, /*#__PURE__*/React.createElement("h1", null, item.context), /*#__PURE__*/React.createElement("h2", {
           className: "instruction"
-        }, "Read the sentence and click on the related image."), item.words.map(function (word, i) {
+        }, "Read the sentence and click on the related image."), item.vocabu.map(function (word, i) {
           return /*#__PURE__*/React.createElement(Question, {
             key: i,
             sentence: item.sentences[i],
             img: item.options[i],
-            question: item.words[i],
+            question: item.vocabu[i],
             update: _this3.updateAnswers,
             getState: _this3.getState,
             questionIndex: i

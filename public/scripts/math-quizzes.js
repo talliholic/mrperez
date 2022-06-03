@@ -47,10 +47,80 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
     };
     _this.update = _this.update.bind(_assertThisInitialized(_this));
     _this.score = _this.score.bind(_assertThisInitialized(_this));
+    _this.processResult = _this.processResult.bind(_assertThisInitialized(_this));
+    _this.check = _this.check.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(Quiz, [{
+    key: "processResult",
+    value: function processResult(quizzes, type) {
+      var _this2 = this;
+
+      fetch("/quizzes").then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        quizzes = json;
+
+        var score = _this2.score();
+
+        var taken = [];
+
+        if (quizzes.length > 0) {
+          taken = quizzes.filter(function (quiz) {
+            return quiz.context === cap(searchParams.get("topic")) && quiz.structure === "Math" && quiz.type === type;
+          });
+        }
+
+        if (taken.length > 0) {
+          fetch("/quizzes/" + taken[0]._id, {
+            method: "PATCH",
+            body: JSON.stringify({
+              grade: score
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8"
+            }
+          }).then(function (response) {
+            return response.json();
+          }).then(function (json) {
+            return console.log(json);
+          });
+        } else {
+          fetch("/quizzes/", {
+            method: "POST",
+            body: JSON.stringify({
+              context: cap(searchParams.get("topic")),
+              structure: "Math",
+              type: type,
+              path: "math-quizzes?topic=" + searchParams.get("topic"),
+              grade: score
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8"
+            }
+          }).then(function (response) {
+            return response.json();
+          }).then(function (json) {
+            return console.log(json);
+          });
+        }
+      });
+    }
+  }, {
+    key: "check",
+    value: function check(e, answer, i, correct, incorrect) {
+      var value = e.target.value;
+
+      if (value == answer) {
+        correct();
+        this.update(i, 1);
+      } else {
+        incorrect();
+        this.update(i, 0);
+      }
+    }
+  }, {
     key: "score",
     value: function score() {
       return Math.round(this.state.answers.reduce(function (partialSum, a) {
@@ -74,7 +144,9 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
             score: this.score
           }), /*#__PURE__*/React.createElement(Doubles, {
             update: this.update,
-            score: this.score
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
           }));
 
         case "doubles Missing":
@@ -82,7 +154,19 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
             score: this.score
           }), /*#__PURE__*/React.createElement(DoublesM, {
             update: this.update,
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
+          }));
+
+        case "add one digit to three":
+          return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Score, {
             score: this.score
+          }), /*#__PURE__*/React.createElement(Add1dto3, {
+            update: this.update,
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
           }));
 
         default:
@@ -100,19 +184,19 @@ var Doubles = /*#__PURE__*/function (_React$Component2) {
   var _super2 = _createSuper(Doubles);
 
   function Doubles(props) {
-    var _this2;
+    var _this3;
 
     _classCallCheck(this, Doubles);
 
-    _this2 = _super2.call(this, props);
-    _this2.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
-    return _this2;
+    _this3 = _super2.call(this, props);
+    _this3.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+    return _this3;
   }
 
   _createClass(Doubles, [{
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this4 = this;
 
       return /*#__PURE__*/React.createElement("div", {
         className: "quiz"
@@ -123,8 +207,10 @@ var Doubles = /*#__PURE__*/function (_React$Component2) {
           key: i,
           i: i,
           addend: addend,
-          update: _this3.props.update,
-          score: _this3.props.score
+          update: _this4.props.update,
+          score: _this4.props.score,
+          processResult: _this4.props.processResult,
+          check: _this4.props.check
         });
       }));
     }
@@ -139,115 +225,52 @@ var Double = /*#__PURE__*/function (_React$Component3) {
   var _super3 = _createSuper(Double);
 
   function Double(props) {
-    var _this4;
+    var _this5;
 
     _classCallCheck(this, Double);
 
-    _this4 = _super3.call(this, props);
-    _this4.check = _this4.check.bind(_assertThisInitialized(_this4));
-    _this4.answer = _this4.props.addend + _this4.props.addend;
-    _this4.state = {
+    _this5 = _super3.call(this, props);
+    _this5.answer = _this5.props.addend + _this5.props.addend;
+    _this5.state = {
       correct: false,
       started: false
     };
-    _this4.quizzes = [];
-    _this4.processResult = _this4.processResult.bind(_assertThisInitialized(_this4));
-    return _this4;
+    _this5.quizzes = [];
+    return _this5;
   }
 
   _createClass(Double, [{
     key: "componentDidUpdate",
     value: function componentDidUpdate(props, state) {
       if (state.correct !== this.state.correct) {
-        this.processResult();
-      }
-    }
-  }, {
-    key: "processResult",
-    value: function processResult() {
-      var _this5 = this;
-
-      fetch("/quizzes").then(function (res) {
-        return res.json();
-      }).then(function (json) {
-        _this5.quizzes = json;
-        var type = "Adding";
-
-        var score = _this5.props.score();
-
-        var taken = [];
-
-        if (_this5.quizzes.length > 0) {
-          taken = _this5.quizzes.filter(function (quiz) {
-            return quiz.context === cap(searchParams.get("topic")) && quiz.structure === "Math" && quiz.type === type;
-          });
-        }
-
-        if (taken.length > 0) {
-          fetch("/quizzes/" + taken[0]._id, {
-            method: "PATCH",
-            body: JSON.stringify({
-              grade: score
-            }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8"
-            }
-          }).then(function (response) {
-            return response.json();
-          }).then(function (json) {
-            return console.log(json);
-          });
-        } else {
-          fetch("/quizzes/", {
-            method: "POST",
-            body: JSON.stringify({
-              context: cap(searchParams.get("topic")),
-              structure: "Math",
-              type: type,
-              path: "math-quizzes?topic=" + searchParams.get("topic"),
-              grade: score
-            }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8"
-            }
-          }).then(function (response) {
-            return response.json();
-          }).then(function (json) {
-            return console.log(json);
-          });
-        }
-      });
-    }
-  }, {
-    key: "check",
-    value: function check(e) {
-      var value = e.target.value;
-
-      if (value == this.answer) {
-        this.setState(function (prev) {
-          return {
-            started: true,
-            correct: true
-          };
-        });
-        this.props.update(this.props.i, 1);
-      } else {
-        this.setState(function (prev) {
-          return {
-            started: true,
-            correct: false
-          };
-        });
-        this.props.update(this.props.i, 0);
+        this.props.processResult(this.quizzes, "Doubles");
       }
     }
   }, {
     key: "render",
     value: function render() {
+      var _this6 = this;
+
       return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
         className: "sentence"
       }, this.props.addend, "", " +", "", " ", this.props.addend, " =", " "), /*#__PURE__*/React.createElement("input", {
-        onChange: this.check,
+        onChange: function onChange(e) {
+          return _this6.props.check(e, _this6.answer, _this6.props.i, function () {
+            return _this6.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this6.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
         type: "number"
       }), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
         className: "check",
@@ -268,19 +291,19 @@ var DoublesM = /*#__PURE__*/function (_React$Component4) {
   var _super4 = _createSuper(DoublesM);
 
   function DoublesM(props) {
-    var _this6;
+    var _this7;
 
     _classCallCheck(this, DoublesM);
 
-    _this6 = _super4.call(this, props);
-    _this6.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
-    return _this6;
+    _this7 = _super4.call(this, props);
+    _this7.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+    return _this7;
   }
 
   _createClass(DoublesM, [{
     key: "render",
     value: function render() {
-      var _this7 = this;
+      var _this8 = this;
 
       return /*#__PURE__*/React.createElement("div", {
         className: "quiz"
@@ -291,8 +314,10 @@ var DoublesM = /*#__PURE__*/function (_React$Component4) {
           key: i,
           i: i,
           addend: addend,
-          update: _this7.props.update,
-          score: _this7.props.score
+          update: _this8.props.update,
+          score: _this8.props.score,
+          processResult: _this8.props.processResult,
+          check: _this8.props.check
         });
       }));
     }
@@ -307,117 +332,54 @@ var DoubleM = /*#__PURE__*/function (_React$Component5) {
   var _super5 = _createSuper(DoubleM);
 
   function DoubleM(props) {
-    var _this8;
+    var _this9;
 
     _classCallCheck(this, DoubleM);
 
-    _this8 = _super5.call(this, props);
-    _this8.check = _this8.check.bind(_assertThisInitialized(_this8));
-    _this8.answer = _this8.props.addend;
-    _this8.state = {
+    _this9 = _super5.call(this, props);
+    _this9.answer = _this9.props.addend;
+    _this9.state = {
       correct: false,
       started: false
     };
-    _this8.quizzes = [];
-    _this8.processResult = _this8.processResult.bind(_assertThisInitialized(_this8));
-    return _this8;
+    _this9.quizzes = [];
+    return _this9;
   }
 
   _createClass(DoubleM, [{
     key: "componentDidUpdate",
     value: function componentDidUpdate(props, state) {
       if (state.correct !== this.state.correct) {
-        this.processResult();
-      }
-    }
-  }, {
-    key: "processResult",
-    value: function processResult() {
-      var _this9 = this;
-
-      fetch("/quizzes").then(function (res) {
-        return res.json();
-      }).then(function (json) {
-        _this9.quizzes = json;
-        var type = "Adding";
-
-        var score = _this9.props.score();
-
-        var taken = [];
-
-        if (_this9.quizzes.length > 0) {
-          taken = _this9.quizzes.filter(function (quiz) {
-            return quiz.context === cap(searchParams.get("topic")) && quiz.structure === "Math" && quiz.type === type;
-          });
-        }
-
-        if (taken.length > 0) {
-          fetch("/quizzes/" + taken[0]._id, {
-            method: "PATCH",
-            body: JSON.stringify({
-              grade: score
-            }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8"
-            }
-          }).then(function (response) {
-            return response.json();
-          }).then(function (json) {
-            return console.log(json);
-          });
-        } else {
-          fetch("/quizzes/", {
-            method: "POST",
-            body: JSON.stringify({
-              context: cap(searchParams.get("topic")),
-              structure: "Math",
-              type: type,
-              path: "math-quizzes?topic=" + searchParams.get("topic"),
-              grade: score
-            }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8"
-            }
-          }).then(function (response) {
-            return response.json();
-          }).then(function (json) {
-            return console.log(json);
-          });
-        }
-      });
-    }
-  }, {
-    key: "check",
-    value: function check(e) {
-      var value = e.target.value;
-
-      if (value == this.answer) {
-        this.setState(function (prev) {
-          return {
-            started: true,
-            correct: true
-          };
-        });
-        this.props.update(this.props.i, 1);
-      } else {
-        this.setState(function (prev) {
-          return {
-            started: true,
-            correct: false
-          };
-        });
-        this.props.update(this.props.i, 0);
+        this.props.processResult(this.quizzes, "Adding");
       }
     }
   }, {
     key: "render",
     value: function render() {
+      var _this10 = this;
+
       return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
         className: "sentence"
       }, this.props.addend + " ", " +", " ", /*#__PURE__*/React.createElement("input", {
-        onChange: this.check,
+        onChange: function onChange(e) {
+          return _this10.props.check(e, _this10.answer, _this10.props.i, function () {
+            return _this10.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this10.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
         type: "number"
-      }), " =", " ", this.props.addend * 2), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
+      }), " ", "= ", this.props.addend * 2), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
         className: "check",
         src: "media/topics/check.jpg"
       }), this.state.started && this.state.correct === false && /*#__PURE__*/React.createElement("img", {
@@ -428,6 +390,114 @@ var DoubleM = /*#__PURE__*/function (_React$Component5) {
   }]);
 
   return DoubleM;
+}(React.Component);
+
+var Add1dto3 = /*#__PURE__*/function (_React$Component6) {
+  _inherits(Add1dto3, _React$Component6);
+
+  var _super6 = _createSuper(Add1dto3);
+
+  function Add1dto3(props) {
+    var _this11;
+
+    _classCallCheck(this, Add1dto3);
+
+    _this11 = _super6.call(this, props);
+    _this11.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7]);
+    return _this11;
+  }
+
+  _createClass(Add1dto3, [{
+    key: "render",
+    value: function render() {
+      var _this12 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "quiz"
+      }, /*#__PURE__*/React.createElement("h1", null, "Adding 1 Digit Numbers by 0 to 3"), /*#__PURE__*/React.createElement("div", {
+        id: "instruction"
+      }, "Use any strategy to find the sum."), this.addends.map(function (addend, i) {
+        return /*#__PURE__*/React.createElement(Ad1dto3, {
+          key: i,
+          i: i,
+          addend: addend,
+          update: _this12.props.update,
+          score: _this12.props.score,
+          processResult: _this12.props.processResult,
+          check: _this12.props.check
+        });
+      }));
+    }
+  }]);
+
+  return Add1dto3;
+}(React.Component);
+
+var Ad1dto3 = /*#__PURE__*/function (_React$Component7) {
+  _inherits(Ad1dto3, _React$Component7);
+
+  var _super7 = _createSuper(Ad1dto3);
+
+  function Ad1dto3(props) {
+    var _this13;
+
+    _classCallCheck(this, Ad1dto3);
+
+    _this13 = _super7.call(this, props);
+    _this13.addend2 = Math.floor(Math.random() * 4);
+    _this13.answer = _this13.props.addend + _this13.addend2;
+    _this13.state = {
+      correct: false,
+      started: false
+    };
+    _this13.quizzes = [];
+    return _this13;
+  }
+
+  _createClass(Ad1dto3, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      if (state.correct !== this.state.correct) {
+        this.props.processResult(this.quizzes, "Adding");
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this14 = this;
+
+      return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
+        className: "sentence"
+      }, this.props.addend + " ", " + ", this.addend2 + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
+        onChange: function onChange(e) {
+          return _this14.props.check(e, _this14.answer, _this14.props.i, function () {
+            return _this14.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this14.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
+        type: "number"
+      })), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
+        className: "check",
+        src: "media/topics/check.jpg"
+      }), this.state.started && this.state.correct === false && /*#__PURE__*/React.createElement("img", {
+        className: "cross",
+        src: "media/topics/cross.png"
+      }));
+    }
+  }]);
+
+  return Ad1dto3;
 }(React.Component);
 
 var Score = function Score(props) {
