@@ -30,6 +30,7 @@ app.use(quizRouter);
 const vocab = require("../data/vocab.json");
 const projectable = require("../data/projectable.json");
 const messages = require("../data/messages.json");
+const vocales = require("../data/vocales.json");
 
 app.get("/loggedin", (req, res) => {
   let loggedIn = false;
@@ -96,6 +97,12 @@ app.get("/math-quizzes", (req, res) => {
 app.get("/math", (req, res) => {
   res.render("math");
 });
+app.get("/match", (req, res) => {
+  res.render("match");
+});
+app.get("/vocales", (req, res) => {
+  res.render("vocales");
+});
 app.get("/section", (req, res) => {
   res.render("section", { section: req.query.topic });
 });
@@ -106,7 +113,12 @@ app.get("/load-messages", (req, res) => {
 app.get("/projectable_data", (req, res) => {
   res.send(projectable);
 });
-
+app.get("/cargar-vocales/:title", (req, res) => {
+  const filteredVocales = vocales.filter(
+    (juego) => juego.título === req.params.title
+  );
+  res.json(filteredVocales[0]);
+});
 app.get("/vocab/:context", (req, res) => {
   const filteredVocab = vocab.filter(
     (item) => item.context === req.params.context
