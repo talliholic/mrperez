@@ -31,6 +31,7 @@ const vocab = require("../data/vocab.json");
 const projectable = require("../data/projectable.json");
 const messages = require("../data/messages.json");
 const vocales = require("../data/vocales.json");
+const odd = require("../data/odd.json");
 
 app.get("/loggedin", (req, res) => {
   let loggedIn = false;
@@ -103,6 +104,9 @@ app.get("/match", (req, res) => {
 app.get("/vocales", (req, res) => {
   res.render("vocales");
 });
+app.get("/odd", (req, res) => {
+  res.render("odd");
+});
 app.get("/section", (req, res) => {
   res.render("section", { section: req.query.topic });
 });
@@ -118,6 +122,10 @@ app.get("/cargar-vocales/:title", (req, res) => {
     (juego) => juego.título === req.params.title
   );
   res.json(filteredVocales[0]);
+});
+app.get("/load-odd/:title", (req, res) => {
+  const filteredOdd = odd.filter((sounds) => sounds.title === req.params.title);
+  res.json(filteredOdd[0]);
 });
 app.get("/vocab/:context", (req, res) => {
   const filteredVocab = vocab.filter(
