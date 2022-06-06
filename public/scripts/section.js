@@ -109,7 +109,34 @@ var Menu = function Menu(props) {
       key: i,
       topic: topic
     });
-  })));
+  })), /*#__PURE__*/React.createElement("h2", null, "Pre K"), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "vocales?t\xEDtulo=Inspector de Vocales 1"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/vocales/oso.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Inspector de Vocales 1"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "vocales?t\xEDtulo=Inspector de Vocales 2"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/vocales/dulce.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Inspector de Vocales 2"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "vocales?t\xEDtulo=Inspector de Vocales 3"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/vocales/pelota.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Inspector de Vocales 3"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "odd?title=Basic Sounds"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/phonics/img/sun.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Basic Sounds"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "odd?title=Basic Sounds&audio=true"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/phonics/img/turtle.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Basic Sounds Listening")))));
 };
 
 var Context = function Context(props) {

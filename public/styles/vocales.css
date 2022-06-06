@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 .juego {
-  margin: 30px;
+  margin-bottom: 30px;
 }
 .instrucción {
   font-size: 24px;
@@ -19,7 +19,7 @@ h1 {
   text-align: center;
   padding: 10px;
   border: 1px dotted black;
-  margin: 30px;
+  margin: 30px 0;
 }
 img {
   height: 200px;

@@ -150,33 +150,65 @@ var Pregunta = /*#__PURE__*/function (_React$Component2) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      var palabra = _toConsumableArray(this.props.palabra);
+      if (this.props.números.length === 2) {
+        var palabra = _toConsumableArray(this.props.palabra);
 
-      palabra[this.props.números[0] - 1] = "_";
-      palabra[this.props.números[1] - 1] = "_";
-      this.setState(function (prev) {
-        return _objectSpread(_objectSpread({}, prev), {}, {
-          respuesta: palabra
+        palabra[this.props.números[0] - 1] = "_";
+        palabra[this.props.números[1] - 1] = "_";
+        this.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            respuesta: palabra
+          });
         });
-      });
+      } else {
+        var _palabra = _toConsumableArray(this.props.palabra);
+
+        _palabra[this.props.números[0] - 1] = "_";
+        _palabra[this.props.números[1] - 1] = "_";
+        _palabra[this.props.números[2] - 1] = "_";
+        this.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            respuesta: _palabra
+          });
+        });
+      }
     }
   }, {
     key: "changeInput",
     value: function changeInput(letter) {
-      var respuesta = _toConsumableArray(this.state.respuesta);
+      if (this.props.números.length === 2) {
+        var respuesta = _toConsumableArray(this.state.respuesta);
 
-      if (this.state.tries === 0) {
-        respuesta[this.props.números[0] - 1] = letter;
-      } else if (this.state.tries === 1) {
-        respuesta[this.props.números[1] - 1] = letter;
+        if (this.state.tries === 0) {
+          respuesta[this.props.números[0] - 1] = letter;
+        } else if (this.state.tries === 1) {
+          respuesta[this.props.números[1] - 1] = letter;
+        }
+
+        this.setState(function (prev) {
+          return {
+            respuesta: respuesta,
+            tries: prev.tries + 1
+          };
+        });
+      } else {
+        var _respuesta = _toConsumableArray(this.state.respuesta);
+
+        if (this.state.tries === 0) {
+          _respuesta[this.props.números[0] - 1] = letter;
+        } else if (this.state.tries === 1) {
+          _respuesta[this.props.números[1] - 1] = letter;
+        } else if (this.state.tries === 2) {
+          _respuesta[this.props.números[2] - 1] = letter;
+        }
+
+        this.setState(function (prev) {
+          return {
+            respuesta: _respuesta,
+            tries: prev.tries + 1
+          };
+        });
       }
-
-      this.setState(function (prev) {
-        return {
-          respuesta: respuesta,
-          tries: prev.tries + 1
-        };
-      });
     }
   }, {
     key: "render",
