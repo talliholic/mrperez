@@ -7,16 +7,39 @@
   margin: 20px;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 h1,
 h2 {
   text-align: center;
+  padding: 5px;
+  background-color: lightgreen;
 }
 img {
-  height: 200px;
+  height: 150px;
+  border-radius: 10%;
+  border: 1px solid black;
 }
-
+.link {
+  position: relative;
+}
+figure {
+  margin: 15px;
+  padding: 0;
+}
 figcaption {
+  position: absolute;
   text-align: center;
+  top: -25px;
+  left: 10px;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 25%;
+  background-color: lightgoldenrodyellow;
+  font-weight: bold;
 }

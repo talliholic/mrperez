@@ -23,8 +23,10 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 var searchParams = new URLSearchParams(window.location.search);
-var title = searchParams.get("title");
+var subject = searchParams.get("subject");
 var topic = searchParams.get("topic");
+var main = searchParams.get("main");
+var context = searchParams.get("context");
 
 var Section = /*#__PURE__*/function (_React$Component) {
   _inherits(Section, _React$Component);
@@ -32,27 +34,226 @@ var Section = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(Section);
 
   function Section(props) {
+    var _this;
+
     _classCallCheck(this, Section);
 
-    return _super.call(this, props);
+    _this = _super.call(this, props);
+    _this.state = {
+      topics: [],
+      sections: [],
+      section: [],
+      loaded: false
+    };
+    return _this;
   }
 
   _createClass(Section, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch("/vocabulary").then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        _this2.setState({
+          topics: json.topics,
+          sections: context ? json.vocab.filter(function (vocab) {
+            return vocab.context === context;
+          }) : [],
+          section: json.vocab.filter(function (section) {
+            return section.vocab === topic;
+          }),
+          loaded: true
+        });
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      if (title === "Math" && topic === "Adding") {
-        return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Adding"), /*#__PURE__*/React.createElement("div", {
-          className: "container"
-        }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
-          href: "/math-quizzes?topic=doubles"
-        }, /*#__PURE__*/React.createElement("img", {
-          src: "media/topics/math.png"
-        })), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Sum"))));
+      if (subject === "Math" && topic === "Adding") {
+        return /*#__PURE__*/React.createElement(Maths, null);
+      } else if (subject === "Language") {
+        return this.state.loaded && /*#__PURE__*/React.createElement(Language, {
+          data: this.state.section[0]
+        });
+      } else if (context) {
+        return this.state.loaded && /*#__PURE__*/React.createElement(Main, {
+          className: "container",
+          data: this.state.sections
+        });
+      } else if (this.state.loaded) {
+        return /*#__PURE__*/React.createElement(Menu, {
+          data: this.state.topics,
+          topics: this.state.topics
+        });
+      } else {
+        return /*#__PURE__*/React.createElement("div", null, "Loading...");
       }
     }
   }]);
 
   return Section;
 }(React.Component);
+
+var Menu = function Menu(props) {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Transition Skills"), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "section?subject=Math&topic=Adding"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/math.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Math Addition"))), props.topics.map(function (topic, i) {
+    return /*#__PURE__*/React.createElement(Context, {
+      key: i,
+      topic: topic
+    });
+  })));
+};
+
+var Context = function Context(props) {
+  return /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/section?context=" + props.topic
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/" + props.topic + "_menu.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, props.topic)));
+};
+
+var Main = function Main(props) {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, context), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, props.data.map(function (topic, i) {
+    return /*#__PURE__*/React.createElement(Topic, {
+      key: i,
+      data: topic
+    });
+  })));
+};
+
+var Topic = function Topic(props) {
+  return /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/section?subject=Language&topic=" + props.data.vocab
+  }, /*#__PURE__*/React.createElement("img", {
+    src: props.data.icon
+  }), /*#__PURE__*/React.createElement("figcaption", null, props.data.vocab)));
+};
+
+var Language = function Language(props) {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, props.data.vocab), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.vocabulary
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/vocabulary.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Vocabulary"))), props.data.sentences && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.sentences
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/sentences.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Sentences"))), props.data.video && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.video
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/youtube.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Video"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.readingQuiz
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/reading.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Reading Quiz"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.listeningQuiz
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/listening.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Listening Quiz"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.unscrambleSentence
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/unscramble-sentence.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Unscramble the Sentence"))), props.data.unscrambleWord && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.unscrambleWord
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/unscramble-word.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Unscramble the Word"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.typing
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/typing.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Typing"))), props.data.decoding && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.decoding
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/decoding.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Decoding"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.paper
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/quiz.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Paper Quiz"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.paperReading
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/paper-reading.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Paper Reading"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.unscrambled_paper
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/unscrambled-paper.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Paper Unscramble Sentences"))), props.data.unscrambled_paper_phrase && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: props.data.unscrambled_paper_phrase
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/unscrambled-paper-phrase.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Paper Unscramble Words")))));
+};
+
+var Maths = function Maths() {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Adding"), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=doubles"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/doubles-missing.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Sum"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=doubles%20Missing"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/doubles.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    target: "_blank",
+    className: "link",
+    href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/game.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Archery Doubles"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    target: "_blank",
+    className: "link",
+    href: "https://www.youtube.com/watch?v=8jOzhiACB68"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/youtube.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Rap"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    target: "_blank",
+    className: "link",
+    href: "https://www.youtube.com/watch?v=At0quRa90rs"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/youtube.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Facts Song"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math?topic=doubles"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/worksheet.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Sum"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math?topic=doubles%20Missing"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/worksheet.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing")))));
+};
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Section, null), document.getElementById("app"));

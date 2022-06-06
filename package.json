@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,json,hbs,css"
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,json,hbs,css",
+    "watch": "npx babel react/section.js --out-file=public/scripts/section.js --presets=@babel/preset-env,@babel/preset-react --watch"
   },
   "keywords": [],
   "author": "",

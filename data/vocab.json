@@ -1,5 +1,6 @@
 [
   {
+    "icon": "media/img_1/palace.png",
     "context": "Welcome to My Town",
     "structure": "There's a",
     "prefix": false,
@@ -36,6 +37,7 @@
   },
   {
     "context": "Welcome to My Town",
+    "icon": "media/img_1/happy people.png",
     "structure": "There are",
     "prefix": false,
     "vocab": "City Words 6",
@@ -58,6 +60,7 @@
   },
   {
     "context": "Welcome to My Town",
+    "icon": "media/img_1/cinema.png",
     "structure": "Let's go to the",
     "prefix": false,
     "vocab": "City Words 7",
@@ -81,6 +84,7 @@
   {
     "context": "Technology",
     "structure": "I am wearing",
+    "icon": "media/img_1/pants.png",
     "prefix": false,
     "vocab": "Clothes",
     "key": "",
@@ -112,6 +116,7 @@
   {
     "context": "Technology",
     "structure": "is a technology",
+    "icon": "media/img_1/internet.jpg",
     "prefix": true,
     "vocab": "Technology Words",
     "key": "",
@@ -141,6 +146,7 @@
   {
     "context": "Technology",
     "structure": "The shoemaker is",
+    "icon": "media/img_1/making shoes.png",
     "prefix": false,
     "vocab": "The Elves and the Shoemaker 1",
     "key": "",
@@ -164,6 +170,7 @@
   {
     "context": "Technology",
     "structure": "The elves are",
+    "icon": "media/img_1/working.png",
     "prefix": false,
     "vocab": "The Elves and the Shoemaker 2",
     "key": "",
@@ -179,6 +186,7 @@
   },
   {
     "context": "Time",
+    "icon": "media/img_1/5 o'clock.png",
     "structure": "It is",
     "prefix": false,
     "vocab": "O'clock",
@@ -210,6 +218,7 @@
   },
   {
     "context": "Time",
+    "icon": "media/img_1/the 3rd day.png",
     "structure": "This is",
     "prefix": false,
     "vocab": "The Days of the Week",
@@ -236,6 +245,7 @@
   },
   {
     "context": "Time",
+    "icon": "media/img_1/6th month.png",
     "structure": "This is the",
     "prefix": false,
     "vocab": "The Months of the Year",
@@ -268,6 +278,7 @@
   {
     "context": "Time",
     "structure": "The time is",
+    "icon": "media/img_1/4 thirty.png",
     "prefix": false,
     "vocab": "Half Hour",
     "key": "",
@@ -293,6 +304,7 @@
   {
     "context": "Time",
     "structure": "is a part of the day",
+    "icon": "media/img_1/morning.jpg",
     "prefix": true,
     "vocab": "Parts of the Day",
     "key": "",
@@ -311,6 +323,7 @@
   },
   {
     "context": "The City",
+    "icon": "media/img_1/buildings.png",
     "structure": "I can see",
     "prefix": false,
     "vocab": "City Words 1",
@@ -340,6 +353,7 @@
   },
   {
     "context": "The City",
+    "icon": "media/img_1/cars.jpg",
     "structure": "I can hear",
     "prefix": false,
     "vocab": "City Words 2",
@@ -361,6 +375,7 @@
   },
   {
     "context": "The City",
+    "icon": "media/img_1/smoke.jpg",
     "structure": "I can smell",
     "prefix": false,
     "vocab": "City Words 3",
@@ -382,6 +397,7 @@
   },
   {
     "context": "The City",
+    "icon": "media/img_1/zoo.png",
     "structure": "There is a",
     "prefix": false,
     "vocab": "City Words 4",
@@ -410,6 +426,7 @@
   },
   {
     "context": "The City",
+    "icon": "media/img_1/train.jpg",
     "structure": "People travel by",
     "prefix": false,
     "vocab": "Transportation 1",
@@ -430,6 +447,7 @@
   },
   {
     "context": "The City",
+    "icon": "media/img_1/roads.jpg",
     "structure": "People use",
     "prefix": false,
     "vocab": "Transportation 2",
@@ -450,6 +468,7 @@
   },
   {
     "context": "Phonics",
+    "icon": "media/img_1/soy.png",
     "structure": "contains OI/OY",
     "prefix": true,
     "vocab": "Words with OI and OY",
@@ -481,6 +500,7 @@
 
   {
     "context": "Phonics",
+    "icon": "media/img_1/curl.jpg",
     "structure": "contains ur",
     "prefix": true,
     "vocab": "Words with UR",
@@ -500,6 +520,7 @@
   },
   {
     "context": "Phonics",
+    "icon": "media/img_1/bird.jpg",
     "structure": "contains ir",
     "prefix": true,
     "vocab": "Words with IR",
@@ -519,6 +540,7 @@
   },
   {
     "context": "Phonics",
+    "icon": "media/img_1/baby.png",
     "structure": "contains -y",
     "prefix": true,
     "vocab": "2-syllable words ending with -Y",
@@ -538,6 +560,7 @@
   },
   {
     "context": "Phonics",
+    "icon": "media/img_1/cry.png",
     "structure": "contains -y",
     "prefix": true,
     "vocab": "1-syllable words ending with -Y",
