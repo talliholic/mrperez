@@ -161,6 +161,11 @@ var Language = function Language(props) {
     src: "media/topics/youtube.png"
   }), /*#__PURE__*/React.createElement("figcaption", null, "Video"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
+    href: props.data.match
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/match.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Match the Words"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
     href: props.data.readingQuiz
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/reading.jpg"

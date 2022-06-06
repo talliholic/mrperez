@@ -3,6 +3,9 @@
 * {
   font-family: "Special Elite", cursive;
 }
+.items {
+  margin-bottom: 600px;
+}
 input[type="text"] {
   color: blue;
   font-size: 24px;

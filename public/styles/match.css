@@ -3,37 +3,71 @@
 * {
   font-family: "Special Elite", cursive;
 }
+h2 {
+  text-align: center;
+}
+.match {
+  margin-bottom: 85px;
+  border: 1px dotted black;
+  padding-bottom: 20px;
+}
 .item {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: -25px 0;
+}
+figure {
+  border-radius: 25%;
 }
 img {
-  height: 200px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 25%;
+}
+.left img {
+  float: left;
+}
+.right img {
+  float: right;
 }
 figcaption {
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
+  margin: 2px;
 }
 .red {
-  border: 4px solid orange;
+  border: 7px dashed red;
 }
 .white {
-  border: 4px solid white;
+  border: 7px solid white;
 }
 .check,
 .cross {
-  height: 75px;
+  height: 20px;
 }
 .tries {
-  font-size: 32px;
+  font-size: 18px;
 }
 .score {
   position: fixed;
-  right: 20px;
+  left: 50%;
   bottom: 20px;
   font-size: 24px;
   z-index: 1;
   background-color: white;
   border: 1px solid black;
   padding: 9px;
+}
+.instruction {
+  background-color: lightgreen;
+  padding: 7px;
+  font-size: 22px;
+  text-align: justify;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+.feedback {
+  color: blue;
 }

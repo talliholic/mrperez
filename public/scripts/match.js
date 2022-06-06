@@ -315,7 +315,9 @@ var Match = /*#__PURE__*/function (_React$Component) {
 
       return /*#__PURE__*/React.createElement("div", {
         className: "match"
-      }, this.state.loaded && this.state.items.map(function (item, i) {
+      }, /*#__PURE__*/React.createElement("h2", null, this.state.vocab + " ", "-Matching Game"), /*#__PURE__*/React.createElement("div", {
+        className: "instruction"
+      }, "Click to select an image on the left. Then click on an empty space on the right to place it image under the corresponding word."), this.state.loaded && this.state.items.map(function (item, i) {
         return /*#__PURE__*/React.createElement(Item, {
           key: i,
           i: i,
@@ -355,19 +357,25 @@ var Item = /*#__PURE__*/function (_React$Component2) {
 
       return /*#__PURE__*/React.createElement("div", {
         className: "item"
+      }, /*#__PURE__*/React.createElement("figure", {
+        className: "left"
       }, /*#__PURE__*/React.createElement("img", {
         className: this.props.selected ? "red" : "white",
         onClick: function onClick(e) {
           return _this6.props.select(e, _this6.props.i);
         },
         src: this.props.img
-      }), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("img", {
+      }), /*#__PURE__*/React.createElement("figcaption", null, "")), /*#__PURE__*/React.createElement("figure", {
+        className: "right"
+      }, /*#__PURE__*/React.createElement("img", {
         onClick: function onClick(e) {
           return _this6.props.drop(e, _this6.props.i);
         },
         className: "empty",
         src: this.props.empty
-      }), /*#__PURE__*/React.createElement("figcaption", null, this.props.word)), this.props.correct > 0 && /*#__PURE__*/React.createElement("img", {
+      }), /*#__PURE__*/React.createElement("figcaption", null, this.props.word), /*#__PURE__*/React.createElement("div", {
+        className: "feedback"
+      }, this.props.correct > 0 && /*#__PURE__*/React.createElement("img", {
         className: "check",
         src: "media/topics/check.jpg"
       }), !this.props.correct && this.props.tries < 2 && /*#__PURE__*/React.createElement("img", {
@@ -379,7 +387,7 @@ var Item = /*#__PURE__*/function (_React$Component2) {
         className: "tries"
       }, "2nd try!"), this.props.correct === 1 && /*#__PURE__*/React.createElement("div", {
         className: "tries"
-      }, "1st try!"));
+      }, "1st try!"))));
     }
   }]);
 
