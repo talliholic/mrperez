@@ -42,7 +42,7 @@ app.get("/loggedin", (req, res) => {
 });
 
 app.get("", (req, res) => {
-  res.render("transition_skills");
+  res.render("section");
 });
 app.get("/transition", (req, res) => {
   res.redirect("../");
