@@ -20,7 +20,6 @@
       "police station",
       "football stadium"
     ],
-    "wordQuiz": true,
     "readingQuiz": "vocab_reading_quiz?context=Welcome to My Town&index=0",
     "unscrambleWord": "unscramble_word?context=Welcome to My Town&index=0",
     "unscrambleSentence": "unscramble_sentence?context=Welcome to My Town&index=0",
@@ -161,9 +160,12 @@
       "selling the shoes",
       "watching",
       "making a present",
-      "so happy"
+      "very happy"
     ],
     "readingQuiz": "vocab_reading_quiz?context=Technology&index=2",
+    "video": "https://youtu.be/Imug1eBjpZc",
+    "sentences": "sentence_practice?context=Technology&index=2",
+    "listeningQuiz": "vocab_listening_quiz?context=Technology&index=2",
     "unscrambleSentence": "unscramble_sentence?context=Technology&index=2",
     "vocabulary": "vocabulary_ref?context=Technology&index=2",
     "paper": "paper_quiz?context=Technology&index=2",
@@ -180,8 +182,16 @@
     "prefix": false,
     "vocab": "The Elves and the Shoemaker 2",
     "key": "",
-    "words": ["making the shoes", "helping", "working", "so happy"],
+    "words": [
+      "making the shoes",
+      "helping the shoemaker",
+      "working",
+      "so happy"
+    ],
     "readingQuiz": "vocab_reading_quiz?context=Technology&index=3",
+    "video": "https://youtu.be/Imug1eBjpZc",
+    "sentences": "sentence_practice?context=Technology&index=3",
+    "listeningQuiz": "vocab_listening_quiz?context=Technology&index=3",
     "unscrambleSentence": "unscramble_sentence?context=Technology&index=3",
     "vocabulary": "vocabulary_ref?context=Technology&index=3",
     "paper": "paper_quiz?context=Technology&index=3",
