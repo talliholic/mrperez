@@ -196,7 +196,7 @@ var Language = function Language(props) {
     href: props.data.readingQuiz
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/reading.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Reading Quiz"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Reading Quiz"))), props.data.listeningQuiz && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.listeningQuiz
   }, /*#__PURE__*/React.createElement("img", {

@@ -29,13 +29,14 @@ img {
 .left img {
   float: left;
 }
-.right img {
+.right {
   float: right;
 }
 figcaption {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   margin: 2px;
+  width: 125px;
 }
 .red {
   border: 7px dashed red;

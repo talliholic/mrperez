@@ -317,7 +317,7 @@ var Match = /*#__PURE__*/function (_React$Component) {
         className: "match"
       }, /*#__PURE__*/React.createElement("h2", null, this.state.vocab + " ", "-Matching Game"), /*#__PURE__*/React.createElement("div", {
         className: "instruction"
-      }, "Click to select an image on the left. Then click on an empty space on the right to place it image under the corresponding word."), this.state.loaded && this.state.items.map(function (item, i) {
+      }, "Click to select an image on the left. Then click on an empty space on the right to place it. Click on the placed image to change it. You have 2 tries."), this.state.loaded && this.state.items.map(function (item, i) {
         return /*#__PURE__*/React.createElement(Item, {
           key: i,
           i: i,

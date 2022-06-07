@@ -228,13 +228,23 @@ var Pregunta = /*#__PURE__*/function (_React$Component2) {
         }, letra);
       })), /*#__PURE__*/React.createElement("div", {
         className: "retroalimentaci\xF3n"
-      }, this.state.finished && this.state.correct && /*#__PURE__*/React.createElement("img", {
+      }, this.state.finished && this.state.correct && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
         className: "check",
         src: "media/topics/check.jpg"
-      }), this.state.finished && !this.state.correct && /*#__PURE__*/React.createElement("img", {
+      }), /*#__PURE__*/React.createElement("audio", {
+        autoPlay: true
+      }, /*#__PURE__*/React.createElement("source", {
+        src: "media/feedback/felicitaciones.ogg",
+        type: "audio/ogg"
+      }))), this.state.finished && !this.state.correct && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
         className: "cross",
         src: "media/topics/cross.png"
-      })), /*#__PURE__*/React.createElement("div", {
+      }), /*#__PURE__*/React.createElement("audio", {
+        autoPlay: true
+      }, /*#__PURE__*/React.createElement("source", {
+        src: "media/feedback/sigue_practicando.ogg",
+        type: "audio/ogg"
+      })))), /*#__PURE__*/React.createElement("div", {
         className: "keyboard"
       }, ["a", "e", "i", "o", "u"].map(function (key, i) {
         return /*#__PURE__*/React.createElement(Key, {

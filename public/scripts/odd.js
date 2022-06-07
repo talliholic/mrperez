@@ -114,6 +114,8 @@ var Sound = /*#__PURE__*/function (_React$Component2) {
     _this4.updateCorrect = _this4.updateCorrect.bind(_assertThisInitialized(_this4));
     _this4.finished = _this4.finished.bind(_assertThisInitialized(_this4));
     _this4.play = _this4.play.bind(_assertThisInitialized(_this4));
+    _this4.positive = shuffle(["awesome", "great_job", "outstanding"]);
+    _this4.negative = shuffle(["oops", "next_time"]);
     return _this4;
   }
 
@@ -196,13 +198,23 @@ var Sound = /*#__PURE__*/function (_React$Component2) {
         });
       })), /*#__PURE__*/React.createElement("div", {
         className: "feedback"
-      }, this.state.finished && this.state.success && /*#__PURE__*/React.createElement("img", {
+      }, this.state.finished && this.state.success && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
         className: "check",
         src: "media/topics/check.jpg"
-      }), this.state.finished && !this.state.success && /*#__PURE__*/React.createElement("img", {
+      }), /*#__PURE__*/React.createElement("audio", {
+        autoPlay: true
+      }, /*#__PURE__*/React.createElement("source", {
+        src: "media/feedback/" + this.positive[0] + ".ogg",
+        type: "audio/ogg"
+      }))), this.state.finished && !this.state.success && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("img", {
         className: "cross",
         src: "media/topics/cross.png"
-      })));
+      }), /*#__PURE__*/React.createElement("audio", {
+        autoPlay: true
+      }, /*#__PURE__*/React.createElement("source", {
+        src: "media/feedback/" + this.negative[0] + ".ogg",
+        type: "audio/ogg"
+      })))));
     }
   }]);
 
