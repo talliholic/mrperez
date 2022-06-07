@@ -196,6 +196,15 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
     if (vocabQuiz.prefix) {
       vocabQuiz.sentences[i] =
         capFirst(vocabQuiz.words[i]) + " " + vocabQuiz.structure + ".";
+    }
+    if (vocabQuiz.double) {
+      vocabQuiz.sentences[i] =
+        capFirst(vocabQuiz.words[i]) +
+        " " +
+        vocabQuiz.structure +
+        " " +
+        vocabQuiz.complement[i] +
+        ".";
     } else {
       vocabQuiz.sentences[i] =
         vocabQuiz.structure + " " + vocabQuiz.words[i] + ".";

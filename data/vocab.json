@@ -228,6 +228,35 @@
     "match": "match?context=Technology&index=4"
   },
   {
+    "context": "Technology",
+    "structure": "have",
+    "icon": "media/img_1/tricycles.png",
+    "prefix": true,
+    "double": true,
+    "vocab": "Transportation 4",
+    "key": "",
+    "complement": [
+      "two wheels",
+      "three wheels",
+      "one wheel",
+      "more than four wheels",
+      "big and small wheels"
+    ],
+    "words": ["bicycles", "tricycles", "unicycles", "trucks", "wheelchairs"],
+    "wordQuiz": false,
+    "readingQuiz": "vocab_reading_quiz?context=Technology&index=5",
+    "unscrambleWord": "unscramble_word?context=Technology&index=5",
+    "unscrambleSentence": "unscramble_sentence?context=Technology&index=5",
+    "vocabulary": "vocabulary_ref?context=Technology&index=5",
+    "paper": "paper_quiz?context=Technology&index=5",
+    "paperReading": "paper_reading?context=Technology&index=5",
+    "decoding": "decoding?context=Technology&index=5",
+    "unscrambled_paper": "unscrambled_paper?context=Technology&index=5",
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=5",
+    "typing": "typing?context=Technology&index=5",
+    "match": "match?context=Technology&index=5"
+  },
+  {
     "context": "Time",
     "icon": "media/img_1/5 o'clock.png",
     "structure": "It is",
