@@ -169,6 +169,26 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
             check: this.check
           }));
 
+        case "add one digit to six":
+          return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Score, {
+            score: this.score
+          }), /*#__PURE__*/React.createElement(Add1dto6, {
+            update: this.update,
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
+          }));
+
+        case "add one digit to nine":
+          return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Score, {
+            score: this.score
+          }), /*#__PURE__*/React.createElement(Add1dto9, {
+            update: this.update,
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
+          }));
+
         default:
           return /*#__PURE__*/React.createElement("div", null, "No topic set");
       }
@@ -403,7 +423,7 @@ var Add1dto3 = /*#__PURE__*/function (_React$Component6) {
     _classCallCheck(this, Add1dto3);
 
     _this11 = _super6.call(this, props);
-    _this11.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7]);
+    _this11.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
     return _this11;
   }
 
@@ -498,6 +518,222 @@ var Ad1dto3 = /*#__PURE__*/function (_React$Component7) {
   }]);
 
   return Ad1dto3;
+}(React.Component);
+
+var Add1dto6 = /*#__PURE__*/function (_React$Component8) {
+  _inherits(Add1dto6, _React$Component8);
+
+  var _super8 = _createSuper(Add1dto6);
+
+  function Add1dto6(props) {
+    var _this15;
+
+    _classCallCheck(this, Add1dto6);
+
+    _this15 = _super8.call(this, props);
+    _this15.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    return _this15;
+  }
+
+  _createClass(Add1dto6, [{
+    key: "render",
+    value: function render() {
+      var _this16 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "quiz"
+      }, /*#__PURE__*/React.createElement("h1", null, "Adding 1 Digit Numbers by 4 to 6"), /*#__PURE__*/React.createElement("div", {
+        id: "instruction"
+      }, "Use any strategy to find the sum."), this.addends.map(function (addend, i) {
+        return /*#__PURE__*/React.createElement(Ad1dto6, {
+          key: i,
+          i: i,
+          addend: addend,
+          update: _this16.props.update,
+          score: _this16.props.score,
+          processResult: _this16.props.processResult,
+          check: _this16.props.check
+        });
+      }));
+    }
+  }]);
+
+  return Add1dto6;
+}(React.Component);
+
+var Ad1dto6 = /*#__PURE__*/function (_React$Component9) {
+  _inherits(Ad1dto6, _React$Component9);
+
+  var _super9 = _createSuper(Ad1dto6);
+
+  function Ad1dto6(props) {
+    var _this17;
+
+    _classCallCheck(this, Ad1dto6);
+
+    _this17 = _super9.call(this, props);
+    _this17.addend2 = 4 + Math.floor(Math.random() * 3);
+    _this17.answer = _this17.props.addend + _this17.addend2;
+    _this17.state = {
+      correct: false,
+      started: false
+    };
+    _this17.quizzes = [];
+    return _this17;
+  }
+
+  _createClass(Ad1dto6, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      if (state.correct !== this.state.correct) {
+        this.props.processResult(this.quizzes, "Adding");
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this18 = this;
+
+      return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
+        className: "sentence"
+      }, this.props.addend + " ", " + ", this.addend2 + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
+        onChange: function onChange(e) {
+          return _this18.props.check(e, _this18.answer, _this18.props.i, function () {
+            return _this18.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this18.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
+        type: "number"
+      })), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
+        className: "check",
+        src: "media/topics/check.jpg"
+      }), this.state.started && this.state.correct === false && /*#__PURE__*/React.createElement("img", {
+        className: "cross",
+        src: "media/topics/cross.png"
+      }));
+    }
+  }]);
+
+  return Ad1dto6;
+}(React.Component);
+
+var Add1dto9 = /*#__PURE__*/function (_React$Component10) {
+  _inherits(Add1dto9, _React$Component10);
+
+  var _super10 = _createSuper(Add1dto9);
+
+  function Add1dto9(props) {
+    var _this19;
+
+    _classCallCheck(this, Add1dto9);
+
+    _this19 = _super10.call(this, props);
+    _this19.addends = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    return _this19;
+  }
+
+  _createClass(Add1dto9, [{
+    key: "render",
+    value: function render() {
+      var _this20 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "quiz"
+      }, /*#__PURE__*/React.createElement("h1", null, "Adding 1 Digit Numbers by 7 to 9"), /*#__PURE__*/React.createElement("div", {
+        id: "instruction"
+      }, "Use any strategy to find the sum."), this.addends.map(function (addend, i) {
+        return /*#__PURE__*/React.createElement(Ad1dto9, {
+          key: i,
+          i: i,
+          addend: addend,
+          update: _this20.props.update,
+          score: _this20.props.score,
+          processResult: _this20.props.processResult,
+          check: _this20.props.check
+        });
+      }));
+    }
+  }]);
+
+  return Add1dto9;
+}(React.Component);
+
+var Ad1dto9 = /*#__PURE__*/function (_React$Component11) {
+  _inherits(Ad1dto9, _React$Component11);
+
+  var _super11 = _createSuper(Ad1dto9);
+
+  function Ad1dto9(props) {
+    var _this21;
+
+    _classCallCheck(this, Ad1dto9);
+
+    _this21 = _super11.call(this, props);
+    _this21.addend2 = 7 + Math.floor(Math.random() * 3);
+    _this21.answer = _this21.props.addend + _this21.addend2;
+    _this21.state = {
+      correct: false,
+      started: false
+    };
+    _this21.quizzes = [];
+    return _this21;
+  }
+
+  _createClass(Ad1dto9, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      if (state.correct !== this.state.correct) {
+        this.props.processResult(this.quizzes, "Adding");
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this22 = this;
+
+      return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
+        className: "sentence"
+      }, this.props.addend + " ", " + ", this.addend2 + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
+        onChange: function onChange(e) {
+          return _this22.props.check(e, _this22.answer, _this22.props.i, function () {
+            return _this22.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this22.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
+        type: "number"
+      })), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
+        className: "check",
+        src: "media/topics/check.jpg"
+      }), this.state.started && this.state.correct === false && /*#__PURE__*/React.createElement("img", {
+        className: "cross",
+        src: "media/topics/cross.png"
+      }));
+    }
+  }]);
+
+  return Ad1dto9;
 }(React.Component);
 
 var Score = function Score(props) {

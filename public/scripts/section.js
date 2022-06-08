@@ -258,6 +258,21 @@ var Maths = function Maths() {
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/doubles.jpg"
   }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=add one digit to three"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/3.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 3 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=add one digit to six"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/6.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 6 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=add one digit to nine"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/9.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 9 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     target: "_blank",
     className: "link",
     href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
