@@ -73,6 +73,8 @@ var Section = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       if (subject === "Math" && topic === "Adding") {
         return /*#__PURE__*/React.createElement(Maths, null);
+      } else if (subject === "Math" && topic === "Subtracting") {
+        return /*#__PURE__*/React.createElement(MathsSub, null);
       } else if (subject === "Language") {
         return this.state.loaded && /*#__PURE__*/React.createElement(Language, {
           data: this.state.section[0]
@@ -100,6 +102,11 @@ var Menu = function Menu(props) {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Transition Skills"), /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "section?subject=Math&topic=Subtracting"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/Subtraction_menu.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Math Subtraction"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "section?subject=Math&topic=Adding"
   }, /*#__PURE__*/React.createElement("img", {
@@ -301,6 +308,17 @@ var Maths = function Maths() {
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/worksheet.png"
   }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing")))));
+};
+
+var MathsSub = function MathsSub() {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Subtracting"), /*#__PURE__*/React.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "math-quizzes?topic=subtract%20ten%20less"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/img_1/ten.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less")))));
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Section, null), document.getElementById("app"));
