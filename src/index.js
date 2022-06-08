@@ -208,6 +208,9 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
     } else if (vocabQuiz.double && !vocabQuiz.prefix) {
       vocabQuiz.sentences[i] =
         capFirst(vocabQuiz.complement[i]) + " " + vocabQuiz.words[i] + ".";
+    } else if (vocabQuiz.prefix) {
+      vocabQuiz.sentences[i] =
+        capFirst(vocabQuiz.words[i]) + " " + vocabQuiz.structure + ".";
     } else {
       vocabQuiz.sentences[i] =
         vocabQuiz.structure + " " + vocabQuiz.words[i] + ".";
