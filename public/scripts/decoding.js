@@ -114,7 +114,12 @@ var Decoding = /*#__PURE__*/function (_React$Component) {
           className: "score"
         }, "Score:", " ", Math.round(this.state.answers.reduce(function (partialSum, a) {
           return partialSum + a;
-        }, 0) / this.state.sentences.length * 100)), /*#__PURE__*/React.createElement("h1", null, this.state.vocab), /*#__PURE__*/React.createElement("div", {
+        }, 0) / this.state.sentences.length * 100), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("button", {
+          className: "play_again",
+          onClick: function onClick() {
+            return location.reload();
+          }
+        }, "Play Again")), /*#__PURE__*/React.createElement("h1", null, this.state.vocab), /*#__PURE__*/React.createElement("div", {
           id: "instruction"
         }, "Click on the microphone and read the sentence out loud. Don't stop while reading."), this.state.sentences.map(function (sentence, i) {
           return /*#__PURE__*/React.createElement(Block, {

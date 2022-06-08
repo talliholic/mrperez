@@ -108,7 +108,12 @@ var Typing = /*#__PURE__*/function (_React$Component) {
           className: "score"
         }, "Score:", " ", Math.round(this.state.answers.reduce(function (partialSum, a) {
           return partialSum + a;
-        }, 0) / this.state.sentences.length * 100)), this.state.sentences.map(function (sentence, i) {
+        }, 0) / this.state.sentences.length * 100), " ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("button", {
+          className: "play_again",
+          onClick: function onClick() {
+            return location.reload();
+          }
+        }, "Play Again")), this.state.sentences.map(function (sentence, i) {
           return /*#__PURE__*/React.createElement(Item, {
             key: i,
             i: i,

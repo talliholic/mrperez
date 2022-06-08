@@ -203,17 +203,19 @@
   },
   {
     "context": "Technology",
-    "structure": "You can travel in",
-    "icon": "media/img_1/a cable car.jpg",
+    "structure": "You can travel",
+    "icon": "media/img_1/cable car.jpg",
     "prefix": false,
+    "double": true,
     "vocab": "Transportation 3",
     "key": "",
-    "words": [
-      "an underground train",
-      "a hydrofoil",
-      "a cable car",
-      "a tractor"
+    "complement": [
+      "You can travel under the city in an",
+      "You can travel on the water in a",
+      "You can travel on air on a",
+      "You can travel on land in a"
     ],
+    "words": ["underground train", "hydrofoil", "cable car", "tractor"],
     "wordQuiz": false,
     "readingQuiz": "vocab_reading_quiz?context=Technology&index=4",
     "unscrambleWord": "unscramble_word?context=Technology&index=4",
@@ -240,7 +242,7 @@
       "three wheels",
       "one wheel",
       "more than four wheels",
-      "big and small wheels"
+      "wheels of different size"
     ],
     "words": ["bicycles", "tricycles", "unicycles", "trucks", "wheelchairs"],
     "wordQuiz": false,

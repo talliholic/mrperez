@@ -332,7 +332,12 @@ var Match = /*#__PURE__*/function (_React$Component) {
         });
       }), /*#__PURE__*/React.createElement("div", {
         className: "score"
-      }, "Score: ", this.score().toString()));
+      }, "Score: ", this.score().toString(), " ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("button", {
+        className: "play_again",
+        onClick: function onClick() {
+          return location.reload();
+        }
+      }, "Play Again")));
     }
   }]);
 

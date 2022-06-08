@@ -197,7 +197,7 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
       vocabQuiz.sentences[i] =
         capFirst(vocabQuiz.words[i]) + " " + vocabQuiz.structure + ".";
     }
-    if (vocabQuiz.double) {
+    if (vocabQuiz.double && vocabQuiz.prefix) {
       vocabQuiz.sentences[i] =
         capFirst(vocabQuiz.words[i]) +
         " " +
@@ -205,6 +205,9 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
         " " +
         vocabQuiz.complement[i] +
         ".";
+    } else if (vocabQuiz.double && !vocabQuiz.prefix) {
+      vocabQuiz.sentences[i] =
+        capFirst(vocabQuiz.complement[i]) + " " + vocabQuiz.words[i] + ".";
     } else {
       vocabQuiz.sentences[i] =
         vocabQuiz.structure + " " + vocabQuiz.words[i] + ".";

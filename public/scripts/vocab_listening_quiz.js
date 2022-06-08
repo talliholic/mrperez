@@ -87,7 +87,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
       if (dataLoaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, /*#__PURE__*/React.createElement("h1", null, item.context), /*#__PURE__*/React.createElement("h2", {
+        }, /*#__PURE__*/React.createElement("h1", null, item.vocab), /*#__PURE__*/React.createElement("h2", {
           className: "instruction"
         }, "Listen to the sentence and click on the related image."), item.vocabu.map(function (word, i) {
           return /*#__PURE__*/React.createElement(Question, {
@@ -292,7 +292,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
       }, 0);
       var score = Math.round(sum * 100 / this.props.getResult().length);
       var taken = this.state.quizzes.filter(function (quiz) {
-        return quiz.context === _this10.props.data.context && quiz.structure === _this10.props.data.structure && quiz.type === type;
+        return quiz.context === _this10.props.data.context && quiz.structure === _this10.props.data.vocab && quiz.type === type;
       });
 
       if (taken.length > 0) {
@@ -314,7 +314,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
           method: "POST",
           body: JSON.stringify({
             context: this.props.data.context,
-            structure: this.props.data.structure,
+            structure: this.props.data.vocab,
             type: type,
             path: this.props.path,
             grade: score
@@ -330,7 +330,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
       }
 
       alert("You scored " + score + " points.");
-      location.reload();
+      window.location.href = "section?subject=Language&topic=" + this.props.data.vocab;
     }
   }, {
     key: "render",

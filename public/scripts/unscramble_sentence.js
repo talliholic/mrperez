@@ -84,7 +84,7 @@ var Practice = /*#__PURE__*/function (_React$Component) {
       if (this.state.loaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "practice"
-        }, /*#__PURE__*/React.createElement("h1", null, this.state.data.context), /*#__PURE__*/React.createElement("h2", {
+        }, /*#__PURE__*/React.createElement("h1", null, this.state.data.vocab), /*#__PURE__*/React.createElement("h2", {
           className: "instruction"
         }, "Look at the image and click on each word to make a sentence. Check your answers at the bottom."), this.state.data.img.map(function (img, i) {
           return /*#__PURE__*/React.createElement(Question, {
@@ -287,7 +287,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
       }, 0);
       var score = Math.round(sum * 100 / this.props.getResult().length);
       var taken = this.state.quizzes.filter(function (quiz) {
-        return quiz.context === _this11.props.data.context && quiz.structure === _this11.props.data.structure && quiz.type === type;
+        return quiz.context === _this11.props.data.context && quiz.structure === _this11.props.data.vocab && quiz.type === type;
       });
 
       if (taken.length > 0) {
@@ -309,7 +309,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
           method: "POST",
           body: JSON.stringify({
             context: this.props.data.context,
-            structure: this.props.data.structure,
+            structure: this.props.data.vocab,
             type: type,
             path: this.props.path,
             grade: score
@@ -325,7 +325,7 @@ var Check = /*#__PURE__*/function (_React$Component4) {
       }
 
       alert("You scored " + score + " points.");
-      location.reload();
+      window.location.href = "section?subject=Language&topic=" + this.props.data.vocab;
     }
   }, {
     key: "render",
