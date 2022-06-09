@@ -280,6 +280,16 @@ var Maths = function Maths() {
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/9.jpg"
   }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 9 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=add ten more"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/ten-more.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add Ten More "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=add to ten"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/one-to-ten.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add 1 Number to Ten "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     target: "_blank",
     className: "link",
     href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
