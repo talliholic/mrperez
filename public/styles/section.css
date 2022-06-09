@@ -14,7 +14,8 @@ h1,
 h2 {
   text-align: center;
   padding: 5px;
-  background-color: lightgreen;
+  background-color: #f0f0f0;
+  color: #1d4068;
 }
 img {
   height: 150px;
