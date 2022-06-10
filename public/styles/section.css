@@ -9,6 +9,9 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+#app {
+  border: 1px dotted #1d4068;
+}
 
 h1,
 h2 {
