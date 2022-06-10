@@ -44,3 +44,11 @@ figcaption {
   background-color: lightgoldenrodyellow;
   font-weight: bold;
 }
+.cross,
+.check {
+  height: 20px;
+  border: 1px solid white;
+}
+.feedback {
+  display: inline-block;
+}

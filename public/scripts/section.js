@@ -2,6 +2,12 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -43,28 +49,70 @@ var Section = /*#__PURE__*/function (_React$Component) {
       topics: [],
       sections: [],
       section: [],
-      loaded: false
+      loaded: false,
+      quizzes: [],
+      loggedIn: false
     };
+    _this.passed = _this.passed.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(Section, [{
+    key: "passed",
+    value: function passed(path) {
+      var passed = this.state.quizzes.some(function (quiz) {
+        return quiz.path === path && quiz.grade > 74.5;
+      });
+      return passed;
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      var _this2 = this;
+
+      if (state.loggedIn !== this.state.loggedIn) {
+        if (this.state.loggedIn) {
+          fetch("/quizzes").then(function (res) {
+            return res.json();
+          }).then(function (json) {
+            _this2.setState(function (prev) {
+              return _objectSpread(_objectSpread({}, prev), {}, {
+                quizzes: json
+              });
+            });
+          });
+        }
+      }
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
+      var _this3 = this;
 
       fetch("/vocabulary").then(function (res) {
         return res.json();
       }).then(function (json) {
-        _this2.setState({
-          topics: json.topics,
-          sections: context ? json.vocab.filter(function (vocab) {
-            return vocab.context === context;
-          }) : [],
-          section: json.vocab.filter(function (section) {
-            return section.vocab === topic;
-          }),
-          loaded: true
+        _this3.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            topics: json.topics,
+            sections: context ? json.vocab.filter(function (vocab) {
+              return vocab.context === context;
+            }) : [],
+            section: json.vocab.filter(function (section) {
+              return section.vocab === topic;
+            }),
+            loaded: true
+          });
+        });
+
+        fetch("/loggedIn").then(function (res) {
+          return res.json();
+        }).then(function (json) {
+          _this3.setState(function (prev) {
+            return _objectSpread(_objectSpread({}, prev), {}, {
+              loggedIn: json.loggedIn
+            });
+          });
         });
       });
     }
@@ -72,12 +120,20 @@ var Section = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       if (subject === "Math" && topic === "Adding") {
-        return /*#__PURE__*/React.createElement(Maths, null);
+        return /*#__PURE__*/React.createElement(Maths, {
+          passed: this.passed,
+          loggedIn: this.state.loggedIn
+        });
       } else if (subject === "Math" && topic === "Subtracting") {
-        return /*#__PURE__*/React.createElement(MathsSub, null);
+        return /*#__PURE__*/React.createElement(MathsSub, {
+          passed: this.passed,
+          loggedIn: this.state.loggedIn
+        });
       } else if (subject === "Language") {
         return this.state.loaded && /*#__PURE__*/React.createElement(Language, {
-          data: this.state.section[0]
+          passed: this.passed,
+          data: this.state.section[0],
+          loggedIn: this.state.loggedIn
         });
       } else if (context) {
         return this.state.loaded && /*#__PURE__*/React.createElement(Main, {
@@ -97,6 +153,22 @@ var Section = /*#__PURE__*/function (_React$Component) {
 
   return Section;
 }(React.Component);
+
+var Feedback = function Feedback(props) {
+  if (props.loggedIn) {
+    return /*#__PURE__*/React.createElement("div", {
+      className: "feedback"
+    }, props.passed && /*#__PURE__*/React.createElement("img", {
+      className: "check",
+      src: "media/topics/check.jpg"
+    }), !props.passed && /*#__PURE__*/React.createElement("img", {
+      className: "cross",
+      src: "media/topics/cross.png"
+    }));
+  } else {
+    return /*#__PURE__*/React.createElement("div", null);
+  }
+};
 
 var Menu = function Menu(props) {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Transition Skills"), /*#__PURE__*/React.createElement("div", {
@@ -198,37 +270,58 @@ var Language = function Language(props) {
     href: props.data.match
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/match.png"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Match the Words"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Match the Words")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.match),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.readingQuiz
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/reading.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Reading Quiz"))), props.data.listeningQuiz && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Reading Quiz")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.readingQuiz),
+    loggedIn: props.loggedIn
+  })), props.data.listeningQuiz && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.listeningQuiz
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/listening.png"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Listening Quiz"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Listening Quiz")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.listeningQuiz),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.unscrambleSentence
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/unscramble-sentence.png"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Unscramble the Sentence"))), props.data.unscrambleWord && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Unscramble the Sentence")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.unscrambleSentence),
+    loggedIn: props.loggedIn
+  })), props.data.unscrambleWord && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.unscrambleWord
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/unscramble-word.png"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Unscramble the Word"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Unscramble the Word")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.unscrambleWord),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.typing
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/typing.png"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Typing"))), props.data.decoding && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Typing")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.typing),
+    loggedIn: props.loggedIn
+  })), props.data.decoding && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.decoding
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/decoding.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Decoding"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Decoding")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed(props.data.decoding),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: props.data.paper
   }, /*#__PURE__*/React.createElement("img", {
@@ -251,7 +344,7 @@ var Language = function Language(props) {
   }), /*#__PURE__*/React.createElement("figcaption", null, "Paper Unscramble Words")))));
 };
 
-var Maths = function Maths() {
+var Maths = function Maths(props) {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Adding"), /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
@@ -259,37 +352,58 @@ var Maths = function Maths() {
     href: "/math-quizzes?topic=doubles"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/doubles-missing.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Sum"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Sum")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=doubles"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "/math-quizzes?topic=doubles%20Missing"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/doubles.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing"))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=doubles%20Missing"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "/math-quizzes?topic=add one digit to three"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/3.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 3 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 3 ")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add one digit to three"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "/math-quizzes?topic=add one digit to six"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/6.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 6 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 6 ")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add one digit to six"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "/math-quizzes?topic=add one digit to nine"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/9.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 9 "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add One Digit to 9 ")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add one digit to nine"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "/math-quizzes?topic=add ten more"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/ten-more.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Add Ten More "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add Ten More ")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add ten more"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
     href: "/math-quizzes?topic=add to ten"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/one-to-ten.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "Add 1 Number to Ten "))), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add 1 Number to Ten ")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add to ten"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     target: "_blank",
     className: "link",
     href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
@@ -320,7 +434,7 @@ var Maths = function Maths() {
   }), /*#__PURE__*/React.createElement("figcaption", null, "Doubles Missing")))));
 };
 
-var MathsSub = function MathsSub() {
+var MathsSub = function MathsSub(props) {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Subtracting"), /*#__PURE__*/React.createElement("div", {
     className: "container"
   }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
@@ -328,7 +442,10 @@ var MathsSub = function MathsSub() {
     href: "math-quizzes?topic=subtract%20ten%20less"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/img_1/ten.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less")))));
+  }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=subtract%20ten%20less"),
+    loggedIn: props.loggedIn
+  }))));
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Section, null), document.getElementById("app"));
