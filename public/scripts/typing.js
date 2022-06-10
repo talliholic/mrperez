@@ -224,7 +224,7 @@ var Item = /*#__PURE__*/function (_React$Component2) {
     value: function check(e) {
       this.setState(function (prev) {
         return _objectSpread(_objectSpread({}, prev), {}, {
-          missing: e.target.value.trim()
+          missing: e.target.value.trim().toLowerCase()
         });
       });
     }
@@ -281,11 +281,13 @@ var Item = /*#__PURE__*/function (_React$Component2) {
         onChange: this.check,
         name: "missing",
         type: "text",
+        value: this.state.missing,
         required: true
       }), "."), this.props.prefix && /*#__PURE__*/React.createElement("label", null, " ", /*#__PURE__*/React.createElement("input", {
         onChange: this.check,
         name: "missing",
         type: "text",
+        value: this.state.missing,
         required: true
       }), " ", this.state.sentenceArr.join(" ")), this.state.missing.length > 0 && this.state.correct && /*#__PURE__*/React.createElement("img", {
         className: "check",
