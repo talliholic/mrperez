@@ -61,38 +61,19 @@ var Section = /*#__PURE__*/function (_React$Component) {
     key: "passed",
     value: function passed(path) {
       var passed = this.state.quizzes.some(function (quiz) {
-        return quiz.path === path && quiz.grade > 74.5;
+        return quiz.path === path && quiz.grade >= 75;
       });
       return passed;
     }
   }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(props, state) {
-      var _this2 = this;
-
-      if (state.loggedIn !== this.state.loggedIn) {
-        if (this.state.loggedIn) {
-          fetch("/quizzes").then(function (res) {
-            return res.json();
-          }).then(function (json) {
-            _this2.setState(function (prev) {
-              return _objectSpread(_objectSpread({}, prev), {}, {
-                quizzes: json
-              });
-            });
-          });
-        }
-      }
-    }
-  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this3 = this;
+      var _this2 = this;
 
       fetch("/vocabulary").then(function (res) {
         return res.json();
       }).then(function (json) {
-        _this3.setState(function (prev) {
+        _this2.setState(function (prev) {
           return _objectSpread(_objectSpread({}, prev), {}, {
             topics: json.topics,
             sections: context ? json.vocab.filter(function (vocab) {
@@ -105,12 +86,19 @@ var Section = /*#__PURE__*/function (_React$Component) {
           });
         });
 
-        fetch("/loggedIn").then(function (res) {
+        fetch("/quizzes").then(function (res) {
           return res.json();
         }).then(function (json) {
-          _this3.setState(function (prev) {
+          var loggedIn = false;
+
+          if (json.length > 0) {
+            loggedIn = true;
+          }
+
+          _this2.setState(function (prev) {
             return _objectSpread(_objectSpread({}, prev), {}, {
-              loggedIn: json.loggedIn
+              quizzes: json,
+              loggedIn: loggedIn
             });
           });
         });
