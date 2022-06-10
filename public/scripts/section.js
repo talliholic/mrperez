@@ -60,9 +60,14 @@ var Section = /*#__PURE__*/function (_React$Component) {
   _createClass(Section, [{
     key: "passed",
     value: function passed(path) {
-      var passed = this.state.quizzes.some(function (quiz) {
-        return quiz.path === path && quiz.grade >= 75;
-      });
+      var passed = false;
+
+      if (this.state.quizzes.length > 0) {
+        passed = this.state.quizzes.some(function (quiz) {
+          return quiz.path === path && quiz.grade >= 75;
+        });
+      }
+
       return passed;
     }
   }, {
