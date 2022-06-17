@@ -75,13 +75,11 @@ router.get("/leaderboard", auth, async (req, res) => {
 
 router.post("/users", async (req, res) => {
   const user = new User(req.body);
-
   try {
     await user.save();
-    const token = await user.generateAuthToken();
-    res.status(201).send({ user, token });
+    res.status(201).send({ user });
   } catch (e) {
-    res.status(400).send({ error: "There was an error" });
+    res.status(400).send({ error: e });
   }
 });
 

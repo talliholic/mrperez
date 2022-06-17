@@ -224,7 +224,7 @@ var Item = /*#__PURE__*/function (_React$Component2) {
     value: function check(e) {
       this.setState(function (prev) {
         return _objectSpread(_objectSpread({}, prev), {}, {
-          missing: e.target.value.trim().toLowerCase()
+          missing: e.target.value.trim()
         });
       });
     }
