@@ -890,7 +890,7 @@
   {
     "context": "Phonics",
     "structure": "has the sound",
-    "icon": "media/img_1/clown.jpg",
+    "icon": "media/img_1/chair.jpg",
     "prefix": true,
     "double": true,
     "vocab": "Words with IGH, AIR and EAR",
@@ -915,24 +915,24 @@
       "ear",
       "light",
       "chair",
-      "farmer",
+      "tear",
       "sight",
       "stairs",
-      "dancer",
-      "sight",
+      "fear",
+      "thigh",
       "hair",
-      "water"
+      "year"
     ],
     "wordQuiz": false,
-    "readingQuiz": "vocab_reading_quiz?context=Phonics&index=5",
-    "unscrambleWord": "unscramble_word?context=Phonics&index=5",
-    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=5",
-    "vocabulary": "vocabulary_ref?context=Phonics&index=5",
-    "paper": "paper_quiz?context=Phonics&index=5",
-    "paperReading": "paper_reading?context=Phonics&index=5",
-    "unscrambled_paper": "unscrambled_paper?context=Phonics&index=5",
-    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=5",
-    "typing": "typing?context=Phonics&index=5",
-    "match": "match?context=Phonics&index=5"
+    "readingQuiz": "vocab_reading_quiz?context=Phonics&index=6",
+    "unscrambleWord": "unscramble_word?context=Phonics&index=6",
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=6",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=6",
+    "paper": "paper_quiz?context=Phonics&index=6",
+    "paperReading": "paper_reading?context=Phonics&index=6",
+    "unscrambled_paper": "unscrambled_paper?context=Phonics&index=6",
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=6",
+    "typing": "typing?context=Phonics&index=6",
+    "match": "match?context=Phonics&index=6"
   }
 ]
