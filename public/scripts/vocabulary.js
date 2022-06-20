@@ -52,7 +52,7 @@ var Vocabulary = /*#__PURE__*/function (_React$Component) {
       if (this.state.items !== state.items) {
         this.setState(function (prev) {
           return _objectSpread(_objectSpread({}, prev), {}, {
-            unique: prev.items.complement.filter(onlyUnique)
+            unique: prev.items.complement ? prev.items.complement.filter(onlyUnique) : []
           });
         });
       }
