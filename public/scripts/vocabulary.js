@@ -2,6 +2,12 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -34,12 +40,24 @@ var Vocabulary = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      items: []
+      items: [],
+      unique: []
     };
     return _this;
   }
 
   _createClass(Vocabulary, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      if (this.state.items !== state.items) {
+        this.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            unique: prev.items.complement.filter(onlyUnique)
+          });
+        });
+      }
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
@@ -48,8 +66,10 @@ var Vocabulary = /*#__PURE__*/function (_React$Component) {
       fetch("/vocab_quiz/" + searchParams.get("context") + "/" + searchParams.get("index")).then(function (res) {
         return res.json();
       }).then(function (json) {
-        _this2.setState({
-          items: json
+        _this2.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            items: json
+          });
         });
       });
     }
@@ -60,7 +80,14 @@ var Vocabulary = /*#__PURE__*/function (_React$Component) {
 
       return /*#__PURE__*/React.createElement("div", null, this.state.items.words && /*#__PURE__*/React.createElement("div", {
         className: "container"
-      }, this.state.items.prefix && /*#__PURE__*/React.createElement("h1", null, "...", this.state.items.structure), !this.state.items.prefix && /*#__PURE__*/React.createElement("h1", null, this.state.items.structure, "..."), /*#__PURE__*/React.createElement("div", {
+      }, this.state.items.prefix && this.state.items.context !== "Assessment" && /*#__PURE__*/React.createElement("h1", null, "...", this.state.items.structure), !this.state.items.prefix && this.state.items.context !== "Assessment" && /*#__PURE__*/React.createElement("h1", null, this.state.items.structure, "..."), this.state.items.context === "Assessment" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, this.state.items.vocab), /*#__PURE__*/React.createElement("div", {
+        className: "stru"
+      }, this.state.unique.map(function (structure, i) {
+        return /*#__PURE__*/React.createElement("span", {
+          className: "struc",
+          key: i
+        }, cap(structure));
+      }))), /*#__PURE__*/React.createElement("div", {
         className: "words"
       }, this.state.items.words.map(function (word, i) {
         return /*#__PURE__*/React.createElement(Word, {
@@ -84,3 +111,11 @@ var Word = function Word(props) {
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Vocabulary, null), document.getElementById("app"));
+
+function onlyUnique(value, index, self) {
+  return self.indexOf(value) === index;
+}
+
+function cap(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}

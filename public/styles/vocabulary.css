@@ -5,6 +5,7 @@
 }
 h1 {
   text-align: center;
+  margin-top: 20px;
 }
 .words {
   display: flex;
@@ -24,4 +25,16 @@ figcaption {
   font-size: 24px;
   text-align: center;
   margin: 5px;
+}
+.stru {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.struc {
+  font-size: 24px;
+  margin: 10px;
+  padding: 5px;
+  background-color: lightgreen;
+  border: 1px solid black;
 }

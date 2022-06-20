@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,json,hbs,css",
-    "watch": "npx babel react/typing.js --out-file=public/scripts/typing.js --presets=@babel/preset-env,@babel/preset-react --watch"
+    "watch": "npx babel react/vocabulary.js --out-file=public/scripts/vocabulary.js --presets=@babel/preset-env,@babel/preset-react --watch"
   },
   "keywords": [],
   "author": "",
