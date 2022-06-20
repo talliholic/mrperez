@@ -46,14 +46,16 @@ ul {
   padding: 3px 7px;
   text-align: justify;
 }
+.links {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+}
 .list:hover {
   background-color: #f0f0f0;
 }
 .bg img {
   height: 600px;
-}
-a {
-  text-align: center;
 }
 .lines {
   border-left: 1px solid #ffaa9f;

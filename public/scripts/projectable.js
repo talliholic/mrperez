@@ -160,13 +160,15 @@ var Instruction = /*#__PURE__*/function (_React$Component3) {
     value: function render() {
       return /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", {
         className: "list"
-      }, this.props.data.command, " ", /*#__PURE__*/React.createElement("br", null), this.props.data.resources && this.props.data.resources.map(function (resource, i) {
+      }, this.props.data.command, " ", /*#__PURE__*/React.createElement("div", {
+        className: "links"
+      }, this.props.data.resources && this.props.data.resources.map(function (resource, i) {
         return /*#__PURE__*/React.createElement("a", {
           target: "_blank",
           key: i,
           href: resource.link
         }, resource.type);
-      })));
+      }))));
     }
   }]);
 
