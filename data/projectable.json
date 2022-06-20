@@ -62,6 +62,10 @@
         "command": "Look at the vocabulary and make sentences. Write them in your language notebook on page 25. Leave a space to illustrate each sentence.",
         "resources": [
           {
+            "type": "Vocabulary",
+            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Technology&index=4"
+          },
+          {
             "type": "Page 25",
             "link": "media/textbooks/l25.png"
           }
