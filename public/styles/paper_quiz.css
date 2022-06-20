@@ -3,6 +3,9 @@
 * {
   font-family: "Special Elite", cursive;
 }
+h1 {
+  text-align: center;
+}
 #quiz {
   display: blocK;
   margin: 10px;
@@ -14,7 +17,7 @@
 .word {
   margin: 7px 20px;
   display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .image {
@@ -29,4 +32,30 @@ hr {
 i {
   font-size: 24px;
   margin: 0;
+}
+.stru {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.struc {
+  font-size: 22px;
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+p {
+  font-size: 19px;
+  text-align: center;
+  text-decoration: underline;
+}
+#header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#date {
+  margin-right: 150px;
 }

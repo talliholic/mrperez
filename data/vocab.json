@@ -7,6 +7,7 @@
     "double": false,
     "vocab": "The Clock",
     "key": "",
+    "complement": ["It is"],
     "words": [
       "8 o'clock",
       "8 thirty",
@@ -14,10 +15,7 @@
       "4 o'clock",
       "6 o'clock",
       "6 thirty",
-      "1 thirty",
-      "1 o'clock",
-      "10 o'clock",
-      "10 thirty"
+      "1 thirty"
     ],
     "wordQuiz": false,
     "readingQuiz": "vocab_reading_quiz?context=Assessment&index=0",
@@ -47,11 +45,7 @@
       "this is",
       "I go to school in the",
       "I do homework in the",
-      "I sleep at",
-      "this is the",
-      "I watch tv in the",
-      "this is the",
-      "this is"
+      "I sleep at"
     ],
     "words": [
       "the 1st day",
@@ -60,11 +54,7 @@
       "the 5th day",
       "morning",
       "afternoon",
-      "night",
-      "12th month",
-      "evening",
-      "6th month",
-      "the 7th day"
+      "night"
     ],
     "wordQuiz": false,
     "readingQuiz": "vocab_reading_quiz?context=Assessment&index=1",
@@ -90,28 +80,20 @@
     "complement": [
       "an example of technology is",
       "i am wearing",
-      "i am wearing",
       "the shoemaker is",
       "the elves are",
       "the shoemaker is",
-      "the shoemaker is",
-      "the shoemaker is",
       "i am wearing",
-      "an example of technology is",
       "an example of technology is"
     ],
     "words": [
       "internet",
-      "a shirt",
       "glasses",
       "selling the shoes",
       "making the shoes",
       "sleeping",
-      "watching",
-      "making a present",
       "a hat",
-      "a phone",
-      "a computer"
+      "a phone"
     ],
     "wordQuiz": true,
     "readingQuiz": "vocab_reading_quiz?context=Assessment&index=2",
