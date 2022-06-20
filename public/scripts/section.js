@@ -397,6 +397,14 @@ var Maths = function Maths(props) {
     passed: props.passed("math-quizzes?topic=add to ten"),
     loggedIn: props.loggedIn
   })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "/math-quizzes?topic=add to a ten"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/mult_10.jpg"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "Add 1 Number to a Multiple of Ten ")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add to a ten"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     target: "_blank",
     className: "link",
     href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
