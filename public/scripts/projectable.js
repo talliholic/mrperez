@@ -2,6 +2,12 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -35,7 +41,8 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.state = {
       items: [],
-      dataLoaded: false
+      dataLoaded: false,
+      loggedIn: false
     };
     return _this;
   }
@@ -50,7 +57,20 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
       }).then(function (json) {
         _this2.setState({
           items: json,
-          dataLoaded: true
+          dataLoaded: true,
+          loggedIn: false
+        });
+
+        fetch("/loggedIn").then(function (res) {
+          return res.json();
+        }).then(function (res) {
+          if (res.loggedIn) {
+            _this2.setState(function (prev) {
+              return _objectSpread(_objectSpread({}, prev), {}, {
+                loggedIn: true
+              });
+            });
+          }
         });
       });
     }
@@ -61,7 +81,7 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
           dataLoaded = _this$state.dataLoaded,
           items = _this$state.items;
 
-      if (dataLoaded) {
+      if (dataLoaded && this.state.loggedIn) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
         }, items.map(function (item, i) {
@@ -70,9 +90,13 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
             data: item
           });
         }));
+      } else if (dataLoaded && !this.state.loggedIn) {
+        return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "Debes iniciar sesi\xF3n para acceder al material de estudio."), /*#__PURE__*/React.createElement("a", {
+          href: "/loginuser"
+        }, "Inicia Sesi\xF3n o Reg\xEDstrate"));
       }
 
-      return /*#__PURE__*/React.createElement("p", null, "Data did not load");
+      return /*#__PURE__*/React.createElement("p", null, "Loading...");
     }
   }]);
 
@@ -93,15 +117,27 @@ var Lesson = /*#__PURE__*/function (_React$Component2) {
   _createClass(Lesson, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", {
-        className: "lesson"
-      }, /*#__PURE__*/React.createElement("h1", null, this.props.data.question), /*#__PURE__*/React.createElement("h3", null, /*#__PURE__*/React.createElement("i", null, this.props.data.textbook)), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), this.props.data.instructions.map(function (instruction, i) {
-        return /*#__PURE__*/React.createElement(Instruction, {
-          className: "instruction",
-          key: i,
-          data: instruction
-        });
-      }));
+      if (this.props.data.objective !== "e") {
+        return /*#__PURE__*/React.createElement("div", {
+          className: "lesson"
+        }, /*#__PURE__*/React.createElement("div", {
+          className: "text"
+        }, /*#__PURE__*/React.createElement("h1", null, this.props.data.question), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), /*#__PURE__*/React.createElement("div", {
+          className: "lines"
+        }), this.props.data.instructions.map(function (instruction, i) {
+          return /*#__PURE__*/React.createElement(Instruction, {
+            className: "instruction",
+            key: i,
+            data: instruction
+          });
+        })), /*#__PURE__*/React.createElement("div", {
+          className: "bg"
+        }, /*#__PURE__*/React.createElement("img", {
+          src: this.props.data.img
+        })));
+      } else {
+        return /*#__PURE__*/React.createElement("div", null);
+      }
     }
   }]);
 
@@ -122,10 +158,15 @@ var Instruction = /*#__PURE__*/function (_React$Component3) {
   _createClass(Instruction, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, this.props.data.command), this.props.data.resource && /*#__PURE__*/React.createElement("a", {
-        target: "_blank",
-        href: this.props.data.resource
-      }, "Resource"));
+      return /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", {
+        className: "list"
+      }, this.props.data.command, " ", /*#__PURE__*/React.createElement("br", null), this.props.data.resources && this.props.data.resources.map(function (resource, i) {
+        return /*#__PURE__*/React.createElement("a", {
+          target: "_blank",
+          key: i,
+          href: resource.link
+        }, resource.type);
+      })));
     }
   }]);
 

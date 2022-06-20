@@ -1,98 +1,197 @@
 [
   {
-    "objective": "Use learned vocabulary and structures to write simple sentences regarding technology, the city and the farm..",
-    "question": "What can I do in the city?",
-    "textbook": "Language notebook 63 and 64",
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
     "instructions": [
       {
-        "command": "Answer the essential question."
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
       },
       {
-        "command": "Look at the pictures and answer 'What are they doing?', 'where', 'What do they wear?', 'How do they move?' and 'Where do they go?'",
-        "resource": "media/img_1/people_city.png"
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
       },
       {
-        "command": "Write the answers in your notebook, page 63",
-        "resource": "media/textbooks/l63.png"
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
       },
       {
-        "command": "Practice saying sentences about the city.",
-        "resource": "/sentence_practice?context=The City"
-      },
-      {
-        "command": "On page 64, complete the sentences on the paragraph.",
-        "resource": "media/textbooks/l64.png"
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
       }
     ]
   },
   {
-    "objective": "Segment and blend words according to learned sounds.",
-    "question": "Which words contain OI and OY?",
-    "textbook": "Language notebook 66",
+    "objective": "Write sentences about how people travel",
+    "question": "How do people travel?",
+    "textbook": "Language Notebook 25",
+    "img": "media/textbooks/l25.png",
     "instructions": [
       {
-        "command": "Answer the essential question."
+        "command": "Read the sentences and pick the correct image.",
+        "resources": [
+          {
+            "type": "Reading Game",
+            "link": "https://mrperez.herokuapp.com/vocab_reading_quiz?context=Technology&index=4"
+          }
+        ]
       },
       {
-        "command": "Watch the video, ask and answer the essential question.",
-        "resource": "https://www.youtube.com/watch?v=EJV7XsmxW4s"
+        "command": "Look at the vocabulary and make sentences. Write them in your language notebook on page 25. Leave a space to illustrate each sentence.",
+        "resources": [
+          {
+            "type": "Page 25",
+            "link": "media/textbooks/l25.png"
+          }
+        ]
       },
       {
-        "command": "Watch another video and say which words have OY and OI.",
-        "resource": "https://www.youtube.com/watch?v=OdWkgYQnFcw"
-      },
-      {
-        "command": "In your notebook write 10 words with OY and ten words with OI.",
-        "resource": "/media/textbooks/l66.png"
+        "command": "Practice writing the words.",
+        "resources": [
+          {
+            "type": "Typing Game",
+            "link": "https://mrperez.herokuapp.com/typing?context=Technology&index=4"
+          }
+        ]
       }
     ]
   },
   {
-    "objective": "Apply subtraction strategies.",
-    "question": "How can you use a number line?",
-    "textbook": "Math notebook 85",
+    "objective": "Identify words with OW, UR and ER",
+    "question": "Which words have the sounds OW, UR and ER?",
+    "textbook": "",
+    "img": "media/textbooks/l24.png",
     "instructions": [
       {
-        "command": "Look at the number line and answer the essential question.",
-        "resource": "https://content.connect.collins.co.uk/Content/Live/ES/Primary/complete/Resources/Busy_Ant_Tools-Games/10_IMT_NumberLine_RC1/index.html"
+        "command": "Watch the video and say which words have the sound OW.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=HWIXnIX9yY0"
+          }
+        ]
       },
       {
-        "command": "Open your notebook on page 85 and solve the first 2 exercises with the teacher. Use the interactve number line",
-        "resource": "https://content.connect.collins.co.uk/Content/Live/ES/Primary/complete/Resources/Busy_Ant_Tools-Games/10_IMT_NumberLine_RC1/index.html"
+        "command": "Watch the video and say which words have the sound ER .",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=xf7b2rO5iIY"
+          }
+        ]
       },
       {
-        "command": "Read the instructions and use the number line to solve the exercises.",
-        "resource": "/media/textbooks/m85.png"
+        "command": "Watch the video and say which words have the sound UR.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=Fs2LQjamFqg"
+          }
+        ]
+      },
+      {
+        "command": "Take turns. Match the images with the words.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "https://mrperez.herokuapp.com/match?context=Phonics&index=5"
+          }
+        ]
+      },
+      {
+        "command": "Look at the vocabulary and complete the words on page 24 in your notebooks. Use the structure to write sentences. For example, BROWN HAS THE SOUND OW.",
+        "resources": [
+          {
+            "type": "Vocabulary Words with the Sounds OW, ER and UR",
+            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Phonics&index=5"
+          }
+        ]
       }
     ]
   },
   {
-    "objective": "Segment and blend words according to learned sounds.",
-    "question": "Which words contain -y and -y?",
-    "textbook": "Language notebook 77",
+    "objective": "Compare and contrast information",
+    "question": "How many wheels do bicycles have?",
+    "textbook": "Language Notebook Page 22",
+    "img": "media/textbooks/l22.png",
     "instructions": [
       {
-        "command": "Watch the video and say which words contain -y (1 syllable).",
-        "resource": "https://www.youtube.com/watch?v=Ew5gLUbejSs"
+        "command": "Use page 23 in your notebook to type the missing words.",
+        "resources": [
+          {
+            "type": "Typing Game",
+            "link": "https://mrperez.herokuapp.com/typing?context=Technology&index=5"
+          }
+        ]
       },
       {
-        "command": "Watch another video and say which words end with -y (2 syllables).",
-        "resource": "https://www.youtube.com/watch?v=EJV7XsmxW4s"
+        "command": "On page 22, in your language notebook, write the names of the 4 vehicles explored: bicycles, tricycles, unicycles and wheelchairs.",
+        "resources": [
+          {
+            "type": "Page 22",
+            "link": "media/textbooks/l22.png"
+          }
+        ]
       },
       {
-        "command": "Take turns to read the sentence and pick the related image (-y with 2 syllables).",
-        "resource": "/vocab_reading_quiz?context=Phonics&index=3"
+        "command": "On the center, write what all the vehicles have in common: vehicles, wheels, etc. You can also use your book on page 129 and get the information from the reading HOW MANY WHEELS."
       },
       {
-        "command": "Take turns to read the sentence and pick the related image (-y with 1 syllables).",
-        "resource": "/vocab_reading_quiz?context=Phonics&index=4"
+        "command": "On the sides, write what they have different."
+      }
+    ]
+  },
+  {
+    "objective": "Compare and contrast information",
+    "question": "How many wheels do bicycles have?",
+    "textbook": "Language Book page 129",
+    "img": "media/textbooks/lb129.png",
+    "instructions": [
+      {
+        "command": "Make sentences using the vocabulary.",
+        "resources": [
+          {
+            "type": "Transportation Words",
+            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Technology&index=5"
+          }
+        ]
       },
       {
-        "command": "In your notebook, page 77, listen to the dictation and write the corresponding word. Check the words you picked.",
-        "resource": "/media/textbooks/l77.png"
+        "command": "On page 129, in your language book, read the paragraph out loud."
       },
       {
-        "command": "Solve 2 notebook pages for homework."
+        "command": "Underline the sentences with the transportation words. Use a color pencil."
+      },
+      {
+        "command": "Read each word, unscramble the sentence and read it out loud.",
+        "resources": [
+          {
+            "type": "Game",
+            "link": "https://mrperez.herokuapp.com/unscramble_sentence?context=Technology&index=5"
+          }
+        ]
       }
     ]
   }
