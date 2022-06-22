@@ -56,7 +56,13 @@
         ]
       },
       {
-        "command": "On the center, write what all the vehicles have in common: vehicles, wheels, etc. You can also use your book on page 129 and get the information from the reading HOW MANY WHEELS."
+        "command": "On the center, write what all the vehicles have in common: vehicles, wheels, etc. You can also use your book on page 129 and get the information from the reading HOW MANY WHEELS.",
+        "resources": [
+          {
+            "type": "Reference Book Page 129",
+            "link": "media/textbooks/lb129.png"
+          }
+        ]
       },
       {
         "command": "On the sides, write what they have different."
