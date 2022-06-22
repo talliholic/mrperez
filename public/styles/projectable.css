@@ -4,7 +4,7 @@
   font-family: "Special Elite", cursive;
 }
 .container {
-  margin: 20px;
+  margin: 10px;
 }
 h1 {
   text-align: center;
@@ -69,4 +69,33 @@ ul {
 h2,
 h3 {
   color: #555;
+}
+#textbookNav {
+  display: flex;
+  flex-direction: row wrap;
+}
+.textbook {
+  padding: 2px;
+  font-size: 17px;
+  text-align: center;
+}
+.textbookContent {
+  border: 1px solid black;
+  margin-right: 3px;
+}
+.page {
+  margin: 2px 7px;
+}
+.page:hover {
+  font-weight: bold;
+}
+.page-links {
+  display: flex;
+  width: 292.5px;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.go-menu {
+  font-size: 18px;
 }

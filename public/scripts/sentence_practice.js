@@ -106,7 +106,7 @@ var VocabItem = /*#__PURE__*/function (_React$Component2) {
         }, /*#__PURE__*/React.createElement("img", {
           className: "vocab_pic",
           src: _this3.props.data.img[i]
-        }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("h3", null, item)), /*#__PURE__*/React.createElement("audio", {
+        }), /*#__PURE__*/React.createElement("figcaption", null, /*#__PURE__*/React.createElement("h3", null, item)), _this3.props.data.audio[i] && /*#__PURE__*/React.createElement("audio", {
           controls: true
         }, /*#__PURE__*/React.createElement("source", {
           src: _this3.props.data.audio[i],

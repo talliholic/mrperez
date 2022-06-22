@@ -1,43 +1,151 @@
 [
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "Compare and contrast information",
+    "question": "How many wheels do bicycles have?",
+    "textbook": "Language Book 129",
+    "img": "media/textbooks/lb129.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Make sentences using the vocabulary.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Transportation Words",
+            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Technology&index=5"
           }
         ]
       },
       {
-        "command": "",
+        "command": "On page 129, in your language book, read the paragraph out loud."
+      },
+      {
+        "command": "Underline the sentences with the transportation words. Use a color pencil."
+      },
+      {
+        "command": "Read each word, unscramble the sentence and read it out loud.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Game",
+            "link": "https://mrperez.herokuapp.com/unscramble_sentence?context=Technology&index=5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Compare and contrast information",
+    "question": "How many wheels do bicycles have?",
+    "textbook": "Language Notebook 22",
+    "img": "media/textbooks/l22.png",
+    "instructions": [
+      {
+        "command": "Use page 23 in your notebook to type the missing words.",
+        "resources": [
+          {
+            "type": "Typing Game",
+            "link": "https://mrperez.herokuapp.com/typing?context=Technology&index=5"
           }
         ]
       },
       {
-        "command": "",
+        "command": "On page 22, in your language notebook, write the names of the 4 vehicles explored: bicycles, tricycles, unicycles and wheelchairs.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 22",
+            "link": "media/textbooks/l22.png"
           }
         ]
       },
       {
-        "command": "",
+        "command": "On the center, write what all the vehicles have in common: vehicles, wheels, etc. You can also use your book on page 129 and get the information from the reading HOW MANY WHEELS."
+      },
+      {
+        "command": "On the sides, write what they have different."
+      }
+    ]
+  },
+  {
+    "objective": "To complete sentences about vehicles",
+    "question": "How many wheels do vehicles have?",
+    "textbook": "Language Notebook 23",
+    "img": "media/textbooks/l23.png",
+    "instructions": [
+      {
+        "command": "Read the sentences out loud.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=5"
+          }
+        ]
+      },
+      {
+        "command": "Use the sentences to complete the ones in your notebook",
+        "resources": [
+          {
+            "type": "Page 23",
+            "link": "media/textbooks/l23.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice unscrambling the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "http://localhost:3000/unscramble_sentence?context=Technology&index=5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Identify words with OW, UR and ER",
+    "question": "Which words have the sounds OW, UR and ER?",
+    "textbook": "Language Notebook 24",
+    "img": "media/textbooks/l24.png",
+    "instructions": [
+      {
+        "command": "Watch the video and say which words have the sound OW.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=HWIXnIX9yY0"
+          }
+        ]
+      },
+      {
+        "command": "Watch the video and say which words have the sound ER .",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=xf7b2rO5iIY"
+          }
+        ]
+      },
+      {
+        "command": "Watch the video and say which words have the sound UR.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=Fs2LQjamFqg"
+          }
+        ]
+      },
+      {
+        "command": "Take turns. Match the images with the words.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "https://mrperez.herokuapp.com/match?context=Phonics&index=5"
+          }
+        ]
+      },
+      {
+        "command": "Look at the sentences and complete the words on page 24 in your notebooks. Use the examples and write sentences. For example, BROWN HAS THE SOUND OW.",
+        "resources": [
+          {
+            "type": "Sentences with the Sounds OW, ER and UR",
+            "link": "/sentence_practice?context=Phonics&index=5"
           }
         ]
       }
@@ -83,117 +191,504 @@
     ]
   },
   {
-    "objective": "Identify words with OW, UR and ER",
-    "question": "Which words have the sounds OW, UR and ER?",
+    "objective": "To sequence multiples of ten",
+    "question": "How can you count by tens?",
+    "textbook": "Math Notebook 108",
+    "img": "media/textbooks/m108.png",
+    "instructions": [
+      {
+        "command": "Sing the counting by tens song.",
+        "resources": [
+          {
+            "type": "Song",
+            "link": "https://www.youtube.com/watch?v=dSdjzFl9H6k"
+          }
+        ]
+      },
+      {
+        "command": "Add numbers by tens",
+        "resources": [
+          {
+            "type": "Math Game",
+            "link": "/math-quizzes?topic=add%20ten%20more"
+          }
+        ]
+      },
+      {
+        "command": "1. Complete the sequence of numbers. Count by tens.",
+        "resources": [
+          {
+            "type": "Page 108",
+            "link": "media/textbooks/m108.png"
+          }
+        ]
+      },
+      {
+        "command": "2. Count the tens and ones to make the number."
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
     "textbook": "",
-    "img": "media/textbooks/l24.png",
+    "img": "media/textbooks/",
     "instructions": [
       {
-        "command": "Watch the video and say which words have the sound OW.",
+        "command": "",
         "resources": [
           {
-            "type": "Video",
-            "link": "https://www.youtube.com/watch?v=HWIXnIX9yY0"
+            "type": "",
+            "link": ""
           }
         ]
       },
       {
-        "command": "Watch the video and say which words have the sound ER .",
+        "command": "",
         "resources": [
           {
-            "type": "Video",
-            "link": "https://www.youtube.com/watch?v=xf7b2rO5iIY"
+            "type": "",
+            "link": ""
           }
         ]
       },
       {
-        "command": "Watch the video and say which words have the sound UR.",
+        "command": "",
         "resources": [
           {
-            "type": "Video",
-            "link": "https://www.youtube.com/watch?v=Fs2LQjamFqg"
+            "type": "",
+            "link": ""
           }
         ]
       },
       {
-        "command": "Take turns. Match the images with the words.",
+        "command": "",
         "resources": [
           {
-            "type": "Matching Game",
-            "link": "https://mrperez.herokuapp.com/match?context=Phonics&index=5"
-          }
-        ]
-      },
-      {
-        "command": "Look at the vocabulary and complete the words on page 24 in your notebooks. Use the structure to write sentences. For example, BROWN HAS THE SOUND OW.",
-        "resources": [
-          {
-            "type": "Vocabulary Words with the Sounds OW, ER and UR",
-            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Phonics&index=5"
+            "type": "",
+            "link": ""
           }
         ]
       }
     ]
   },
   {
-    "objective": "Compare and contrast information",
-    "question": "How many wheels do bicycles have?",
-    "textbook": "Language Notebook Page 22",
-    "img": "media/textbooks/l22.png",
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
     "instructions": [
       {
-        "command": "Use page 23 in your notebook to type the missing words.",
+        "command": "",
         "resources": [
           {
-            "type": "Typing Game",
-            "link": "https://mrperez.herokuapp.com/typing?context=Technology&index=5"
+            "type": "",
+            "link": ""
           }
         ]
       },
       {
-        "command": "On page 22, in your language notebook, write the names of the 4 vehicles explored: bicycles, tricycles, unicycles and wheelchairs.",
+        "command": "",
         "resources": [
           {
-            "type": "Page 22",
-            "link": "media/textbooks/l22.png"
+            "type": "",
+            "link": ""
           }
         ]
       },
       {
-        "command": "On the center, write what all the vehicles have in common: vehicles, wheels, etc. You can also use your book on page 129 and get the information from the reading HOW MANY WHEELS."
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
       },
       {
-        "command": "On the sides, write what they have different."
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
       }
     ]
   },
   {
-    "objective": "Compare and contrast information",
-    "question": "How many wheels do bicycles have?",
-    "textbook": "Language Book page 129",
-    "img": "media/textbooks/lb129.png",
+    "objective": "To add tens",
+    "question": "How can you add tens?",
+    "textbook": "Math Notebook 109",
+    "img": "media/textbooks/m109.png",
     "instructions": [
       {
-        "command": "Make sentences using the vocabulary.",
+        "command": "Read the sentences about tens. Use your fingers to represent each sentence.",
         "resources": [
           {
-            "type": "Transportation Words",
-            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Technology&index=5"
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Math%20Numbers&index=1"
           }
         ]
       },
       {
-        "command": "On page 129, in your language book, read the paragraph out loud."
-      },
-      {
-        "command": "Underline the sentences with the transportation words. Use a color pencil."
-      },
-      {
-        "command": "Read each word, unscramble the sentence and read it out loud.",
+        "command": "1. Count the tens and write the corresponding number. ",
         "resources": [
           {
-            "type": "Game",
-            "link": "https://mrperez.herokuapp.com/unscramble_sentence?context=Technology&index=5"
+            "type": "Page 109",
+            "link": "media/textbooks/m109.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Addition Game",
+            "link": "/math-quizzes?topic=add%20to%20a%20ten"
+          }
+        ]
+      },
+      {
+        "command": "2. Add ones to tens in your notebook. Stay on page 109."
+      }
+    ]
+  },
+  {
+    "objective": "To draw blocks of tens",
+    "question": "How can I represent big numbers?",
+    "textbook": "Math Notebook 110",
+    "img": "media/textbooks/m110.png",
+    "instructions": [
+      {
+        "command": "Look at the image of tens. Count all the squares. Then count the tens.",
+        "resources": [
+          {
+            "type": "Image of tens",
+            "link": "media/aids/tens_blocks.png"
+          }
+        ]
+      },
+      {
+        "command": "1. Look at each number and draw tens to represent them.",
+        "resources": [
+          {
+            "type": "Page 110",
+            "link": "media/textbooks/m110.png"
+          }
+        ]
+      },
+      {
+        "command": "2. Circle the number that represents 7 tens."
+      },
+      {
+        "command": "3. Show the addition that represents 7 tens. Or write the sentence: 7 TENS IS 70."
+      }
+    ]
+  },
+  {
+    "objective": "To identify the numbers that make the tens",
+    "question": "What is 4 tens equal to?",
+    "textbook": "Math Notebook 111",
+    "img": "media/textbooks/m111.png",
+    "instructions": [
+      {
+        "command": "Unscramble the sentences about tens.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "/unscramble_sentence?context=Math%20Numbers&index=1"
+          }
+        ]
+      },
+      {
+        "command": "1. Complete the sentences.",
+        "resources": [
+          {
+            "type": "Page 111",
+            "link": "media/textbooks/m111.png"
+          }
+        ]
+      },
+      {
+        "command": "2. Write the corresponding number to the word number. Use the reference.",
+        "resources": [
+          {
+            "type": "Reference",
+            "link": "/vocabulary_ref?context=Math%20Numbers&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Practice unscrambling the number words.",
+        "resources": [
+          {
+            "type": "Unscramble the words",
+            "link": "/unscramble_word?context=Math%20Numbers&index=1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
           }
         ]
       }

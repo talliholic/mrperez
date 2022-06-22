@@ -84,7 +84,21 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
       if (dataLoaded && this.state.loggedIn) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, items.map(function (item, i) {
+        }, /*#__PURE__*/React.createElement("div", {
+          id: "textbookNav"
+        }, /*#__PURE__*/React.createElement(Textbook, {
+          textbook: "Language Notebook",
+          data: this.state.items
+        }), /*#__PURE__*/React.createElement(Textbook, {
+          textbook: "Language Book",
+          data: this.state.items
+        }), /*#__PURE__*/React.createElement(Textbook, {
+          textbook: "Math Notebook",
+          data: this.state.items
+        }), /*#__PURE__*/React.createElement(Textbook, {
+          textbook: "Math Book",
+          data: this.state.items
+        })), items.map(function (item, i) {
           return /*#__PURE__*/React.createElement(Lesson, {
             key: i,
             data: item
@@ -103,15 +117,58 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
   return Projectable;
 }(React.Component);
 
-var Lesson = /*#__PURE__*/function (_React$Component2) {
-  _inherits(Lesson, _React$Component2);
+var Textbook = /*#__PURE__*/function (_React$Component2) {
+  _inherits(Textbook, _React$Component2);
 
-  var _super2 = _createSuper(Lesson);
+  var _super2 = _createSuper(Textbook);
+
+  function Textbook(props) {
+    var _this3;
+
+    _classCallCheck(this, Textbook);
+
+    _this3 = _super2.call(this, props);
+    _this3.state = {
+      activities: _this3.props.data.filter(function (activity) {
+        return activity.textbook.includes(_this3.props.textbook);
+      })
+    };
+    return _this3;
+  }
+
+  _createClass(Textbook, [{
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "textbookContent"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "textbook"
+      }, this.props.textbook), /*#__PURE__*/React.createElement("div", {
+        className: "page-links"
+      }, this.state.activities.map(function (activity, i) {
+        return /*#__PURE__*/React.createElement("a", {
+          className: "page",
+          key: i,
+          href: "#" + activity.textbook
+        }, activity.textbook.replace(_this4.props.textbook, "Page"));
+      })));
+    }
+  }]);
+
+  return Textbook;
+}(React.Component);
+
+var Lesson = /*#__PURE__*/function (_React$Component3) {
+  _inherits(Lesson, _React$Component3);
+
+  var _super3 = _createSuper(Lesson);
 
   function Lesson(props) {
     _classCallCheck(this, Lesson);
 
-    return _super2.call(this, props);
+    return _super3.call(this, props);
   }
 
   _createClass(Lesson, [{
@@ -119,7 +176,8 @@ var Lesson = /*#__PURE__*/function (_React$Component2) {
     value: function render() {
       if (this.props.data.objective !== "e") {
         return /*#__PURE__*/React.createElement("div", {
-          className: "lesson"
+          className: "lesson",
+          id: this.props.data.textbook
         }, /*#__PURE__*/React.createElement("div", {
           className: "text"
         }, /*#__PURE__*/React.createElement("h1", null, this.props.data.question), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), /*#__PURE__*/React.createElement("div", {
@@ -130,7 +188,10 @@ var Lesson = /*#__PURE__*/function (_React$Component2) {
             key: i,
             data: instruction
           });
-        })), /*#__PURE__*/React.createElement("div", {
+        }), /*#__PURE__*/React.createElement("a", {
+          className: "go-menu",
+          href: "/projectable"
+        }, "Go to menu")), /*#__PURE__*/React.createElement("div", {
           className: "bg"
         }, /*#__PURE__*/React.createElement("img", {
           src: this.props.data.img
@@ -144,15 +205,15 @@ var Lesson = /*#__PURE__*/function (_React$Component2) {
   return Lesson;
 }(React.Component);
 
-var Instruction = /*#__PURE__*/function (_React$Component3) {
-  _inherits(Instruction, _React$Component3);
+var Instruction = /*#__PURE__*/function (_React$Component4) {
+  _inherits(Instruction, _React$Component4);
 
-  var _super3 = _createSuper(Instruction);
+  var _super4 = _createSuper(Instruction);
 
   function Instruction(props) {
     _classCallCheck(this, Instruction);
 
-    return _super3.call(this, props);
+    return _super4.call(this, props);
   }
 
   _createClass(Instruction, [{
