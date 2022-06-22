@@ -229,6 +229,26 @@ var Quiz = /*#__PURE__*/function (_React$Component) {
             check: this.check
           }));
 
+        case "add ten to any":
+          return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Score, {
+            score: this.score
+          }), /*#__PURE__*/React.createElement(AddtotenAny, {
+            update: this.update,
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
+          }));
+
+        case "sub ten to any":
+          return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Score, {
+            score: this.score
+          }), /*#__PURE__*/React.createElement(SubtotenAny, {
+            update: this.update,
+            score: this.score,
+            processResult: this.processResult,
+            check: this.check
+          }));
+
         default:
           return /*#__PURE__*/React.createElement("div", null, "No topic set");
       }
@@ -1100,32 +1120,32 @@ var AdtoAten = /*#__PURE__*/function (_React$Component17) {
   return AdtoAten;
 }(React.Component);
 
-var Sub10less = /*#__PURE__*/function (_React$Component18) {
-  _inherits(Sub10less, _React$Component18);
+var AddtotenAny = /*#__PURE__*/function (_React$Component18) {
+  _inherits(AddtotenAny, _React$Component18);
 
-  var _super18 = _createSuper(Sub10less);
+  var _super18 = _createSuper(AddtotenAny);
 
-  function Sub10less(props) {
+  function AddtotenAny(props) {
     var _this35;
 
-    _classCallCheck(this, Sub10less);
+    _classCallCheck(this, AddtotenAny);
 
     _this35 = _super18.call(this, props);
-    _this35.addends = shuffle([10, 20, 30, 40, 50, 60, 70, 80, 90]);
+    _this35.addends = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
     return _this35;
   }
 
-  _createClass(Sub10less, [{
+  _createClass(AddtotenAny, [{
     key: "render",
     value: function render() {
       var _this36 = this;
 
       return /*#__PURE__*/React.createElement("div", {
         className: "quiz"
-      }, /*#__PURE__*/React.createElement("h1", null, "Subtracting 10 from tens"), /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/React.createElement("h1", null, "Adding Ten to Any number"), /*#__PURE__*/React.createElement("div", {
         id: "instruction"
       }, "Use any strategy to find the sum."), this.addends.map(function (addend, i) {
-        return /*#__PURE__*/React.createElement(Su10less, {
+        return /*#__PURE__*/React.createElement(AdtotenAny, {
           key: i,
           i: i,
           addend: addend,
@@ -1138,22 +1158,22 @@ var Sub10less = /*#__PURE__*/function (_React$Component18) {
     }
   }]);
 
-  return Sub10less;
+  return AddtotenAny;
 }(React.Component);
 
-var Su10less = /*#__PURE__*/function (_React$Component19) {
-  _inherits(Su10less, _React$Component19);
+var AdtotenAny = /*#__PURE__*/function (_React$Component19) {
+  _inherits(AdtotenAny, _React$Component19);
 
-  var _super19 = _createSuper(Su10less);
+  var _super19 = _createSuper(AdtotenAny);
 
-  function Su10less(props) {
+  function AdtotenAny(props) {
     var _this37;
 
-    _classCallCheck(this, Su10less);
+    _classCallCheck(this, AdtotenAny);
 
     _this37 = _super19.call(this, props);
-    _this37.addend2 = 10;
-    _this37.answer = _this37.props.addend - _this37.addend2;
+    _this37.addend2 = Math.floor(Math.random() * 90);
+    _this37.answer = _this37.props.addend + _this37.addend2;
     _this37.state = {
       correct: false,
       started: false
@@ -1162,11 +1182,11 @@ var Su10less = /*#__PURE__*/function (_React$Component19) {
     return _this37;
   }
 
-  _createClass(Su10less, [{
+  _createClass(AdtotenAny, [{
     key: "componentDidUpdate",
     value: function componentDidUpdate(props, state) {
       if (state.correct !== this.state.correct) {
-        this.props.processResult(this.quizzes, "Subtracting");
+        this.props.processResult(this.quizzes, "Adding");
       }
     }
   }, {
@@ -1176,7 +1196,7 @@ var Su10less = /*#__PURE__*/function (_React$Component19) {
 
       return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
         className: "sentence"
-      }, this.props.addend + " ", " - ", this.addend2 + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
+      }, this.addend2 + " ", " + ", this.props.addend + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
         onChange: function onChange(e) {
           return _this38.props.check(e, _this38.answer, _this38.props.i, function () {
             return _this38.setState(function (prev) {
@@ -1205,7 +1225,223 @@ var Su10less = /*#__PURE__*/function (_React$Component19) {
     }
   }]);
 
+  return AdtotenAny;
+}(React.Component);
+
+var Sub10less = /*#__PURE__*/function (_React$Component20) {
+  _inherits(Sub10less, _React$Component20);
+
+  var _super20 = _createSuper(Sub10less);
+
+  function Sub10less(props) {
+    var _this39;
+
+    _classCallCheck(this, Sub10less);
+
+    _this39 = _super20.call(this, props);
+    _this39.addends = shuffle([10, 20, 30, 40, 50, 60, 70, 80, 90]);
+    return _this39;
+  }
+
+  _createClass(Sub10less, [{
+    key: "render",
+    value: function render() {
+      var _this40 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "quiz"
+      }, /*#__PURE__*/React.createElement("h1", null, "Subtracting 10 from tens"), /*#__PURE__*/React.createElement("div", {
+        id: "instruction"
+      }, "Use any strategy to find the sum."), this.addends.map(function (addend, i) {
+        return /*#__PURE__*/React.createElement(Su10less, {
+          key: i,
+          i: i,
+          addend: addend,
+          update: _this40.props.update,
+          score: _this40.props.score,
+          processResult: _this40.props.processResult,
+          check: _this40.props.check
+        });
+      }));
+    }
+  }]);
+
+  return Sub10less;
+}(React.Component);
+
+var Su10less = /*#__PURE__*/function (_React$Component21) {
+  _inherits(Su10less, _React$Component21);
+
+  var _super21 = _createSuper(Su10less);
+
+  function Su10less(props) {
+    var _this41;
+
+    _classCallCheck(this, Su10less);
+
+    _this41 = _super21.call(this, props);
+    _this41.addend2 = 10;
+    _this41.answer = _this41.props.addend - _this41.addend2;
+    _this41.state = {
+      correct: false,
+      started: false
+    };
+    _this41.quizzes = [];
+    return _this41;
+  }
+
+  _createClass(Su10less, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      if (state.correct !== this.state.correct) {
+        this.props.processResult(this.quizzes, "Subtracting");
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this42 = this;
+
+      return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
+        className: "sentence"
+      }, this.props.addend + " ", " - ", this.addend2 + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
+        onChange: function onChange(e) {
+          return _this42.props.check(e, _this42.answer, _this42.props.i, function () {
+            return _this42.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this42.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
+        type: "number"
+      })), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
+        className: "check",
+        src: "media/topics/check.jpg"
+      }), this.state.started && this.state.correct === false && /*#__PURE__*/React.createElement("img", {
+        className: "cross",
+        src: "media/topics/cross.png"
+      }));
+    }
+  }]);
+
   return Su10less;
+}(React.Component);
+
+var SubtotenAny = /*#__PURE__*/function (_React$Component22) {
+  _inherits(SubtotenAny, _React$Component22);
+
+  var _super22 = _createSuper(SubtotenAny);
+
+  function SubtotenAny(props) {
+    var _this43;
+
+    _classCallCheck(this, SubtotenAny);
+
+    _this43 = _super22.call(this, props);
+    _this43.addends = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+    return _this43;
+  }
+
+  _createClass(SubtotenAny, [{
+    key: "render",
+    value: function render() {
+      var _this44 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "quiz"
+      }, /*#__PURE__*/React.createElement("h1", null, "Subtracting Ten to Any Number"), /*#__PURE__*/React.createElement("div", {
+        id: "instruction"
+      }, "Use any strategy to find the sum."), this.addends.map(function (addend, i) {
+        return /*#__PURE__*/React.createElement(SutotenAny, {
+          key: i,
+          i: i,
+          addend: addend,
+          update: _this44.props.update,
+          score: _this44.props.score,
+          processResult: _this44.props.processResult,
+          check: _this44.props.check
+        });
+      }));
+    }
+  }]);
+
+  return SubtotenAny;
+}(React.Component);
+
+var SutotenAny = /*#__PURE__*/function (_React$Component23) {
+  _inherits(SutotenAny, _React$Component23);
+
+  var _super23 = _createSuper(SutotenAny);
+
+  function SutotenAny(props) {
+    var _this45;
+
+    _classCallCheck(this, SutotenAny);
+
+    _this45 = _super23.call(this, props);
+    _this45.addend2 = 10 + Math.floor(Math.random() * 90);
+    _this45.answer = _this45.addend2 - _this45.props.addend;
+    _this45.state = {
+      correct: false,
+      started: false
+    };
+    _this45.quizzes = [];
+    return _this45;
+  }
+
+  _createClass(SutotenAny, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(props, state) {
+      if (state.correct !== this.state.correct) {
+        this.props.processResult(this.quizzes, "Adding");
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this46 = this;
+
+      return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", {
+        className: "sentence"
+      }, this.addend2 + " ", " - ", this.props.addend + " ", " =", " ", /*#__PURE__*/React.createElement("input", {
+        onChange: function onChange(e) {
+          return _this46.props.check(e, _this46.answer, _this46.props.i, function () {
+            return _this46.setState(function (prev) {
+              return {
+                started: true,
+                correct: true
+              };
+            });
+          }, function () {
+            return _this46.setState(function (prev) {
+              return {
+                started: true,
+                correct: false
+              };
+            });
+          });
+        },
+        type: "number"
+      })), this.state.started && this.state.correct && /*#__PURE__*/React.createElement("img", {
+        className: "check",
+        src: "media/topics/check.jpg"
+      }), this.state.started && this.state.correct === false && /*#__PURE__*/React.createElement("img", {
+        className: "cross",
+        src: "media/topics/cross.png"
+      }));
+    }
+  }]);
+
+  return SutotenAny;
 }(React.Component);
 
 var Score = function Score(props) {

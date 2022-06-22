@@ -405,6 +405,14 @@ var Maths = function Maths(props) {
     passed: props.passed("math-quizzes?topic=add to a ten"),
     loggedIn: props.loggedIn
   })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "math-quizzes?topic=add ten to any"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/hundreds_chart.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "10 more that any number")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=add ten to any"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     target: "_blank",
     className: "link",
     href: "https://ictgames.com/mobilePage/archeryDoubles/index.html"
@@ -443,8 +451,16 @@ var MathsSub = function MathsSub(props) {
     href: "math-quizzes?topic=subtract%20ten%20less"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/img_1/ten.jpg"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less")), /*#__PURE__*/React.createElement(Feedback, {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less than a multiple of ten")), /*#__PURE__*/React.createElement(Feedback, {
     passed: props.passed("math-quizzes?topic=subtract%20ten%20less"),
+    loggedIn: props.loggedIn
+  })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
+    className: "link",
+    href: "math-quizzes?topic=sub ten to any"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "media/topics/hundreds_chart.png"
+  }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less than any number")), /*#__PURE__*/React.createElement(Feedback, {
+    passed: props.passed("math-quizzes?topic=sub ten to any"),
     loggedIn: props.loggedIn
   }))));
 };

@@ -176,8 +176,8 @@
         "command": "Look at the vocabulary and make sentences. Write them in your language notebook on page 25. Leave a space to illustrate each sentence.",
         "resources": [
           {
-            "type": "Vocabulary",
-            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Technology&index=4"
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=4"
           },
           {
             "type": "Page 25",
@@ -437,132 +437,107 @@
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "Find the number that is ten more or ten less",
+    "question": "Which number is ten less/more than...?",
+    "textbook": "Math Notebook 112",
+    "img": "media/textbooks/m112.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Watch the tutorial to locate the numbers that are ten less or ten more.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Tutorial",
+            "link": "https://www.youtube.com/watch?v=blZdOlfm_ug"
           }
         ]
       },
       {
-        "command": "",
+        "command": "On the interactive hundreds chart, color the numbers 54, 80, 55 and 90 on the number chart. Then find the numbers that are ten less and ten more.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Interactive Hundreds Chart",
+            "link": "https://www.abcya.com/games/interactive_100_number_chart"
           }
         ]
       },
       {
-        "command": "",
+        "command": "In your notebook, color the numbers 54, 80, 55 and 90 on the number chart. Then color the ones on top or below to find ten less or more.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 112",
+            "link": "media/textbooks/m112.png"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Practice finding ten more and ten less. Use a hundreds chart for help. Practice the strategy learned.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Ten More Game",
+            "link": "/math-quizzes?topic=add%20ten%20to%20any"
+          },
+          {
+            "type": "Ten Less Game",
+            "link": "/math-quizzes?topic=sub%20ten%20to%20any"
           }
         ]
       }
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "To solve a word problem using ten more/less",
+    "question": "How can I solve a word problem?",
+    "textbook": "Math Notebook 113",
+    "img": "media/textbooks/m113.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Practice finding ten more and ten less. Use a hundreds chart for help. Practice the strategy learned.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Ten More Game",
+            "link": "/math-quizzes?topic=add%20ten%20to%20any"
+          },
+          {
+            "type": "Ten Less Game",
+            "link": "/math-quizzes?topic=sub%20ten%20to%20any"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Read the word problem. Write the corresponding addition and subtraction sentences using letters for each name. J for JORGE, I for IVAN and F for FERNANDO.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 113",
+            "link": "media/textbooks/m113-a.png"
           }
         ]
       },
       {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
+        "command": "Solve the sentences with your teacher. Take turns. Then write the answers at the bottom of the page."
       }
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "To take a dictation",
+    "question": "Which words have the sound...?",
+    "textbook": "Language Notebook 26",
+    "img": "media/textbooks/l26.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Review the sentences showing the sounds explored.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Sentence Review",
+            "link": "/sentence_practice?context=Phonics&index=5"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Listen to the teacher dictate the sentences about the sounds and copy them in order.",
         "resources": [
           {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
+            "type": "Page 26",
+            "link": "media/textbooks/l26.png"
           }
         ]
       }
