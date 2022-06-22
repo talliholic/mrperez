@@ -548,6 +548,36 @@
     "match": "match?context=Technology&index=5"
   },
   {
+    "context": "Technology",
+    "structure": "I can",
+    "icon": "media/img_1/climb.png",
+    "prefix": false,
+    "vocab": "Transportation Actions 1",
+    "key": "",
+    "triple": true,
+    "complement": [
+      "a mountain",
+      "on a slide",
+      "on a boat",
+      "a car",
+      "on a plane"
+    ],
+    "words": ["climb", "slide", "float", "drive", "fly"],
+    "sentences": "sentence_practice?context=Technology&index=6",
+    "wordQuiz": false,
+    "readingQuiz": "vocab_reading_quiz?context=Technology&index=6",
+    "unscrambleWord": "unscramble_word?context=Technology&index=6",
+    "unscrambleSentence": "unscramble_sentence?context=Technology&index=6",
+    "vocabulary": "vocabulary_ref?context=Technology&index=6",
+    "paper": "paper_quiz?context=Technology&index=6",
+    "paperReading": "paper_reading?context=Technology&index=6",
+    "decoding": "decoding?context=Technology&index=6",
+    "unscrambled_paper": "unscrambled_paper?context=Technology&index=6",
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=6",
+    "typing": "typing?context=Technology&index=6",
+    "match": "match?context=Technology&index=6"
+  },
+  {
     "context": "Time",
     "icon": "media/img_1/5 o'clock.png",
     "structure": "It is",

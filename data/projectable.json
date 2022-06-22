@@ -235,94 +235,6 @@
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
-    "instructions": [
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
-    "instructions": [
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "objective": "To add tens",
     "question": "How can you add tens?",
     "textbook": "Math Notebook 109",
@@ -538,6 +450,85 @@
           {
             "type": "Page 26",
             "link": "media/textbooks/l26.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences with IGH, AIR and EAR sounds",
+    "question": "Which words have the sounds IGH, AIR and EAR",
+    "textbook": "Language Notebook 27",
+    "img": "media/textbooks/l27.png",
+    "instructions": [
+      {
+        "command": "Read the sentences containing the sounds.",
+        "resources": [
+          {
+            "type": "Sentence Practice",
+            "link": "/sentence_practice?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "unscramble_sentence?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, page 27, write the words and the sentences with each sound. Use the sentences explored or your own.",
+        "resources": [
+          {
+            "type": "Page 27",
+            "link": "media/textbooks/l26.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
           }
         ]
       }

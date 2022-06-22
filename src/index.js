@@ -218,10 +218,19 @@ app.get("/vocab_quiz/:context/:index", (req, res) => {
         " " +
         vocabQuiz.words[i] +
         ".";
+    } else if (vocabQuiz.triple || vocab.prefix) {
+      vocabQuiz.sentences[i] =
+        vocabQuiz.structure +
+        " " +
+        vocabQuiz.words[i] +
+        " " +
+        vocabQuiz.complement[i] +
+        ".";
     } else {
       vocabQuiz.sentences[i] =
         vocabQuiz.structure + " " + vocabQuiz.words[i] + ".";
     }
+
     for (let j = 0; j < vocabQuiz.words.length; j++) {
       if (j === i) {
         continue;
