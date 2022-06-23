@@ -409,7 +409,7 @@ var Maths = function Maths(props) {
     href: "math-quizzes?topic=add ten to any"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/topics/hundreds_chart.png"
-  }), /*#__PURE__*/React.createElement("figcaption", null, "10 more that any number")), /*#__PURE__*/React.createElement(Feedback, {
+  }), /*#__PURE__*/React.createElement("figcaption", null, "10 more than any number")), /*#__PURE__*/React.createElement(Feedback, {
     passed: props.passed("math-quizzes?topic=add ten to any"),
     loggedIn: props.loggedIn
   })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {

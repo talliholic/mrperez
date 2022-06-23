@@ -823,220 +823,159 @@
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "To add and subtract numbers on the hundred's chart.",
+    "question": "How can I add and subtract 10 using a hundreds chart?",
+    "textbook": "Math Notebook 114",
+    "img": "media/textbooks/m114.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Take turns to color the numbers dictated by the teacher.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Hundreds Chart",
+            "link": "https://www.abcya.com/games/interactive_100_number_chart"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Listen to the teacher and color the numbers accordingly. Remember to locate the numbers that are TEN MORE below the number and TEN LESS above the number.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 114",
+            "link": "media/textbooks/m114.png"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Locate the numbers on the hundred's chart.",
         "resources": [
           {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
+            "type": "Hundred chart Game",
+            "link": "https://www.abcya.com/games/one_hundred_number_chart_game"
           }
         ]
       }
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "To add and subtract 10 and 1",
+    "question": "How can I add and subtract using the hundred chart?",
+    "textbook": "Math Notebook 115",
+    "img": "media/textbooks/m115.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Practice adding ten more and less than any number.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Ten More",
+            "link": "/math-quizzes?topic=add%20ten%20to%20any"
+          },
+          {
+            "type": "Ten Less",
+            "link": "/math-quizzes?topic=sub%20ten%20to%20any"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Now, use the hundreds chart on page 114 to add or subtract the numbers on page 115.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 114",
+            "link": "media/textbooks/m114.png"
+          },
+          {
+            "type": "Page 115",
+            "link": "media/textbooks/m115.png"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Write an addition or subtraction sentence with the numbers 29 and 26."
+      }
+    ]
+  },
+  {
+    "objective": "To complete the number bonds with tens and ones.",
+    "question": "How can I complete a number bond?",
+    "textbook": "Math Notebook 116",
+    "img": "media/textbooks/m116.png",
+    "instructions": [
+      {
+        "command": "Use tens: 10, 20, 30, 40, 50, 60, 70, 80, 90 or 100 to solve the number bonds.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 116",
+            "link": "media/textbooks/m116.png"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Write how many tens and ones you see. Then write the corresponding expanded form. Check the video for an example.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=wO7tUQaLXrc"
           }
         ]
       }
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "To count tens and ones and compose the corresponding number",
+    "question": "How many tens and ones do you see?",
+    "textbook": "Math Notebook 117",
+    "img": "media/textbooks/m117.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Practice saying the sentences. Then find the answer. For example, 40 + 3 = 43: 4 tens and 3 ones equals 43.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Tens and ones quiz",
+            "link": "/math-quizzes?topic=add%20to%20a%20ten"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Write how many tens and ones you see. Say the addition sentence and write the answer.",
         "resources": [
           {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
+            "type": "Page 117",
+            "link": "media/textbooks/m117.png"
           }
         ]
       }
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "Practice adding tens and ones and adding",
+    "question": "How can I add tens and ones?",
+    "textbook": "Math Notebook 118",
+    "img": "media/textbooks/m118.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Review how to add the expanded form of tens and ones.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=amIJu7QEvgY"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Count the tens and ones on page 118 and then write their expanded form.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 118",
+            "link": "media/textbooks/m118.png"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Play a tens and ones game to practice.",
         "resources": [
           {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
-    "instructions": [
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
-          }
-        ]
-      },
-      {
-        "command": "",
-        "resources": [
-          {
-            "type": "",
-            "link": ""
+            "type": "Game",
+            "link": "https://www.abcya.com/games/base_ten_fun"
           }
         ]
       }
