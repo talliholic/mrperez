@@ -1,5 +1,35 @@
 [
   {
+    "context": "Senses",
+    "structure": "I can",
+    "icon": "media/img_1/smell.png",
+    "prefix": false,
+    "vocab": "The Five Senses 1",
+    "key": "",
+    "triple": true,
+    "complement": [
+      "with my eyes",
+      "with my ears",
+      "with my hands",
+      "with my mouth",
+      "with my nose"
+    ],
+    "words": ["see", "hear", "touch", "taste", "smell"],
+    "sentences": "sentence_practice?context=Senses&index=0",
+    "wordQuiz": true,
+    "readingQuiz": "vocab_reading_quiz?context=Senses&index=0",
+    "unscrambleWord": "unscramble_word?context=Senses&index=0",
+    "unscrambleSentence": "unscramble_sentence?context=Senses&index=0",
+    "vocabulary": "vocabulary_ref?context=Senses&index=0",
+    "paper": "paper_quiz?context=Senses&index=0",
+    "paperReading": "paper_reading?context=Senses&index=0",
+    "decoding": "decoding?context=Senses&index=0",
+    "unscrambled_paper": "unscrambled_paper?context=Senses&index=0",
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Senses&index=0",
+    "typing": "typing?context=Senses&index=0",
+    "match": "match?context=Senses&index=0"
+  },
+  {
     "context": "Assessment",
     "structure": "It is",
     "icon": "media/img_1/4 thirty.png",
@@ -578,6 +608,37 @@
     "match": "match?context=Technology&index=6"
   },
   {
+    "context": "Technology",
+    "structure": "My favorite vehicle is a",
+    "icon": "media/img_1/taxi.jpg",
+    "prefix": false,
+    "vocab": "My Favorite Vehicle",
+    "key": "",
+    "triple": true,
+    "complement": [
+      ". It has four wheels. It can travel on land",
+      ". It has a cable. It can travel on air",
+      ". It has foils. It can travel under water",
+      ". It has two wheels. It can carry a person",
+      ". It has big wheels. It can be used for farming",
+      ". It has three wheels. It can be used by children"
+    ],
+    "words": ["taxi", "cable car", "hydrofoil", "bike", "tractor", "tricycle"],
+    "sentences": "sentence_practice?context=Technology&index=7",
+    "wordQuiz": true,
+    "readingQuiz": "vocab_reading_quiz?context=Technology&index=7",
+    "unscrambleWord": "unscramble_word?context=Technology&index=7",
+    "unscrambleSentence": "unscramble_sentence?context=Technology&index=7",
+    "vocabulary": "vocabulary_ref?context=Technology&index=7",
+    "paper": "paper_quiz?context=Technology&index=7",
+    "paperReading": "paper_reading?context=Technology&index=7",
+    "decoding": "decoding?context=Technology&index=7",
+    "unscrambled_paper": "unscrambled_paper?context=Technology&index=7",
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Technology&index=7",
+    "typing": "typing?context=Technology&index=7",
+    "match": "match?context=Technology&index=7"
+  },
+  {
     "context": "Time",
     "icon": "media/img_1/5 o'clock.png",
     "structure": "It is",
@@ -1085,5 +1146,38 @@
     "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=6",
     "typing": "typing?context=Phonics&index=6",
     "match": "match?context=Phonics&index=6"
+  },
+  {
+    "context": "Phonics",
+    "structure": "has the sound",
+    "icon": "media/img_1/might.jpg",
+    "prefix": true,
+    "double": true,
+    "vocab": "Words with IGH, OW and EAR",
+    "key": "",
+    "complement": ["igh", "igh", "igh", "ow", "ow", "ow", "ear", "ear", "ear"],
+    "words": [
+      "light",
+      "night",
+      "might",
+      "clown",
+      "town",
+      "down",
+      "ear",
+      "hear",
+      "read"
+    ],
+    "wordQuiz": false,
+    "readingQuiz": "vocab_reading_quiz?context=Phonics&index=7",
+    "sentences": "sentence_practice?context=Phonics&index=7",
+    "unscrambleWord": "unscramble_word?context=Phonics&index=7",
+    "unscrambleSentence": "unscramble_sentence?context=Phonics&index=7",
+    "vocabulary": "vocabulary_ref?context=Phonics&index=7",
+    "paper": "paper_quiz?context=Phonics&index=7",
+    "paperReading": "paper_reading?context=Phonics&index=7",
+    "unscrambled_paper": "unscrambled_paper?context=Phonics&index=7",
+    "unscrambled_paper_phrase": "unscrambled_paper_phrase?context=Phonics&index=7",
+    "typing": "typing?context=Phonics&index=7",
+    "match": "match?context=Phonics&index=7"
   }
 ]

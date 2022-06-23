@@ -484,7 +484,471 @@
         "resources": [
           {
             "type": "Page 27",
-            "link": "media/textbooks/l26.png"
+            "link": "media/textbooks/l27.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences with trabsportation actions",
+    "question": "Which transortation actions do you know?",
+    "textbook": "Language Notebook 28",
+    "img": "media/textbooks/l28.png",
+    "instructions": [
+      {
+        "command": "Explore sentences with the sounds. Read them out loud.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "http://localhost:3000/unscramble_sentence?context=Technology&index=6"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, copy the 5 sentences explored and make a drawing representing them.",
+        "resources": [
+          {
+            "type": "Page 28",
+            "link": "media/textbooks/l28.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences describing sounds.",
+    "question": "Which words have the sounds IGH, AIR and EAR",
+    "textbook": "Language Notebook 29",
+    "img": "media/textbooks/l29.png",
+    "instructions": [
+      {
+        "command": "Review the sentences explored with the sounds IGH, AIR and EAR.",
+        "resources": [
+          {
+            "type": "Sentence Review",
+            "link": "/sentence_practice?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Practice unscrambling the sentences.",
+        "resources": [
+          {
+            "type": "Sentence unscramble",
+            "link": "/unscramble_sentence?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "On page 29, in your language notebook, listen to the teacher's dictation using the sentences explored. Write them on the page.",
+        "resources": [
+          {
+            "type": "media/textbooks/l29.png",
+            "link": "Page 29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To take a dictation",
+    "question": "Which words have the sound...?",
+    "textbook": "Language Notebook 30",
+    "img": "media/textbooks/l30.png",
+    "instructions": [
+      {
+        "command": "Review the sentences showing the sounds explored.",
+        "resources": [
+          {
+            "type": "Sentence Review",
+            "link": "/sentence_practice?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Listen to the teacher dictate the sentences about the sounds and copy them in order.",
+        "resources": [
+          {
+            "type": "Page 30",
+            "link": "media/textbooks/l30.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review the sounds explored",
+    "question": "Which words have the sound IGH, OW and EAR",
+    "textbook": "Language Notebook 31",
+    "img": "media/textbooks/l31.png",
+    "instructions": [
+      {
+        "command": "Type the missing word.",
+        "resources": [
+          {
+            "type": "Typing game",
+            "link": "/typing?context=Phonics&index=7"
+          }
+        ]
+      },
+      {
+        "command": "Match the images with the words.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "/match?context=Phonics&index=7"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, on page 31, write sentences using the words. You can use the structure ...HAS THE SOUND...",
+        "resources": [
+          {
+            "type": "Page 31",
+            "link": "media/textbooks/l31.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about your favorite vehicle",
+    "question": "What can you write about your favorite vehicle?",
+    "textbook": "Language Notebook 32",
+    "img": "media/textbooks/l32.png",
+    "instructions": [
+      {
+        "command": "Explore the sentences.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=7"
+          }
+        ]
+      },
+      {
+        "command": "Try unscrambling the sentences. It is a difficult task, but you can do it. Follow this pattern: MY FAVORITE VEHICLE IS A...IT HAS...IT CAN",
+        "resources": [
+          {
+            "type": "Unscramble sentences",
+            "link": "/unscramble_sentence?context=Technology&index=7"
+          }
+        ]
+      },
+      {
+        "command": "On page 32, complete the sentences to describe your favorite vehicle. Draw it!",
+        "resources": [
+          {
+            "type": "Page 32",
+            "link": "media/textbooks/l32.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To illustrate how you can take care of the environment",
+    "question": "How can you take care of the environment?",
+    "textbook": "Language Notebook 33",
+    "img": "media/textbooks/l33.png",
+    "instructions": [
+      {
+        "command": "Watch the video. Pay close attention.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://youtu.be/belXC_IoW4o"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, on the left part, draw how you can take care of the planet.",
+        "resources": [
+          {
+            "type": "Page 33",
+            "link": "media/textbooks/l33.png"
+          }
+        ]
+      },
+      {
+        "command": "On the right side of the page, draw what may happen if you do not take care of the planet. Watch the video for ideas.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=X2YgM1Zw4_E"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify the five senses actions.",
+    "question": "What can you do with your senses?",
+    "textbook": "Language Notebook 37",
+    "img": "media/textbooks/l37.png",
+    "instructions": [
+      {
+        "command": "Learn the song.",
+        "resources": [
+          {
+            "type": "Song",
+            "link": "https://www.youtube.com/watch?v=EXQjhbtE0EY"
+          }
+        ]
+      },
+      {
+        "command": "Explore the sentences.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the words. Practice spelling the FIVE SENSES words.",
+        "resources": [
+          {
+            "type": "Unscramble the word",
+            "link": "/unscramble_word?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences on page 37. Then draw.",
+        "resources": [
+          {
+            "type": "Page 37",
+            "link": "media/textbooks/l37.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To read sight words.",
+    "question": "Which words can you read out loud?",
+    "textbook": "Language Notebook 36",
+    "img": "media/textbooks/l36.png",
+    "instructions": [
+      {
+        "command": "Try and read each word. With a color pencil, circle the words you can read.",
+        "resources": [
+          {
+            "type": "Page 36",
+            "link": "media/textbooks/l36.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify the five senses actions.",
+    "question": "What can you do with your senses?",
+    "textbook": "Language Notebook 37",
+    "img": "media/textbooks/l37.png",
+    "instructions": [
+      {
+        "command": "Learn the song.",
+        "resources": [
+          {
+            "type": "Song",
+            "link": "https://www.youtube.com/watch?v=EXQjhbtE0EY"
+          }
+        ]
+      },
+      {
+        "command": "Explore the sentences.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the words. Practice spelling the FIVE SENSES words.",
+        "resources": [
+          {
+            "type": "Unscramble the word",
+            "link": "/unscramble_word?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences on page 37. Then draw.",
+        "resources": [
+          {
+            "type": "Page 37",
+            "link": "media/textbooks/l37.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about an experience",
+    "question": "What is a special family trip you had?",
+    "textbook": "Language Notebook 38",
+    "img": "media/textbooks/l38.png",
+    "instructions": [
+      {
+        "command": "Review the five senses. Unscramble the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble the sentences",
+            "link": "/unscramble_sentence?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, on page 38, write about a family trip. Use the senses words.",
+        "resources": [
+          {
+            "type": "Page 38",
+            "link": "media/textbooks/l38.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
           }
         ]
       }
