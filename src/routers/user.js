@@ -167,13 +167,13 @@ router.post("/forgot-password", async (req, res, next) => {
       id: user._id,
     };
     const token = jwt.sign(payload, process.env.JWT_SECRET, {
-      expiresIn: "15m",
+      expiresIn: "24h",
     });
     const link =
       "https://mrperez.herokuapp.com/reset-password/" + user._id + "/" + token;
     sendmail(user.email, link);
     res.send(
-      '<script>alert("A link to reset your password has been sent to the email registered. The link is ONLY valid for 15 minutes."); window.location.href="/loginuser"</script>'
+      '<script>alert("A link to reset your password has been sent to the email registered. The link is  valid for 24 hours."); window.location.href="/loginuser"</script>'
     );
   } catch (e) {
     res.send(
