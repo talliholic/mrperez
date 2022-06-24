@@ -9,7 +9,7 @@ const sendPassword = (email, link) => {
     from: "ivan.perez@gcb.edu.co",
     subject: "Reset password for mrperez.herokuapp.com",
     html:
-      "<p>Hello from Mr. Perez. Here's a link to reset your password.</p><p>This link is valid for 15 minutes.</p> " +
+      "<p>Hello from Mr. Perez. Here's a link to reset your password.</p><p>This link is valid for 24 hours.</p> " +
       link,
   });
 };
