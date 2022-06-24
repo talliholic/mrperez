@@ -415,7 +415,7 @@ var Leaderboard = /*#__PURE__*/function (_React$Component4) {
       }).then(function (res) {
         var leaders = [];
 
-        for (var i = 0; i < 25; i++) {
+        for (var i = 0; i < 30; i++) {
           leaders.push(res[i]);
         }
 
@@ -429,7 +429,7 @@ var Leaderboard = /*#__PURE__*/function (_React$Component4) {
     value: function render() {
       return /*#__PURE__*/React.createElement("div", {
         className: "leaders"
-      }, /*#__PURE__*/React.createElement("h2", null, "Leaderboard"), /*#__PURE__*/React.createElement("h3", null, "Most Points - Top 25"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "#"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Points"))), /*#__PURE__*/React.createElement("tbody", null, this.state.leaders.map(function (leader, i) {
+      }, /*#__PURE__*/React.createElement("h2", null, "Leaderboard"), /*#__PURE__*/React.createElement("h3", null, "Most Points - Top 30"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "#"), /*#__PURE__*/React.createElement("th", null, "Name"), /*#__PURE__*/React.createElement("th", null, "Points"))), /*#__PURE__*/React.createElement("tbody", null, this.state.leaders.map(function (leader, i) {
         return /*#__PURE__*/React.createElement("tr", {
           key: i
         }, /*#__PURE__*/React.createElement("td", null, i + 1), /*#__PURE__*/React.createElement("td", null, leader.user.split(" ")[0] + " " + leader.user.split(" ")[1].charAt(0)), /*#__PURE__*/React.createElement("td", {
