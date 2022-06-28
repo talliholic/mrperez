@@ -28,6 +28,9 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+var searchParams = new URLSearchParams(window.location.search);
+var pageNum = searchParams.get("page");
+
 var Projectable = /*#__PURE__*/function (_React$Component) {
   _inherits(Projectable, _React$Component);
 
@@ -42,7 +45,7 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       items: [],
       dataLoaded: false,
-      loggedIn: false
+      showMenu: false
     };
     return _this;
   }
@@ -52,39 +55,47 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
+      if (!pageNum) {
+        this.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            showMenu: true
+          });
+        });
+      }
+
       fetch("/projectable_data").then(function (res) {
         return res.json();
       }).then(function (json) {
-        _this2.setState({
-          items: json,
-          dataLoaded: true,
-          loggedIn: false
-        });
-
-        fetch("/loggedIn").then(function (res) {
-          return res.json();
-        }).then(function (res) {
-          if (res.loggedIn) {
-            _this2.setState(function (prev) {
-              return _objectSpread(_objectSpread({}, prev), {}, {
-                loggedIn: true
-              });
-            });
-          }
+        _this2.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            items: json,
+            dataLoaded: true
+          });
         });
       });
     }
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       var _this$state = this.state,
           dataLoaded = _this$state.dataLoaded,
           items = _this$state.items;
 
-      if (dataLoaded && this.state.loggedIn) {
+      if (dataLoaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
         }, /*#__PURE__*/React.createElement("div", {
+          onClick: function onClick() {
+            return _this3.setState(function (prev) {
+              return _objectSpread(_objectSpread({}, prev), {}, {
+                showMenu: !prev.showMenu
+              });
+            });
+          },
+          id: "show-menu"
+        }, "Menu"), this.state.showMenu && /*#__PURE__*/React.createElement("div", {
           id: "textbookNav"
         }, /*#__PURE__*/React.createElement(Textbook, {
           textbook: "Language Notebook",
@@ -98,16 +109,14 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
         }), /*#__PURE__*/React.createElement(Textbook, {
           textbook: "Math Book",
           data: this.state.items
-        })), items.map(function (item, i) {
+        })), pageNum && items.filter(function (item) {
+          return item.textbook === pageNum;
+        }).map(function (item, i) {
           return /*#__PURE__*/React.createElement(Lesson, {
             key: i,
             data: item
           });
         }));
-      } else if (dataLoaded && !this.state.loggedIn) {
-        return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "Debes iniciar sesi\xF3n para acceder al material de estudio."), /*#__PURE__*/React.createElement("a", {
-          href: "/loginuser"
-        }, "Inicia Sesi\xF3n o Reg\xEDstrate"));
       }
 
       return /*#__PURE__*/React.createElement("p", null, "Loading...");
@@ -123,23 +132,23 @@ var Textbook = /*#__PURE__*/function (_React$Component2) {
   var _super2 = _createSuper(Textbook);
 
   function Textbook(props) {
-    var _this3;
+    var _this4;
 
     _classCallCheck(this, Textbook);
 
-    _this3 = _super2.call(this, props);
-    _this3.state = {
-      activities: _this3.props.data.filter(function (activity) {
-        return activity.textbook.includes(_this3.props.textbook);
+    _this4 = _super2.call(this, props);
+    _this4.state = {
+      activities: _this4.props.data.filter(function (activity) {
+        return activity.textbook.includes(_this4.props.textbook);
       })
     };
-    return _this3;
+    return _this4;
   }
 
   _createClass(Textbook, [{
     key: "render",
     value: function render() {
-      var _this4 = this;
+      var _this5 = this;
 
       return /*#__PURE__*/React.createElement("div", {
         className: "textbookContent"
@@ -151,8 +160,8 @@ var Textbook = /*#__PURE__*/function (_React$Component2) {
         return /*#__PURE__*/React.createElement("a", {
           className: "page",
           key: i,
-          href: "#" + activity.textbook
-        }, activity.textbook.replace(_this4.props.textbook, "Page"));
+          href: "?page=" + activity.textbook
+        }, activity.textbook.replace(_this5.props.textbook, "Page"));
       })));
     }
   }]);
@@ -180,7 +189,7 @@ var Lesson = /*#__PURE__*/function (_React$Component3) {
           id: this.props.data.textbook
         }, /*#__PURE__*/React.createElement("div", {
           className: "text"
-        }, /*#__PURE__*/React.createElement("h1", null, this.props.data.question), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), /*#__PURE__*/React.createElement("div", {
+        }, /*#__PURE__*/React.createElement("h1", null, this.props.data.textbook), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), /*#__PURE__*/React.createElement("div", {
           className: "lines"
         }), this.props.data.instructions.map(function (instruction, i) {
           return /*#__PURE__*/React.createElement(Instruction, {
@@ -188,10 +197,7 @@ var Lesson = /*#__PURE__*/function (_React$Component3) {
             key: i,
             data: instruction
           });
-        }), /*#__PURE__*/React.createElement("a", {
-          className: "go-menu",
-          href: "/projectable"
-        }, "Go to menu")), /*#__PURE__*/React.createElement("div", {
+        })), /*#__PURE__*/React.createElement("div", {
           className: "bg"
         }, /*#__PURE__*/React.createElement("img", {
           src: this.props.data.img

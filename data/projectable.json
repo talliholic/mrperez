@@ -553,8 +553,8 @@
         "command": "On page 29, in your language notebook, listen to the teacher's dictation using the sentences explored. Write them on the page.",
         "resources": [
           {
-            "type": "media/textbooks/l29.png",
-            "link": "Page 29"
+            "type": "Page 29",
+            "link": "media/textbooks/l29.png"
           }
         ]
       }
@@ -982,26 +982,237 @@
     ]
   },
   {
-    "objective": "e",
-    "question": "",
-    "textbook": "",
-    "img": "media/textbooks/",
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 48",
+    "img": "media/textbooks/mb48.png",
     "instructions": [
       {
-        "command": "",
+        "command": "Pay attention to how shapes can be divided into halves.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=uUfLWCNkH6w"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Answer whether each halved shape is the same as the other one. Then write THIS IS A HALF or THIS IS NOT A HALF below the answers.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 48",
+            "link": "media/textbooks/mb48.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 50",
+    "img": "media/textbooks/mb50.png",
+    "instructions": [
+      {
+        "command": "Pay attention to how shapes can be divided into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=uUfLWCNkH6w"
+          }
+        ]
+      },
+      {
+        "command": "See if each shape can be cut into halves. Write THIS IS A HALF or THIS IS NOT A HALF if the shape can not be cut into a half.",
+        "resources": [
+          {
+            "type": "Page 50",
+            "link": "media/textbooks/mb50.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 51",
+    "img": "media/textbooks/mb51.png",
+    "instructions": [
+      {
+        "command": "Watch another video to cut shapes into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=CXJXrRR_SG8"
+          }
+        ]
+      },
+      {
+        "command": "Follow the instructions on the page to show your understanding of cutting shapes into halves.",
+        "resources": [
+          {
+            "type": "Page 51",
+            "link": "media/textbooks/mb51.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 52",
+    "img": "media/textbooks/mb52.png",
+    "instructions": [
+      {
+        "command": "Watch how fruits can be cut into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.nagwa.com/en/videos/642143465234/"
+          }
+        ]
+      },
+      {
+        "command": "Draw lines to make halves and NOT halves. Then circle the shapes that are folded in halves.",
+        "resources": [
+          {
+            "type": "Page 52",
+            "link": "media/textbooks/mb52.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify and color shapes by their halves",
+    "question": "How can you halve a shape?",
+    "textbook": "Math Book 54",
+    "img": "media/textbooks/mb54.png",
+    "instructions": [
+      {
+        "command": "Continue learning about halving objects.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=OYMBQ92RoVw"
+          }
+        ]
+      },
+      {
+        "command": "Draw a circle on the shapes that show a half. Then color one half of the shape.",
+        "resources": [
+          {
+            "type": "Page 54",
+            "link": "media/textbooks/mb54.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 55",
+    "img": "media/textbooks/mb55.png",
+    "instructions": [
+      {
+        "command": "Follow the instructions on the page to show your understanding of cutting shapes into halves.",
+        "resources": [
+          {
+            "type": "Page 55",
+            "link": "media/textbooks/mb55.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To use vocabulary related to time",
+    "question": "Which words tell time?",
+    "textbook": "Math Book 112",
+    "img": "media/textbooks/mb112.png",
+    "instructions": [
+      {
+        "command": "Review the parts of the day. Unscramble the words.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "/unscramble_word?context=Time&index=4"
+          }
+        ]
+      },
+      {
+        "command": "Review the days of the week. Match the words with their worder in the week.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "/match?context=Time&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences with the words in the box.",
+        "resources": [
+          {
+            "type": "Page 112",
+            "link": "media/textbooks/mb112.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review the order of the days of the week",
+    "question": "Which are the days of the week?",
+    "textbook": "Math Book 113",
+    "img": "media/textbooks/mb113.png",
+    "instructions": [
+      {
+        "command": "Review the order of the days of the week.",
+        "resources": [
+          {
+            "type": "Days of the Week Review",
+            "link": "/vocabulary_ref?context=Time&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Complete the days of the week on the roulette.",
+        "resources": [
+          {
+            "type": "Page 113",
+            "link": "media/textbooks/mb113.png"
+          }
+        ]
+      },
+      {
+        "command": "Then write the digital times. For example, 2 o'clock is 2:00."
+      }
+    ]
+  },
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 114",
+    "img": "media/textbooks/mb114.png",
+    "instructions": [
+      {
+        "command": "Practice the time by typing the word o'clock",
+        "resources": [
+          {
+            "type": "typing Game",
+            "link": "/typing?context=Time&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Follow the page instructions to write the time.",
+        "resources": [
+          {
+            "type": "Page 114",
+            "link": "media/textbooks/mb114.png"
           }
         ]
       },
