@@ -4,7 +4,7 @@
   font-family: "Special Elite", cursive;
 }
 .container {
-  margin: 10px;
+  margin: 5px;
 }
 h1 {
   text-align: center;
@@ -19,8 +19,7 @@ h1 {
   border: 1px dashed black;
   padding: 10px;
   display: flex;
-  flex-direction: row wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
   background-color: #f5f5f5;
 }
 .lesson h4 {
@@ -54,8 +53,13 @@ ul {
 .list:hover {
   background-color: #f0f0f0;
 }
+.text {
+  width: 725px;
+  margin-bottom: 20px;
+}
 .bg img {
-  height: 600px;
+  height: 560px;
+  padding: 0 5px;
 }
 .lines {
   border-left: 1px solid #ffaa9f;
@@ -72,7 +76,7 @@ h3 {
 }
 #textbookNav {
   display: flex;
-  flex-direction: row wrap;
+  flex-wrap: wrap;
 }
 .textbook {
   padding: 2px;
@@ -80,9 +84,10 @@ h3 {
   text-align: center;
 }
 .textbookContent {
-  margin-right: 3px;
+  margin-right: 5px;
   border: 1px dashed black;
   padding: 5px;
+  margin-bottom: 5px;
 }
 .page {
   margin: 2px 7px;
@@ -95,11 +100,11 @@ h3 {
 }
 .page-links {
   display: flex;
-  width: 282.5px;
+  width: 282px;
   padding-right: 10px;
   flex-wrap: wrap;
   justify-content: flex-start;
-  font-size: 15px;
+  font-size: 14px;
 }
 .go-menu {
   font-size: 18px;
