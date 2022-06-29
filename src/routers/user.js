@@ -93,7 +93,7 @@ router.post("/users/login", async (req, res) => {
     res.cookie("jwt", token, { httpOnly: true });
     res.send({ user, token });
   } catch (e) {
-    res.status(400).send({ error: "There was an error" });
+    res.status(400).send({ error: "Ocurrió un error!" });
   }
 });
 

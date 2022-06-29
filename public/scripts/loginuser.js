@@ -126,7 +126,7 @@ var App = /*#__PURE__*/function (_React$Component) {
             showLog: true
           });
         } else {
-          alert("There was en error!");
+          alert("Completa todos los campos. Ingresa una clave de mínimo 5 caracteres. Asegurate de no haberte resgistrado antes con el correo que acabas de ingresar. Utiliza un correo electrónico activo.");
         }
       });
     }
@@ -158,7 +158,7 @@ var App = /*#__PURE__*/function (_React$Component) {
             showLog: false
           });
         } else {
-          alert("There was an error!");
+          alert("Revisa tu clave o correo ingresado.");
         }
       });
     }
@@ -212,63 +212,70 @@ var App = /*#__PURE__*/function (_React$Component) {
         id: "container"
       }, this.state.showSign && /*#__PURE__*/React.createElement("div", {
         className: "form"
-      }, /*#__PURE__*/React.createElement("h1", null, "User Signup"), /*#__PURE__*/React.createElement("form", {
+      }, /*#__PURE__*/React.createElement("h1", null, "Registro de Usuario"), /*#__PURE__*/React.createElement("form", {
         className: "user_form"
       }, /*#__PURE__*/React.createElement("input", {
         type: "text",
-        placeholder: "Name"
+        placeholder: "Nombre",
+        required: true
       }), /*#__PURE__*/React.createElement("input", {
         type: "text",
-        placeholder: "Last Name"
+        placeholder: "Apellido",
+        required: true
       }), /*#__PURE__*/React.createElement("input", {
         type: "email",
-        placeholder: "Email"
+        placeholder: "Correo Electr\xF3nico",
+        required: true
       }), /*#__PURE__*/React.createElement("input", {
         type: "password",
-        placeholder: "Password",
-        autoComplete: "on"
+        placeholder: "Clave",
+        autoComplete: "on",
+        required: true,
+        minLength: "5"
       }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
         onClick: this.showPassword,
         className: "show_password_button"
-      }, "Show password"), /*#__PURE__*/React.createElement("div", {
+      }, "Revisa tu clave"), /*#__PURE__*/React.createElement("div", {
         className: "show_password"
       })), /*#__PURE__*/React.createElement("input", {
         onClick: this.signup,
         type: "submit",
-        value: "Sign up"
+        value: "Reg\xEDstrate"
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showLogIn
-      }, "Are you a member? Log in here"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+      }, "Si ya est\xE1s registrado, haz clic ac\xE1."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
         target: "_blank",
         id: "forgot",
         href: "/forgot-password"
-      }, "Did you forget your password?")), this.state.showLog && /*#__PURE__*/React.createElement("div", {
+      }, "\xBFOlvidaste tu clave?")), this.state.showLog && /*#__PURE__*/React.createElement("div", {
         className: "form"
-      }, /*#__PURE__*/React.createElement("h1", null, "User Login"), /*#__PURE__*/React.createElement("form", {
+      }, /*#__PURE__*/React.createElement("h1", null, "Ingreso"), /*#__PURE__*/React.createElement("form", {
         className: "user_form"
       }, /*#__PURE__*/React.createElement("input", {
         type: "email",
-        placeholder: "Email"
+        placeholder: "Correo Electr\xF3nico",
+        required: true
       }), /*#__PURE__*/React.createElement("input", {
         type: "password",
-        placeholder: "Password",
-        autoComplete: "on"
+        placeholder: "Clave",
+        autoComplete: "on",
+        required: true
       }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
         onClick: this.showPassword,
         className: "show_password_button"
-      }, "Show password"), /*#__PURE__*/React.createElement("div", {
+      }, "Revisa tu clave"), /*#__PURE__*/React.createElement("div", {
         className: "show_password"
       })), /*#__PURE__*/React.createElement("input", {
         onClick: this.login,
         type: "submit",
-        value: "Log in"
+        value: "Ingresa"
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showSignUp
-      }, "Not a member? Sign up here"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+      }, "Reg\xEDstrate ac\xE1"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
         target: "_blank",
         id: "forgot",
         href: "/forgot-password"
-      }, "Did you forget your password?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
+      }, "\xBFOlvidaste tu clave?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
         user: this.state.user
       }), /*#__PURE__*/React.createElement(Leaderboard, null), /*#__PURE__*/React.createElement("div", {
         className: "userlogout"
