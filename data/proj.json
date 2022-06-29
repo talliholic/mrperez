@@ -1,0 +1,26 @@
+{
+  "objective": "To review o'clock and half hour times",
+  "question": "What time is it?",
+  "textbook": "Math Book 114",
+  "img": "media/textbooks/mb114.png",
+  "instructions": [
+    {
+      "command": "Practice the time by typing the word o'clock.",
+      "resources": [
+        {
+          "type": "typing Game",
+          "link": "/typing?context=Time&index=0"
+        }
+      ]
+    },
+    {
+      "command": "Follow the page instructions to write the time.",
+      "resources": [
+        {
+          "type": "Page 114",
+          "link": "media/textbooks/mb114.png"
+        }
+      ]
+    }
+  ]
+}

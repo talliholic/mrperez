@@ -45,7 +45,8 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       items: [],
       dataLoaded: false,
-      showMenu: false
+      showMenu: false,
+      showPic: false
     };
     return _this;
   }
@@ -58,7 +59,8 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
       if (!pageNum) {
         this.setState(function (prev) {
           return _objectSpread(_objectSpread({}, prev), {}, {
-            showMenu: true
+            showMenu: true,
+            showPic: true
           });
         });
       }
@@ -86,7 +88,10 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
       if (dataLoaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, /*#__PURE__*/React.createElement("div", {
+        }, this.state.showPic && /*#__PURE__*/React.createElement("img", {
+          id: "bg-read",
+          src: "media/topics/read_write.jpg"
+        }), /*#__PURE__*/React.createElement("div", {
           onClick: function onClick() {
             return _this3.setState(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
@@ -189,7 +194,7 @@ var Lesson = /*#__PURE__*/function (_React$Component3) {
           id: this.props.data.textbook
         }, /*#__PURE__*/React.createElement("div", {
           className: "text"
-        }, /*#__PURE__*/React.createElement("h1", null, this.props.data.textbook), /*#__PURE__*/React.createElement("h4", null, this.props.data.objective), /*#__PURE__*/React.createElement("h2", null, "Instructions"), /*#__PURE__*/React.createElement("div", {
+        }, /*#__PURE__*/React.createElement("h1", null, this.props.data.textbook), /*#__PURE__*/React.createElement("h4", null, this.props.data.question), /*#__PURE__*/React.createElement("h2", null, "Instructions"), /*#__PURE__*/React.createElement("div", {
           className: "lines"
         }), this.props.data.instructions.map(function (instruction, i) {
           return /*#__PURE__*/React.createElement(Instruction, {

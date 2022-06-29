@@ -1199,7 +1199,7 @@
     "img": "media/textbooks/mb114.png",
     "instructions": [
       {
-        "command": "Practice the time by typing the word o'clock",
+        "command": "Practice the time by typing the word o'clock.",
         "resources": [
           {
             "type": "typing Game",
@@ -1215,22 +1215,288 @@
             "link": "media/textbooks/mb114.png"
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "objective": "To review half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 115",
+    "img": "media/textbooks/mb115.png",
+    "instructions": [
       {
-        "command": "",
+        "command": "Practice the time by listening.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Time&index=3"
           }
         ]
       },
       {
-        "command": "",
+        "command": "Follow the page instructions to write the time. Pay attention to the hour hand that shows half.",
         "resources": [
           {
-            "type": "",
-            "link": ""
+            "type": "Page 115",
+            "link": "media/textbooks/mb115.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 116",
+    "img": "media/textbooks/mb116.png",
+    "instructions": [
+      {
+        "command": "Organize the days of the week.",
+        "resources": [
+          {
+            "type": "Page 116",
+            "link": "media/textbooks/mb116.png"
+          },
+          {
+            "type": "Listening Activity",
+            "link": "/sentence_practice?context=Time&index=1"
+          },
+          {
+            "type": "Order the days",
+            "link": "/match?context=Time&index=1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 117",
+    "img": "media/textbooks/mb117.png",
+    "instructions": [
+      {
+        "command": "Write the time.",
+        "resources": [
+          {
+            "type": "typing Game",
+            "link": "media/textbooks/mb117.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review counting to 20",
+    "question": "Can you count to 20?",
+    "textbook": "Math Book 120",
+    "img": "media/textbooks/mb120.png",
+    "instructions": [
+      {
+        "command": "Say the missing number.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=vmyzMyDtQRI"
+          }
+        ]
+      },
+      {
+        "command": "Listen to the number and rescue the helicopter passenger.",
+        "resources": [
+          {
+            "type": "Helicopter Game",
+            "link": "https://www.topmarks.co.uk/learning-to-count/helicopter-rescue"
+          }
+        ]
+      },
+      {
+        "command": "Follow the page instructions to write the time.",
+        "resources": [
+          {
+            "type": "Page 120",
+            "link": "media/textbooks/mb120.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To make numbers with tens and ones",
+    "question": "How can you make numbers with tens and ones?",
+    "textbook": "Math Book 121",
+    "img": "media/textbooks/mb121.png",
+    "instructions": [
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Adding Game",
+            "link": "/math-quizzes?topic=add%20to%20a%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Write the missing numbers. Then add the tens and ones.",
+        "resources": [
+          {
+            "type": "Page 121",
+            "link": "media/textbooks/mb121.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write teen number words",
+    "question": "How can you write teen numbers?",
+    "textbook": "Math Book 122",
+    "img": "media/textbooks/mb122.png",
+    "instructions": [
+      {
+        "command": "Practice reading the teen numbers. Use this image to solve the book exercise.",
+        "resources": [
+          {
+            "type": "Image",
+            "link": "media/reference/teen_numbers.jpg"
+          }
+        ]
+      },
+      {
+        "command": "Write the number words.",
+        "resources": [
+          {
+            "type": "Page 122",
+            "link": "media/textbooks/mb122.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To add numbers with tens and ones",
+    "question": "How can you add tens and ones?",
+    "textbook": "Math Book 124",
+    "img": "media/textbooks/mb124.png",
+    "instructions": [
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Adding to Ten",
+            "link": "/math-quizzes?topic=add%20to%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Look at the pictures on the page and write addition sentences with the number 10.",
+        "resources": [
+          {
+            "type": "Page 124",
+            "link": "media/textbooks/mb124.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Draw in a ten frame",
+    "question": "How can add with a ten frame?",
+    "textbook": "Math Book 125",
+    "img": "media/textbooks/mb125.png",
+    "instructions": [
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Adding to Ten",
+            "link": "/math-quizzes?topic=add%20to%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Count the counters on the ten frame. Write the number. Then draw counters on the empty tens frame. Then write the corresponding addition sentence.",
+        "resources": [
+          {
+            "type": "Page 125",
+            "link": "media/textbooks/mb125.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To decompose numbers",
+    "question": "How can decompose a number?",
+    "textbook": "Math Book 126",
+    "img": "media/textbooks/mb126.png",
+    "instructions": [
+      {
+        "command": "Count the beads. Write the corresponding addition sentence, adding the red and white beads.",
+        "resources": [
+          {
+            "type": "Page 126",
+            "link": "media/textbooks/mb126.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To compare quantities",
+    "question": "Are there more red or yellow cars?",
+    "textbook": "Math Book 127",
+    "img": "media/textbooks/mb127.png",
+    "instructions": [
+      {
+        "command": "Rewrite the sentences: THERE ARE MORE YELLOW CARS THAN RED CARS. 15 IS GREATER THAN 13.",
+        "resources": [
+          {
+            "type": "Page 127",
+            "link": "media/textbooks/mb127.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To compare numbers",
+    "question": "Are there more or less?",
+    "textbook": "Math Book 128",
+    "img": "media/textbooks/mb128.png",
+    "instructions": [
+      {
+        "command": "Count the objects and complete the sentences.",
+        "resources": [
+          {
+            "type": "Page 128",
+            "link": "media/textbooks/mb128.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To compare numbers",
+    "question": "Which number is greater than...?",
+    "textbook": "Math Book 129",
+    "img": "media/textbooks/mb129.png",
+    "instructions": [
+      {
+        "command": "Start exploring greater than and less than.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=3qisu9NF1_0"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences with greater than or less than.",
+        "resources": [
+          {
+            "type": "Page 129",
+            "link": "media/textbooks/mb129.png"
           }
         ]
       }
