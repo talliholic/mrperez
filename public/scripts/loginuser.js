@@ -120,13 +120,15 @@ var App = /*#__PURE__*/function (_React$Component) {
         return res.json();
       }).then(function (res) {
         if (!res.error) {
+          alert("Tu registro fue exitoso. Ingresa con el correo y clave registrada.");
+
           _this3.setState({
             loggedIn: false,
             showSign: false,
             showLog: true
           });
         } else {
-          alert("Completa todos los campos. Ingresa una clave de mínimo 5 caracteres. Asegurate de no haberte resgistrado antes con el correo que acabas de ingresar. Utiliza un correo electrónico activo.");
+          alert("Completa todos los campos. Ingresa una clave de mínimo 5 caracteres. Haz clic en REVISA TU CLAVE para que la tengas presente. Asegurate de no haberte resgistrado antes con el correo que acabas de ingresar. Utiliza un correo electrónico activo.");
         }
       });
     }
