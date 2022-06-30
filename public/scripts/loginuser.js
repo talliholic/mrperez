@@ -2,6 +2,12 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -128,7 +134,7 @@ var App = /*#__PURE__*/function (_React$Component) {
             showLog: true
           });
         } else {
-          alert("Completa todos los campos. Ingresa una clave de mínimo 5 caracteres. Haz clic en REVISA TU CLAVE para que la tengas presente. Asegurate de no haberte resgistrado antes con el correo que acabas de ingresar. Utiliza un correo electrónico activo.");
+          alert("Completa todos los campos. Ingresa una clave de mínimo 5 caracteres. Haz clic en REVISA TU CLAVE para que la tengas presente. Asegurate de no haberte registrado antes con el correo que acabas de ingresar. Utiliza un correo electrónico activo.");
         }
       });
     }
@@ -245,7 +251,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         value: "Reg\xEDstrate"
       })), /*#__PURE__*/React.createElement("button", {
         onClick: this.showLogIn
-      }, "Si ya est\xE1s registrado, haz clic ac\xE1."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
+      }, "\xBFYa est\xE1s registrado?"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
         target: "_blank",
         id: "forgot",
         href: "/forgot-password"
@@ -277,18 +283,12 @@ var App = /*#__PURE__*/function (_React$Component) {
         target: "_blank",
         id: "forgot",
         href: "/forgot-password"
-      }, "\xBFOlvidaste tu clave?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(User, {
-        user: this.state.user
-      }), /*#__PURE__*/React.createElement(Leaderboard, null), /*#__PURE__*/React.createElement("div", {
-        className: "userlogout"
-      }, /*#__PURE__*/React.createElement("form", {
-        className: "user_form"
-      }, /*#__PURE__*/React.createElement("input", {
-        onClick: this.logout,
-        id: "logoutbutton",
-        type: "submit",
-        value: "Log out"
-      })))));
+      }, "\xBFOlvidaste tu clave?")), this.state.loggedIn && /*#__PURE__*/React.createElement("div", {
+        className: "profile"
+      }, /*#__PURE__*/React.createElement(User, null), /*#__PURE__*/React.createElement(Quizzes, {
+        user: this.state.user,
+        logout: this.logout
+      }), /*#__PURE__*/React.createElement(Leaderboard, null)));
     }
   }]);
 
@@ -307,14 +307,114 @@ var User = /*#__PURE__*/function (_React$Component2) {
 
     _this5 = _super2.call(this, props);
     _this5.state = {
-      quizzes: [],
-      scores: []
+      user: {},
+      changeName: false
     };
-    _this5.getScore = _this5.getScore.bind(_assertThisInitialized(_this5));
+    _this5.changeName = _this5.changeName.bind(_assertThisInitialized(_this5));
     return _this5;
   }
 
   _createClass(User, [{
+    key: "changeName",
+    value: function changeName(e) {
+      e.preventDefault();
+      var name = e.target.name.value;
+      var lastname = e.target.lastname.value;
+      this.setState(function (prev) {
+        return _objectSpread(_objectSpread({}, prev), {}, {
+          changeName: false
+        });
+      });
+      fetch("/users/me", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: name,
+          lastname: lastname
+        })
+      }).then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        return location.reload();
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this6 = this;
+
+      fetch("/users/me").then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        return _this6.setState(function (prev) {
+          return _objectSpread(_objectSpread({}, prev), {}, {
+            user: res
+          });
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this7 = this;
+
+      return /*#__PURE__*/React.createElement("div", {
+        className: "perfil"
+      }, /*#__PURE__*/React.createElement("h2", null, "My Profile"), /*#__PURE__*/React.createElement("p", null, "My username is ", this.state.user.name, " ", this.state.user.lastname, "."), /*#__PURE__*/React.createElement("p", null, "My email is ", this.state.user.email, "."), /*#__PURE__*/React.createElement("a", {
+        onClick: function onClick() {
+          return _this7.setState(function (prev) {
+            return _objectSpread(_objectSpread({}, prev), {}, {
+              changeName: !prev.changeName
+            });
+          });
+        },
+        href: "#"
+      }, "Change my username"), this.state.changeName && /*#__PURE__*/React.createElement("form", {
+        onSubmit: this.changeName
+      }, /*#__PURE__*/React.createElement("input", {
+        type: "text",
+        name: "name",
+        placeholder: "New Name",
+        minLength: "2",
+        required: true
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "text",
+        name: "lastname",
+        placeholder: "New Lastname",
+        minLength: "2",
+        required: true
+      }), /*#__PURE__*/React.createElement("input", {
+        type: "submit",
+        value: "Change"
+      })));
+    }
+  }]);
+
+  return User;
+}(React.Component);
+
+var Quizzes = /*#__PURE__*/function (_React$Component3) {
+  _inherits(Quizzes, _React$Component3);
+
+  var _super3 = _createSuper(Quizzes);
+
+  function Quizzes(props) {
+    var _this8;
+
+    _classCallCheck(this, Quizzes);
+
+    _this8 = _super3.call(this, props);
+    _this8.state = {
+      quizzes: [],
+      scores: []
+    };
+    _this8.getScore = _this8.getScore.bind(_assertThisInitialized(_this8));
+    return _this8;
+  }
+
+  _createClass(Quizzes, [{
     key: "getScore",
     value: function getScore(score) {
       this.setState(function (prev) {
@@ -327,23 +427,23 @@ var User = /*#__PURE__*/function (_React$Component2) {
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps, prevState) {
-      var _this6 = this;
+      var _this9 = this;
 
       if (prevState.quizzes !== this.state.quizzes) {
         this.state.quizzes.forEach(function (quiz) {
-          return _this6.getScore(quiz.grade);
+          return _this9.getScore(quiz.grade);
         });
       }
     }
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this7 = this;
+      var _this10 = this;
 
       fetch("/quizzes").then(function (res) {
         return res.json();
       }).then(function (res) {
-        _this7.setState({
+        _this10.setState({
           quizzes: res,
           scores: []
         });
@@ -354,33 +454,44 @@ var User = /*#__PURE__*/function (_React$Component2) {
     value: function render() {
       return /*#__PURE__*/React.createElement("div", {
         id: "subcontainer"
-      }, this.state.quizzes.length === 0 && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "No quiz results yet!")), /*#__PURE__*/React.createElement("div", {
+      }, this.state.quizzes.length === 0 && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "No quiz results yet! Take a quiz!")), /*#__PURE__*/React.createElement("h2", null, "My Quizzes"), /*#__PURE__*/React.createElement("div", {
         id: "total_score"
       }, "I have scored", " ", /*#__PURE__*/React.createElement("b", null, this.state.scores.reduce(function (partialSum, a) {
         return partialSum + a;
-      }, 0)), " ", "pts."), /*#__PURE__*/React.createElement("table", null, this.state.quizzes.length > 0 && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
+      }, 0)), " ", "pts."), /*#__PURE__*/React.createElement("table", {
+        id: "my-scores"
+      }, this.state.quizzes.length > 0 && /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
         id: "heading"
       }, /*#__PURE__*/React.createElement("th", null, "Description"), /*#__PURE__*/React.createElement("th", null, "Score"), /*#__PURE__*/React.createElement("th", null, "Link"))), /*#__PURE__*/React.createElement("tbody", null, this.state.quizzes.length > 0 && this.state.quizzes.map(function (quiz, i) {
         return /*#__PURE__*/React.createElement(Quiz, {
           key: i,
           data: quiz
         });
+      }))), /*#__PURE__*/React.createElement("div", {
+        className: "userlogout"
+      }, /*#__PURE__*/React.createElement("form", {
+        className: "user_form"
+      }, /*#__PURE__*/React.createElement("input", {
+        onClick: this.props.logout,
+        id: "logoutbutton",
+        type: "submit",
+        value: "Log out"
       }))));
     }
   }]);
 
-  return User;
+  return Quizzes;
 }(React.Component);
 
-var Quiz = /*#__PURE__*/function (_React$Component3) {
-  _inherits(Quiz, _React$Component3);
+var Quiz = /*#__PURE__*/function (_React$Component4) {
+  _inherits(Quiz, _React$Component4);
 
-  var _super3 = _createSuper(Quiz);
+  var _super4 = _createSuper(Quiz);
 
   function Quiz(props) {
     _classCallCheck(this, Quiz);
 
-    return _super3.call(this, props);
+    return _super4.call(this, props);
   }
 
   _createClass(Quiz, [{
@@ -397,27 +508,27 @@ var Quiz = /*#__PURE__*/function (_React$Component3) {
   return Quiz;
 }(React.Component);
 
-var Leaderboard = /*#__PURE__*/function (_React$Component4) {
-  _inherits(Leaderboard, _React$Component4);
+var Leaderboard = /*#__PURE__*/function (_React$Component5) {
+  _inherits(Leaderboard, _React$Component5);
 
-  var _super4 = _createSuper(Leaderboard);
+  var _super5 = _createSuper(Leaderboard);
 
   function Leaderboard(props) {
-    var _this8;
+    var _this11;
 
     _classCallCheck(this, Leaderboard);
 
-    _this8 = _super4.call(this, props);
-    _this8.state = {
+    _this11 = _super5.call(this, props);
+    _this11.state = {
       leaders: []
     };
-    return _this8;
+    return _this11;
   }
 
   _createClass(Leaderboard, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this9 = this;
+      var _this12 = this;
 
       fetch("/leaderboard").then(function (res) {
         return res.json();
@@ -428,7 +539,7 @@ var Leaderboard = /*#__PURE__*/function (_React$Component4) {
           leaders.push(res[i]);
         }
 
-        _this9.setState({
+        _this12.setState({
           leaders: leaders
         });
       });

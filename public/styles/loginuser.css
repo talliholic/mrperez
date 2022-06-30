@@ -3,24 +3,21 @@
 * {
   font-family: "Special Elite", cursive;
 }
-#container,
-#subcontainer {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-}
 .form {
   display: block;
   margin: 20px auto;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px dashed black;
+  width: 350px;
 }
 input {
   display: block;
-  margin: 10px;
+  margin: 10px auto;
   padding: 5px;
   font-size: 18px;
   text-align: center;
+  width: 300px;
+  display: block;
 }
 input[type="submit"] {
   border: none;
@@ -37,17 +34,20 @@ input[type="submit"] {
   font-size: 18px;
   padding: 5px;
   border-radius: 10%;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  width: 300px;
+  display: block;
 }
 .show_password_button {
-  border: 1px dashed black;
   background-color: lightcyan;
   cursor: pointer;
   font-size: 18px;
   padding: 5px;
   border-radius: 10%;
   text-align: center;
-  margin-top: 15px;
+  margin: 20px auto 0;
+  width: 300px;
+  display: block;
 }
 .show_password {
   border: none;
@@ -79,6 +79,11 @@ td {
   display: inline-block;
   border: 1px dashed black;
 }
+p {
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  border: 1px dashed black;
+}
 #forgot {
   text-decoration: none;
   color: black;
@@ -86,6 +91,9 @@ td {
   padding: 5px;
   display: block;
   text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  display: block;
 }
 h2,
 h3 {
@@ -105,4 +113,18 @@ h3 {
 }
 h1 {
   text-align: center;
+}
+.profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.leaders {
+  width: 250px;
+}
+#subcontainer {
+  width: 400px;
+}
+.perfil {
+  width: 300px;
 }
