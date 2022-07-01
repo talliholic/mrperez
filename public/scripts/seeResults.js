@@ -135,7 +135,9 @@ var Quizzes = function Quizzes(_ref) {
       key: i
     }, /*#__PURE__*/React.createElement("td", null, quiz.createdAt ? new Date(quiz.createdAt).toLocaleString("es-CO") : ""), /*#__PURE__*/React.createElement("td", null, quiz.updatedAt ? new Date(quiz.updatedAt).toLocaleString("es-CO") : ""), /*#__PURE__*/React.createElement("td", null, quiz.context), /*#__PURE__*/React.createElement("td", null, quiz.structure), /*#__PURE__*/React.createElement("td", null, quiz.type), /*#__PURE__*/React.createElement("td", {
       className: "score-td"
-    }, quiz.score));
+    }, quiz.score), /*#__PURE__*/React.createElement("td", null, /*#__PURE__*/React.createElement("a", {
+      href: quiz.path
+    }, "See Quiz")));
   })));
 };
 

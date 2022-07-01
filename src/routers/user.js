@@ -59,6 +59,7 @@ router.get("/leaderboard", auth, async (req, res) => {
           score: quiz.grade,
           createdAt: quiz.createdAt,
           updatedAt: quiz.updatedAt,
+          path: quiz.path,
         };
       }),
     };
