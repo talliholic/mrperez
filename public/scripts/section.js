@@ -448,11 +448,11 @@ var MathsSub = function MathsSub(props) {
     className: "container"
   }, /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",
-    href: "math-quizzes?topic=subtract%20ten%20less"
+    href: "math-quizzes?topic=subtract ten less"
   }, /*#__PURE__*/React.createElement("img", {
     src: "media/img_1/ten.jpg"
   }), /*#__PURE__*/React.createElement("figcaption", null, "10 Less than a multiple of ten")), /*#__PURE__*/React.createElement(Feedback, {
-    passed: props.passed("math-quizzes?topic=subtract%20ten%20less"),
+    passed: props.passed("math-quizzes?topic=subtract ten less"),
     loggedIn: props.loggedIn
   })), /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("a", {
     className: "link",

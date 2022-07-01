@@ -1023,7 +1023,7 @@ var AddtoAten = /*#__PURE__*/function (_React$Component16) {
     _classCallCheck(this, AddtoAten);
 
     _this31 = _super16.call(this, props);
-    _this31.addends = shuffle([10, 20, 30, 40, 50, 60, 70, 80, 90]);
+    _this31.addends = shuffle([0, 10, 20, 30, 40, 50, 60, 70, 80, 90]);
     return _this31;
   }
 
@@ -1239,7 +1239,7 @@ var Sub10less = /*#__PURE__*/function (_React$Component20) {
     _classCallCheck(this, Sub10less);
 
     _this39 = _super20.call(this, props);
-    _this39.addends = shuffle([10, 20, 30, 40, 50, 60, 70, 80, 90]);
+    _this39.addends = shuffle([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
     return _this39;
   }
 
