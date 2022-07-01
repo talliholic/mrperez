@@ -1,0 +1,19 @@
+[
+  {
+    "textbook": "Language Notebook 41",
+    "sentences": [
+      "This is a pizza.",
+      "We used dough, pineapples, ham and cheese.",
+      "It looks beautiful.",
+      "It smells like cheese.",
+      "It tastes delicious."
+    ],
+    "images": [
+      "media/examples/pizza.jpg",
+      "media/examples/dough.jpg",
+      "media/examples/ham.jpg",
+      "media/examples/pineapple.jpg",
+      "media/examples/cheese.jpg"
+    ]
+  }
+]

@@ -692,50 +692,6 @@
     ]
   },
   {
-    "objective": "To identify the five senses actions.",
-    "question": "What can you do with your senses?",
-    "textbook": "Language Notebook 37",
-    "img": "media/textbooks/l37.png",
-    "instructions": [
-      {
-        "command": "Learn the song.",
-        "resources": [
-          {
-            "type": "Song",
-            "link": "https://www.youtube.com/watch?v=EXQjhbtE0EY"
-          }
-        ]
-      },
-      {
-        "command": "Explore the sentences.",
-        "resources": [
-          {
-            "type": "Sentences",
-            "link": "/sentence_practice?context=Senses&index=0"
-          }
-        ]
-      },
-      {
-        "command": "Unscramble the words. Practice spelling the FIVE SENSES words.",
-        "resources": [
-          {
-            "type": "Unscramble the word",
-            "link": "/unscramble_word?context=Senses&index=0"
-          }
-        ]
-      },
-      {
-        "command": "Complete the sentences on page 37. Then draw.",
-        "resources": [
-          {
-            "type": "Page 37",
-            "link": "media/textbooks/l37.png"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "objective": "To read sight words.",
     "question": "Which words can you read out loud?",
     "textbook": "Language Notebook 36",
@@ -817,6 +773,171 @@
           {
             "type": "Page 38",
             "link": "media/textbooks/l38.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To say words with long vowels",
+    "question": "Which words have the sound AI, EA, OA and EE?",
+    "textbook": "Language Notebook 39",
+    "img": "media/textbooks/l39.png",
+    "instructions": [
+      {
+        "command": "Explore words with AI, EA, OA and EE.",
+        "resources": [
+          {
+            "type": "Video - AI",
+            "link": "https://www.youtube.com/watch?v=_uyC7jweYj4"
+          },
+          {
+            "type": "Video - EA",
+            "link": "https://www.youtube.com/watch?v=Yc36_Imtiig"
+          },
+          {
+            "type": "Video - OA",
+            "link": "https://www.youtube.com/watch?v=LIIOWNpY4ro"
+          },
+          {
+            "type": "Video - EE",
+            "link": "https://www.youtube.com/watch?v=HoS7G1tY-Io"
+          }
+        ]
+      },
+      {
+        "command": "Practice listening to the sounds in a sentence. Pick the correct answer.",
+        "resources": [
+          {
+            "type": "AI/EA Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=8"
+          },
+          {
+            "type": "OA/EE Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=9"
+          }
+        ]
+      },
+      {
+        "command": "Write words with the sounds explored. Then write a sentence.",
+        "resources": [
+          {
+            "type": "Page 39",
+            "link": "media/textbooks/l39.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To read the story FIVE FRIENDS AND THE ELEPHANT",
+    "question": "How can I answer comprehension questions?",
+    "textbook": "Language Notebook 40",
+    "img": "media/textbooks/l40.png",
+    "instructions": [
+      {
+        "command": "With your teacher, read the story FIVE FRIENDS AND THE ELEPHANT.",
+        "resources": [
+          {
+            "type": "Page 1",
+            "link": "media/textbooks/lb110.png"
+          },
+          {
+            "type": "Page 2",
+            "link": "media/textbooks/lb111.png"
+          },
+          {
+            "type": "Page 3",
+            "link": "media/textbooks/lb112.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice listening to the sounds in a sentence. Pick the correct answer.",
+        "resources": [
+          {
+            "type": "AI/EA Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=8"
+          },
+          {
+            "type": "OA/EE Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=9"
+          }
+        ]
+      },
+      {
+        "command": "Go to your notebook on page 40 and answer the questions.",
+        "resources": [
+          {
+            "type": "Page 40",
+            "link": "media/textbooks/l40.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To read the story FIVE FRIENDS AND THE ELEPHANT",
+    "question": "How can I answer comprehension questions?",
+    "textbook": "Language Notebook 41",
+    "img": "media/textbooks/l41.png",
+    "instructions": [
+      {
+        "command": "Go to your notebook on page 41 and answer the questions. Read the example.",
+        "resources": [
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2041"
+          },
+          {
+            "type": "Page 41",
+            "link": "media/textbooks/l41.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review the sounds OW, IGH, AR, OR and UR",
+    "question": "Which words have the sounds OW, IGH, AR, OR and UR?",
+    "textbook": "Language Notebook 43",
+    "img": "media/textbooks/l43.png",
+    "instructions": [
+      {
+        "command": "Review the sounds. Read the words with the sounds.",
+        "resources": [
+          {
+            "type": "Sound OW",
+            "link": "/vocabulary_ref?context=Phonics&index=5"
+          },
+          {
+            "type": "Sound IGH",
+            "link": "/vocabulary_ref?context=Phonics&index=7"
+          },
+          {
+            "type": "Sound AR",
+            "link": "/vocabulary_ref?context=Phonics&index=11"
+          },
+          {
+            "type": "Sound OR",
+            "link": "/vocabulary_ref?context=Phonics&index=11"
+          },
+          {
+            "type": "Sound UR",
+            "link": "/vocabulary_ref?context=Phonics&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Write the words next to each sound. Then draw and write a sentence.",
+        "resources": [
+          {
+            "type": "Page 43",
+            "link": "/media/textbooks/l43.png"
+          },
+          {
+            "type": "Review the sounds. Play the games.",
+            "link": "/section?context=Phonics"
           }
         ]
       }

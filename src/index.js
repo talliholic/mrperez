@@ -31,6 +31,7 @@ const projectable = require("../data/projectable.json");
 const messages = require("../data/messages.json");
 const vocales = require("../data/vocales.json");
 const odd = require("../data/odd.json");
+const examples = require("../data/examples.json");
 
 app.get("/loggedin", (req, res) => {
   let loggedIn = false;
@@ -119,6 +120,13 @@ app.get("/load-messages", (req, res) => {
 app.get("/projectable_data", (req, res) => {
   res.send(projectable);
 });
+app.get("/examples", (req, res) => {
+  res.render("examples");
+});
+app.get("/get-examples", (req, res) => {
+  res.json(examples);
+});
+
 app.get("/cargar-vocales/:title", (req, res) => {
   const filteredVocales = vocales.filter(
     (juego) => juego.título === req.params.title
