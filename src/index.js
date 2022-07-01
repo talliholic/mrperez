@@ -106,6 +106,9 @@ app.get("/vocales", (req, res) => {
 app.get("/odd", (req, res) => {
   res.render("odd");
 });
+app.get("/results", (req, res) => {
+  res.render("see-results");
+});
 app.get("/section", (req, res) => {
   res.render("section", { section: req.query.topic });
 });

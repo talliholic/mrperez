@@ -20,7 +20,7 @@ const users = (filter = {}) => {
 const quizzes = () => {
   return new Promise((res, rej) => {
     try {
-      res(Quiz.find());
+      res(Quiz.find().sort({ createdAt: -1, updatedAt: -1 }));
     } catch (error) {
       rej(error);
     }
@@ -57,6 +57,8 @@ router.get("/leaderboard", auth, async (req, res) => {
           structure: quiz.structure,
           type: quiz.type,
           score: quiz.grade,
+          createdAt: quiz.createdAt,
+          updatedAt: quiz.updatedAt,
         };
       }),
     };

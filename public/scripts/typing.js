@@ -122,6 +122,7 @@ var Typing = /*#__PURE__*/function (_React$Component) {
             img: _this3.state.img[i],
             answers: _this3.getState,
             structure: _this3.state.structure,
+            vocab: _this3.state.vocab,
             prefix: _this3.state.prefix
           });
         }));
@@ -180,7 +181,7 @@ var Item = /*#__PURE__*/function (_React$Component2) {
 
         if (_this5.quizzes.length > 0) {
           taken = _this5.quizzes.filter(function (quiz) {
-            return quiz.context === searchParams.get("context") && quiz.structure === _this5.props.structure && quiz.type === type;
+            return quiz.context === searchParams.get("context") && quiz.structure === _this5.props.vocab && quiz.type === type;
           });
         }
 
@@ -203,7 +204,7 @@ var Item = /*#__PURE__*/function (_React$Component2) {
             method: "POST",
             body: JSON.stringify({
               context: searchParams.get("context"),
-              structure: _this5.props.structure,
+              structure: _this5.props.vocab,
               type: type,
               path: "typing?context=" + searchParams.get("context") + "&index=" + searchParams.get("index"),
               grade: score
