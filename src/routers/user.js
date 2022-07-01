@@ -72,7 +72,7 @@ router.get("/leaderboard", auth, async (req, res) => {
   try {
     res.send(leaderboard);
   } catch (error) {
-    res.send(e);
+    res.send(error);
   }
 });
 

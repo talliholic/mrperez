@@ -53,11 +53,15 @@ var Results = /*#__PURE__*/function (_React$Component) {
       fetch("/leaderboard").then(function (res) {
         return res.json();
       }).then(function (res) {
-        _this2.setState(function (prev) {
-          return _objectSpread(_objectSpread({}, prev), {}, {
-            results: res
+        if (!res.error) {
+          _this2.setState(function (prev) {
+            return _objectSpread(_objectSpread({}, prev), {}, {
+              results: res
+            });
           });
-        });
+        } else {
+          window.location.replace("/loginuser");
+        }
       });
     }
   }, {
