@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js -e js,json,hbs,css",
-    "watch": "npx babel react/examples.js --out-file=public/scripts/examples.js --presets=@babel/preset-env,@babel/preset-react --watch"
+    "watch": "npx babel react/exams.js --out-file=public/scripts/exams.js --presets=@babel/preset-env,@babel/preset-react --watch"
   },
   "keywords": [],
   "author": "",

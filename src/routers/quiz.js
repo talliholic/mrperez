@@ -20,6 +20,17 @@ router.post("/quizzes", auth, async (req, res) => {
 router.get("/quizzes", auth, async (req, res) => {
   try {
     await req.user.populate("quizzes");
+    if (req.query.taken) {
+      const taken = req.user.quizzes.some(
+        (quiz) => quiz.structure === req.query.taken
+      );
+      if (taken) {
+        const quiz = req.user.quizzes.filter(
+          (quiz) => quiz.structure === req.query.taken
+        );
+        res.send({ taken, quiz_id: quiz[0]._id });
+      }
+    }
     res.send(req.user.quizzes);
   } catch (e) {
     res.status(500).send();

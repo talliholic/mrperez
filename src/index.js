@@ -32,6 +32,7 @@ const messages = require("../data/messages.json");
 const vocales = require("../data/vocales.json");
 const odd = require("../data/odd.json");
 const examples = require("../data/examples.json");
+const quizData = require("../data/quiz.json");
 
 app.get("/loggedin", (req, res) => {
   let loggedIn = false;
@@ -112,6 +113,22 @@ app.get("/results", (req, res) => {
 });
 app.get("/section", (req, res) => {
   res.render("section", { section: req.query.topic });
+});
+app.get("/quiz", (req, res) => {
+  res.render("quiz", { section: req.query.topic });
+});
+app.get("/exams", (req, res) => {
+  res.render("exams", { section: req.query.topic });
+});
+app.get("/quiz-data", (req, res) => {
+  if (req.query.title) {
+    const filteredData = quizData.filter(
+      (quiz) => quiz.title === req.query.title
+    );
+    res.json(filteredData[0]);
+  } else {
+    res.json(quizData);
+  }
 });
 app.get("/load-messages", (req, res) => {
   res.json(messages);

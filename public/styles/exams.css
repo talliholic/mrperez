@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.exam {
+  border: 1px solid purple;
+  margin: 10px 5px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 15%;
+}
