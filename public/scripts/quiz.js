@@ -227,7 +227,7 @@ var Question = /*#__PURE__*/function (_React$Component2) {
         _this5.setState(function (prev) {
           return _objectSpread(_objectSpread({}, prev), {}, {
             grade: grade,
-            input: answer
+            input: e.target.value
           });
         });
       };
