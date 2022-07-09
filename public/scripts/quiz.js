@@ -221,7 +221,7 @@ var Question = /*#__PURE__*/function (_React$Component2) {
     value: function grade(e) {
       var _this5 = this;
 
-      var answer = e.target.value;
+      var answer = e.target.value.trim();
 
       var updateGrade = function updateGrade(grade) {
         _this5.setState(function (prev) {
