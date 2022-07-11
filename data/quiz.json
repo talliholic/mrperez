@@ -101,7 +101,7 @@
       {
         "question": "Did he repair 5 cars on Tuesday?",
         "input": "text",
-        "answer": ["yes", "did"]
+        "answer": ["yes", "did", "yeah"]
       }
     ]
   },
@@ -167,7 +167,7 @@
       {
         "question": "How many children prefer grapes?",
         "input": "number",
-        "answer": ["2"]
+        "answer": ["4"]
       },
       {
         "question": "How many children prefer apples?",
@@ -182,7 +182,7 @@
       {
         "question": "Which is the children's least favorite fruit?",
         "input": "text",
-        "answer": ["banana"]
+        "answer": ["pear"]
       },
       {
         "question": "How many children prefer apples and bananas?",
