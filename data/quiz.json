@@ -3,6 +3,7 @@
     "subject": "Math",
     "topic": "Data Handling",
     "title": "School Transportation",
+    "type": "1 prompt",
     "prompt": {
       "text": "This is how children go to Allen Middle School.",
       "media": "media/quiz/school_transportation.png",
@@ -55,6 +56,7 @@
     "subject": "Math",
     "topic": "Data Handling",
     "title": "Cars Repaired",
+    "type": "1 prompt",
     "prompt": {
       "text": "This is the number of cars Mr. James repaired last week.",
       "media": "media/quiz/cars_repaired.png",
@@ -100,6 +102,92 @@
         "question": "Did he repair 5 cars on Tuesday?",
         "input": "text",
         "answer": ["yes", "did"]
+      }
+    ]
+  },
+  {
+    "subject": "Math",
+    "topic": "Data Handling",
+    "title": "Day Camp",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "Use the table to answer the questions.",
+      "media": "media/quiz/day_camp.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "What activity do the children do at 9:00?",
+        "input": "text",
+        "answer": ["art"]
+      },
+      {
+        "question": "What activity do the children do just before music?",
+        "input": "text",
+        "answer": ["tee-ball", "tee ball"]
+      },
+      {
+        "question": "What activity do the children do just after puppet theater?",
+        "input": "text",
+        "answer": ["swimming", "swim"]
+      },
+      {
+        "question": "What time does music begin?",
+        "input": "text",
+        "answer": ["10:00", "ten o'clock", "10 o'clock"]
+      }
+    ]
+  },
+  {
+    "subject": "Math",
+    "topic": "Data Handling",
+    "title": "Favorite Fruit",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "This is a table showing a class favorite fruits.",
+      "media": "media/quiz/favorite_fruit.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "How many children prefer pears?",
+        "input": "number",
+        "answer": ["2"]
+      },
+      {
+        "question": "How many children prefer bananas?",
+        "input": "number",
+        "answer": ["7"]
+      },
+      {
+        "question": "How many children prefer strawberries?",
+        "input": "number",
+        "answer": ["3"]
+      },
+      {
+        "question": "How many children prefer grapes?",
+        "input": "number",
+        "answer": ["2"]
+      },
+      {
+        "question": "How many children prefer apples?",
+        "input": "number",
+        "answer": ["5"]
+      },
+      {
+        "question": "Which is the children's favorite fruit?",
+        "input": "text",
+        "answer": ["banana"]
+      },
+      {
+        "question": "Which is the children's least favorite fruit?",
+        "input": "text",
+        "answer": ["banana"]
+      },
+      {
+        "question": "How many children prefer apples and bananas?",
+        "input": "number",
+        "answer": ["12"]
       }
     ]
   }

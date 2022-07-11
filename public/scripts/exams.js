@@ -2,6 +2,18 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -40,7 +52,8 @@ var Exams = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      exams: []
+      exams: [],
+      topics: []
     };
     return _this;
   }
@@ -48,14 +61,18 @@ var Exams = /*#__PURE__*/function (_React$Component) {
   _createClass(Exams, [{
     key: "render",
     value: function render() {
-      var exams = this.state.exams;
+      var _this$state = this.state,
+          exams = _this$state.exams,
+          topics = _this$state.topics;
       return /*#__PURE__*/React.createElement("div", {
         id: "container"
-      }, exams.map(function (exam, i) {
-        return /*#__PURE__*/React.createElement(Exam, {
+      }, topics.map(function (topic, i) {
+        return /*#__PURE__*/React.createElement(ByTopic, {
           key: i,
-          i: i + 1,
-          exam: exam
+          exams: exams.filter(function (exam) {
+            return exam.topic === topic;
+          }),
+          topic: topic
         });
       }));
     }
@@ -67,7 +84,10 @@ var Exams = /*#__PURE__*/function (_React$Component) {
       get("/quiz-data", function (res) {
         return _this2.setState(function (prev) {
           return _objectSpread(_objectSpread({}, prev), {}, {
-            exams: res
+            exams: res,
+            topics: _toConsumableArray(new Set(res.map(function (item) {
+              return item.topic;
+            })))
           });
         });
       });
@@ -77,14 +97,31 @@ var Exams = /*#__PURE__*/function (_React$Component) {
   return Exams;
 }(React.Component);
 
-var Exam = function Exam(_ref) {
-  var exam = _ref.exam,
-      i = _ref.i;
+var ByTopic = function ByTopic(_ref) {
+  var exams = _ref.exams,
+      topic = _ref.topic;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "topic"
+  }, /*#__PURE__*/React.createElement("h2", null, topic), /*#__PURE__*/React.createElement("div", {
+    className: "exams"
+  }, exams.map(function (exam, i) {
+    return /*#__PURE__*/React.createElement(Exam, {
+      key: i,
+      i: i + 1,
+      exam: exam
+    });
+  })));
+};
+
+var Exam = function Exam(_ref2) {
+  var exam = _ref2.exam;
   return /*#__PURE__*/React.createElement("div", {
     className: "exam"
-  }, "Exam ", i, ":", "  ", " ", /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("a", {
     href: "/quiz?title=" + exam.title
-  }, exam.title));
+  }, exam.type === "1 prompt" && /*#__PURE__*/React.createElement("figure", null, /*#__PURE__*/React.createElement("img", {
+    src: exam.prompt.media
+  }), /*#__PURE__*/React.createElement("figcaption", null, exam.title))));
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(Exams, null), document.getElementById("app"));

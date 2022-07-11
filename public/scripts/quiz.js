@@ -221,7 +221,7 @@ var Question = /*#__PURE__*/function (_React$Component2) {
     value: function grade(e) {
       var _this5 = this;
 
-      var answer = e.target.value.trim();
+      var answer = e.target.value.toLowerCase().trim();
 
       var updateGrade = function updateGrade(grade) {
         _this5.setState(function (prev) {
@@ -232,20 +232,26 @@ var Question = /*#__PURE__*/function (_React$Component2) {
         });
       };
 
-      var answerArray = answer.split(" ");
+      var wordMatch = function wordMatch(dbArray) {
+        var answerArray = answer.split(" ");
 
-      if (answerArray[answerArray.length - 1].includes(".")) {
-        answerArray[answerArray.length - 1] = answerArray[answerArray.length - 1].slice(0, -1);
-      }
+        if (answerArray[answerArray.length - 1].includes(".")) {
+          answerArray[answerArray.length - 1] = answerArray[answerArray.length - 1].slice(0, -1);
+        }
 
-      answerArray = answerArray.filter(function (word) {
-        return word !== ".";
-      });
-      var wordMatch = answerArray.some(function (word) {
-        return _this5.props.data.answer.includes(word.toLowerCase());
-      }); // console.log(answerArray, wordMatch);
+        answerArray = answerArray.filter(function (word) {
+          return word !== ".";
+        });
+        answerArray = answerArray.filter(function (word) {
+          return word !== "";
+        });
+        answerArray = answerArray.join(" ");
+        return dbArray.some(function (word) {
+          return answerArray.includes(word);
+        });
+      };
 
-      if (wordMatch) {
+      if (wordMatch(this.props.data.answer)) {
         updateGrade(1);
       } else {
         updateGrade(0);
