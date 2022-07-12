@@ -190,5 +190,68 @@
         "answer": ["12"]
       }
     ]
+  },
+  {
+    "subject": "Language",
+    "topic": "Reading Comprehension",
+    "title": "Senses",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "Read the story SENSES on raz-plus. Then answer the questions.",
+      "media": "media/quiz/senses.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "How does the girl learn about things?",
+        "input": "text",
+        "answer": ["senses"]
+      },
+      {
+        "question": "What for does she use her eyes?",
+        "input": "text",
+        "answer": ["see"]
+      },
+      {
+        "question": "What does she see?",
+        "input": "text",
+        "answer": ["birds", "bees"]
+      },
+      {
+        "question": "What for does she use her ears?",
+        "input": "text",
+        "answer": ["hear"]
+      },
+      {
+        "question": "What does she hear?",
+        "input": "text",
+        "answer": ["birds", "bees"]
+      },
+      {
+        "question": "What for does she user her fingers?",
+        "input": "text",
+        "answer": ["touch"]
+      },
+      {
+        "question": "What does she touch?",
+        "input": "text",
+        "answer": ["caterpillar"]
+      },
+      {
+        "question": "What for does she use her tongue?",
+        "input": "text",
+        "answer": ["taste"]
+      },
+      {
+        "question": "What does she taste?",
+        "input": "text",
+        "answer": ["strawberries", "strawberry", "berries", "berry", "fruit"]
+      },
+      {
+        "question": "Where does she like to go?",
+        "input": "text",
+        "answer": ["garden"]
+      }
+    ]
   }
 ]
