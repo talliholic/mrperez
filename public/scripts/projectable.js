@@ -88,10 +88,7 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
       if (dataLoaded) {
         return /*#__PURE__*/React.createElement("div", {
           className: "container"
-        }, this.state.showPic && /*#__PURE__*/React.createElement("img", {
-          id: "bg-read",
-          src: "media/topics/read_write.jpg"
-        }), /*#__PURE__*/React.createElement("div", {
+        }, /*#__PURE__*/React.createElement("div", {
           onClick: function onClick() {
             return _this3.setState(function (prev) {
               return _objectSpread(_objectSpread({}, prev), {}, {
@@ -100,7 +97,10 @@ var Projectable = /*#__PURE__*/function (_React$Component) {
             });
           },
           id: "show-menu"
-        }, "Menu"), this.state.showMenu && /*#__PURE__*/React.createElement("div", {
+        }, "Menu"), this.state.showPic && /*#__PURE__*/React.createElement("img", {
+          id: "bg-read",
+          src: "media/topics/read_write.jpg"
+        }), this.state.showMenu && /*#__PURE__*/React.createElement("div", {
           id: "textbookNav"
         }, /*#__PURE__*/React.createElement(Textbook, {
           textbook: "Language Notebook",
@@ -240,6 +240,15 @@ var Instruction = /*#__PURE__*/function (_React$Component4) {
           key: i,
           href: resource.link
         }, resource.type);
+      }), this.props.data.embed && /*#__PURE__*/React.createElement("iframe", {
+        width: "600",
+        height: "338",
+        frameBorder: "0",
+        src: this.props.data.embed,
+        webkitallowfullscreen: "true",
+        mozallowfullscreen: "true",
+        allowFullScreen: true,
+        allow: "microphone; camera; display-capture"
       }))));
     }
   }]);

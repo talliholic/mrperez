@@ -930,6 +930,18 @@
     ]
   },
   {
+    "objective": "To write about sounds",
+    "question": "Can you write sentences about sounds?",
+    "textbook": "Language Notebook 42",
+    "img": "media/textbooks/l42.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/Cr8PdfsL3K_D?embed=true"
+      }
+    ]
+  },
+  {
     "objective": "To review the sounds OW, IGH, AR, OR and UR",
     "question": "Which words have the sounds OW, IGH, AR, OR and UR?",
     "textbook": "Language Notebook 43",
@@ -976,6 +988,30 @@
             "link": "https://flip.com/s/a8qM4augMbbV"
           }
         ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "What happens in the story senses?",
+    "textbook": "Language Notebook 44",
+    "img": "media/textbooks/l44.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/5DRutm_uGzVx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "What can you write about each sense?",
+    "textbook": "Language Notebook 45",
+    "img": "media/textbooks/l45.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/PTzkbtoCf4Km?embed=true"
       }
     ]
   },
