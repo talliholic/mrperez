@@ -1,5 +1,65 @@
 [
   {
+    "objective": "To read about senses",
+    "question": "Which are the five senses?",
+    "textbook": "Language Book 100",
+    "img": "media/textbooks/lb100.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/dYuRKbps5D18?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the five senses?",
+    "textbook": "Language Book 101",
+    "img": "media/textbooks/lb101.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/dYuRKbps5D18?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the important words from the story?",
+    "textbook": "Language Book 110",
+    "img": "media/textbooks/lb110.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/3FeW5Mu9NwTx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the important words from the story?",
+    "textbook": "Language Book 111",
+    "img": "media/textbooks/lb111.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/3FeW5Mu9NwTx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the important words from the story?",
+    "textbook": "Language Book 112",
+    "img": "media/textbooks/lb112.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/3FeW5Mu9NwTx?embed=true"
+      }
+    ]
+  },
+  {
     "objective": "Compare and contrast information",
     "question": "How many wheels do bicycles have?",
     "textbook": "Language Book 129",
@@ -1012,6 +1072,42 @@
       {
         "command": "Watch the tutorial and solve the activities on the page.",
         "embed": "https://flip.com/s/PTzkbtoCf4Km?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "How can I compare using my senses?",
+    "textbook": "Language Notebook 46",
+    "img": "media/textbooks/l46.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/yyDxgjGwiY8Z?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "Which words describe the 5 senses?",
+    "textbook": "Language Notebook 47",
+    "img": "media/textbooks/l47.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/bQW-9R_YxGjV?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "Which words describe the 5 senses?",
+    "textbook": "Language Notebook 48",
+    "img": "media/textbooks/l48.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/Srz9hA4yHiAy?embed=true"
       }
     ]
   },
