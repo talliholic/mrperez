@@ -1071,7 +1071,13 @@
     "instructions": [
       {
         "command": "Watch the tutorial and solve the activities on the page.",
-        "embed": "https://flip.com/s/PTzkbtoCf4Km?embed=true"
+        "embed": "https://flip.com/s/PTzkbtoCf4Km?embed=true",
+        "resources": [
+          {
+            "type": "example",
+            "link": "/examples?page=Language%20Notebook%2045"
+          }
+        ]
       }
     ]
   },
@@ -1106,8 +1112,192 @@
     "img": "media/textbooks/l48.png",
     "instructions": [
       {
-        "command": "Watch the tutorial and solve the activities on the page.",
-        "embed": "https://flip.com/s/Srz9hA4yHiAy?embed=true"
+        "command": "Watch the tutorial, look at the example and solve the activities on the page.",
+        "embed": "https://flip.com/s/Srz9hA4yHiAy?embed=true",
+        "resources": [
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2048"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review words about sounds",
+    "question": "How can I write that a word has a sound?",
+    "textbook": "Language Notebook 49",
+    "img": "media/textbooks/l49.png",
+    "instructions": [
+      {
+        "command": "Read the instructions on the page. Then look at the example",
+        "resources": [
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2049"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about a friend",
+    "question": "Who is my friend?",
+    "textbook": "Language Notebook 50",
+    "img": "media/textbooks/l50.png",
+    "instructions": [
+      {
+        "command": "Read the instructions on the page. Then look at the example.",
+        "embed2": "/examples?page=Language%20Notebook%2050",
+        "resources": [{ "type": "Page 50", "link": "media/textbooks/l50.png" }]
+      }
+    ]
+  },
+  {
+    "objective": "To compare with the senses",
+    "question": "What is sweeter?",
+    "textbook": "Language Notebook 51",
+    "img": "media/textbooks/l51.png",
+    "instructions": [
+      {
+        "command": "Read the sentences. Then unscramble the words. Finally, do some extra practice",
+        "embed2": "/sentence_practice?context=Senses&index=1",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Senses&index=1"
+          },
+          {
+            "type": "Unscramble Game",
+            "link": "/unscramble_sentence?context=Senses&index=1"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=Comparing%20with%20Senses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about senses",
+    "question": "Which sentences can you write about the senses?",
+    "textbook": "Language Notebook 52",
+    "img": "media/textbooks/l52.png",
+    "instructions": [
+      {
+        "command": "Review the five senses. Say sentences with the words. Then match and unscramble words. Finally, complete and write sentences on page 52.",
+        "embed2": "/vocabulary_ref?context=Senses&index=0",
+        "resources": [
+          {
+            "type": "Match Words",
+            "link": "/match?context=Senses&index=0"
+          },
+          {
+            "type": "Unscramble Words",
+            "link": "/unscramble_word?context=Senses&index=0"
+          },
+          {
+            "type": "Page 52",
+            "link": "media/textbooks/l52.png"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=The%20Five%20Senses%201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about senses",
+    "question": "Which sentences can you write about the senses?",
+    "textbook": "Language Notebook 53",
+    "img": "media/textbooks/l53.png",
+    "instructions": [
+      {
+        "command": "Review the structure to write about the five senses. Read the sentences. Then unscramble the sentences. Finally, complete and write sentences on page 53, using the structure. Practice more at home. Click on extra practice.",
+        "embed2": "/sentence_practice?context=Senses&index=2",
+        "resources": [
+          {
+            "type": "Unscramble sentences",
+            "link": "/unscramble_sentence?context=Senses&index=2"
+          },
+          {
+            "type": "Page 53",
+            "link": "media/textbooks/l53.png"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=My%20Favorite%20Thing%20to%20Sense"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify sight words",
+    "question": "Which 3 sentences can you write using the words?",
+    "textbook": "Language Notebook 55",
+    "img": "media/textbooks/l55.png",
+    "instructions": [
+      {
+        "command": "On page 55, circle 3 words and write sentences about them. Use the bottom of the page. Look at the examples. Continue learning about the senses by clicking on EXTRA PRACTICE.S",
+        "embed2": "/examples?page=Language%20Notebook%2055",
+        "resources": [
+          {
+            "type": "Page 55",
+            "link": "media/textbooks/l53.png"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=My%20Favorite%20Thing%20to%20Sense"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about the environment",
+    "question": "Which sentences can you write about the environment?",
+    "textbook": "Language Notebook 56",
+    "img": "media/textbooks/l56.png",
+    "instructions": [
+      {
+        "command": "Look at the pictures on page and write sentences. Watch the video for ideas. Look at my example, but change some words. Do not copy. Finally, play a NEW games about the FIVE SENSES.",
+        "youtube": "https://www.youtube.com/embed/X2YgM1Zw4_E",
+        "resources": [
+          {
+            "type": "Page 56",
+            "link": "media/textbooks/l56.png"
+          },
+          {
+            "type": "Five Senses Game",
+            "link": "https://www.abcya.com/games/five_senses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about the environment",
+    "question": "Which sentences can you write about the environment?",
+    "textbook": "Language Notebook 57",
+    "img": "media/textbooks/l57.png",
+    "instructions": [
+      {
+        "command": "Meet with your family. Talk about water. Read the questions on page 57. Watch the video about water to get some ideas. You can look at my example, but do not copy me. Change some words.",
+        "youtube": "https://www.youtube.com/embed/ncORPosDrjI",
+        "resources": [
+          {
+            "type": "Page 57",
+            "link": "media/textbooks/l57.png"
+          },
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2057"
+          }
+        ]
       }
     ]
   },

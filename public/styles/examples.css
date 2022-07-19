@@ -4,7 +4,8 @@
   font-family: "Special Elite", cursive;
 }
 #example {
-  margin: 35px 0;
+  width: 600px;
+  margin: 35px auto;
 }
 #content {
   display: flex;

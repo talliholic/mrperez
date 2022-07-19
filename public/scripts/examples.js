@@ -74,7 +74,7 @@ var Example = /*#__PURE__*/function (_React$Component) {
         id: "container"
       }, this.state.example.length > 0 && /*#__PURE__*/React.createElement("div", {
         id: "example"
-      }, /*#__PURE__*/React.createElement("h1", null, this.state.example[0].textbook), /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/React.createElement("div", {
         id: "content"
       }, /*#__PURE__*/React.createElement("div", {
         id: "images"

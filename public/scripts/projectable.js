@@ -241,6 +241,7 @@ var Instruction = /*#__PURE__*/function (_React$Component4) {
           href: resource.link
         }, resource.type);
       }), this.props.data.embed && /*#__PURE__*/React.createElement("iframe", {
+        className: "embed",
         width: "600",
         height: "338",
         frameBorder: "0",
@@ -249,6 +250,19 @@ var Instruction = /*#__PURE__*/function (_React$Component4) {
         mozallowfullscreen: "true",
         allowFullScreen: true,
         allow: "microphone; camera; display-capture"
+      }), this.props.data.embed2 && /*#__PURE__*/React.createElement("iframe", {
+        className: "embed2",
+        height: "525",
+        src: this.props.data.embed2
+      }), this.props.data.youtube && /*#__PURE__*/React.createElement("iframe", {
+        className: "embed2",
+        width: "560",
+        height: "315",
+        src: this.props.data.youtube,
+        title: "YouTube video player",
+        frameborder: "0",
+        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+        allowFullScreen: true
       }))));
     }
   }]);
