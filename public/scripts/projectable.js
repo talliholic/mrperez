@@ -252,6 +252,7 @@ var Instruction = /*#__PURE__*/function (_React$Component4) {
         allow: "microphone; camera; display-capture"
       }), this.props.data.embed2 && /*#__PURE__*/React.createElement("iframe", {
         className: "embed2",
+        width: "625",
         height: "525",
         src: this.props.data.embed2
       }), this.props.data.youtube && /*#__PURE__*/React.createElement("iframe", {
