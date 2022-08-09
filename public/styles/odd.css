@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+img {
+  height: 80px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+.white {
+  border: 3px solid white;
+}
+.green {
+  border: 3px solid green;
+}
+.sound {
+  font-size: 65px;
+  display: block;
+  text-align: center;
+  margin: 30px;
+  border: 2px dotted black;
+  padding: 20px;
+  border-radius: 20%;
+}
+.options {
+  margin: 10px;
+}
+.cross,
+.check {
+  height: 80px;
+}
+.instruction {
+  background-color: lightyellow;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+}
+.listen {
+  padding: 10px;
+  border-radius: 25%;
+  border: 2px dotted red;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}

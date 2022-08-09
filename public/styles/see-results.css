@@ -1,0 +1,29 @@
+#container {
+  margin: 10px;
+}
+.rank,
+.student,
+.score {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+}
+.rank {
+  width: 20px;
+  text-align: center;
+}
+.student {
+  width: 200px;
+}
+.score {
+  width: 50px;
+  text-align: right;
+}
+td {
+  border: 1px solid black;
+  padding: 2px;
+}
+.score-td {
+  text-align: center;
+}

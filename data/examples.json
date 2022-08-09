@@ -1,0 +1,114 @@
+[
+  {
+    "textbook": "Language Notebook 41",
+    "sentences": [
+      "This is a pizza.",
+      "We used dough, pineapples, ham and cheese.",
+      "It looks beautiful.",
+      "It smells like cheese.",
+      "It tastes delicious."
+    ],
+    "images": [
+      "media/examples/pizza.jpg",
+      "media/examples/dough.jpg",
+      "media/examples/ham.jpg",
+      "media/examples/pineapple.jpg",
+      "media/examples/cheese.jpg"
+    ]
+  },
+  {
+    "textbook": "Language Notebook 45",
+    "sentences": [
+      "I can see...",
+      "I can hear...",
+      "I can taste...",
+      "I can smell..."
+    ],
+    "images": [
+      "media/img_1/see.png",
+      "media/img_1/hear.png",
+      "media/img_1/taste.png",
+      "media/img_1/smell.png"
+    ]
+  },
+  {
+    "textbook": "Language Notebook 48",
+    "sentences": [
+      "I can see with my eyes.",
+      "I can see a...",
+      "I can hear with my ears.",
+      "I can hear a...",
+      "I can taste with my tongue.",
+      "I can taste ...",
+      "I can touch with my hands.",
+      "I can touch ...",
+      "I can smell with my nose.",
+      "I can smell..."
+    ],
+    "images": [
+      "media/img_1/see.png",
+      "media/img_1/hear.png",
+      "media/img_1/taste.png",
+      "media/img_1/smell.png",
+      "media/img_1/touch.png"
+    ]
+  },
+  {
+    "textbook": "Language Notebook 49",
+    "sentences": [
+      "BEE",
+      "Bee has the sound EE.",
+      "BOAT",
+      "Boat has the sound OA",
+      "BOY",
+      "Boy has the sound OY."
+    ],
+    "images": [
+      "media/img_1/bee.png",
+      "media/img_1/boat.png",
+      "media/img_1/boy.png"
+    ]
+  },
+  {
+    "textbook": "Language Notebook 50",
+    "sentences": [
+      "This is Laura and me.",
+      "We are friends.",
+      "Her hair is longer than mine",
+      "She is taller than me.",
+      "She is faster than me.",
+      "But we are both friends."
+    ],
+    "images": [
+      "media/examples/taller.jpg",
+      "media/examples/longer_hair.jpg",
+      "media/examples/faster.png"
+    ]
+  },
+  {
+    "textbook": "Language Notebook 55",
+    "sentences": [
+      "I go to school by bus.",
+      "I like number 30.",
+      "I do my work at 9 o'clock."
+    ],
+    "images": [
+      "media/img_1/bus.jpg",
+      "media/img_1/thirty.jpg",
+      "media/img_1/9 o'clock.png"
+    ]
+  },
+  {
+    "textbook": "Language Notebook 57",
+    "sentences": [
+      "Water is a transparent liquid.",
+      "Water comes from rivers.",
+      "Take a short shower to save water."
+    ],
+    "images": [
+      "media/examples/water.jpg",
+      "media/examples/river.jpg",
+      "media/examples/shower.jpg"
+    ]
+  }
+]

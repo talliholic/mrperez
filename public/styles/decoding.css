@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+.transcript {
+  color: blue;
+  font-style: italic;
+}
+.speaking {
+  height: 75px;
+  display: block;
+}
+.image {
+  height: 150px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 15px;
+}
+.sentence,
+.transcript {
+  font-size: 24px;
+  text-align: center;
+}
+.sentence {
+  padding: 10px;
+}
+.transcript {
+  margin-bottom: 15px;
+}
+.cross,
+.check {
+  height: 25px;
+  margin: 0 5px;
+}
+.speak {
+  height: 50px;
+  display: block;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.speaking {
+  display: block;
+  margin: 5px auto;
+}
+.score {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 24px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+  padding: 9px;
+}
+h1 {
+  text-align: center;
+}
+#instruction {
+  background-color: lightgreen;
+  padding: 7px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 35px;
+}

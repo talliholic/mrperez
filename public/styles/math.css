@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+input[type="number"] {
+  font-size: 24px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+}
+.quiz {
+  padding-bottom: 50px;
+}
+form {
+  display: inline-block;
+}
+.sentence {
+  font-size: 24px;
+  margin: 0 10px;
+  display: inline-block;
+  border: 1px dashed black;
+  padding: 5px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+#instruction {
+  border: 1px dotted black;
+  padding: 7px;
+  font-size: 22px;
+  text-align: justify;
+  margin-bottom: 35px;
+  text-align: center;
+}
+hr {
+  border: 1px dashed black;
+  margin: 0;
+}
+i {
+  font-size: 24px;
+  margin: 0;
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Basic Sounds",
+    "sounds": [
+      {
+        "sound": "s",
+        "img": [
+          "media/phonics/img/snake.jpg",
+          "media/phonics/img/sun.jpg",
+          "media/phonics/img/socks.jpg",
+          "media/phonics/img/car.jpg",
+          "media/phonics/img/hat.jpg"
+        ],
+        "tries": 3,
+        "audio": "media/phonics/audio/s.mp3"
+      },
+      {
+        "sound": "a",
+        "img": [
+          "media/phonics/img/apple.jpg",
+          "media/phonics/img/alligator.jpg",
+          "media/phonics/img/ant.jpg",
+          "media/phonics/img/flower.jpg",
+          "media/phonics/img/ball.jpg"
+        ],
+        "tries": 3,
+        "audio": "media/phonics/audio/a.mp3"
+      },
+      {
+        "sound": "t",
+        "img": [
+          "media/phonics/img/tiger.jpg",
+          "media/phonics/img/train.jpg",
+          "media/phonics/img/turtle.jpg",
+          "media/phonics/img/cat.jpg",
+          "media/phonics/img/gorilla.jpg"
+        ],
+        "tries": 3,
+        "audio": "media/phonics/audio/t.mp3"
+      },
+      {
+        "sound": "p",
+        "img": [
+          "media/phonics/img/pig.jpg",
+          "media/phonics/img/pencil.jpg",
+          "media/phonics/img/penguin.jpg",
+          "media/phonics/img/dog.jpg",
+          "media/phonics/img/juice.jpg"
+        ],
+        "tries": 3,
+        "audio": "media/phonics/audio/p.mp3"
+      },
+      {
+        "sound": "i",
+        "img": [
+          "media/phonics/img/igloo.jpg",
+          "media/phonics/img/insects.jpg",
+          "media/phonics/img/iguana.jpg",
+          "media/phonics/img/kangaroo.jpg",
+          "media/phonics/img/lion.jpg"
+        ],
+        "tries": 3,
+        "audio": "media/phonics/audio/i.mp3"
+      },
+      {
+        "sound": "n",
+        "img": [
+          "media/phonics/img/nest.jpg",
+          "media/phonics/img/numbers.jpg",
+          "media/phonics/img/net.jpg",
+          "media/phonics/img/no.jpg",
+          "media/phonics/img/monkey.jpg"
+        ],
+        "tries": 4,
+        "audio": "media/phonics/audio/n.mp3"
+      },
+      {
+        "sound": "e",
+        "img": [
+          "media/phonics/img/eggs.jpg",
+          "media/phonics/img/elephant.jpg",
+          "media/phonics/img/elbow.jpg",
+          "media/phonics/img/octopus.jpg",
+          "media/phonics/img/rainbow.jpg"
+        ],
+        "tries": 3,
+        "audio": "media/phonics/audio/e.mp3"
+      }
+    ]
+  }
+]

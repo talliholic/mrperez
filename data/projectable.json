@@ -1,0 +1,2028 @@
+[
+  {
+    "objective": "To read about senses",
+    "question": "Which are the five senses?",
+    "textbook": "Language Book 100",
+    "img": "media/textbooks/lb100.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/dYuRKbps5D18?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the five senses?",
+    "textbook": "Language Book 101",
+    "img": "media/textbooks/lb101.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/dYuRKbps5D18?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the important words from the story?",
+    "textbook": "Language Book 110",
+    "img": "media/textbooks/lb110.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/3FeW5Mu9NwTx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the important words from the story?",
+    "textbook": "Language Book 111",
+    "img": "media/textbooks/lb111.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/3FeW5Mu9NwTx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To read about senses",
+    "question": "Which are the important words from the story?",
+    "textbook": "Language Book 112",
+    "img": "media/textbooks/lb112.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/3FeW5Mu9NwTx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "Compare and contrast information",
+    "question": "How many wheels do bicycles have?",
+    "textbook": "Language Book 129",
+    "img": "media/textbooks/lb129.png",
+    "instructions": [
+      {
+        "command": "Make sentences using the vocabulary.",
+        "resources": [
+          {
+            "type": "Transportation Words",
+            "link": "https://mrperez.herokuapp.com/vocabulary_ref?context=Technology&index=5"
+          }
+        ]
+      },
+      {
+        "command": "On page 129, in your language book, read the paragraph out loud."
+      },
+      {
+        "command": "Underline the sentences with the transportation words. Use a color pencil."
+      },
+      {
+        "command": "Read each word, unscramble the sentence and read it out loud.",
+        "resources": [
+          {
+            "type": "Game",
+            "link": "https://mrperez.herokuapp.com/unscramble_sentence?context=Technology&index=5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Compare and contrast information",
+    "question": "How many wheels do bicycles have?",
+    "textbook": "Language Notebook 22",
+    "img": "media/textbooks/l22.png",
+    "instructions": [
+      {
+        "command": "Use page 23 in your notebook to type the missing words.",
+        "resources": [
+          {
+            "type": "Typing Game",
+            "link": "https://mrperez.herokuapp.com/typing?context=Technology&index=5"
+          }
+        ]
+      },
+      {
+        "command": "On page 22, in your language notebook, write the names of the 4 vehicles explored: bicycles, tricycles, unicycles and wheelchairs.",
+        "resources": [
+          {
+            "type": "Page 22",
+            "link": "media/textbooks/l22.png"
+          }
+        ]
+      },
+      {
+        "command": "On the center, write what all the vehicles have in common: vehicles, wheels, etc. You can also use your book on page 129 and get the information from the reading HOW MANY WHEELS.",
+        "resources": [
+          {
+            "type": "Reference Book Page 129",
+            "link": "media/textbooks/lb129.png"
+          }
+        ]
+      },
+      {
+        "command": "On the sides, write what they have different."
+      }
+    ]
+  },
+  {
+    "objective": "To complete sentences about vehicles",
+    "question": "How many wheels do vehicles have?",
+    "textbook": "Language Notebook 23",
+    "img": "media/textbooks/l23.png",
+    "instructions": [
+      {
+        "command": "Read the sentences out loud.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=5"
+          }
+        ]
+      },
+      {
+        "command": "Use the sentences to complete the ones in your notebook",
+        "resources": [
+          {
+            "type": "Page 23",
+            "link": "media/textbooks/l23.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice unscrambling the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "http://localhost:3000/unscramble_sentence?context=Technology&index=5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Identify words with OW, UR and ER",
+    "question": "Which words have the sounds OW, UR and ER?",
+    "textbook": "Language Notebook 24",
+    "img": "media/textbooks/l24.png",
+    "instructions": [
+      {
+        "command": "Watch the video and say which words have the sound OW.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=HWIXnIX9yY0"
+          }
+        ]
+      },
+      {
+        "command": "Watch the video and say which words have the sound ER .",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=xf7b2rO5iIY"
+          }
+        ]
+      },
+      {
+        "command": "Watch the video and say which words have the sound UR.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=Fs2LQjamFqg"
+          }
+        ]
+      },
+      {
+        "command": "Take turns. Match the images with the words.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "https://mrperez.herokuapp.com/match?context=Phonics&index=5"
+          }
+        ]
+      },
+      {
+        "command": "Look at the sentences and complete the words on page 24 in your notebooks. Use the examples and write sentences. For example, BROWN HAS THE SOUND OW.",
+        "resources": [
+          {
+            "type": "Sentences with the Sounds OW, ER and UR",
+            "link": "/sentence_practice?context=Phonics&index=5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Write sentences about how people travel",
+    "question": "How do people travel?",
+    "textbook": "Language Notebook 25",
+    "img": "media/textbooks/l25.png",
+    "instructions": [
+      {
+        "command": "Read the sentences and pick the correct image.",
+        "resources": [
+          {
+            "type": "Reading Game",
+            "link": "https://mrperez.herokuapp.com/vocab_reading_quiz?context=Technology&index=4"
+          }
+        ]
+      },
+      {
+        "command": "Look at the vocabulary and make sentences. Write them in your language notebook on page 25. Leave a space to illustrate each sentence.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=4"
+          },
+          {
+            "type": "Page 25",
+            "link": "media/textbooks/l25.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice writing the words.",
+        "resources": [
+          {
+            "type": "Typing Game",
+            "link": "https://mrperez.herokuapp.com/typing?context=Technology&index=4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To sequence multiples of ten",
+    "question": "How can you count by tens?",
+    "textbook": "Math Notebook 108",
+    "img": "media/textbooks/m108.png",
+    "instructions": [
+      {
+        "command": "Sing the counting by tens song.",
+        "resources": [
+          {
+            "type": "Song",
+            "link": "https://www.youtube.com/watch?v=dSdjzFl9H6k"
+          }
+        ]
+      },
+      {
+        "command": "Add numbers by tens",
+        "resources": [
+          {
+            "type": "Math Game",
+            "link": "/math-quizzes?topic=add%20ten%20more"
+          }
+        ]
+      },
+      {
+        "command": "1. Complete the sequence of numbers. Count by tens.",
+        "resources": [
+          {
+            "type": "Page 108",
+            "link": "media/textbooks/m108.png"
+          }
+        ]
+      },
+      {
+        "command": "2. Count the tens and ones to make the number."
+      }
+    ]
+  },
+  {
+    "objective": "To add tens",
+    "question": "How can you add tens?",
+    "textbook": "Math Notebook 109",
+    "img": "media/textbooks/m109.png",
+    "instructions": [
+      {
+        "command": "Read the sentences about tens. Use your fingers to represent each sentence.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Math%20Numbers&index=1"
+          }
+        ]
+      },
+      {
+        "command": "1. Count the tens and write the corresponding number. ",
+        "resources": [
+          {
+            "type": "Page 109",
+            "link": "media/textbooks/m109.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Addition Game",
+            "link": "/math-quizzes?topic=add%20to%20a%20ten"
+          }
+        ]
+      },
+      {
+        "command": "2. Add ones to tens in your notebook. Stay on page 109."
+      }
+    ]
+  },
+  {
+    "objective": "To draw blocks of tens",
+    "question": "How can I represent big numbers?",
+    "textbook": "Math Notebook 110",
+    "img": "media/textbooks/m110.png",
+    "instructions": [
+      {
+        "command": "Look at the image of tens. Count all the squares. Then count the tens.",
+        "resources": [
+          {
+            "type": "Image of tens",
+            "link": "media/aids/tens_blocks.png"
+          }
+        ]
+      },
+      {
+        "command": "1. Look at each number and draw tens to represent them.",
+        "resources": [
+          {
+            "type": "Page 110",
+            "link": "media/textbooks/m110.png"
+          }
+        ]
+      },
+      {
+        "command": "2. Circle the number that represents 7 tens."
+      },
+      {
+        "command": "3. Show the addition that represents 7 tens. Or write the sentence: 7 TENS IS 70."
+      }
+    ]
+  },
+  {
+    "objective": "To identify the numbers that make the tens",
+    "question": "What is 4 tens equal to?",
+    "textbook": "Math Notebook 111",
+    "img": "media/textbooks/m111.png",
+    "instructions": [
+      {
+        "command": "Unscramble the sentences about tens.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "/unscramble_sentence?context=Math%20Numbers&index=1"
+          }
+        ]
+      },
+      {
+        "command": "1. Complete the sentences.",
+        "resources": [
+          {
+            "type": "Page 111",
+            "link": "media/textbooks/m111.png"
+          }
+        ]
+      },
+      {
+        "command": "2. Write the corresponding number to the word number. Use the reference.",
+        "resources": [
+          {
+            "type": "Reference",
+            "link": "/vocabulary_ref?context=Math%20Numbers&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Practice unscrambling the number words.",
+        "resources": [
+          {
+            "type": "Unscramble the words",
+            "link": "/unscramble_word?context=Math%20Numbers&index=1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Find the number that is ten more or ten less",
+    "question": "Which number is ten less/more than...?",
+    "textbook": "Math Notebook 112",
+    "img": "media/textbooks/m112.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial to locate the numbers that are ten less or ten more.",
+        "resources": [
+          {
+            "type": "Tutorial",
+            "link": "https://www.youtube.com/watch?v=blZdOlfm_ug"
+          }
+        ]
+      },
+      {
+        "command": "On the interactive hundreds chart, color the numbers 54, 80, 55 and 90 on the number chart. Then find the numbers that are ten less and ten more.",
+        "resources": [
+          {
+            "type": "Interactive Hundreds Chart",
+            "link": "https://www.abcya.com/games/interactive_100_number_chart"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, color the numbers 54, 80, 55 and 90 on the number chart. Then color the ones on top or below to find ten less or more.",
+        "resources": [
+          {
+            "type": "Page 112",
+            "link": "media/textbooks/m112.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice finding ten more and ten less. Use a hundreds chart for help. Practice the strategy learned.",
+        "resources": [
+          {
+            "type": "Ten More Game",
+            "link": "/math-quizzes?topic=add%20ten%20to%20any"
+          },
+          {
+            "type": "Ten Less Game",
+            "link": "/math-quizzes?topic=sub%20ten%20to%20any"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To solve a word problem using ten more/less",
+    "question": "How can I solve a word problem?",
+    "textbook": "Math Notebook 113",
+    "img": "media/textbooks/m113.png",
+    "instructions": [
+      {
+        "command": "Practice finding ten more and ten less. Use a hundreds chart for help. Practice the strategy learned.",
+        "resources": [
+          {
+            "type": "Ten More Game",
+            "link": "/math-quizzes?topic=add%20ten%20to%20any"
+          },
+          {
+            "type": "Ten Less Game",
+            "link": "/math-quizzes?topic=sub%20ten%20to%20any"
+          }
+        ]
+      },
+      {
+        "command": "Read the word problem. Write the corresponding addition and subtraction sentences using letters for each name. J for JORGE, I for IVAN and F for FERNANDO.",
+        "resources": [
+          {
+            "type": "Page 113",
+            "link": "media/textbooks/m113-a.png"
+          }
+        ]
+      },
+      {
+        "command": "Solve the sentences with your teacher. Take turns. Then write the answers at the bottom of the page."
+      }
+    ]
+  },
+  {
+    "objective": "To take a dictation",
+    "question": "Which words have the sound...?",
+    "textbook": "Language Notebook 26",
+    "img": "media/textbooks/l26.png",
+    "instructions": [
+      {
+        "command": "Review the sentences showing the sounds explored.",
+        "resources": [
+          {
+            "type": "Sentence Review",
+            "link": "/sentence_practice?context=Phonics&index=5"
+          }
+        ]
+      },
+      {
+        "command": "Listen to the teacher dictate the sentences about the sounds and copy them in order.",
+        "resources": [
+          {
+            "type": "Page 26",
+            "link": "media/textbooks/l26.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences with IGH, AIR and EAR sounds",
+    "question": "Which words have the sounds IGH, AIR and EAR",
+    "textbook": "Language Notebook 27",
+    "img": "media/textbooks/l27.png",
+    "instructions": [
+      {
+        "command": "Read the sentences containing the sounds.",
+        "resources": [
+          {
+            "type": "Sentence Practice",
+            "link": "/sentence_practice?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "unscramble_sentence?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, page 27, write the words and the sentences with each sound. Use the sentences explored or your own.",
+        "resources": [
+          {
+            "type": "Page 27",
+            "link": "media/textbooks/l27.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences with trabsportation actions",
+    "question": "Which transortation actions do you know?",
+    "textbook": "Language Notebook 28",
+    "img": "media/textbooks/l28.png",
+    "instructions": [
+      {
+        "command": "Explore sentences with the sounds. Read them out loud.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "http://localhost:3000/unscramble_sentence?context=Technology&index=6"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, copy the 5 sentences explored and make a drawing representing them.",
+        "resources": [
+          {
+            "type": "Page 28",
+            "link": "media/textbooks/l28.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences describing sounds.",
+    "question": "Which words have the sounds IGH, AIR and EAR",
+    "textbook": "Language Notebook 29",
+    "img": "media/textbooks/l29.png",
+    "instructions": [
+      {
+        "command": "Review the sentences explored with the sounds IGH, AIR and EAR.",
+        "resources": [
+          {
+            "type": "Sentence Review",
+            "link": "/sentence_practice?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Practice unscrambling the sentences.",
+        "resources": [
+          {
+            "type": "Sentence unscramble",
+            "link": "/unscramble_sentence?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "On page 29, in your language notebook, listen to the teacher's dictation using the sentences explored. Write them on the page.",
+        "resources": [
+          {
+            "type": "Page 29",
+            "link": "media/textbooks/l29.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To take a dictation",
+    "question": "Which words have the sound...?",
+    "textbook": "Language Notebook 30",
+    "img": "media/textbooks/l30.png",
+    "instructions": [
+      {
+        "command": "Review the sentences showing the sounds explored.",
+        "resources": [
+          {
+            "type": "Sentence Review",
+            "link": "/sentence_practice?context=Phonics&index=6"
+          }
+        ]
+      },
+      {
+        "command": "Listen to the teacher dictate the sentences about the sounds and copy them in order.",
+        "resources": [
+          {
+            "type": "Page 30",
+            "link": "media/textbooks/l30.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review the sounds explored",
+    "question": "Which words have the sound IGH, OW and EAR",
+    "textbook": "Language Notebook 31",
+    "img": "media/textbooks/l31.png",
+    "instructions": [
+      {
+        "command": "Type the missing word.",
+        "resources": [
+          {
+            "type": "Typing game",
+            "link": "/typing?context=Phonics&index=7"
+          }
+        ]
+      },
+      {
+        "command": "Match the images with the words.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "/match?context=Phonics&index=7"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, on page 31, write sentences using the words. You can use the structure ...HAS THE SOUND...",
+        "resources": [
+          {
+            "type": "Page 31",
+            "link": "media/textbooks/l31.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about your favorite vehicle",
+    "question": "What can you write about your favorite vehicle?",
+    "textbook": "Language Notebook 32",
+    "img": "media/textbooks/l32.png",
+    "instructions": [
+      {
+        "command": "Explore the sentences.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Technology&index=7"
+          }
+        ]
+      },
+      {
+        "command": "Try unscrambling the sentences. It is a difficult task, but you can do it. Follow this pattern: MY FAVORITE VEHICLE IS A...IT HAS...IT CAN",
+        "resources": [
+          {
+            "type": "Unscramble sentences",
+            "link": "/unscramble_sentence?context=Technology&index=7"
+          }
+        ]
+      },
+      {
+        "command": "On page 32, complete the sentences to describe your favorite vehicle. Draw it!",
+        "resources": [
+          {
+            "type": "Page 32",
+            "link": "media/textbooks/l32.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To illustrate how you can take care of the environment",
+    "question": "How can you take care of the environment?",
+    "textbook": "Language Notebook 33",
+    "img": "media/textbooks/l33.png",
+    "instructions": [
+      {
+        "command": "Watch the video. Pay close attention.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://youtu.be/belXC_IoW4o"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, on the left part, draw how you can take care of the planet.",
+        "resources": [
+          {
+            "type": "Page 33",
+            "link": "media/textbooks/l33.png"
+          }
+        ]
+      },
+      {
+        "command": "On the right side of the page, draw what may happen if you do not take care of the planet. Watch the video for ideas.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=X2YgM1Zw4_E"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To read sight words.",
+    "question": "Which words can you read out loud?",
+    "textbook": "Language Notebook 36",
+    "img": "media/textbooks/l36.png",
+    "instructions": [
+      {
+        "command": "Try and read each word. With a color pencil, circle the words you can read.",
+        "resources": [
+          {
+            "type": "Page 36",
+            "link": "media/textbooks/l36.png"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/Vs6tRo4yxQec"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify the five senses actions.",
+    "question": "What can you do with your senses?",
+    "textbook": "Language Notebook 37",
+    "img": "media/textbooks/l37.png",
+    "instructions": [
+      {
+        "command": "Learn the song.",
+        "resources": [
+          {
+            "type": "Song",
+            "link": "https://www.youtube.com/watch?v=EXQjhbtE0EY"
+          }
+        ]
+      },
+      {
+        "command": "Explore the sentences.",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Unscramble the words. Practice spelling the FIVE SENSES words.",
+        "resources": [
+          {
+            "type": "Unscramble the word",
+            "link": "/unscramble_word?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences on page 37. Then draw.",
+        "resources": [
+          {
+            "type": "Page 37",
+            "link": "media/textbooks/l37.png"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/VScAk6dYz4YG"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about an experience",
+    "question": "What is a special family trip you had?",
+    "textbook": "Language Notebook 38",
+    "img": "media/textbooks/l38.png",
+    "instructions": [
+      {
+        "command": "Review the five senses. Unscramble the sentences.",
+        "resources": [
+          {
+            "type": "Unscramble the sentences",
+            "link": "/unscramble_sentence?context=Senses&index=0"
+          }
+        ]
+      },
+      {
+        "command": "In your notebook, on page 38, write about a family trip. Use the senses words.",
+        "resources": [
+          {
+            "type": "Page 38",
+            "link": "media/textbooks/l38.png"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/xuku8ELxVYen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To say words with long vowels",
+    "question": "Which words have the sound AI, EA, OA and EE?",
+    "textbook": "Language Notebook 39",
+    "img": "media/textbooks/l39.png",
+    "instructions": [
+      {
+        "command": "Explore words with AI, EA, OA and EE.",
+        "resources": [
+          {
+            "type": "Video - AI",
+            "link": "https://www.youtube.com/watch?v=_uyC7jweYj4"
+          },
+          {
+            "type": "Video - EA",
+            "link": "https://www.youtube.com/watch?v=Yc36_Imtiig"
+          },
+          {
+            "type": "Video - OA",
+            "link": "https://www.youtube.com/watch?v=LIIOWNpY4ro"
+          },
+          {
+            "type": "Video - EE",
+            "link": "https://www.youtube.com/watch?v=HoS7G1tY-Io"
+          }
+        ]
+      },
+      {
+        "command": "Practice listening to the sounds in a sentence. Pick the correct answer.",
+        "resources": [
+          {
+            "type": "AI/EA Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=8"
+          },
+          {
+            "type": "OA/EE Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=9"
+          }
+        ]
+      },
+      {
+        "command": "Write words with the sounds explored. Then write a sentence.",
+        "resources": [
+          {
+            "type": "Page 39",
+            "link": "media/textbooks/l39.png"
+          },
+          {
+            "type": "AI/EA Words",
+            "link": "/vocabulary_ref?context=Phonics&index=8"
+          },
+          {
+            "type": "OA/EE Words",
+            "link": "/vocabulary_ref?context=Phonics&index=9"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/Nz3vSywz4BXt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To read the story FIVE FRIENDS AND THE ELEPHANT",
+    "question": "How can I answer comprehension questions?",
+    "textbook": "Language Notebook 40",
+    "img": "media/textbooks/l40.png",
+    "instructions": [
+      {
+        "command": "With your teacher, read the story FIVE FRIENDS AND THE ELEPHANT.",
+        "resources": [
+          {
+            "type": "Page 1",
+            "link": "media/textbooks/lb110.png"
+          },
+          {
+            "type": "Page 2",
+            "link": "media/textbooks/lb111.png"
+          },
+          {
+            "type": "Page 3",
+            "link": "media/textbooks/lb112.png"
+          }
+        ]
+      },
+      {
+        "command": "Practice listening to the sounds in a sentence. Pick the correct answer.",
+        "resources": [
+          {
+            "type": "AI/EA Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=8"
+          },
+          {
+            "type": "OA/EE Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=9"
+          }
+        ]
+      },
+      {
+        "command": "Go to your notebook on page 40 and answer the questions.",
+        "resources": [
+          {
+            "type": "Page 40",
+            "link": "media/textbooks/l40.png"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/cCFYrvczUHEE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about a recipe",
+    "question": "How can I prepare food?",
+    "textbook": "Language Notebook 41",
+    "img": "media/textbooks/l41.png",
+    "instructions": [
+      {
+        "command": "Go to your notebook on page 41 and answer the questions about a recipe. Read the example.",
+        "resources": [
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2041"
+          },
+          {
+            "type": "Page 41",
+            "link": "media/textbooks/l41.png"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/y7okqvbZNaxz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about sounds",
+    "question": "Can you write sentences about sounds?",
+    "textbook": "Language Notebook 42",
+    "img": "media/textbooks/l42.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/Cr8PdfsL3K_D?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To review the sounds OW, IGH, AR, OR and UR",
+    "question": "Which words have the sounds OW, IGH, AR, OR and UR?",
+    "textbook": "Language Notebook 43",
+    "img": "media/textbooks/l43.png",
+    "instructions": [
+      {
+        "command": "Review the sounds. Read the words with the sounds.",
+        "resources": [
+          {
+            "type": "Sound OW",
+            "link": "/vocabulary_ref?context=Phonics&index=5"
+          },
+          {
+            "type": "Sound IGH",
+            "link": "/vocabulary_ref?context=Phonics&index=7"
+          },
+          {
+            "type": "Sound AR",
+            "link": "/vocabulary_ref?context=Phonics&index=11"
+          },
+          {
+            "type": "Sound OR",
+            "link": "/vocabulary_ref?context=Phonics&index=11"
+          },
+          {
+            "type": "Sound UR",
+            "link": "/vocabulary_ref?context=Phonics&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Write the words next to each sound. Then draw and write a sentence.",
+        "resources": [
+          {
+            "type": "Page 43",
+            "link": "/media/textbooks/l43.png"
+          },
+          {
+            "type": "Review and games.",
+            "link": "/section?context=Phonics"
+          },
+          {
+            "type": "Tutorial",
+            "link": "https://flip.com/s/a8qM4augMbbV"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "What happens in the story senses?",
+    "textbook": "Language Notebook 44",
+    "img": "media/textbooks/l44.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/5DRutm_uGzVx?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "What can you write about each sense?",
+    "textbook": "Language Notebook 45",
+    "img": "media/textbooks/l45.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/PTzkbtoCf4Km?embed=true",
+        "resources": [
+          {
+            "type": "example",
+            "link": "/examples?page=Language%20Notebook%2045"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "How can I compare using my senses?",
+    "textbook": "Language Notebook 46",
+    "img": "media/textbooks/l46.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/yyDxgjGwiY8Z?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "Which words describe the 5 senses?",
+    "textbook": "Language Notebook 47",
+    "img": "media/textbooks/l47.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial and solve the activities on the page.",
+        "embed": "https://flip.com/s/bQW-9R_YxGjV?embed=true"
+      }
+    ]
+  },
+  {
+    "objective": "To write about senses",
+    "question": "Which words describe the 5 senses?",
+    "textbook": "Language Notebook 48",
+    "img": "media/textbooks/l48.png",
+    "instructions": [
+      {
+        "command": "Watch the tutorial, look at the example and solve the activities on the page.",
+        "embed": "https://flip.com/s/Srz9hA4yHiAy?embed=true",
+        "resources": [
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2048"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review words about sounds",
+    "question": "How can I write that a word has a sound?",
+    "textbook": "Language Notebook 49",
+    "img": "media/textbooks/l49.png",
+    "instructions": [
+      {
+        "command": "Read the instructions on the page. Then look at the example",
+        "resources": [
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2049"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write about a friend",
+    "question": "Who is my friend?",
+    "textbook": "Language Notebook 50",
+    "img": "media/textbooks/l50.png",
+    "instructions": [
+      {
+        "command": "Read the instructions on the page. Then look at the example.",
+        "embed2": "/examples?page=Language%20Notebook%2050",
+        "resources": [{ "type": "Page 50", "link": "media/textbooks/l50.png" }]
+      }
+    ]
+  },
+  {
+    "objective": "To compare with the senses",
+    "question": "What is sweeter?",
+    "textbook": "Language Notebook 51",
+    "img": "media/textbooks/l51.png",
+    "instructions": [
+      {
+        "command": "Read the sentences. Then unscramble the words. Finally, do some extra practice",
+        "embed2": "/sentence_practice?context=Senses&index=1",
+        "resources": [
+          {
+            "type": "Sentences",
+            "link": "/sentence_practice?context=Senses&index=1"
+          },
+          {
+            "type": "Unscramble Game",
+            "link": "/unscramble_sentence?context=Senses&index=1"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=Comparing%20with%20Senses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about senses",
+    "question": "Which sentences can you write about the senses?",
+    "textbook": "Language Notebook 52",
+    "img": "media/textbooks/l52.png",
+    "instructions": [
+      {
+        "command": "Review the five senses. Say sentences with the words. Then match and unscramble words. Finally, complete and write sentences on page 52.",
+        "embed2": "/vocabulary_ref?context=Senses&index=0",
+        "resources": [
+          {
+            "type": "Match Words",
+            "link": "/match?context=Senses&index=0"
+          },
+          {
+            "type": "Unscramble Words",
+            "link": "/unscramble_word?context=Senses&index=0"
+          },
+          {
+            "type": "Page 52",
+            "link": "media/textbooks/l52.png"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=The%20Five%20Senses%201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about senses",
+    "question": "Which sentences can you write about the senses?",
+    "textbook": "Language Notebook 53",
+    "img": "media/textbooks/l53.png",
+    "instructions": [
+      {
+        "command": "Review the structure to write about the five senses. Read the sentences. Then unscramble the sentences. Finally, complete and write sentences on page 53, using the structure. Practice more at home. Click on extra practice.",
+        "embed2": "/sentence_practice?context=Senses&index=2",
+        "resources": [
+          {
+            "type": "Unscramble sentences",
+            "link": "/unscramble_sentence?context=Senses&index=2"
+          },
+          {
+            "type": "Page 53",
+            "link": "media/textbooks/l53.png"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=My%20Favorite%20Thing%20to%20Sense"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify sight words",
+    "question": "Which 3 sentences can you write using the words?",
+    "textbook": "Language Notebook 55",
+    "img": "media/textbooks/l55.png",
+    "instructions": [
+      {
+        "command": "On page 55, circle 3 words and write sentences about them. Use the bottom of the page. Look at the examples. Continue learning about the senses by clicking on EXTRA PRACTICE.S",
+        "embed2": "/examples?page=Language%20Notebook%2055",
+        "resources": [
+          {
+            "type": "Page 55",
+            "link": "media/textbooks/l53.png"
+          },
+          {
+            "type": "Extra Practice",
+            "link": "/section?subject=Language&topic=My%20Favorite%20Thing%20to%20Sense"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about the environment",
+    "question": "Which sentences can you write about the environment?",
+    "textbook": "Language Notebook 56",
+    "img": "media/textbooks/l56.png",
+    "instructions": [
+      {
+        "command": "Look at the pictures on page and write sentences. Watch the video for ideas. Look at my example, but change some words. Do not copy. Finally, play a NEW games about the FIVE SENSES.",
+        "youtube": "https://www.youtube.com/embed/X2YgM1Zw4_E",
+        "resources": [
+          {
+            "type": "Page 56",
+            "link": "media/textbooks/l56.png"
+          },
+          {
+            "type": "Five Senses Game",
+            "link": "https://www.abcya.com/games/five_senses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write sentences about the environment",
+    "question": "Which sentences can you write about the environment?",
+    "textbook": "Language Notebook 57",
+    "img": "media/textbooks/l57.png",
+    "instructions": [
+      {
+        "command": "Meet with your family. Talk about water. Read the questions on page 57. Watch the video about water to get some ideas. You can look at my example, but do not copy me. Change some words.",
+        "youtube": "https://www.youtube.com/embed/ncORPosDrjI",
+        "resources": [
+          {
+            "type": "Page 57",
+            "link": "media/textbooks/l57.png"
+          },
+          {
+            "type": "Example",
+            "link": "/examples?page=Language%20Notebook%2057"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To add and subtract numbers on the hundred's chart.",
+    "question": "How can I add and subtract 10 using a hundreds chart?",
+    "textbook": "Math Notebook 114",
+    "img": "media/textbooks/m114.png",
+    "instructions": [
+      {
+        "command": "Take turns to color the numbers dictated by the teacher.",
+        "resources": [
+          {
+            "type": "Hundreds Chart",
+            "link": "https://www.abcya.com/games/interactive_100_number_chart"
+          }
+        ]
+      },
+      {
+        "command": "Listen to the teacher and color the numbers accordingly. Remember to locate the numbers that are TEN MORE below the number and TEN LESS above the number.",
+        "resources": [
+          {
+            "type": "Page 114",
+            "link": "media/textbooks/m114.png"
+          }
+        ]
+      },
+      {
+        "command": "Locate the numbers on the hundred's chart.",
+        "resources": [
+          {
+            "type": "Hundred chart Game",
+            "link": "https://www.abcya.com/games/one_hundred_number_chart_game"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To add and subtract 10 and 1",
+    "question": "How can I add and subtract using the hundred chart?",
+    "textbook": "Math Notebook 115",
+    "img": "media/textbooks/m115.png",
+    "instructions": [
+      {
+        "command": "Practice adding ten more and less than any number.",
+        "resources": [
+          {
+            "type": "Ten More",
+            "link": "/math-quizzes?topic=add%20ten%20to%20any"
+          },
+          {
+            "type": "Ten Less",
+            "link": "/math-quizzes?topic=sub%20ten%20to%20any"
+          }
+        ]
+      },
+      {
+        "command": "Now, use the hundreds chart on page 114 to add or subtract the numbers on page 115.",
+        "resources": [
+          {
+            "type": "Page 114",
+            "link": "media/textbooks/m114.png"
+          },
+          {
+            "type": "Page 115",
+            "link": "media/textbooks/m115.png"
+          }
+        ]
+      },
+      {
+        "command": "Write an addition or subtraction sentence with the numbers 29 and 26."
+      }
+    ]
+  },
+  {
+    "objective": "To complete the number bonds with tens and ones.",
+    "question": "How can I complete a number bond?",
+    "textbook": "Math Notebook 116",
+    "img": "media/textbooks/m116.png",
+    "instructions": [
+      {
+        "command": "Use tens: 10, 20, 30, 40, 50, 60, 70, 80, 90 or 100 to solve the number bonds.",
+        "resources": [
+          {
+            "type": "Page 116",
+            "link": "media/textbooks/m116.png"
+          }
+        ]
+      },
+      {
+        "command": "Write how many tens and ones you see. Then write the corresponding expanded form. Check the video for an example.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=wO7tUQaLXrc"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To count tens and ones and compose the corresponding number",
+    "question": "How many tens and ones do you see?",
+    "textbook": "Math Notebook 117",
+    "img": "media/textbooks/m117.png",
+    "instructions": [
+      {
+        "command": "Practice saying the sentences. Then find the answer. For example, 40 + 3 = 43: 4 tens and 3 ones equals 43.",
+        "resources": [
+          {
+            "type": "Tens and ones quiz",
+            "link": "/math-quizzes?topic=add%20to%20a%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Write how many tens and ones you see. Say the addition sentence and write the answer.",
+        "resources": [
+          {
+            "type": "Page 117",
+            "link": "media/textbooks/m117.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Practice adding tens and ones and adding",
+    "question": "How can I add tens and ones?",
+    "textbook": "Math Notebook 118",
+    "img": "media/textbooks/m118.png",
+    "instructions": [
+      {
+        "command": "Review how to add the expanded form of tens and ones.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=amIJu7QEvgY"
+          }
+        ]
+      },
+      {
+        "command": "Count the tens and ones on page 118 and then write their expanded form.",
+        "resources": [
+          {
+            "type": "Page 118",
+            "link": "media/textbooks/m118.png"
+          }
+        ]
+      },
+      {
+        "command": "Play a tens and ones game to practice.",
+        "resources": [
+          {
+            "type": "Game",
+            "link": "https://www.abcya.com/games/base_ten_fun"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 48",
+    "img": "media/textbooks/mb48.png",
+    "instructions": [
+      {
+        "command": "Pay attention to how shapes can be divided into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=uUfLWCNkH6w"
+          }
+        ]
+      },
+      {
+        "command": "Answer whether each halved shape is the same as the other one. Then write THIS IS A HALF or THIS IS NOT A HALF below the answers.",
+        "resources": [
+          {
+            "type": "Page 48",
+            "link": "media/textbooks/mb48.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 50",
+    "img": "media/textbooks/mb50.png",
+    "instructions": [
+      {
+        "command": "Pay attention to how shapes can be divided into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=uUfLWCNkH6w"
+          }
+        ]
+      },
+      {
+        "command": "See if each shape can be cut into halves. Write THIS IS A HALF or THIS IS NOT A HALF if the shape can not be cut into a half.",
+        "resources": [
+          {
+            "type": "Page 50",
+            "link": "media/textbooks/mb50.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 51",
+    "img": "media/textbooks/mb51.png",
+    "instructions": [
+      {
+        "command": "Watch another video to cut shapes into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=CXJXrRR_SG8"
+          }
+        ]
+      },
+      {
+        "command": "Follow the instructions on the page to show your understanding of cutting shapes into halves.",
+        "resources": [
+          {
+            "type": "Page 51",
+            "link": "media/textbooks/mb51.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 52",
+    "img": "media/textbooks/mb52.png",
+    "instructions": [
+      {
+        "command": "Watch how fruits can be cut into halves.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.nagwa.com/en/videos/642143465234/"
+          }
+        ]
+      },
+      {
+        "command": "Draw lines to make halves and NOT halves. Then circle the shapes that are folded in halves.",
+        "resources": [
+          {
+            "type": "Page 52",
+            "link": "media/textbooks/mb52.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To identify and color shapes by their halves",
+    "question": "How can you halve a shape?",
+    "textbook": "Math Book 54",
+    "img": "media/textbooks/mb54.png",
+    "instructions": [
+      {
+        "command": "Continue learning about halving objects.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=OYMBQ92RoVw"
+          }
+        ]
+      },
+      {
+        "command": "Draw a circle on the shapes that show a half. Then color one half of the shape.",
+        "resources": [
+          {
+            "type": "Page 54",
+            "link": "media/textbooks/mb54.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To cut shapes into halves",
+    "question": "How can I cut shapes into halves?",
+    "textbook": "Math Book 55",
+    "img": "media/textbooks/mb55.png",
+    "instructions": [
+      {
+        "command": "Follow the instructions on the page to show your understanding of cutting shapes into halves.",
+        "resources": [
+          {
+            "type": "Page 55",
+            "link": "media/textbooks/mb55.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To use vocabulary related to time",
+    "question": "Which words tell time?",
+    "textbook": "Math Book 112",
+    "img": "media/textbooks/mb112.png",
+    "instructions": [
+      {
+        "command": "Review the parts of the day. Unscramble the words.",
+        "resources": [
+          {
+            "type": "Unscramble Game",
+            "link": "/unscramble_word?context=Time&index=4"
+          }
+        ]
+      },
+      {
+        "command": "Review the days of the week. Match the words with their worder in the week.",
+        "resources": [
+          {
+            "type": "Matching Game",
+            "link": "/match?context=Time&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences with the words in the box.",
+        "resources": [
+          {
+            "type": "Page 112",
+            "link": "media/textbooks/mb112.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review the order of the days of the week",
+    "question": "Which are the days of the week?",
+    "textbook": "Math Book 113",
+    "img": "media/textbooks/mb113.png",
+    "instructions": [
+      {
+        "command": "Review the order of the days of the week.",
+        "resources": [
+          {
+            "type": "Days of the Week Review",
+            "link": "/vocabulary_ref?context=Time&index=1"
+          }
+        ]
+      },
+      {
+        "command": "Complete the days of the week on the roulette.",
+        "resources": [
+          {
+            "type": "Page 113",
+            "link": "media/textbooks/mb113.png"
+          }
+        ]
+      },
+      {
+        "command": "Then write the digital times. For example, 2 o'clock is 2:00."
+      }
+    ]
+  },
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 114",
+    "img": "media/textbooks/mb114.png",
+    "instructions": [
+      {
+        "command": "Practice the time by typing the word o'clock.",
+        "resources": [
+          {
+            "type": "typing Game",
+            "link": "/typing?context=Time&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Follow the page instructions to write the time.",
+        "resources": [
+          {
+            "type": "Page 114",
+            "link": "media/textbooks/mb114.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 115",
+    "img": "media/textbooks/mb115.png",
+    "instructions": [
+      {
+        "command": "Practice the time by listening.",
+        "resources": [
+          {
+            "type": "Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Time&index=3"
+          }
+        ]
+      },
+      {
+        "command": "Follow the page instructions to write the time. Pay attention to the hour hand that shows half.",
+        "resources": [
+          {
+            "type": "Page 115",
+            "link": "media/textbooks/mb115.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 116",
+    "img": "media/textbooks/mb116.png",
+    "instructions": [
+      {
+        "command": "Organize the days of the week.",
+        "resources": [
+          {
+            "type": "Page 116",
+            "link": "media/textbooks/mb116.png"
+          },
+          {
+            "type": "Listening Activity",
+            "link": "/sentence_practice?context=Time&index=1"
+          },
+          {
+            "type": "Order the days",
+            "link": "/match?context=Time&index=1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 117",
+    "img": "media/textbooks/mb117.png",
+    "instructions": [
+      {
+        "command": "Write the time.",
+        "resources": [
+          {
+            "type": "typing Game",
+            "link": "media/textbooks/mb117.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To review counting to 20",
+    "question": "Can you count to 20?",
+    "textbook": "Math Book 120",
+    "img": "media/textbooks/mb120.png",
+    "instructions": [
+      {
+        "command": "Say the missing number.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=vmyzMyDtQRI"
+          }
+        ]
+      },
+      {
+        "command": "Listen to the number and rescue the helicopter passenger.",
+        "resources": [
+          {
+            "type": "Helicopter Game",
+            "link": "https://www.topmarks.co.uk/learning-to-count/helicopter-rescue"
+          }
+        ]
+      },
+      {
+        "command": "Follow the page instructions to write the time.",
+        "resources": [
+          {
+            "type": "Page 120",
+            "link": "media/textbooks/mb120.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To make numbers with tens and ones",
+    "question": "How can you make numbers with tens and ones?",
+    "textbook": "Math Book 121",
+    "img": "media/textbooks/mb121.png",
+    "instructions": [
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Adding Game",
+            "link": "/math-quizzes?topic=add%20to%20a%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Write the missing numbers. Then add the tens and ones.",
+        "resources": [
+          {
+            "type": "Page 121",
+            "link": "media/textbooks/mb121.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To write teen number words",
+    "question": "How can you write teen numbers?",
+    "textbook": "Math Book 122",
+    "img": "media/textbooks/mb122.png",
+    "instructions": [
+      {
+        "command": "Practice reading the teen numbers. Use this image to solve the book exercise.",
+        "resources": [
+          {
+            "type": "Image",
+            "link": "media/reference/teen_numbers.jpg"
+          }
+        ]
+      },
+      {
+        "command": "Write the number words.",
+        "resources": [
+          {
+            "type": "Page 122",
+            "link": "media/textbooks/mb122.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To add numbers with tens and ones",
+    "question": "How can you add tens and ones?",
+    "textbook": "Math Book 124",
+    "img": "media/textbooks/mb124.png",
+    "instructions": [
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Adding to Ten",
+            "link": "/math-quizzes?topic=add%20to%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Look at the pictures on the page and write addition sentences with the number 10.",
+        "resources": [
+          {
+            "type": "Page 124",
+            "link": "media/textbooks/mb124.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "Draw in a ten frame",
+    "question": "How can add with a ten frame?",
+    "textbook": "Math Book 125",
+    "img": "media/textbooks/mb125.png",
+    "instructions": [
+      {
+        "command": "Practice adding ones to tens.",
+        "resources": [
+          {
+            "type": "Adding to Ten",
+            "link": "/math-quizzes?topic=add%20to%20ten"
+          }
+        ]
+      },
+      {
+        "command": "Count the counters on the ten frame. Write the number. Then draw counters on the empty tens frame. Then write the corresponding addition sentence.",
+        "resources": [
+          {
+            "type": "Page 125",
+            "link": "media/textbooks/mb125.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To decompose numbers",
+    "question": "How can decompose a number?",
+    "textbook": "Math Book 126",
+    "img": "media/textbooks/mb126.png",
+    "instructions": [
+      {
+        "command": "Count the beads. Write the corresponding addition sentence, adding the red and white beads.",
+        "resources": [
+          {
+            "type": "Page 126",
+            "link": "media/textbooks/mb126.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To compare quantities",
+    "question": "Are there more red or yellow cars?",
+    "textbook": "Math Book 127",
+    "img": "media/textbooks/mb127.png",
+    "instructions": [
+      {
+        "command": "Rewrite the sentences: THERE ARE MORE YELLOW CARS THAN RED CARS. 15 IS GREATER THAN 13.",
+        "resources": [
+          {
+            "type": "Page 127",
+            "link": "media/textbooks/mb127.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To compare numbers",
+    "question": "Are there more or less?",
+    "textbook": "Math Book 128",
+    "img": "media/textbooks/mb128.png",
+    "instructions": [
+      {
+        "command": "Count the objects and complete the sentences.",
+        "resources": [
+          {
+            "type": "Page 128",
+            "link": "media/textbooks/mb128.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To compare numbers",
+    "question": "Which number is greater than...?",
+    "textbook": "Math Book 129",
+    "img": "media/textbooks/mb129.png",
+    "instructions": [
+      {
+        "command": "Start exploring greater than and less than.",
+        "resources": [
+          {
+            "type": "Video",
+            "link": "https://www.youtube.com/watch?v=3qisu9NF1_0"
+          }
+        ]
+      },
+      {
+        "command": "Complete the sentences with greater than or less than.",
+        "resources": [
+          {
+            "type": "Page 129",
+            "link": "media/textbooks/mb129.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "e",
+    "question": "",
+    "textbook": "",
+    "img": "media/textbooks/",
+    "instructions": [
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "command": "",
+        "resources": [
+          {
+            "type": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  }
+]

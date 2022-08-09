@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+#quiz {
+  display: blocK;
+  margin: 10px;
+}
+#images {
+  border: 2px dashed black;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.image {
+  height: 75px;
+  margin: 10px;
+  padding: 5px;
+  border: 1 px solid black;
+}
+#sentence_container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+}
+.square {
+  height: 85px;
+  width: 180px;
+  border: 1px dashed black;
+  margin-right: 10px;
+}
+.sentences {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.sentence {
+  padding: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+hr {
+  border: 1px dashed black;
+  margin: 0;
+}
+i {
+  font-size: 24px;
+  margin: 0;
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "subject": "Math",
+    "topic": "Data Handling",
+    "title": "School Transportation",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "This is how children go to Allen Middle School.",
+      "media": "media/quiz/school_transportation.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "How many children walk to school?",
+        "input": "number",
+        "answer": ["7"]
+      },
+      {
+        "question": "How many children go by car?",
+        "input": "number",
+        "answer": ["6"]
+      },
+      {
+        "question": "How many children go by bike?",
+        "input": "number",
+        "answer": ["4"]
+      },
+      {
+        "question": "How many children go on the bus?",
+        "input": "number",
+        "answer": ["3"]
+      },
+      {
+        "question": "How many children do not walk?",
+        "input": "number",
+        "answer": ["13"]
+      },
+      {
+        "question": "How many children do not go on the bus?",
+        "input": "number",
+        "answer": ["17"]
+      },
+      {
+        "question": "How do most children go to school?",
+        "input": "text",
+        "answer": ["walk", "walking"]
+      },
+      {
+        "question": "Do most children prefer going on the bus?",
+        "input": "text",
+        "answer": ["no", "don't"]
+      }
+    ]
+  },
+  {
+    "subject": "Math",
+    "topic": "Data Handling",
+    "title": "Cars Repaired",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "This is the number of cars Mr. James repaired last week.",
+      "media": "media/quiz/cars_repaired.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "How many cars did he repair on Monday?",
+        "input": "number",
+        "answer": ["3"]
+      },
+      {
+        "question": "When did he repair most cars?",
+        "input": "text",
+        "answer": ["thursday"]
+      },
+      {
+        "question": "Did he repair 3 cars on Wednesday?",
+        "input": "text",
+        "answer": ["no", "didn't"]
+      },
+      {
+        "question": "How many cars did he repair in all?",
+        "input": "number",
+        "answer": ["25"]
+      },
+      {
+        "question": "When did he rest?",
+        "input": "text",
+        "answer": ["sunday"]
+      },
+      {
+        "question": "How many cars did he repair on Friday and Saturday?",
+        "input": "number",
+        "answer": ["8"]
+      },
+      {
+        "question": "When did he repair 2 cars?",
+        "input": "text",
+        "answer": ["wednesday"]
+      },
+      {
+        "question": "Did he repair 5 cars on Tuesday?",
+        "input": "text",
+        "answer": ["yes", "did", "yeah"]
+      }
+    ]
+  },
+  {
+    "subject": "Math",
+    "topic": "Data Handling",
+    "title": "Day Camp",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "Use the table to answer the questions.",
+      "media": "media/quiz/day_camp.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "What activity do the children do at 9:00?",
+        "input": "text",
+        "answer": ["art"]
+      },
+      {
+        "question": "What activity do the children do just before music?",
+        "input": "text",
+        "answer": ["tee-ball", "tee ball"]
+      },
+      {
+        "question": "What activity do the children do just after puppet theater?",
+        "input": "text",
+        "answer": ["swimming", "swim"]
+      },
+      {
+        "question": "What time does music begin?",
+        "input": "text",
+        "answer": ["10:00", "ten o'clock", "10 o'clock"]
+      }
+    ]
+  },
+  {
+    "subject": "Math",
+    "topic": "Data Handling",
+    "title": "Favorite Fruit",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "This is a table showing a class favorite fruits.",
+      "media": "media/quiz/favorite_fruit.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "How many children prefer pears?",
+        "input": "number",
+        "answer": ["2"]
+      },
+      {
+        "question": "How many children prefer bananas?",
+        "input": "number",
+        "answer": ["7"]
+      },
+      {
+        "question": "How many children prefer strawberries?",
+        "input": "number",
+        "answer": ["3"]
+      },
+      {
+        "question": "How many children prefer grapes?",
+        "input": "number",
+        "answer": ["4"]
+      },
+      {
+        "question": "How many children prefer apples?",
+        "input": "number",
+        "answer": ["5"]
+      },
+      {
+        "question": "Which is the children's favorite fruit?",
+        "input": "text",
+        "answer": ["banana"]
+      },
+      {
+        "question": "Which is the children's least favorite fruit?",
+        "input": "text",
+        "answer": ["pear"]
+      },
+      {
+        "question": "How many children prefer apples and bananas?",
+        "input": "number",
+        "answer": ["12"]
+      }
+    ]
+  },
+  {
+    "subject": "Language",
+    "topic": "Reading Comprehension",
+    "title": "Senses",
+    "type": "1 prompt",
+    "prompt": {
+      "text": "Read the story SENSES on raz-plus. Then answer the questions.",
+      "media": "media/quiz/senses.png",
+      "type": "image"
+    },
+    "questions": [
+      {
+        "question": "How does the girl learn about things?",
+        "input": "text",
+        "answer": ["senses"]
+      },
+      {
+        "question": "What for does she use her eyes?",
+        "input": "text",
+        "answer": ["see"]
+      },
+      {
+        "question": "What does she see?",
+        "input": "text",
+        "answer": ["birds", "bees"]
+      },
+      {
+        "question": "What for does she use her ears?",
+        "input": "text",
+        "answer": ["hear"]
+      },
+      {
+        "question": "What does she hear?",
+        "input": "text",
+        "answer": ["birds", "bees"]
+      },
+      {
+        "question": "What for does she user her fingers?",
+        "input": "text",
+        "answer": ["touch"]
+      },
+      {
+        "question": "What does she touch?",
+        "input": "text",
+        "answer": ["caterpillar"]
+      },
+      {
+        "question": "What for does she use her tongue?",
+        "input": "text",
+        "answer": ["taste"]
+      },
+      {
+        "question": "What does she taste?",
+        "input": "text",
+        "answer": ["strawberries", "strawberry", "berries", "berry", "fruit"]
+      },
+      {
+        "question": "Where does she like to go?",
+        "input": "text",
+        "answer": ["garden"]
+      }
+    ]
+  }
+]

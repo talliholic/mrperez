@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+.form {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px dashed black;
+  width: 350px;
+}
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: 300px;
+  display: block;
+}
+input[type="submit"] {
+  border: none;
+  background-color: lightgreen;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+}
+.form button {
+  border: none;
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+  margin: 0 auto;
+  width: 300px;
+  display: block;
+}
+.show_password_button {
+  background-color: lightcyan;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10%;
+  text-align: center;
+  margin: 20px auto 0;
+  width: 300px;
+  display: block;
+}
+.show_password {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding-top: 10px;
+  border-radius: 10%;
+  text-align: center;
+}
+#logoutbutton {
+  margin-top: 60px;
+  float: right;
+}
+table {
+  margin: 20px auto;
+}
+th,
+td {
+  padding: 7px 10px;
+  border: 1px solid black;
+}
+.center {
+  text-align: center;
+}
+#total_score {
+  text-align: center;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  display: inline-block;
+  border: 1px dashed black;
+}
+p {
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  border: 1px dashed black;
+}
+#forgot {
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  display: block;
+}
+h2,
+h3 {
+  text-align: center;
+}
+h2 {
+  background-color: aquamarine;
+}
+h3 {
+  background-color: antiquewhite;
+}
+.total {
+  text-align: right;
+}
+.user_form input {
+  margin: 10px auto;
+}
+h1 {
+  text-align: center;
+}
+.profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.leaders {
+  width: 250px;
+}
+#subcontainer {
+  width: 400px;
+}
+.perfil {
+  width: 300px;
+}

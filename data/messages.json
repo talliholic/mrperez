@@ -1,0 +1,32 @@
+[
+  {
+    "Date": "3/06/22",
+    "Title": "Corrección en retroalimentación de resultado en quizzes de READING y LISTENING",
+    "Message": "He corregido la herramienta que da puntaje en los quizzes de READING y LISTENING. Estaba dando resultados erróneos."
+  },
+  {
+    "Date": "1/06/22",
+    "Title": "Nueva sección de MATH",
+    "Message": "He creado una nueva sección de MATH. En ella, los estudiantes pueden explorar material interactivo, ejercicios para imprimir en casa, juegos, videos y quizzes que sumarán a sus resultados."
+  },
+  {
+    "Date": "31/05/22",
+    "Title": "Nueva sección de TYPING",
+    "Message": "He creado una nueva tipo de quiz interactivo, TYPING. En esta actividad, los estudiantes deben completar la oración con una de las palabras exploradas en el vocabulario. Si la palabra inicia la oración, el estudiante debe capitalizarla."
+  },
+  {
+    "Date": "31/05/22",
+    "Title": "Corrección quiz UNSCRAMBLE THE WORD",
+    "Message": "He corregido el quiz interactivo UNSCRAMBLE THE WORD. Los estudiantes ya pueden organizar SÓLO una palabra EN VEZ de una frase."
+  },
+  {
+    "Date": "31/05/22",
+    "Title": "Nueva sección de mensajes",
+    "Message": "He creado una nueva sección de mensajes, en la cual presentaré el material nuevo, las actualizaciones y noticias importantes de la página. Los invito a estar revisando esta sección con regularidad para que estén entererados del material nuevo y las actualizacines."
+  },
+  {
+    "Date": "31/05/22",
+    "Title": "Corrección de error en uno de los audios",
+    "Message": "He corregido audio en el tema THE TIME IS...(HALF HOUR) que indicaba 7:30 en vez de 6:30."
+  }
+]

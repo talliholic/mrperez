@@ -1,0 +1,53 @@
+[
+  {
+    "título": "Inspector de Vocales 1",
+    "palabras": [
+      { "palabra": "oso", "vocales": [1, 3] },
+      { "palabra": "silla", "vocales": [2, 5] },
+      { "palabra": "perro", "vocales": [2, 5] },
+      { "palabra": "uva", "vocales": [1, 3] },
+      { "palabra": "pino", "vocales": [2, 4] }
+    ],
+    "imágenes": [
+      "media/vocales/oso.jpg",
+      "media/vocales/silla.jpg",
+      "media/vocales/perro.jpg",
+      "media/vocales/uva.jpg",
+      "media/vocales/pino.jpg"
+    ]
+  },
+  {
+    "título": "Inspector de Vocales 2",
+    "palabras": [
+      { "palabra": "dulce", "vocales": [2, 5] },
+      { "palabra": "olla", "vocales": [1, 4] },
+      { "palabra": "tina", "vocales": [2, 4] },
+      { "palabra": "leon", "vocales": [2, 3] },
+      { "palabra": "uña", "vocales": [1, 3] }
+    ],
+    "imágenes": [
+      "media/vocales/dulce.jpg",
+      "media/vocales/olla.jpg",
+      "media/vocales/tina.jpg",
+      "media/vocales/leon.jpg",
+      "media/vocales/uña.jpg"
+    ]
+  },
+  {
+    "título": "Inspector de Vocales 3",
+    "palabras": [
+      { "palabra": "pelota", "vocales": [2, 4, 6] },
+      { "palabra": "maleta", "vocales": [2, 4, 6] },
+      { "palabra": "gusano", "vocales": [2, 4, 6] },
+      { "palabra": "caracol", "vocales": [2, 4, 6] },
+      { "palabra": "tortuga", "vocales": [2, 5, 7] }
+    ],
+    "imágenes": [
+      "media/vocales/pelota.jpg",
+      "media/vocales/maleta.jpg",
+      "media/vocales/gusano.png",
+      "media/vocales/caracol.jpg",
+      "media/vocales/tortuga.jpg"
+    ]
+  }
+]

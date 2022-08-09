@@ -1,0 +1,79 @@
+[
+  {
+    "objective": "To review o'clock and half hour times",
+    "question": "What time is it?",
+    "textbook": "Math Book 114",
+    "img": "media/textbooks/mb114.png",
+    "instructions": [
+      {
+        "command": "Practice the time by typing the word o'clock.",
+        "resources": [
+          {
+            "type": "typing Game",
+            "link": "/typing?context=Time&index=0"
+          }
+        ]
+      },
+      {
+        "command": "Follow the page instructions to write the time.",
+        "resources": [
+          {
+            "type": "Page 114",
+            "link": "media/textbooks/mb114.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "objective": "To say words with long vowels",
+    "question": "Which words have the sound AI, EA, OA and EE?",
+    "textbook": "Language Notebook 39",
+    "img": "media/textbooks/l39.png",
+    "instructions": [
+      {
+        "command": "Explore words with AI, EA, OA and EE.",
+        "resources": [
+          {
+            "type": "Video - AI",
+            "link": "https://www.youtube.com/watch?v=_uyC7jweYj4"
+          },
+          {
+            "type": "Video - EA",
+            "link": "https://www.youtube.com/watch?v=Yc36_Imtiig"
+          },
+          {
+            "type": "Video - OA",
+            "link": "https://www.youtube.com/watch?v=LIIOWNpY4ro"
+          },
+          {
+            "type": "Video - EE",
+            "link": "https://www.youtube.com/watch?v=HoS7G1tY-Io"
+          }
+        ]
+      },
+      {
+        "command": "Practice listening to the sounds in a sentence. Pick the correct answer.",
+        "resources": [
+          {
+            "type": "AI/EA Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=8"
+          },
+          {
+            "type": "OA/EE Listening Quiz",
+            "link": "/vocab_listening_quiz?context=Phonics&index=9"
+          }
+        ]
+      },
+      {
+        "command": "Write words with the sounds explored. Then write a sentence.",
+        "resources": [
+          {
+            "type": "Page 39",
+            "link": "media/textbooks/l39.png"
+          }
+        ]
+      }
+    ]
+  }
+]

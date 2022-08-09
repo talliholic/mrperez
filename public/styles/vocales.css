@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  font-family: "Dancing Script", cursive;
+}
+h1 {
+  text-align: center;
+}
+.juego {
+  margin-bottom: 30px;
+}
+.instrucción {
+  font-size: 24px;
+  background-color: lightgreen;
+  text-align: center;
+  padding: 5px;
+}
+.pregunta {
+  text-align: center;
+  padding: 10px;
+  border: 1px dotted black;
+  margin: 30px 0;
+}
+img {
+  height: 200px;
+  display: block;
+  margin: 10px auto;
+}
+.keyboard,
+.palabra {
+  font-size: 36px;
+  margin: 20px;
+}
+.palabra {
+  padding: 5px;
+  border: 1px solid black;
+  display: inline-block;
+}
+.vocal,
+.letra {
+  margin: 10px;
+}
+.vocal {
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+}
+.check,
+.cross {
+  height: 30px;
+}
+.retroalimentación {
+  display: inline-block;
+}
